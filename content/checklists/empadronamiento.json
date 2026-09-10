@@ -1,0 +1,55 @@
+{
+  "slug": "empadronamiento",
+  "title": "Checklist do Empadronamiento",
+  "description": "Passo a passo para se registrar no padrón do município onde você mora.",
+  "stage": "acabei-de-chegar",
+  "topics": ["empadronamiento", "documentos"],
+  "cities": [],
+  "items": [
+    {
+      "id": "moradia",
+      "title": "Ter um endereço real para declarar",
+      "detail": "Contrato de aluguel, autorização do proprietário ou documento aceito pelo ayuntamiento local."
+    },
+    {
+      "id": "regras",
+      "title": "Ler as regras do seu município",
+      "detail": "Cada cidade tem fluxo próprio: cita online, presencial, autocita ou atendimento em junta municipal."
+    },
+    {
+      "id": "agendar",
+      "title": "Agendar o atendimento",
+      "detail": "Marque a cita e salve o comprovante no celular e impresso."
+    },
+    {
+      "id": "docs-id",
+      "title": "Separar identificação",
+      "detail": "Passaporte e, se já tiver, NIE. Alguns lugares pedem cópia de todas as páginas usadas."
+    },
+    {
+      "id": "docs-casa",
+      "title": "Separar comprovante de moradia",
+      "detail": "Contrato, escritura, autorização assinada ou documento que o município listar."
+    },
+    {
+      "id": "formulario",
+      "title": "Preencher formulário local se houver",
+      "detail": "Alguns ayuntamientos pedem hoja de padron pré-preenchida."
+    },
+    {
+      "id": "comparecer",
+      "title": "Comparecer e solicitar o alta",
+      "detail": "Peça o volante ou certificado de empadronamiento. Você vai usar em vários trâmites."
+    },
+    {
+      "id": "guardar",
+      "title": "Digitalizar e arquivar",
+      "detail": "Guarde PDF legível e uma cópia impressa na pasta de documentos."
+    },
+    {
+      "id": "atualizar",
+      "title": "Atualizar se mudar de endereço",
+      "detail": "Mudou de casa? Refaça o padrón. Documento desatualizado gera problema depois."
+    }
+  ]
+}

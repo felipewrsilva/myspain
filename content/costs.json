@@ -1,0 +1,34 @@
+{
+  "currency": "EUR",
+  "profiles": [
+    { "id": "solo", "label": "Moro sozinho(a)" },
+    { "id": "casal", "label": "Casal" }
+  ],
+  "cities": [
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "solo": { "rent": 900, "food": 280, "transport": 55, "utilities": 120, "other": 150 },
+      "casal": { "rent": 1200, "food": 450, "transport": 90, "utilities": 160, "other": 220 }
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "solo": { "rent": 950, "food": 290, "transport": 40, "utilities": 125, "other": 160 },
+      "casal": { "rent": 1300, "food": 470, "transport": 70, "utilities": 165, "other": 230 }
+    },
+    {
+      "id": "valencia",
+      "name": "Valência",
+      "solo": { "rent": 700, "food": 250, "transport": 40, "utilities": 110, "other": 130 },
+      "casal": { "rent": 950, "food": 400, "transport": 70, "utilities": 145, "other": 190 }
+    },
+    {
+      "id": "malaga",
+      "name": "Málaga",
+      "solo": { "rent": 750, "food": 260, "transport": 40, "utilities": 115, "other": 140 },
+      "casal": { "rent": 1000, "food": 420, "transport": 70, "utilities": 150, "other": 200 }
+    }
+  ],
+  "notes": "Valores médios aproximados em euros para planejamento. Aluguel e estilo de vida variam bastante por bairro."
+}

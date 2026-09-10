@@ -1,0 +1,60 @@
+{
+  "slug": "nie",
+  "title": "Checklist do NIE",
+  "description": "Do agendamento à retirada: tudo que costuma ser pedido no processo do NIE.",
+  "stage": "acabei-de-chegar",
+  "topics": ["nie", "documentos"],
+  "cities": [],
+  "items": [
+    {
+      "id": "motivo",
+      "title": "Definir o motivo da solicitação",
+      "detail": "Trabalho, estudos, compra de imóvel, interesses econômicos e outros. O motivo muda documentos de apoio."
+    },
+    {
+      "id": "agendar",
+      "title": "Agendar cita prévia",
+      "detail": "Marque no sistema oficial o atendimento de Extranjería ou polícia, conforme sua cidade."
+    },
+    {
+      "id": "formulario",
+      "title": "Preencher o formulário EX-15",
+      "detail": "Baixe o modelo oficial, preencha com calma e imprima. Confira nome exatamente como no passaporte."
+    },
+    {
+      "id": "taxa",
+      "title": "Pagar a taxa 790-012",
+      "detail": "Gere a taxa correta, pague e leve o comprovante original."
+    },
+    {
+      "id": "docs",
+      "title": "Montar o pacote de documentos",
+      "detail": "Passaporte original e cópia, justificativa do motivo, comprovante de pagamento e fotos se pedirem."
+    },
+    {
+      "id": "copias",
+      "title": "Separar cópias extras",
+      "detail": "Leve ao menos uma via extra de tudo. Algumas oficinas pedem no balcão."
+    },
+    {
+      "id": "endereco",
+      "title": "Confirmar endereço e horário da cita",
+      "detail": "Cheque o comprovante no dia anterior. Chegue com folga para fila e segurança."
+    },
+    {
+      "id": "comparecer",
+      "title": "Comparecer com pasta organizada",
+      "detail": "Leve caneta, documentos na ordem e o celular no silencioso."
+    },
+    {
+      "id": "protocolo",
+      "title": "Guardar protocolo e orientações",
+      "detail": "Fotografe ou escaneie tudo que entregar e receber."
+    },
+    {
+      "id": "acompanhar",
+      "title": "Acompanhar prazo e retirada",
+      "detail": "Anote a data estimada e o local de retirada ou envio informado na cita."
+    }
+  ]
+}

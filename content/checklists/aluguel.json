@@ -1,0 +1,50 @@
+{
+  "slug": "aluguel",
+  "title": "Checklist de aluguel",
+  "description": "Do anúncio à entrega das chaves, com foco em evitar prejuízo.",
+  "stage": "acabei-de-chegar",
+  "topics": ["moradia"],
+  "cities": [],
+  "items": [
+    {
+      "id": "orcamento",
+      "title": "Definir teto de aluguel e depósito",
+      "detail": "Inclua comunidade, luz, água, internet e possível taxa de agência."
+    },
+    {
+      "id": "busca",
+      "title": "Filtrar anúncios e marcar visitas",
+      "detail": "Priorize visita presencial. Evite pagamento antecipado sem contrato."
+    },
+    {
+      "id": "visita",
+      "title": "Visitar e fotografar o imóvel",
+      "detail": "Cheque umidade, barulho, pressão da água e estado dos eletrodomésticos."
+    },
+    {
+      "id": "contrato",
+      "title": "Ler contrato com calma",
+      "detail": "Prazo, reajuste, rescisão, inventário e responsabilidade por reparos."
+    },
+    {
+      "id": "deposito",
+      "title": "Pagar depósito com comprovante",
+      "detail": "Guarde recibo e nunca pague só por conversa de WhatsApp sem papel."
+    },
+    {
+      "id": "inventario",
+      "title": "Assinar inventário com fotos",
+      "detail": "Registre riscos, buracos, manchas e chaves entregues."
+    },
+    {
+      "id": "contas",
+      "title": "Transferir ou ativar contas da casa",
+      "detail": "Luz, água, gás e internet no seu nome ou conforme o contrato."
+    },
+    {
+      "id": "padron",
+      "title": "Usar o contrato no empadronamiento",
+      "detail": "Com o endereço firme, avance o padrón o quanto antes."
+    }
+  ]
+}

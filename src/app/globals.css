@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #ffffff;
+  --paper-2: #f0f4f7;
+  --ink: #14181f;
+  --ink-muted: #5a6572;
+  --accent: #c8102e;
+  --accent-2: #1a6b8a;
+  --line: #d7e0e7;
+  --background: var(--paper);
+  --foreground: var(--ink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper-2);
+  background-image:
+    linear-gradient(90deg, transparent 49%, color-mix(in oklab, var(--accent-2) 7%, transparent) 50%, transparent 51%),
+    linear-gradient(0deg, transparent 49%, color-mix(in oklab, var(--accent-2) 7%, transparent) 50%, transparent 51%);
+  background-size: 28px 28px;
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--accent) 22%, white);
+  color: var(--ink);
+}
+
+.leaflet-container {
+  font: inherit;
+  border-radius: 1.25rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes softZoom {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.anim-rise {
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.anim-zoom {
+  animation: softZoom 1.4s ease-out both;
+}

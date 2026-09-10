@@ -1,0 +1,50 @@
+{
+  "slug": "autonomo-inicio",
+  "title": "Checklist para começar como autónomo",
+  "description": "Alta, cotização, fatura e organização mínima para trabalhar por conta própria.",
+  "stage": "ja-moro",
+  "topics": ["trabalho", "impostos"],
+  "cities": [],
+  "items": [
+    {
+      "id": "modelo",
+      "title": "Validar se autónomo é o caminho certo",
+      "detail": "Compare com contrato por conta alheia. Veja impostos, cotização e previsibilidade de renda."
+    },
+    {
+      "id": "asesor",
+      "title": "Escolher asesor ou gestor de confiança",
+      "detail": "Um bom apoio evita multa e atraso nos primeiros meses."
+    },
+    {
+      "id": "alta",
+      "title": "Fazer a alta nos órgãos competentes",
+      "detail": "Siga a orientação do gestor para Hacienda e Segurança Social."
+    },
+    {
+      "id": "conta",
+      "title": "Separar conta para receber clientes",
+      "detail": "Evite misturar gasto pessoal e profissional."
+    },
+    {
+      "id": "fatura",
+      "title": "Configurar modelo de fatura",
+      "detail": "Dados fiscais, numeração e forma de pagamento claros."
+    },
+    {
+      "id": "reserva",
+      "title": "Reservar percentual todo mês",
+      "detail": "Separe cotização e impostos antes de gastar o que entrou."
+    },
+    {
+      "id": "controle",
+      "title": "Montar planilha de receitas e despesas",
+      "detail": "Atualize semanalmente. Não deixe acumular para o trimestre."
+    },
+    {
+      "id": "prazos",
+      "title": "Colocar prazos no calendário",
+      "detail": "Declarações trimestrais e obrigações anuais com alerta antecipado."
+    }
+  ]
+}

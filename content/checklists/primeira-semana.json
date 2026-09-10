@@ -1,0 +1,45 @@
+{
+  "slug": "primeira-semana",
+  "title": "Checklist da primeira semana",
+  "description": "Prioridades do dia 1 ao dia 7 para sair do modo sobrevivência.",
+  "stage": "acabei-de-chegar",
+  "topics": ["nie", "empadronamiento", "banco"],
+  "cities": [],
+  "items": [
+    {
+      "id": "chegar",
+      "title": "Chegar ao endereço e testar Wi-Fi",
+      "detail": "Sem internet estável, tudo atrasa. Resolva isso no primeiro dia."
+    },
+    {
+      "id": "chip",
+      "title": "Ativar chip ou eSIM local",
+      "detail": "Número espanhol facilita bancos, citas e autenticação."
+    },
+    {
+      "id": "mapa",
+      "title": "Localizar supermercado, farmácia e transporte",
+      "detail": "Faça o circuito básico a pé ou de metrô."
+    },
+    {
+      "id": "citas",
+      "title": "Agendar NIE e empadronamiento",
+      "detail": "Quanto antes, melhor. Datas somem rápido em algumas cidades."
+    },
+    {
+      "id": "banco",
+      "title": "Avançar abertura de conta",
+      "detail": "Leve documentos e tente encaixar atendimento na semana."
+    },
+    {
+      "id": "pasta",
+      "title": "Montar pasta física da semana",
+      "detail": "Passaporte, reservas, seguro, formulários e comprovantes."
+    },
+    {
+      "id": "comunidade",
+      "title": "Entrar na comunidade",
+      "detail": "Tire dúvidas pontuais com quem já passou pelo mesmo fluxo."
+    }
+  ]
+}

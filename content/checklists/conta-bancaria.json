@@ -1,0 +1,50 @@
+{
+  "slug": "conta-bancaria",
+  "title": "Checklist para abrir conta bancária",
+  "description": "Documentos, escolha do banco e ativação do dia a dia financeiro.",
+  "stage": "acabei-de-chegar",
+  "topics": ["banco"],
+  "cities": [],
+  "items": [
+    {
+      "id": "comparar",
+      "title": "Comparar bancos e contas",
+      "detail": "Olhe taxa mensal, cartão, app, transferência SEPA e se aceitam abertura com passaporte ou só com NIE."
+    },
+    {
+      "id": "docs",
+      "title": "Reunir documentos",
+      "detail": "Passaporte, NIE quando disponível, comprovante de endereço e, em alguns casos, contrato de trabalho."
+    },
+    {
+      "id": "cita",
+      "title": "Agendar atendimento presencial",
+      "detail": "Muitos bancos ainda abrem conta só em agência. Leve tudo impresso."
+    },
+    {
+      "id": "abrir",
+      "title": "Abrir a conta e pedir cartão",
+      "detail": "Confirme tarifas, prazo de envio do cartão e limites iniciais."
+    },
+    {
+      "id": "app",
+      "title": "Ativar app e chave de segurança",
+      "detail": "Configure autenticação e salve telefones de suporte."
+    },
+    {
+      "id": "transferencia",
+      "title": "Fazer uma transferência teste",
+      "detail": "Envie um valor pequeno para validar IBAN e funcionamento."
+    },
+    {
+      "id": "recibos",
+      "title": "Cadastrar débitos e dados de nómina",
+      "detail": "Aluguel, luz, telefone e salário. Evita atraso e fila depois."
+    },
+    {
+      "id": "reserva",
+      "title": "Separar reserva de emergência",
+      "detail": "Mesmo pequena, mantenha uma folga em euro para imprevistos."
+    }
+  ]
+}

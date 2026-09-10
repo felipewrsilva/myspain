@@ -1,0 +1,50 @@
+{
+  "slug": "tie-residencia",
+  "title": "Checklist de TIE e residência",
+  "description": "Organização prática para o cartão de identidade de estrangeiro e prazos.",
+  "stage": "acabei-de-chegar",
+  "topics": ["visto", "documentos", "nie"],
+  "cities": [],
+  "items": [
+    {
+      "id": "elegibilidade",
+      "title": "Confirmar se você precisa de TIE",
+      "detail": "Em muitos casos de residência superior a 6 meses o cartão físico é necessário."
+    },
+    {
+      "id": "prazo",
+      "title": "Anotar o prazo para solicitar",
+      "detail": "Não deixe vencer a janela. Protocolos atrasados geram dor de cabeça."
+    },
+    {
+      "id": "cita",
+      "title": "Agendar cita de TIE",
+      "detail": "Use o canal oficial da sua província e salve o comprovante."
+    },
+    {
+      "id": "taxa",
+      "title": "Pagar taxa correspondente",
+      "detail": "Confira o modelo e valor corretos antes de pagar."
+    },
+    {
+      "id": "docs",
+      "title": "Separar documentação",
+      "detail": "Resolução ou visto, passaporte, foto, empadronamiento e formulários pedidos."
+    },
+    {
+      "id": "impressao",
+      "title": "Tirar digitais e foto conforme orientação",
+      "detail": "Siga o que a oficina pedir no dia. Leve fotos extras se indicado."
+    },
+    {
+      "id": "recibo",
+      "title": "Guardar resguardo",
+      "detail": "O comprovante provisório importa até o cartão ficar pronto."
+    },
+    {
+      "id": "retirada",
+      "title": "Retirar o cartão no prazo",
+      "detail": "Anote a data de retirada e leve identificação."
+    }
+  ]
+}

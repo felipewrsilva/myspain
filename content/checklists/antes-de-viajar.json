@@ -1,0 +1,55 @@
+{
+  "slug": "antes-de-viajar",
+  "title": "Checklist antes de viajar",
+  "description": "O que fechar no Brasil nas últimas semanas antes do embarque.",
+  "stage": "antes-de-ir",
+  "topics": ["documentos", "custo-de-vida"],
+  "cities": [],
+  "items": [
+    {
+      "id": "passaporte",
+      "title": "Conferir validade do passaporte",
+      "detail": "Garanta margem de validade e páginas livres."
+    },
+    {
+      "id": "visto",
+      "title": "Confirmar se precisa de visto prévio",
+      "detail": "Não embarque no caminho errado. Veja o guia de visto e residência."
+    },
+    {
+      "id": "seguro",
+      "title": "Contratar seguro adequado",
+      "detail": "Salve apólice em PDF e imprima uma via."
+    },
+    {
+      "id": "reserva",
+      "title": "Fechar hospedagem dos primeiros dias",
+      "detail": "Endereço inicial ajuda em embarque, banco e orientação."
+    },
+    {
+      "id": "dinheiro",
+      "title": "Separar reserva financeira",
+      "detail": "Euro inicial, cartão avisado e plano de transferência."
+    },
+    {
+      "id": "digital",
+      "title": "Organizar pasta digital",
+      "detail": "Documentos nomeados, offline e acessível sem chip espanhol."
+    },
+    {
+      "id": "brasil",
+      "title": "Encerrar pendências no Brasil",
+      "detail": "Contas, assinaturas, correspondência e procurações se necessário."
+    },
+    {
+      "id": "saude",
+      "title": "Levar medicamentos e receitas",
+      "detail": "Quantidade para os primeiros meses e documentação de uso contínuo."
+    },
+    {
+      "id": "voo",
+      "title": "Revisar voo, conexão e bagagem",
+      "detail": "Check-in, limite de mala e documentos na bagagem de mão."
+    }
+  ]
+}

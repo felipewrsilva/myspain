@@ -1,0 +1,14 @@
+[
+  { "id": "documentos", "name": "Documentos" },
+  { "id": "visto", "name": "Visto e residência" },
+  { "id": "nie", "name": "NIE" },
+  { "id": "empadronamiento", "name": "Empadronamiento" },
+  { "id": "banco", "name": "Banco e finanças" },
+  { "id": "moradia", "name": "Moradia" },
+  { "id": "trabalho", "name": "Trabalho" },
+  { "id": "saude", "name": "Saúde" },
+  { "id": "impostos", "name": "Impostos" },
+  { "id": "idioma", "name": "Idioma" },
+  { "id": "custo-de-vida", "name": "Custo de vida" },
+  { "id": "educacao", "name": "Educação" }
+]
