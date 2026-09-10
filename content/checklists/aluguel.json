@@ -1,50 +1,63 @@
 {
   "slug": "aluguel",
   "title": "Checklist de aluguel",
-  "description": "Do anúncio à entrega das chaves, com foco em evitar prejuízo.",
+  "description": "Do Idealista à entrega das chaves, com fiança da LAU e sinais de golpe.",
   "stage": "acabei-de-chegar",
   "topics": ["moradia"],
   "cities": [],
   "items": [
     {
       "id": "orcamento",
-      "title": "Definir teto de aluguel e depósito",
-      "detail": "Inclua comunidade, luz, água, internet e possível taxa de agência."
+      "title": "Somar aluguel + fiança + honorários + contas",
+      "detail": "A LAU limita a fiança de moradia habitual a 1 mês, depositada no órgão autonômico. Anúncios ainda pedem garantia extra e, em alguns casos, agência. Some o desembolso de entrada, não só a mensalidade.",
+      "links": [
+        {
+          "label": "LAU no BOE",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003"
+        }
+      ]
     },
     {
       "id": "busca",
-      "title": "Filtrar anúncios e marcar visitas",
-      "detail": "Priorize visita presencial. Evite pagamento antecipado sem contrato."
+      "title": "Filtrar anúncios e marcar visita presencial",
+      "detail": "Idealista e Fotocasa. Recuse transferência para 'segurar' imóvel sem visita e sem contrato.",
+      "links": [
+        { "label": "Idealista", "href": "https://www.idealista.com" },
+        { "label": "Fotocasa", "href": "https://www.fotocasa.es" }
+      ]
     },
     {
       "id": "visita",
-      "title": "Visitar e fotografar o imóvel",
-      "detail": "Cheque umidade, barulho, pressão da água e estado dos eletrodomésticos."
+      "title": "Visitar, fotografar e perguntar sobre padrón",
+      "detail": "Umidade, barulho, água, eletrodomésticos. Confirme se o dono autoriza empadronamiento — sem isso o contrato não serve para trâmites."
     },
     {
       "id": "contrato",
-      "title": "Ler contrato com calma",
-      "detail": "Prazo, reajuste, rescisão, inventário e responsabilidade por reparos."
+      "title": "Ler prazo, reajuste, rescisão e inventário",
+      "detail": "Contrato por escrito. Nada de anexo em branco. Recibo de cada pagamento."
     },
     {
       "id": "deposito",
-      "title": "Pagar depósito com comprovante",
-      "detail": "Guarde recibo e nunca pague só por conversa de WhatsApp sem papel."
+      "title": "Pagar fiança com comprovante",
+      "detail": "Prefira transferência com conceito claro para a conta do proprietário/agência identificada no contrato. Nunca só Bizum para desconhecido."
     },
     {
       "id": "inventario",
-      "title": "Assinar inventário com fotos",
-      "detail": "Registre riscos, buracos, manchas e chaves entregues."
+      "title": "Assinar inventário no dia das chaves",
+      "detail": "Fotos datadas de riscos, manchas e contadores. Sem isso a devolução da fiança vira briga."
     },
     {
       "id": "contas",
-      "title": "Transferir ou ativar contas da casa",
-      "detail": "Luz, água, gás e internet no seu nome ou conforme o contrato."
+      "title": "Ativar luz, água, gás e internet",
+      "detail": "Confira no contrato quem é o titular. Sem titular, o padrón futuro e o depósito complicam."
     },
     {
       "id": "padron",
       "title": "Usar o contrato no empadronamiento",
-      "detail": "Com o endereço firme, avance o padrón o quanto antes."
+      "detail": "Com endereço firme, avance o padrón na mesma semana.",
+      "links": [
+        { "label": "Checklist do padrón", "href": "/checklists/empadronamiento" }
+      ]
     }
   ]
 }

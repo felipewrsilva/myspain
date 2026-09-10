@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ContentCard } from "@/components/ContentCard";
-import { getGuides, getChecklists } from "@/lib/content";
+import { getGuides, getChecklists, getCover } from "@/lib/content";
 import { stages, siteConfig } from "@/lib/site";
 
 export default function HomePage() {
@@ -67,22 +68,43 @@ export default function HomePage() {
         </div>
 
         <div className="mt-10 grid gap-4 md:grid-cols-3">
-          {stages.map((stage, index) => (
-            <Link
-              key={stage.id}
-              href={stage.href}
-              className="group relative overflow-hidden rounded-2xl bg-white p-7 ring-1 ring-[var(--line)] transition hover:-translate-y-1 hover:ring-[var(--accent-2)]"
-            >
-              <span className="font-[family-name:var(--font-display)] text-5xl font-extrabold text-[var(--paper-2)] transition group-hover:text-[color-mix(in_oklab,var(--accent)_18%,white)]">
-                0{index + 1}
-              </span>
-              <h3 className="mt-4 font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]">
-                {stage.title}
-              </h3>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--ink-muted)]">{stage.description}</p>
-              <span className="mt-5 inline-block text-sm font-bold text-[var(--accent)]">Ver etapa</span>
-            </Link>
-          ))}
+          {stages.map((stage, index) => {
+            const cover = getCover(stage.id);
+            return (
+              <Link
+                key={stage.id}
+                href={stage.href}
+                className="group relative overflow-hidden rounded-2xl bg-white ring-1 ring-[var(--line)] transition hover:-translate-y-1 hover:ring-[var(--accent-2)]"
+              >
+                {cover ? (
+                  <div className="relative h-40 overflow-hidden">
+                    <Image
+                      src={cover.src}
+                      alt={cover.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover transition duration-500 group-hover:scale-[1.04]"
+                    />
+                    <span className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />
+                    <span className="absolute bottom-3 left-4 font-[family-name:var(--font-display)] text-4xl font-extrabold text-white/90">
+                      0{index + 1}
+                    </span>
+                  </div>
+                ) : (
+                  <span className="block px-7 pt-7 font-[family-name:var(--font-display)] text-5xl font-extrabold text-[var(--paper-2)]">
+                    0{index + 1}
+                  </span>
+                )}
+                <div className="p-7 pt-5">
+                  <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]">
+                    {stage.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-muted)]">{stage.description}</p>
+                  <span className="mt-5 inline-block text-sm font-bold text-[var(--accent)]">Ver etapa</span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
@@ -105,6 +127,8 @@ export default function HomePage() {
                 title={guide.title}
                 description={guide.description}
                 meta="Guia"
+                image={guide.cover}
+                imageAlt={guide.coverAlt}
               />
             ))}
           </div>
@@ -129,6 +153,8 @@ export default function HomePage() {
               title={item.title}
               description={item.description}
               meta="Checklist"
+              image={item.cover}
+              imageAlt={item.coverAlt}
             />
           ))}
         </div>

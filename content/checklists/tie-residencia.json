@@ -1,50 +1,68 @@
 {
   "slug": "tie-residencia",
   "title": "Checklist de TIE e residência",
-  "description": "Organização prática para o cartão de identidade de estrangeiro e prazos.",
+  "description": "Prazo de um mês, EX-17, huellas, taxa 790-012 e retirada do cartão.",
   "stage": "acabei-de-chegar",
   "topics": ["visto", "documentos", "nie"],
   "cities": [],
   "items": [
     {
       "id": "elegibilidade",
-      "title": "Confirmar se você precisa de TIE",
-      "detail": "Em muitos casos de residência superior a 6 meses o cartão físico é necessário."
+      "title": "Confirmar se a sua autorização exige TIE",
+      "detail": "Estancia ou residência longa (na prática, muitas vias acima de 6 meses, e estudos acima de 180 dias) pede cartão físico. O visto nacional sozinho não substitui a TIE depois do prazo."
     },
     {
       "id": "prazo",
-      "title": "Anotar o prazo para solicitar",
-      "detail": "Não deixe vencer a janela. Protocolos atrasados geram dor de cabeça."
+      "title": "Anotar o prazo — em várias vias é 1 mês após entrar",
+      "detail": "Consulado e folha de extranjería dizem o prazo. Atraso vira expediente irregular. Coloque alerta no celular."
     },
     {
       "id": "cita",
-      "title": "Agendar cita de TIE",
-      "detail": "Use o canal oficial da sua província e salve o comprovante."
+      "title": "Agendar toma de huellas no ICP Plus",
+      "detail": "Província → Policía Nacional → trámite de expedición de tarjeta / toma de huellas. Imprima o localizador. Cita gratuita.",
+      "links": [
+        {
+          "label": "Cita previa ICP Plus",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        }
+      ]
+    },
+    {
+      "id": "formulario",
+      "title": "Preencher o EX-17",
+      "detail": "Modelo oficial de solicitação da TIE. Nome igual ao passaporte.",
+      "links": [
+        {
+          "label": "Modelos EX (EX-17)",
+          "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
+        }
+      ]
     },
     {
       "id": "taxa",
-      "title": "Pagar taxa correspondente",
-      "detail": "Confira o modelo e valor corretos antes de pagar."
+      "title": "Pagar a taxa 790 código 012",
+      "detail": "O importe depende do tipo de cartão (primeira concessão, renovação, familiar UE…). Gere o modelo vigente e leve o justificante.",
+      "links": [
+        {
+          "label": "Gerar taxa 790-012",
+          "href": "https://sede.policia.gob.es/Tasa790_012/"
+        }
+      ]
     },
     {
       "id": "docs",
-      "title": "Separar documentação",
-      "detail": "Resolução ou visto, passaporte, foto, empadronamiento e formulários pedidos."
-    },
-    {
-      "id": "impressao",
-      "title": "Tirar digitais e foto conforme orientação",
-      "detail": "Siga o que a oficina pedir no dia. Leve fotos extras se indicado."
+      "title": "Montar a pasta das huellas",
+      "detail": "Passaporte e cópia, visto ou resolução favorável, EX-17, taxa paga, foto carné fundo branco, padrón se a oficina pedir, justificante da cita."
     },
     {
       "id": "recibo",
-      "title": "Guardar resguardo",
-      "detail": "O comprovante provisório importa até o cartão ficar pronto."
+      "title": "Guardar o resguardo até o cartão ficar pronto",
+      "detail": "Esse papel prova que a TIE está em fabricação. Se for viajar nesse intervalo, pergunte na comissaria sobre autorização de regresso."
     },
     {
       "id": "retirada",
-      "title": "Retirar o cartão no prazo",
-      "detail": "Anote a data de retirada e leve identificação."
+      "title": "Retirar o cartão com o resguardo e o passaporte",
+      "detail": "Anote a data que a polícia indicar. Em algumas cidades a retirada também pede cita."
     }
   ]
 }

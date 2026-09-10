@@ -1,8 +1,20 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import { Callout } from "@/components/Callout";
+import { YouTube } from "@/components/YouTube";
+import { CoverImage } from "@/components/CoverImage";
 
 const components = {
+  YouTube,
+  Callout,
+  CoverImage,
+  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+    <span className="my-8 block overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--paper-2)]">
+      {/* Markdown images: remote Unsplash, already allowed in next.config */}
+      <img {...props} alt={props.alt ?? ""} className="h-auto w-full object-cover" />
+    </span>
+  ),
   a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
     const href = props.href ?? "";
     if (href.startsWith("/")) {
@@ -39,6 +51,26 @@ const components = {
   li: (props: React.HTMLAttributes<HTMLLIElement>) => <li className="leading-relaxed" {...props} />,
   strong: (props: React.HTMLAttributes<HTMLElement>) => (
     <strong className="font-semibold text-[var(--ink)]" {...props} />
+  ),
+  table: (props: React.TableHTMLAttributes<HTMLTableElement>) => (
+    <div className="mb-6 overflow-x-auto rounded-2xl border border-[var(--line)]">
+      <table className="w-full min-w-[32rem] text-left text-sm" {...props} />
+    </div>
+  ),
+  thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
+    <thead className="bg-[var(--paper-2)] text-[var(--ink)]" {...props} />
+  ),
+  th: (props: React.ThHTMLAttributes<HTMLTableCellElement>) => (
+    <th className="px-3 py-2.5 font-semibold" {...props} />
+  ),
+  td: (props: React.TdHTMLAttributes<HTMLTableCellElement>) => (
+    <td className="border-t border-[var(--line)] px-3 py-2.5 text-[var(--ink-muted)]" {...props} />
+  ),
+  blockquote: (props: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
+    <blockquote
+      className="mb-4 border-l-4 border-[var(--accent-2)] pl-4 text-[var(--ink-muted)] italic"
+      {...props}
+    />
   ),
 };
 

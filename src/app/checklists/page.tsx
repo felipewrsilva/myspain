@@ -23,6 +23,8 @@ export default function ChecklistsPage() {
             title={item.title}
             description={item.description}
             meta={`${item.items.length} passos`}
+            image={item.cover}
+            imageAlt={item.coverAlt}
           />
         ))}
       </div>

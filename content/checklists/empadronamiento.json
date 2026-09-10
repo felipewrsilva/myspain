@@ -1,7 +1,7 @@
 {
   "slug": "empadronamiento",
   "title": "Checklist do Empadronamiento",
-  "description": "Passo a passo para se registrar no padrón do município onde você mora.",
+  "description": "Endereço real, regra do município, volante e o que atualizar quando mudar de casa.",
   "stage": "acabei-de-chegar",
   "topics": ["empadronamiento", "documentos"],
   "cities": [],
@@ -9,47 +9,52 @@
     {
       "id": "moradia",
       "title": "Ter um endereço real para declarar",
-      "detail": "Contrato de aluguel, autorização do proprietário ou documento aceito pelo ayuntamiento local."
+      "detail": "Contrato de aluguel, autorização assinada do proprietário, ou o documento que o ayuntamiento da sua cidade listar. Hotel de uma noite quase nunca serve."
     },
     {
       "id": "regras",
-      "title": "Ler as regras do seu município",
-      "detail": "Cada cidade tem fluxo próprio: cita online, presencial, autocita ou atendimento em junta municipal."
+      "title": "Ler o procedimento do seu município",
+      "detail": "Cada cidade muda: cita online, presencial, autocita ou junta de distrito. Em Madrid e Barcelona o fluxo está na sede eletrónica do ayuntamiento.",
+      "links": [
+        { "label": "Sede Madrid", "href": "https://sede.madrid.es" },
+        { "label": "Ajuntament de Barcelona", "href": "https://seuelectronica.ajuntament.barcelona.cat" },
+        { "label": "Ajuntament de València", "href": "https://www.valencia.es" }
+      ]
     },
     {
       "id": "agendar",
-      "title": "Agendar o atendimento",
-      "detail": "Marque a cita e salve o comprovante no celular e impresso."
+      "title": "Agendar se o município exigir cita",
+      "detail": "Salve o comprovante. Algumas juntas aceitam fila no mesmo dia; não aposte nisso em capital."
     },
     {
       "id": "docs-id",
       "title": "Separar identificação",
-      "detail": "Passaporte e, se já tiver, NIE. Alguns lugares pedem cópia de todas as páginas usadas."
+      "detail": "Passaporte original e cópia. NIE ou TIE se já tiver. Às vezes pedem cópia de páginas com carimbo de entrada."
     },
     {
       "id": "docs-casa",
       "title": "Separar comprovante de moradia",
-      "detail": "Contrato, escritura, autorização assinada ou documento que o município listar."
+      "detail": "Contrato, escritura, autorização do titular do padrón anterior, ou fatura. Leia a lista local: o que vale em Valência pode não valer em Madrid."
     },
     {
       "id": "formulario",
-      "title": "Preencher formulário local se houver",
-      "detail": "Alguns ayuntamientos pedem hoja de padron pré-preenchida."
+      "title": "Preencher a hoja de padrón se existir",
+      "detail": "Alguns ayuntamientos deixam baixar o formulário. Nome igual ao passaporte."
     },
     {
       "id": "comparecer",
-      "title": "Comparecer e solicitar o alta",
-      "detail": "Peça o volante ou certificado de empadronamiento. Você vai usar em vários trâmites."
+      "title": "Pedir o volante no mesmo dia",
+      "detail": "O volante (folha simples) já destrava banco e alguns trâmites. O certificado formal pode demorar e às vezes é pago."
     },
     {
       "id": "guardar",
       "title": "Digitalizar e arquivar",
-      "detail": "Guarde PDF legível e uma cópia impressa na pasta de documentos."
+      "detail": "PDF legível + cópia na pasta. Validade típica do volante para outros órgãos: 3 meses — tire outro se pedirem recente."
     },
     {
       "id": "atualizar",
-      "title": "Atualizar se mudar de endereço",
-      "detail": "Mudou de casa? Refaça o padrón. Documento desatualizado gera problema depois."
+      "title": "Refazer se mudar de endereço",
+      "detail": "Padrón desatualizado quebra abono pessoal de transporte em Madrid, centro de salud e renovação de TIE."
     }
   ]
 }

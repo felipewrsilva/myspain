@@ -67,33 +67,54 @@ export function ChecklistClient({
           const isChecked = Boolean(checked[item.id]);
           return (
             <li key={item.id}>
-              <label
+              <div
                 className={cn(
-                  "flex cursor-pointer gap-4 rounded-2xl border border-[var(--line)] bg-white p-4 transition",
+                  "rounded-2xl border border-[var(--line)] bg-white transition",
                   isChecked && "border-[var(--accent)] bg-[color-mix(in_oklab,var(--accent)_6%,white)]",
                 )}
               >
-                <input
-                  type="checkbox"
-                  className="mt-1 size-4 accent-[var(--accent)]"
-                  checked={isChecked}
-                  onChange={(event) =>
-                    setChecked((prev) => ({
-                      ...prev,
-                      [item.id]: event.target.checked,
-                    }))
-                  }
-                />
-                <span>
-                  <span className="block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
-                    Passo {index + 1}
+                <label className="flex cursor-pointer gap-4 p-4">
+                  <input
+                    type="checkbox"
+                    className="mt-1 size-4 accent-[var(--accent)]"
+                    checked={isChecked}
+                    onChange={(event) =>
+                      setChecked((prev) => ({
+                        ...prev,
+                        [item.id]: event.target.checked,
+                      }))
+                    }
+                  />
+                  <span>
+                    <span className="block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
+                      Passo {index + 1}
+                    </span>
+                    <span className={cn("mt-1 block font-semibold text-[var(--ink)]", isChecked && "line-through opacity-60")}>
+                      {item.title}
+                    </span>
+                    <span className="mt-1 block text-sm leading-relaxed text-[var(--ink-muted)]">{item.detail}</span>
                   </span>
-                  <span className={cn("mt-1 block font-semibold text-[var(--ink)]", isChecked && "line-through opacity-60")}>
-                    {item.title}
-                  </span>
-                  <span className="mt-1 block text-sm leading-relaxed text-[var(--ink-muted)]">{item.detail}</span>
-                </span>
-              </label>
+                </label>
+                {item.links?.length ? (
+                  <div className="flex flex-wrap gap-x-3 gap-y-1 border-t border-[var(--line)] px-4 py-3 pl-[3.25rem]">
+                    {item.links.map((link) => {
+                      const internal = link.href.startsWith("/");
+                      return (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          {...(internal
+                            ? {}
+                            : { target: "_blank", rel: "noreferrer" })}
+                          className="text-sm font-semibold text-[var(--accent)] underline-offset-4 hover:underline"
+                        >
+                          {link.label}
+                        </a>
+                      );
+                    })}
+                  </div>
+                ) : null}
+              </div>
             </li>
           );
         })}

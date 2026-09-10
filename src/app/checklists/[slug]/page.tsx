@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { ChecklistClient } from "@/components/ChecklistClient";
+import { CoverImage } from "@/components/CoverImage";
 import { getChecklist, getChecklists } from "@/lib/content";
 import { getStage } from "@/lib/site";
 import Link from "next/link";
@@ -12,7 +13,13 @@ export async function generateMetadata({ params }: PageProps<"/checklists/[slug]
   const { slug } = await params;
   const item = getChecklist(slug);
   if (!item) return {};
-  return { title: item.title, description: item.description };
+  return {
+    title: item.title,
+    description: item.description,
+    openGraph: item.cover
+      ? { images: [{ url: item.cover, alt: item.coverAlt ?? item.title }] }
+      : undefined,
+  };
 }
 
 export default async function ChecklistPage({ params }: PageProps<"/checklists/[slug]">) {
@@ -30,6 +37,11 @@ export default async function ChecklistPage({ params }: PageProps<"/checklists/[
         <Link href={stage.href} className="mt-4 inline-block text-sm text-[var(--accent)] hover:underline">
           Ver etapa: {stage.title}
         </Link>
+      ) : null}
+      {item.cover ? (
+        <div className="mt-8">
+          <CoverImage src={item.cover} alt={item.coverAlt || item.title} priority />
+        </div>
       ) : null}
       <div className="mt-8">
         <ChecklistClient slug={item.slug} items={item.items} />

@@ -27,6 +27,8 @@ export default function GuiasPage() {
             title={guide.title}
             description={guide.description}
             meta={guide.topics.map(getTopicName).slice(0, 2).join(" · ")}
+            image={guide.cover}
+            imageAlt={guide.coverAlt}
           />
         ))}
       </div>

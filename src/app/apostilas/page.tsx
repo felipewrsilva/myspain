@@ -23,6 +23,8 @@ export default function ApostilasPage() {
             title={item.title}
             description={item.description}
             meta={item.pdf ? "Leitura + PDF" : "Leitura online"}
+            image={item.cover}
+            imageAlt={item.coverAlt}
           />
         ))}
       </div>

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { MdxContent } from "@/components/MdxContent";
+import { CoverImage } from "@/components/CoverImage";
 import { getApostila, getApostilas } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -10,7 +11,13 @@ export async function generateMetadata({ params }: PageProps<"/apostilas/[slug]"
   const { slug } = await params;
   const item = getApostila(slug);
   if (!item) return {};
-  return { title: item.title, description: item.description };
+  return {
+    title: item.title,
+    description: item.description,
+    openGraph: item.cover
+      ? { images: [{ url: item.cover, alt: item.coverAlt ?? item.title }] }
+      : undefined,
+  };
 }
 
 export default async function ApostilaPage({ params }: PageProps<"/apostilas/[slug]">) {
@@ -36,6 +43,11 @@ export default async function ApostilaPage({ params }: PageProps<"/apostilas/[sl
           PDF em preparação. Por enquanto, use a leitura online abaixo.
         </p>
       )}
+      {item.cover ? (
+        <div className="mt-8">
+          <CoverImage src={item.cover} alt={item.coverAlt || item.title} priority />
+        </div>
+      ) : null}
       <div className="mt-10">
         <MdxContent source={item.content} />
       </div>

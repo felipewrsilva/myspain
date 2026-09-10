@@ -36,6 +36,8 @@ export default async function BuscarPage({
             title={item.title}
             description={item.description}
             meta={item.type}
+            image={item.image}
+            imageAlt={item.imageAlt}
           />
         ))}
       </div>

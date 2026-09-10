@@ -1,60 +1,82 @@
 {
   "slug": "nie",
   "title": "Checklist do NIE",
-  "description": "Do agendamento à retirada: tudo que costuma ser pedido no processo do NIE.",
+  "description": "Cita oficial, EX-15, taxa 790-012 e o que levar na comissaria.",
   "stage": "acabei-de-chegar",
   "topics": ["nie", "documentos"],
   "cities": [],
   "items": [
     {
       "id": "motivo",
-      "title": "Definir o motivo da solicitação",
-      "detail": "Trabalho, estudos, compra de imóvel, interesses econômicos e outros. O motivo muda documentos de apoio."
+      "title": "Definir o motivo concreto da solicitação",
+      "detail": "O EX-15 pede interesses econômicos, profissionais ou sociais. Escreva o motivo real (abertura de conta, contrato, estudos). Motivo vago é recusa. Se o visto já trouxe NIE, você não precisa deste checklist — vá ao da TIE."
     },
     {
       "id": "agendar",
-      "title": "Agendar cita prévia",
-      "detail": "Marque no sistema oficial o atendimento de Extranjería ou polícia, conforme sua cidade."
+      "title": "Agendar cita previa no portal do Estado",
+      "detail": "Província do seu endereço → Policía Nacional → trámite de asignación de NIE (o nome exato varia). Imprima o localizador. Cita é gratuita.",
+      "links": [
+        {
+          "label": "Cita previa ICP Plus",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        },
+        {
+          "label": "Policía — asignación de NIE",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_asignacion_nie.php"
+        }
+      ]
     },
     {
       "id": "formulario",
-      "title": "Preencher o formulário EX-15",
-      "detail": "Baixe o modelo oficial, preencha com calma e imprima. Confira nome exatamente como no passaporte."
+      "title": "Preencher o EX-15 no computador e imprimir",
+      "detail": "Nome idêntico ao passaporte. Sem rasura. Baixe só do Ministério, nunca de blog.",
+      "links": [
+        {
+          "label": "Modelos oficiais (EX-15)",
+          "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
+        }
+      ]
     },
     {
       "id": "taxa",
-      "title": "Pagar a taxa 790-012",
-      "detail": "Gere a taxa correta, pague e leve o comprovante original."
+      "title": "Pagar a taxa 790 código 012",
+      "detail": "Gere o modelo, pague no banco ou canal online colaborador e leve o justificante original. O valor muda no BOE; confira o vigente no gerador.",
+      "links": [
+        {
+          "label": "Gerar taxa 790-012",
+          "href": "https://sede.policia.gob.es/Tasa790_012/"
+        }
+      ]
     },
     {
       "id": "docs",
-      "title": "Montar o pacote de documentos",
-      "detail": "Passaporte original e cópia, justificativa do motivo, comprovante de pagamento e fotos se pedirem."
+      "title": "Montar a pasta do dia",
+      "detail": "Passaporte original e cópia da folha de dados (e páginas carimbadas), EX-15 assinado, justificante da taxa, prova do motivo (carta do banco, contrato, matrícula) e justificante da cita."
     },
     {
       "id": "copias",
-      "title": "Separar cópias extras",
-      "detail": "Leve ao menos uma via extra de tudo. Algumas oficinas pedem no balcão."
+      "title": "Levar cópia extra de tudo",
+      "detail": "Comissaria pede via para o arquivo. Leve caneta."
     },
     {
       "id": "endereco",
-      "title": "Confirmar endereço e horário da cita",
-      "detail": "Cheque o comprovante no dia anterior. Chegue com folga para fila e segurança."
+      "title": "Confirmar endereço e horário no dia anterior",
+      "detail": "O comprovante traz a oficina. Chegue com folga: segurança e fila."
     },
     {
       "id": "comparecer",
-      "title": "Comparecer com pasta organizada",
-      "detail": "Leve caneta, documentos na ordem e o celular no silencioso."
+      "title": "Comparecer e não improvisar trâmite",
+      "detail": "Se a cita for de NIE, não tente resolver TIE no mesmo balcão. Celular no silencioso."
     },
     {
       "id": "protocolo",
-      "title": "Guardar protocolo e orientações",
-      "detail": "Fotografe ou escaneie tudo que entregar e receber."
+      "title": "Fotografar o resguardo",
+      "detail": "O papel com o NIE é o documento até a TIE. Escaneie no mesmo dia."
     },
     {
       "id": "acompanhar",
-      "title": "Acompanhar prazo e retirada",
-      "detail": "Anote a data estimada e o local de retirada ou envio informado na cita."
+      "title": "Avançar padrón, banco e TIE",
+      "detail": "NIE sozinho não substitui o cartão se a sua autorização exige TIE. Siga o checklist de TIE e o de empadronamiento."
     }
   ]
 }

@@ -1,50 +1,59 @@
 {
   "slug": "conta-bancaria",
   "title": "Checklist para abrir conta bancária",
-  "description": "Documentos, escolha do banco e ativação do dia a dia financeiro.",
+  "description": "Santander com passaporte, ponte em euro e conversão para conta de residente.",
   "stage": "acabei-de-chegar",
   "topics": ["banco"],
   "cities": [],
   "items": [
     {
-      "id": "comparar",
-      "title": "Comparar bancos e contas",
-      "detail": "Olhe taxa mensal, cartão, app, transferência SEPA e se aceitam abertura com passaporte ou só com NIE."
+      "id": "santander",
+      "title": "Abrir a conta Santander de não residente (se ainda estiver no Brasil ou sem NIE)",
+      "detail": "Cuenta Online para No Residentes: passaporte, +18 anos e vídeo. Brasil está na lista do banco. Gera IBAN ES sem NIE. Se você já é residente fiscal na Espanha, este produto não serve — o banco pede NIE.",
+      "links": [
+        {
+          "label": "Santander — conta com passaporte",
+          "href": "https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-online-con-pasaporte"
+        }
+      ]
+    },
+    {
+      "id": "ponte",
+      "title": "Ter uma ponte em euro (Wise ou similar)",
+      "detail": "Use para câmbio e primeiros pagamentos enquanto o cartão espanhol não chega. Senhorio e nómina no entanto vão pedir IBAN espanhol de banco local.",
+      "links": [
+        { "label": "Wise", "href": "https://wise.com" }
+      ]
     },
     {
       "id": "docs",
-      "title": "Reunir documentos",
-      "detail": "Passaporte, NIE quando disponível, comprovante de endereço e, em alguns casos, contrato de trabalho."
-    },
-    {
-      "id": "cita",
-      "title": "Agendar atendimento presencial",
-      "detail": "Muitos bancos ainda abrem conta só em agência. Leve tudo impresso."
-    },
-    {
-      "id": "abrir",
-      "title": "Abrir a conta e pedir cartão",
-      "detail": "Confirme tarifas, prazo de envio do cartão e limites iniciais."
+      "title": "Juntar o que a agência tradicional pede",
+      "detail": "Passaporte, NIE quando existir, volante de empadronamiento e, se houver, contrato de trabalho. BBVA, CaixaBank e Sabadell em balcão quase sempre travam sem NIE + endereço."
     },
     {
       "id": "app",
-      "title": "Ativar app e chave de segurança",
-      "detail": "Configure autenticação e salve telefones de suporte."
+      "title": "Ativar app, chave de segurança e cartão",
+      "detail": "Configure o SMS/app de autorização com o número que você vai manter. Se trocar o chip brasileiro pelo espanhol, atualize o telefone no banco no mesmo dia."
     },
     {
-      "id": "transferencia",
-      "title": "Fazer uma transferência teste",
-      "detail": "Envie um valor pequeno para validar IBAN e funcionamento."
+      "id": "teste",
+      "title": "Fazer uma transferência pequena de teste",
+      "detail": "Do Brasil para o IBAN ES ou entre Wise e Santander. Confira nome do titular idêntico ao passaporte."
     },
     {
       "id": "recibos",
-      "title": "Cadastrar débitos e dados de nómina",
-      "detail": "Aluguel, luz, telefone e salário. Evita atraso e fila depois."
+      "title": "Cadastrar aluguel, luz e telefone em débito",
+      "detail": "Só depois da conta estável. Débito em conta errada ou ainda de não residente às vezes é recusado pela companhia."
+    },
+    {
+      "id": "converter",
+      "title": "Pedir a passagem a conta de residente",
+      "detail": "Com NIE e padrón, peça no app ou na agência a atualização cadastral. Nómina e alguns contratos de aluguel exigem isso."
     },
     {
       "id": "reserva",
-      "title": "Separar reserva de emergência",
-      "detail": "Mesmo pequena, mantenha uma folga em euro para imprevistos."
+      "title": "Separar reserva de emergência em euro",
+      "detail": "Deixe uma folga que não seja o limite do cartão de turismo brasileiro."
     }
   ]
 }

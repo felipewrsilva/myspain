@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MdxContent } from "@/components/MdxContent";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
+import { CoverImage } from "@/components/CoverImage";
 import { getGuide, getGuides, getTopicName } from "@/lib/content";
 import { getStage } from "@/lib/site";
 
@@ -13,7 +14,13 @@ export async function generateMetadata({ params }: PageProps<"/guias/[slug]">) {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
-  return { title: guide.title, description: guide.description };
+  return {
+    title: guide.title,
+    description: guide.description,
+    openGraph: guide.cover
+      ? { images: [{ url: guide.cover, alt: guide.coverAlt ?? guide.title }] }
+      : undefined,
+  };
 }
 
 export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
@@ -39,6 +46,11 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
           </span>
         ))}
       </div>
+      {guide.cover ? (
+        <div className="mt-8">
+          <CoverImage src={guide.cover} alt={guide.coverAlt || guide.title} priority />
+        </div>
+      ) : null}
       <div className="mt-10">
         <MdxContent source={guide.content} />
       </div>

@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { ContentCard } from "@/components/ContentCard";
+import { CoverImage } from "@/components/CoverImage";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { getContentByStage } from "@/lib/content";
+import { getContentByStage, getCover } from "@/lib/content";
 import { getStage, stages, type StageId } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -12,9 +13,11 @@ export async function generateMetadata({ params }: PageProps<"/etapas/[stage]">)
   const { stage: stageId } = await params;
   const stage = getStage(stageId);
   if (!stage) return {};
+  const cover = getCover(stage.id);
   return {
     title: stage.title,
     description: stage.description,
+    openGraph: cover ? { images: [{ url: cover.src, alt: cover.alt }] } : undefined,
   };
 }
 
@@ -24,6 +27,7 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
   if (!stage) notFound();
 
   const content = getContentByStage(stage.id as StageId);
+  const cover = getCover(stage.id);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -32,6 +36,17 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
         {stage.title}
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-[var(--ink-muted)]">{stage.description}</p>
+
+      {cover ? (
+        <div className="mt-8">
+          <CoverImage
+            src={cover.src}
+            alt={cover.alt}
+            priority
+            sizes="(max-width: 768px) 100vw, 1152px"
+          />
+        </div>
+      ) : null}
 
       <div className="mt-6 flex flex-wrap gap-2">
         {stages.map((item) => (
@@ -58,6 +73,8 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
               href={`/guias/${guide.slug}`}
               title={guide.title}
               description={guide.description}
+              image={guide.cover}
+              imageAlt={guide.coverAlt}
             />
           ))}
         </div>
@@ -72,6 +89,8 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
               href={`/checklists/${item.slug}`}
               title={item.title}
               description={item.description}
+              image={item.cover}
+              imageAlt={item.coverAlt}
             />
           ))}
         </div>
@@ -86,6 +105,8 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
               href={`/apostilas/${item.slug}`}
               title={item.title}
               description={item.description}
+              image={item.cover}
+              imageAlt={item.coverAlt}
             />
           ))}
           {!content.apostilas.length ? (

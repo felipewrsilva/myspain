@@ -1,45 +1,61 @@
 {
   "slug": "primeira-semana",
   "title": "Checklist da primeira semana",
-  "description": "Prioridades do dia 1 ao dia 7 para sair do modo sobrevivência.",
+  "description": "Internet, cita, padrón e banco nos primeiros sete dias.",
   "stage": "acabei-de-chegar",
   "topics": ["nie", "empadronamiento", "banco"],
   "cities": [],
   "items": [
     {
       "id": "chegar",
-      "title": "Chegar ao endereço e testar Wi-Fi",
-      "detail": "Sem internet estável, tudo atrasa. Resolva isso no primeiro dia."
+      "title": "Anotar o endereço completo e testar Wi-Fi",
+      "detail": "Código postal entra em padrón e banco. Sem internet, a cita previa não abre."
     },
     {
       "id": "chip",
-      "title": "Ativar chip ou eSIM local",
-      "detail": "Número espanhol facilita bancos, citas e autenticação."
+      "title": "Ativar eSIM do Brasil ou comprar pré-pago com passaporte",
+      "detail": "eSIM instala em casa antes do voo. Na loja espanhola, passaporte original basta — NIE não é obrigatório para pré-pago.",
+      "links": [
+        { "label": "Guia de chip", "href": "/guias/chip-e-transporte" },
+        { "label": "Airalo (eSIM)", "href": "https://www.airalo.com" }
+      ]
     },
     {
       "id": "mapa",
-      "title": "Localizar supermercado, farmácia e transporte",
-      "detail": "Faça o circuito básico a pé ou de metrô."
+      "title": "Localizar supermercado, farmácia, metrô e ayuntamiento",
+      "detail": "Faça o circuito a pé ou de metrô uma vez. Emergência: 112."
     },
     {
       "id": "citas",
-      "title": "Agendar NIE e empadronamiento",
-      "detail": "Quanto antes, melhor. Datas somem rápido em algumas cidades."
+      "title": "Agendar NIE/TIE no ICP Plus no primeiro dia útil",
+      "detail": "Vagas somem em Madrid e Barcelona. Cita é gratuita no portal do Estado.",
+      "links": [
+        {
+          "label": "Cita previa oficial",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        }
+      ]
+    },
+    {
+      "id": "padron",
+      "title": "Ver a regra de empadronamiento do seu município",
+      "detail": "Contrato, autorização do dono ou o documento que o ayuntamiento listar. Marque a cita local se existir."
     },
     {
       "id": "banco",
-      "title": "Avançar abertura de conta",
-      "detail": "Leve documentos e tente encaixar atendimento na semana."
+      "title": "Ativar IBAN espanhol",
+      "detail": "Quem já abriu Santander com passaporte no Brasil só confirma o app. Os demais: Wise de ponte + conta local.",
+      "links": [
+        {
+          "label": "Santander com passaporte",
+          "href": "https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-online-con-pasaporte"
+        }
+      ]
     },
     {
       "id": "pasta",
-      "title": "Montar pasta física da semana",
-      "detail": "Passaporte, reservas, seguro, formulários e comprovantes."
-    },
-    {
-      "id": "comunidade",
-      "title": "Entrar na comunidade",
-      "detail": "Tire dúvidas pontuais com quem já passou pelo mesmo fluxo."
+      "title": "Montar a pasta física da semana",
+      "detail": "Passaporte, visto, seguro, EX-15/EX-17, taxa 790-012, reserva e caneta."
     }
   ]
 }

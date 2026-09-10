@@ -6,6 +6,7 @@ import cities from "../../content/cities.json";
 import topics from "../../content/topics.json";
 import places from "../../content/places.json";
 import costs from "../../content/costs.json";
+import { getCover } from "../../content/covers";
 
 const contentRoot = path.join(process.cwd(), "content");
 
@@ -17,6 +18,8 @@ export type ContentMeta = {
   cities: string[];
   updatedAt?: string;
   pdf?: string | null;
+  cover?: string;
+  coverAlt?: string;
 };
 
 export type Guide = ContentMeta & {
@@ -30,10 +33,16 @@ export type Apostila = ContentMeta & {
   pdf?: string | null;
 };
 
+export type ChecklistLink = {
+  label: string;
+  href: string;
+};
+
 export type ChecklistItem = {
   id: string;
   title: string;
   detail: string;
+  links?: ChecklistLink[];
 };
 
 export type Checklist = {
@@ -44,6 +53,8 @@ export type Checklist = {
   topics: string[];
   cities: string[];
   items: ChecklistItem[];
+  cover?: string;
+  coverAlt?: string;
 };
 
 export type Place = {
@@ -86,6 +97,8 @@ function parseMdxFile(dir: string, file: string) {
     cities: (data.cities as string[]) ?? [],
     updatedAt: data.updatedAt ? String(data.updatedAt) : undefined,
     pdf: (data.pdf as string | null | undefined) ?? null,
+    cover: data.cover ? String(data.cover) : getCover(slug)?.src,
+    coverAlt: data.coverAlt ? String(data.coverAlt) : getCover(slug)?.alt,
     content,
   };
 }
@@ -118,7 +131,13 @@ export function getChecklists(): Checklist[] {
     .filter((file) => file.endsWith(".json"))
     .map((file) => {
       const raw = fs.readFileSync(path.join(dir, file), "utf8");
-      return JSON.parse(raw) as Checklist;
+      const item = JSON.parse(raw) as Checklist;
+      const cover = getCover(item.slug);
+      return {
+        ...item,
+        cover: item.cover ?? cover?.src,
+        coverAlt: item.coverAlt ?? cover?.alt,
+      };
     })
     .sort((a, b) => a.title.localeCompare(b.title, "pt-BR"));
 }
@@ -191,6 +210,8 @@ export function searchContent(filters: SearchFilters) {
       description: item.description,
       stage: item.stage,
       topics: item.topics,
+      image: item.cover,
+      imageAlt: item.coverAlt,
     }));
 
   const apostilas = getApostilas()
@@ -202,6 +223,8 @@ export function searchContent(filters: SearchFilters) {
       description: item.description,
       stage: item.stage,
       topics: item.topics,
+      image: item.cover,
+      imageAlt: item.coverAlt,
     }));
 
   const checklists = getChecklists()
@@ -213,6 +236,8 @@ export function searchContent(filters: SearchFilters) {
       description: item.description,
       stage: item.stage,
       topics: item.topics,
+      image: item.cover,
+      imageAlt: item.coverAlt,
     }));
 
   return [...guides, ...apostilas, ...checklists];
@@ -225,6 +250,8 @@ export function getContentByStage(stage: StageId) {
     checklists: getChecklists().filter((item) => item.stage === stage),
   };
 }
+
+export { getCover } from "../../content/covers";
 
 export function getCityName(id: string) {
   return getCities().find((city) => city.id === id)?.name ?? id;

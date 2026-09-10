@@ -1,50 +1,63 @@
 {
   "slug": "autonomo-inicio",
   "title": "Checklist para começar como autónomo",
-  "description": "Alta, cotização, fatura e organização mínima para trabalhar por conta própria.",
+  "description": "Alta na SS e na Hacienda, fatura, 303/130 e reserva de imposto.",
   "stage": "ja-moro",
   "topics": ["trabalho", "impostos"],
   "cities": [],
   "items": [
     {
-      "id": "modelo",
-      "title": "Validar se autónomo é o caminho certo",
-      "detail": "Compare com contrato por conta alheia. Veja impostos, cotização e previsibilidade de renda."
+      "id": "autorizacao",
+      "title": "Confirmar que a sua residência permite trabalhar por conta própria",
+      "detail": "Não lucrativa não permite. Estudos têm teto de horas. Nômade limita cliente espanhol. Sem autorização, a alta de autónomo não regulariza extranjería.",
+      "links": [
+        { "label": "Guia de visto", "href": "/guias/visto-e-residencia" }
+      ]
     },
     {
       "id": "asesor",
-      "title": "Escolher asesor ou gestor de confiança",
-      "detail": "Um bom apoio evita multa e atraso nos primeiros meses."
+      "title": "Escolher gestor para os primeiros trimestres",
+      "detail": "Alta censal, IAE e regime de IVA errados saem caro. A mensalidade do asesor costuma ser menor que a multa."
     },
     {
       "id": "alta",
-      "title": "Fazer a alta nos órgãos competentes",
-      "detail": "Siga a orientação do gestor para Hacienda e Segurança Social."
+      "title": "Fazer alta na Segurança Social e na Hacienda antes de faturar",
+      "detail": "RETA na SS e modelo de alta censal na Agencia Tributaria. Data de início alinhada nas duas.",
+      "links": [
+        { "label": "Segurança Social", "href": "https://www.seg-social.es" },
+        { "label": "Agencia Tributaria", "href": "https://sede.agenciatributaria.gob.es" }
+      ]
     },
     {
       "id": "conta",
       "title": "Separar conta para receber clientes",
-      "detail": "Evite misturar gasto pessoal e profissional."
+      "detail": "IBAN espanhol de residente ajuda. Não misture aluguel e material de trabalho no mesmo extrato se puder evitar."
     },
     {
       "id": "fatura",
-      "title": "Configurar modelo de fatura",
-      "detail": "Dados fiscais, numeração e forma de pagamento claros."
+      "title": "Configurar fatura com NIF, numeração e dados fiscais",
+      "detail": "Série correlativa, IVA quando couber, forma de pagamento. Sem isso o 303 não fecha."
     },
     {
       "id": "reserva",
-      "title": "Reservar percentual todo mês",
-      "detail": "Separe cotização e impostos antes de gastar o que entrou."
+      "title": "Reservar IVA, IRPF e cotização todo mês",
+      "detail": "O que entra na conta não é lucro. Separe antes de gastar."
+    },
+    {
+      "id": "modelos",
+      "title": "Colocar 303 e 130 no calendário trimestral",
+      "detail": "Prazos oficiais na sede da Agencia Tributaria. Atraso gera recargo.",
+      "links": [
+        {
+          "label": "Sede Agencia Tributaria",
+          "href": "https://sede.agenciatributaria.gob.es"
+        }
+      ]
     },
     {
       "id": "controle",
-      "title": "Montar planilha de receitas e despesas",
-      "detail": "Atualize semanalmente. Não deixe acumular para o trimestre."
-    },
-    {
-      "id": "prazos",
-      "title": "Colocar prazos no calendário",
-      "detail": "Declarações trimestrais e obrigações anuais com alerta antecipado."
+      "title": "Planilha semanal de receitas e despesas",
+      "detail": "Não acumule o trimestre inteiro na véspera do modelo."
     }
   ]
 }
