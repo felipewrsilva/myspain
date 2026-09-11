@@ -206,6 +206,12 @@ function stripMdx(source: string) {
     .replace(/<CoverImage[\s\S]*?\/>/g, "\n")
     .replace(/<YouTube([^/]*)\/>/g, (_match, attrs: string) => {
       const title = /title="([^"]*)"/.exec(attrs)?.[1];
+      const id = /id="([^"]*)"/.exec(attrs)?.[1];
+      const url = id ? `https://www.youtube.com/watch?v=${id}` : "";
+      if (title && url) {
+        return `\n\n**Vídeo (português do Brasil):** [${title}](${url})\n\n`;
+      }
+      if (url) return `\n\n**Vídeo:** ${url}\n\n`;
       return title ? `\n\n**Vídeo no site:** ${title}\n\n` : "\n";
     })
     .replace(/<Callout([^>]*)>([\s\S]*?)<\/Callout>/g, (_match, attrs: string, body: string) => {

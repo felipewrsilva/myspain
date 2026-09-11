@@ -21,11 +21,16 @@
     {
       "id": "busca",
       "title": "Filtrar anúncios e marcar visita presencial",
-      "detail": "Idealista e Fotocasa. Recuse transferência para 'segurar' imóvel sem visita e sem contrato.",
+      "detail": "Idealista e Fotocasa. Recuse transferência para 'segurar' imóvel sem visita e sem contrato. Compare o preço com 5 anúncios do mesmo bairro: 30–40% abaixo da média é isca.",
       "links": [
         { "label": "Idealista", "href": "https://www.idealista.com" },
         { "label": "Fotocasa", "href": "https://www.fotocasa.es" }
       ]
+    },
+    {
+      "id": "fotos",
+      "title": "Buscar as fotos do anúncio no Google Imagens",
+      "detail": "Golpista copia anúncio real (mesmas fotos, outra cidade). Se as fotos aparecem em outro endereço ou em outro país, descarte."
     },
     {
       "id": "visita",
@@ -40,7 +45,7 @@
     {
       "id": "deposito",
       "title": "Pagar fiança com comprovante",
-      "detail": "Prefira transferência com conceito claro para a conta do proprietário/agência identificada no contrato. Nunca só Pix espanhol (Bizum) para desconhecido."
+      "detail": "Prefira transferência com conceito claro para a conta do proprietário/agência identificada no contrato (o IBAN e o nome do titular precisam bater). Nunca só Pix espanhol (Bizum) para desconhecido. Ninguém cobra 200–400 € só para você visitar o imóvel."
     },
     {
       "id": "inventario",

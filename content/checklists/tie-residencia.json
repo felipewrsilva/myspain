@@ -20,7 +20,7 @@
     {
       "id": "cita",
       "title": "Agendar a coleta de digitais no portal oficial",
-      "detail": "No site oficial de agendamento: província → Polícia Nacional → emissão de cartão / coleta de digitais. Imprima o comprovante. Horário gratuito.",
+      "detail": "No site oficial de agendamento: província → Polícia Nacional → emissão de cartão / coleta de digitais ('toma de huellas'). Imprima o comprovante. Horário gratuito. Não pague gestor de cita: pedem foto do passaporte e somem.",
       "links": [
         {
           "label": "Agendamento oficial",
@@ -53,7 +53,7 @@
     {
       "id": "docs",
       "title": "Montar a pasta das digitais",
-      "detail": "Passaporte e cópia, visto ou resolução favorável, EX-17, taxa paga, foto tamanho documento fundo branco, cadastro na prefeitura se a oficina pedir, comprovante do agendamento."
+      "detail": "Passaporte e cópia, visto ou resolução favorável, EX-17, taxa paga, foto **32 × 26 mm** fundo branco (não é o 3×4 brasileiro; leve duas), cadastro na prefeitura se a oficina pedir, comprovante do agendamento."
     },
     {
       "id": "recibo",

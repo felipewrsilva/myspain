@@ -15,7 +15,7 @@
     {
       "id": "agendar",
       "title": "Agendar no portal do Estado",
-      "detail": "O agendamento é obrigatório e gratuito. Província do seu endereço → Polícia Nacional → trâmite de atribuição de NIE (o nome exato varia). Imprima o comprovante.",
+      "detail": "O agendamento é obrigatório e gratuito. Província do seu endereço → Polícia Nacional → trâmite de atribuição de NIE (o nome exato varia; costuma ser 'certificados y asignación de NIE'). Imprima o comprovante. Não compre 'encaixe' no WhatsApp: o Ministério avisa que ninguém pode cobrar por marcar horário. Se não houver vaga, tente de manhã cedo e à noite e guarde print datado.",
       "links": [
         {
           "label": "Agendamento oficial",
@@ -52,7 +52,7 @@
     {
       "id": "docs",
       "title": "Montar a pasta do dia",
-      "detail": "Passaporte original e cópia da folha de dados (e páginas carimbadas), EX-15 assinado, comprovante da taxa, prova do motivo (carta do banco, contrato, matrícula) e comprovante do agendamento."
+      "detail": "Passaporte original e cópia da folha de dados (e páginas carimbadas), EX-15 assinado, comprovante da taxa, prova do motivo (carta do banco, contrato, matrícula), comprovante do agendamento e caneta. Leve cópia extra: a delegacia fica com uma via."
     },
     {
       "id": "copias",
