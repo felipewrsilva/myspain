@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LogoMark } from "@/components/LogoMark";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -13,12 +14,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
-        <Link href="/" className="group flex items-baseline gap-1">
-          <span className="font-[family-name:var(--font-display)] text-[1.35rem] font-extrabold tracking-tight text-[var(--ink)]">
-            Minha
-          </span>
-          <span className="font-[family-name:var(--font-display)] text-[1.35rem] font-extrabold tracking-tight text-[var(--accent)]">
-            Espanha
+        <Link href="/" className="group flex items-center gap-2.5">
+          <LogoMark className="size-9 shrink-0" />
+          <span className="flex items-baseline gap-1">
+            <span className="font-[family-name:var(--font-display)] text-[1.35rem] font-extrabold tracking-tight text-[var(--ink)]">
+              Minha
+            </span>
+            <span className="font-[family-name:var(--font-display)] text-[1.35rem] font-extrabold tracking-tight text-[var(--accent)]">
+              Espanha
+            </span>
           </span>
         </Link>
 

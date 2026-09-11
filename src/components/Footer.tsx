@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LogoMark } from "@/components/LogoMark";
 import { siteConfig } from "@/lib/site";
 
 export function Footer() {
@@ -6,8 +7,11 @@ export function Footer() {
     <footer className="mt-auto bg-[var(--ink)] text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight">
-            Minha <span className="text-[var(--accent)]">Espanha</span>
+          <p className="flex items-center gap-3 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight">
+            <LogoMark className="size-10 shrink-0" />
+            <span>
+              Minha <span className="text-[var(--accent)]">Espanha</span>
+            </span>
           </p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
             Guias práticos para brasileiros que vão ou já moram na Espanha. O conteúdo é público, sem cadastro.

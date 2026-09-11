@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne, Manrope } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#c8102e",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
