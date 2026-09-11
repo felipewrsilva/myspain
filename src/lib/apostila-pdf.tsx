@@ -302,9 +302,9 @@ function Inline({ nodes }: { nodes: PhrasingContent[] }) {
         );
       case "link":
         return (
-          <Text key={index} style={styles.link}>
+          <Link key={index} src={absoluteUrl(node.url)} style={styles.link}>
             <Inline nodes={node.children} />
-          </Text>
+          </Link>
         );
       case "inlineCode":
         return (
@@ -354,7 +354,7 @@ function renderBlock(node: RootContent, key: number | string, skipHeavyBlocks = 
       );
     case "paragraph":
       return (
-        <Text key={key} orphans={3} widows={3} style={styles.p}>
+        <Text key={key} style={styles.p}>
           <Inline nodes={node.children} />
         </Text>
       );
@@ -390,8 +390,12 @@ function renderBlock(node: RootContent, key: number | string, skipHeavyBlocks = 
   }
 }
 
-function Blocks({ nodes, skipHeavyBlocks = false }: { nodes: RootContent[]; skipHeavyBlocks?: boolean }) {
-  return nodes.map((node, index) => renderBlock(node, index, skipHeavyBlocks));
+function chunkNodes(nodes: RootContent[], size = 6) {
+  const chunks: RootContent[][] = [];
+  for (let i = 0; i < nodes.length; i += size) {
+    chunks.push(nodes.slice(i, i + size));
+  }
+  return chunks.length > 0 ? chunks : [[]];
 }
 
 function flattenInline(nodes: PhrasingContent[]): string {
@@ -422,6 +426,10 @@ function PdfTable({ node }: { node: Table }) {
   );
 }
 
+function Blocks({ nodes, skipHeavyBlocks = false }: { nodes: RootContent[]; skipHeavyBlocks?: boolean }) {
+  return nodes.map((node, index) => renderBlock(node, index, skipHeavyBlocks));
+}
+
 function ArticleDocument({
   title,
   description,
@@ -437,32 +445,38 @@ function ArticleDocument({
   tree: Root;
   skipHeavyBlocks?: boolean;
 }) {
+  const chunks = chunkNodes(tree.children, 8);
+
   return (
     <Document title={title} author={siteConfig.name} subject={description} creator={siteConfig.name}>
-      <Page size="A4" style={styles.page}>
-        <View style={styles.header} fixed>
-          <Text style={styles.brand}>{siteConfig.name}</Text>
-          <Text>{siteConfig.domain}</Text>
-        </View>
+      {chunks.map((chunk, pageIndex) => (
+        <Page key={pageIndex} size="A4" style={styles.page}>
+          <View style={styles.header} fixed>
+            <Text style={styles.brand}>{siteConfig.name}</Text>
+            <Text>{siteConfig.domain}</Text>
+          </View>
 
-        <View>
-          <Text style={styles.kicker}>{kicker}</Text>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.description}>{description}</Text>
-        </View>
+          {pageIndex === 0 ? (
+            <View>
+              <Text style={styles.kicker}>{kicker}</Text>
+              <Text style={styles.title}>{title}</Text>
+              <Text style={styles.description}>{description}</Text>
+            </View>
+          ) : null}
 
-        <Blocks nodes={tree.children} skipHeavyBlocks={skipHeavyBlocks} />
+          <Blocks nodes={chunk} skipHeavyBlocks={skipHeavyBlocks} />
 
-        <Text style={styles.footerLeft} fixed>
-          {siteConfig.url}
-          {path}
-        </Text>
-        <Text
-          style={styles.footerRight}
-          fixed
-          render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
-        />
-      </Page>
+          <Text style={styles.footerLeft} fixed>
+            {siteConfig.url}
+            {path}
+          </Text>
+          <Text
+            style={styles.footerRight}
+            fixed
+            render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
+          />
+        </Page>
+      ))}
     </Document>
   );
 }
@@ -548,7 +562,6 @@ export async function renderMarkdownPdf({
 }) {
   const markdown = stripMdx(content);
   const tree = remark().use(remarkGfm).parse(markdown) as Root;
-  const skipHeavyBlocks = false;
   return renderToBuffer(
     <ArticleDocument
       title={title}
@@ -556,7 +569,6 @@ export async function renderMarkdownPdf({
       kicker={kicker}
       path={path}
       tree={tree}
-      skipHeavyBlocks={skipHeavyBlocks}
     />,
   );
 }
