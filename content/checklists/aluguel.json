@@ -1,68 +1,208 @@
 {
   "slug": "aluguel",
   "title": "Checklist de aluguel",
-  "description": "Do Idealista à entrega das chaves, com fiança da lei do aluguel e sinais de golpe.",
-  "bullets": ["Idealista", "Fiança da lei do aluguel", "Sinais de golpe"],
+  "description": "Mini-guia do Idealista à entrega das chaves: visita, fiança, honorários da Lei 12/2023, inventário e sinais de golpe.",
+  "bullets": ["Idealista e visita", "Fiança e honorários (Lei 12/2023)", "Golpe e inventário"],
   "stage": "acabei-de-chegar",
   "topics": ["moradia"],
   "cities": [],
   "items": [
     {
       "id": "orcamento",
-      "title": "Somar aluguel + fiança + honorários + contas",
-      "detail": "A lei do aluguel limita a fiança de moradia habitual a 1 mês, depositada no órgão da região. Anúncios ainda pedem garantia extra e, em alguns casos, agência. Some o desembolso de entrada, não só a mensalidade.",
+      "title": "Somar a entrada: 1º mês + fiança + garantia extra",
+      "detail": "Some o desembolso de entrada, não só a mensalidade. Na moradia habitual a Lei de Arrendamentos Urbanos (LAU, a lei do aluguel) exige fiança (caução) de 1 mês (art. 36.1) e proíbe o dono de cobrar mais de 1 mês de aluguel adiantado (art. 17.2). Garantia extra (depósito, aval, seguro) é permitida, mas no prazo padrão não passa de 2 meses (art. 36.5). Honorários de agência, na moradia habitual, ficam a cargo do arrendador (dono) desde a Lei 12/2023 — veja o passo de honorários. Exemplo com aluguel de 1.200 €: primeiro mês 1.200 + fiança 1.200 + até 2.400 de garantia extra = 2.400–4.800 € na entrada. Não some “um mês de agência” nesse total.",
       "links": [
         {
-          "label": "Lei do aluguel no diário oficial",
+          "label": "LAU no BOE (arts. 17, 20 e 36)",
           "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003"
+        },
+        {
+          "label": "Lei 12/2023, direito à moradia",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203"
+        },
+        {
+          "label": "Guia: aluguel na prática",
+          "href": "/guias/aluguel-na-pratica"
         }
       ]
     },
     {
       "id": "busca",
-      "title": "Filtrar anúncios e marcar visita presencial",
-      "detail": "Idealista e Fotocasa. Recuse transferência para 'segurar' imóvel sem visita e sem contrato. Compare o preço com 5 anúncios do mesmo bairro: 30–40% abaixo da média é isca.",
+      "title": "Filtrar no Idealista e comparar 5 anúncios do mesmo bairro",
+      "detail": "O mercado de fato está no Idealista; o Fotocasa serve de complemento. Filtre o mesmo bairro e a mesma metragem. Compare o preço com 5 anúncios: 30–40% abaixo da média do quarteirão é isca. O índice do Idealista de agosto de 2026 (publicado em 1º/9/2026) apontava 15,1 €/m² no país, 23,3 €/m² em Madrid e 20,2 €/m² em Barcelona — use como teto, não como o seu anúncio. O índice passou a excluir temporada e férias em julho de 2026. Agência física do bairro ajuda depois que você já andou na rua. Anúncio só de WhatsApp ou Facebook (“particular, transfere hoje”) trate como golpe até prova em contrário. Idealista não garante o anunciante.",
       "links": [
         { "label": "Idealista", "href": "https://www.idealista.com" },
-        { "label": "Fotocasa", "href": "https://www.fotocasa.es" }
+        { "label": "Fotocasa", "href": "https://www.fotocasa.es" },
+        {
+          "label": "Idealista — índice de aluguel (agosto 2026)",
+          "href": "https://www.idealista.com/news/inmobiliario/vivienda/2026/09/01/911881-el-precio-del-alquiler-sube-un-5-8-en-agosto-y-sigue-por-encima-de-los-15-euros-m2"
+        }
       ]
     },
     {
       "id": "fotos",
       "title": "Buscar as fotos do anúncio no Google Imagens",
-      "detail": "Golpista copia anúncio real (mesmas fotos, outra cidade). Se as fotos aparecem em outro endereço ou em outro país, descarte."
+      "detail": "Golpista copia anúncio real (mesmas fotos, outra cidade ou outro país). Busque as imagens no Google Imagens. Foto “perfeita” demais, sem rua nem prédio, também merece busca reversa: há anúncio com imagem gerada por inteligência artificial. Se as fotos aparecem em outro endereço, descarte e denuncie no portal.",
+      "links": [
+        {
+          "label": "Idealista — como detectar anúncio falso",
+          "href": "https://www.idealista.com/ayuda/articulos/como-puedo-detectar-anuncios-falsos/"
+        },
+        {
+          "label": "Idealista — reportar anúncio suspeito",
+          "href": "https://www.idealista.com/ayuda/articulos/reportar-o-denunciar-un-inmueble-sospechoso-en-idealista/"
+        }
+      ]
+    },
+    {
+      "id": "golpes",
+      "title": "Recusar sinal, link falso e pagamento sem visita",
+      "detail": "Roteiros que ainda pegam brasileiro: (1) sinal de 200–400 € para “reservar a visita” — o “dono” está viajando; ninguém cobra para visitar; (2) fiança + primeiro mês à distância, sem ver o quarto; (3) link falso de “reserva Idealista” no WhatsApp — reserva, quando existe, entra só pela conta logada no site ou no app, nunca por link; (4) okupa se passando por dono com papel falso — peça a nota simple no Registro da Propriedade e confira se o nome do contrato é o do titular; (5) casa em execução hipotecária; (6) aluguel sem contrato “para evitar burocracia” — sem papel você não empadrona (cadastro na prefeitura). Não transfira Bizum (o Pix espanhol) para desconhecido. Não envie passaporte, NIE (Número de Identidad de Extranjero) e extrato completo por WhatsApp. Se já pagou: pare, avise o banco, guarde prints e o IBAN, denuncie o anúncio e registre denúncia na Polícia Nacional ou na Guardia Civil.",
+      "links": [
+        {
+          "label": "Idealista — detectar anúncio falso",
+          "href": "https://www.idealista.com/ayuda/articulos/como-puedo-detectar-anuncios-falsos/"
+        },
+        {
+          "label": "Registro da Propriedade (nota simple)",
+          "href": "https://www.registradores.org"
+        },
+        {
+          "label": "Denúncia online da Polícia Nacional",
+          "href": "https://denuncias.policia.es/OVD/"
+        }
+      ]
     },
     {
       "id": "visita",
-      "title": "Visitar, fotografar e perguntar sobre cadastro na prefeitura",
-      "detail": "Umidade, barulho, água, eletrodomésticos. Confirme se o dono autoriza o cadastro de morador — sem isso o contrato não serve para trâmites."
+      "title": "Visitar presencialmente, fotografar e perguntar sobre o cadastro na prefeitura",
+      "detail": "Marque visita presencial. Leve passaporte (e o NIE, se já tiver) e comprovante de renda ou extrato. A lei não exige NIE para assinar; agência e seguro de fiança preferem. Na visita pergunte: valor líquido, condomínio, IBI (imposto sobre o imóvel, parecido com o IPTU) e lixo; quem contrata luz, água, gás e internet; duração, reajuste e regras de saída; referência cadastral; se o dono autoriza o empadronamiento por escrito. Sem essa autorização o contrato não serve para TIE (Tarjeta de Identidad de Extranjero, o cartão de residência), posto de saúde e banco. Fotografe umidade, rachadura, eletrodoméstico e contadores no mesmo dia. Recuse “assinamos o anexo na semana que vem”.",
+      "links": [
+        {
+          "label": "Guia: aluguel na prática (visita e contrato)",
+          "href": "/guias/aluguel-na-pratica"
+        }
+      ]
+    },
+    {
+      "id": "honorarios",
+      "title": "Recusar honorários de agência na moradia habitual (Lei 12/2023)",
+      "detail": "Desde a Lei 12/2023 (direito à moradia), o artigo 20 da LAU diz que os gastos de gestão imobiliária e de formalização do contrato ficam a cargo do arrendador. O Ministério da Habitação confirma: em moradia habitual o inquilino não paga essa comissão. A folha de Habitatge da Catalunha repete a mesma regra. Não há tabela oficial de “10% em Barcelona e um mês em Madrid”: a lei nacional fixa quem paga, não o percentual. Ainda cobram o inquilino em aluguel de temporada, quarto (habitación) ou contrato de uso distinto. Pacote disfarçado (“dossier”, “pack inquilino”, “reserva da visita”) é a comissão com outro nome. Contrato de “temporada” com você morando o ano todo é o jeito mais comum de cobrar honorários e fugir da prorrogação (5 anos se o dono for pessoa física, 7 se for empresa — art. 9 da LAU). Se o anúncio de piso para viver o ano todo cobra um mês de agência, recuse ou reclame no órgão de consumo da região.",
+      "links": [
+        {
+          "label": "LAU art. 20 (honorários a cargo do dono)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003#a20"
+        },
+        {
+          "label": "Ministério da Habitação — honorários",
+          "href": "https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/alquiler/nueva-ley-estabilidad-mercado-alquiler"
+        },
+        {
+          "label": "Habitatge Catalunya — despesas do aluguel",
+          "href": "https://habitatge.gencat.cat/ca/ambits/lloguer/despeses-lloguer/"
+        },
+        {
+          "label": "Consumo (cláusula abusiva)",
+          "href": "https://www.consumo.gob.es"
+        }
+      ]
+    },
+    {
+      "id": "fianca",
+      "title": "Conferir fiança de 1 mês e o depósito no órgão da região",
+      "detail": "Fiança legal de moradia habitual: 1 mês, em dinheiro, no ato do contrato. Quem deposita no órgão da região é o arrendador, não você. Peça o justificante com número de registro — sem esse papel some o interlocutor na hora de devolver. Onde deposita depende da comunidade: em Madrid, Agencia de Vivienda Social, em geral em 30 dias úteis após o contrato; na Catalunha, INCASÒL, formulário Modelo 2, prazo de 2 meses (Lei 13/1996); na Comunitat Valenciana, depósito a favor da Generalitat, modelo 816 (telemático) ou 806 (presencial). Na Andaluzia a fiança de 1 mês continua obrigatória (LAU), mas desde 24/01/2026 o dono não deposita mais na Junta (Lei 5/2025): exija recibo escrito do valor e da conta. Nas outras regiões, busque “depósito fianza alquiler” no site da comunidade — não invente o órgão. Devolução: o saldo volta em 1 mês depois de entregar as chaves; depois disso corre juros legais (art. 36.4).",
+      "links": [
+        {
+          "label": "LAU art. 36 (fiança)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003#a36"
+        },
+        {
+          "label": "Madrid — Agencia de Vivienda Social",
+          "href": "https://www.comunidad.madrid/vivienda/fianzas-arrendamiento"
+        },
+        {
+          "label": "Catalunha — INCASÒL (Modelo 2)",
+          "href": "https://incasol.gencat.cat/ca/serveis-i-tramits/fiances-de-lloguers/informacio/diposit-de-fiances"
+        },
+        {
+          "label": "Comunitat Valenciana — modelos 816/806",
+          "href": "https://atv.gva.es/es/tributos-modelos-fianzas"
+        },
+        {
+          "label": "Andaluzia — fim do depósito na Junta (24/01/2026)",
+          "href": "https://www.juntadeandalucia.es/organismos/avra/areas/fianzas/notas-ley-vivienda-andalucia-2025.html"
+        }
+      ]
     },
     {
       "id": "contrato",
-      "title": "Ler prazo, reajuste, rescisão e inventário",
-      "detail": "Contrato por escrito, sem anexo em branco. Peça recibo de cada pagamento, com o valor e a conta que está no contrato."
+      "title": "Ler prazo, reajuste, rescisão, cadastro na prefeitura e inventário",
+      "detail": "Contrato por escrito, sem página em branco nem “anexo depois”. Precisa constar: nome e NIF/NIE ou passaporte de quem aluga e de quem mora (todas as pessoas que vão se cadastrar na prefeitura); endereço com código postal e, se possível, referência cadastral; prazo; aluguel, data de pagamento e IBAN; fiança de 1 mês e onde será depositada; reajuste (o Ministério aponta o IRAV — índice oficial de aluguel de moradia — nos contratos de moradia) e regras de saída; autorização expressa de empadronamiento; inventário anexado. Escreva, em espanhol, que o arrendador autoriza o arrendatário a empadronarse no imóvel. Recuse a frase que proíbe o cadastro. Em Madrid o Ayuntamiento pede contrato em vigor de no mínimo seis meses, assinado por todos os que figuram nele. O passo a passo do cadastro está no checklist de empadronamiento, não aqui.",
+      "links": [
+        {
+          "label": "LAU — prazo, renda e fiança",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003"
+        },
+        {
+          "label": "Madrid — documentos que acreditam o uso da moradia",
+          "href": "https://www.madrid.es/portales/munimadrid/es/4-Documentos-que-acreditan-el-uso-de-la-vivienda/?vgnextoid=d7b8135408e04810VgnVCM1000008a4a900aRCRD"
+        },
+        {
+          "label": "Checklist do empadronamiento",
+          "href": "/checklists/empadronamiento"
+        }
+      ]
     },
     {
       "id": "deposito",
-      "title": "Pagar fiança com comprovante",
-      "detail": "Prefira transferência com conceito claro para a conta do proprietário/agência identificada no contrato (o IBAN e o nome do titular precisam bater). Nunca só Pix espanhol (Bizum) para desconhecido. Ninguém cobra 200–400 € só para você visitar o imóvel."
+      "title": "Pagar só depois da visita, com recibo para o IBAN do contrato",
+      "detail": "Pague só depois da visita, do contrato assinado e do IBAN conferido. Prefira transferência com conceito claro para a conta do proprietário ou da agência identificada no contrato: o IBAN e o nome do titular precisam bater. Faça uma transferência pequena de teste (50–100 €) antes do restante. Cada pagamento precisa de recibo, com valor e conta iguais aos do contrato. Nunca só Bizum para desconhecido. Ninguém cobra 200–400 € só para você visitar o imóvel.",
+      "links": [
+        {
+          "label": "Idealista — prevenir fraude",
+          "href": "https://www.idealista.com/ayuda/articulos/consejos-para-prevenir-el-fraude-en-internet-cuando-buscas-inmueble/"
+        }
+      ]
     },
     {
       "id": "inventario",
-      "title": "Assinar inventário no dia das chaves",
-      "detail": "Fotos datadas de riscos, manchas e contadores. Sem isso, a devolução da fiança vira briga no fim do contrato."
+      "title": "Assinar o inventário no dia das chaves, com fotos datadas",
+      "detail": "O inventário (anexo de inventario y estado de conservación) é a lista do que está no imóvel e de como está. Sem ele, qualquer risco na parede vira desconto na fiança. No dia das chaves: liste móvel, eletrodoméstico, lâmpada, cortina e número de chaves; anote os números dos contadores de luz, água e gás; tire foto de cada cômodo, de umidade e de avaria com data visível; teste torneira, fogão, aquecimento e janelas; as duas partes assinam todas as páginas e cada um fica com uma cópia. Não aceite assinar o anexo “na semana que vem”. Guarde contrato, recibos e o justificante da fiança com a data no nome do arquivo.",
+      "links": [
+        {
+          "label": "Guia: aluguel na prática (inventário)",
+          "href": "/guias/aluguel-na-pratica"
+        }
+      ]
     },
     {
       "id": "contas",
-      "title": "Ativar luz, água, gás e internet",
-      "detail": "Confira no contrato quem é o titular. Sem titular, o cadastro na prefeitura e o depósito complicam."
+      "title": "Ativar ou mudar o titular de luz, água, gás e internet",
+      "detail": "Confira no contrato quem é o titular. Sem titular, o cadastro na prefeitura e o depósito da fiança complicam. Se o dono ou o inquilino anterior deu baixa, você paga a alta de novo; se já está ativo, peça a mudança de titular. Débito em conta ainda de não residente às vezes é recusado pela companhia — espere a conta estável. Detalhe do banco no checklist de conta.",
+      "links": [
+        {
+          "label": "Habitatge — quem paga luz, água e IBI",
+          "href": "https://habitatge.gencat.cat/ca/ambits/lloguer/despeses-lloguer/"
+        },
+        {
+          "label": "Checklist de conta bancária",
+          "href": "/checklists/conta-bancaria"
+        }
+      ]
     },
     {
       "id": "padron",
-      "title": "Usar o contrato no cadastro da prefeitura",
-      "detail": "Com endereço firme, avance o cadastro na prefeitura na mesma semana.",
+      "title": "Usar o contrato no cadastro da prefeitura na mesma semana",
+      "detail": "Com endereço firme e cláusula de empadronamiento no contrato, avance o cadastro na prefeitura na mesma semana. Sem esse comprovante emperram TIE, posto de saúde e boa parte dos bancos. Não copie aqui o tutorial da prefeitura: ele está no checklist de empadronamiento.",
       "links": [
-        { "label": "Checklist do cadastro na prefeitura", "href": "/checklists/empadronamiento" }
+        {
+          "label": "Checklist do empadronamiento",
+          "href": "/checklists/empadronamiento"
+        },
+        {
+          "label": "Guia: primeiros 30 dias",
+          "href": "/guias/primeiros-30-dias"
+        }
       ]
     }
   ]

@@ -1,60 +1,232 @@
 {
   "slug": "conta-bancaria",
   "title": "Checklist para abrir conta bancária",
-  "description": "Santander com passaporte, ponte em euro e conversão para conta de residente.",
-  "bullets": ["Santander com passaporte", "Ponte em euro", "Conta de residente"],
+  "description": "Santander com passaporte, Wise de ponte, IBAN ES de 24 caracteres, o que levar na agência, prazos e custos aproximados.",
+  "bullets": ["Santander com passaporte", "Wise de ponte e IBAN ES", "O que levar, prazos e custos"],
   "stage": "acabei-de-chegar",
   "topics": ["banco"],
   "cities": [],
   "items": [
     {
       "id": "santander",
-      "title": "Abrir a conta Santander de não residente (se ainda estiver no Brasil ou sem o número de estrangeiro)",
-      "detail": "Conta online para não residentes: passaporte, +18 anos e vídeo. Brasil está na lista do banco. Gera código de conta europeu sem o número fiscal de estrangeiro. Se você já é residente fiscal na Espanha, este produto não serve — o banco pede o NIE.",
+      "title": "Abrir a conta Santander de não residente com passaporte (ainda no Brasil ou sem o NIE)",
+      "detail": "A Cuenta Online para No Residentes do Santander Espanha abre no site do banco, com passaporte em vigor, mais de 18 anos e identificação por vídeo (câmera e microfone). O Brasil está na lista de países — confira no dia, porque a lista muda. Não precisa do NIE (Número de Identidad de Extranjero, o número fiscal de estrangeiro) neste produto. É conta corrente não remunerada (TIN 0%, TAE 0%), sem comissão de manutenção e sem exigir holerite, recibos nem permanência, segundo a página do banco; exclusividade para cliente novo. Ordem: 1) entre só em bancosantander.es; 2) faça o vídeo com o passaporte original na mão; 3) anote o IBAN no app. Se você já é residente fiscal na Espanha, este produto não serve — o banco pede o NIE. Agência física varia: o canal confiável para passaporte sem NIE é o online. O cartão físico chega pelos correos; use o virtual no app enquanto espera. Não feche o processo em site com hífen nem por WhatsApp.",
       "links": [
         {
           "label": "Santander — conta com passaporte",
           "href": "https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-online-con-pasaporte"
+        },
+        {
+          "label": "Santander — banca para estrangeiros",
+          "href": "https://www.bancosantander.es/extranjeros"
+        },
+        {
+          "label": "Guia de planejamento financeiro",
+          "href": "/guias/planejamento-financeiro"
         }
       ]
     },
     {
-      "id": "ponte",
-      "title": "Ter uma ponte em euro (Wise ou similar)",
-      "detail": "Use para câmbio e primeiros pagamentos enquanto o cartão espanhol não chega. Proprietário e holerite, no entanto, vão pedir conta espanhola de banco local.",
+      "id": "iban",
+      "title": "Copiar o IBAN ES (24 caracteres) e guardar fora do celular",
+      "detail": "IBAN (International Bank Account Number) é o código internacional da conta. Na Espanha tem 24 caracteres: as letras ES, 2 dígitos de controle, 4 do banco (código do Banco de Espanha), 4 da agência, 2 de controle nacional e 10 da conta. O Banco de Espanha descreve essa estrutura; para ler, agrupe de 4 em 4, como o app mostra. Sem IBAN que começa com ES travam aluguel, holerite e muita operadora de chip em contrato. Na zona SEPA (pagamentos em euro na Europa) a transferência segue só o IBAN — o banco não confere o nome do destinatário. Um dígito errado e o dinheiro pode ir para outra conta; o Banco de Espanha avisa que a operação é irrevogável. Tire print do IBAN no app, copie para um papel na pasta e envie só a partir desse original. Não aceite IBAN mandado por WhatsApp de “proprietário” sem bater com o contrato. Para receber do Brasil, o banco brasileiro às vezes pede também o BIC/SWIFT: pegue os dois no app, não em blog.",
       "links": [
-        { "label": "Wise", "href": "https://wise.com" }
+        {
+          "label": "Banco de Espanha — o que é o IBAN",
+          "href": "https://clientebancario.bde.es/pcb/es/blog/que-se-esconde-tras-los-numeros-de-tu-cuenta-corriente-.html"
+        },
+        {
+          "label": "Banco de Espanha — transferência segue o IBAN",
+          "href": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/serviciospago/traspasostransfe/guia-textual/conceptocaracter/Identificador_unico.html"
+        },
+        {
+          "label": "Wise — formato do IBAN espanhol",
+          "href": "https://wise.com/br/iban/spain"
+        }
+      ]
+    },
+    {
+      "id": "wise",
+      "title": "Ter uma ponte em euro (Wise ou similar) enquanto o cartão espanhol não chega",
+      "detail": "Abra a Wise ainda no Brasil. Use para ver o câmbio antes de pagar e para enviar euro ao seu IBAN ES (o do Santander ou o do contrato de aluguel). Proprietário e holerite, no entanto, pedem conta espanhola de banco local — a Wise não substitui isso. Na calculadora da Wise, em setembro de 2026, enviar 3.000 BRL para a Espanha saía com custo total de cerca de 121 BRL no Pix e 122 BRL com saldo Wise (imposto brasileiro + tarifa; o número mexe com o câmbio). Simule o seu valor no dia. Pagar com saldo Wise ou Pix costuma ser o caminho barato; cartão de crédito na Wise encarece. O IOF de câmbio de pessoa física está em 3,5% no Decreto nº 12.499/2025; remessa com finalidade de investimento permanece em 1,1%. A Wise informa que 74% das transferências chegam em menos de 20 segundos e 95% em menos de um dia — o prazo depende de como você paga. Revolut e N26 podem ajudar nos primeiros dias se o app deixar completar o cadastro; não dependa só delas para contrato de aluguel.",
+      "links": [
+        {
+          "label": "Wise — enviar euro para a Espanha",
+          "href": "https://wise.com/br/send-money/send-money-to-spain"
+        },
+        {
+          "label": "Decreto nº 12.499/2025 — IOF no câmbio",
+          "href": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12499.htm"
+        },
+        {
+          "label": "Guia de planejamento financeiro",
+          "href": "/guias/planejamento-financeiro"
+        }
       ]
     },
     {
       "id": "docs",
-      "title": "Juntar o que a agência tradicional pede",
-      "detail": "Passaporte, número de estrangeiro quando existir, comprovante do cadastro na prefeitura e, se houver, contrato de trabalho. BBVA, CaixaBank e Sabadell em balcão quase sempre travam sem NIE + endereço."
+      "title": "Juntar o que a agência tradicional pede (certificado de não residente só se o banco exigir)",
+      "detail": "BBVA, CaixaBank e Sabadell em balcão quase sempre travam sem NIE + comprovante de endereço. Leve na pasta: passaporte original e cópia da folha de dados; NIE (papel ou TIE, o cartão) se já existir; certificado de empadronamiento (cadastro de morador na prefeitura) recente; contrato de aluguel ou carta do empregador se houver; telefone e e-mail que você vai manter; print do IBAN se já tiver outra conta. Alguns bancos pedem o certificado de no residente da polícia: formulário EX-15, taxa 790-012 e agendamento (cita previa) no portal oficial. Vale 3 meses. A polícia tem 5 dias para resolver; silêncio conta como recusa. Na tabela de taxas, certificados a pedido do interessado estão em 7,31 € — gere o 790-012 e confira a linha no dia. Só marque essa cita se o banco exigir por escrito: o Santander online com passaporte não pede isso na página do produto. Não compre “encaixe” de horário.",
+      "links": [
+        {
+          "label": "Polícia — certificado de não residente",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_certificado_noresidente.php"
+        },
+        {
+          "label": "Gerar taxa 790-012",
+          "href": "https://sede.policia.gob.es/Tasa790_012/"
+        },
+        {
+          "label": "Polícia — tabela de taxas",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tasas.php"
+        },
+        {
+          "label": "Formulários oficiais (EX-15)",
+          "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
+        },
+        {
+          "label": "Agendamento oficial",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        },
+        {
+          "label": "Checklist do cadastro na prefeitura",
+          "href": "/checklists/empadronamiento"
+        },
+        {
+          "label": "Checklist do NIE",
+          "href": "/checklists/nie"
+        }
+      ]
     },
     {
       "id": "app",
-      "title": "Ativar app, chave de segurança e cartão",
-      "detail": "Configure o SMS/app de autorização com o número que você vai manter. Se trocar o chip brasileiro pelo espanhol, atualize o telefone no banco no mesmo dia."
+      "title": "Ativar app, chave de segurança e o telefone que você vai manter",
+      "detail": "Baixe o app só da loja oficial do telefone. Ative o SMS ou o token de autorização com o número que você vai usar nas próximas semanas. Se trocar o chip brasileiro pelo espanhol, atualize o telefone no banco no mesmo dia — o código de confirmação não chega em roaming eterno. Guarde o PUK do chip. O banco amarra o SMS a um único número; vários cadastros do Estado também (um NIE = um telemóvel). Anote o telefone de bloqueio de cartão que vem no contrato, não o número de um SMS suspeito. O banco nunca pede senha nem código por e-mail ou WhatsApp. Sem número espanhol estável, emperram débito de conta, algumas operadoras e o aviso de compra.",
+      "links": [
+        {
+          "label": "Guia de chip e transporte",
+          "href": "/guias/chip-e-transporte"
+        },
+        {
+          "label": "Banco de Espanha — phishing",
+          "href": "https://clientebancario.bde.es/pcb/es/blog/que-es-el-phishing-y-como-evitarlo.html"
+        }
+      ]
     },
     {
       "id": "teste",
-      "title": "Fazer uma transferência pequena de teste",
-      "detail": "Do Brasil para a conta espanhola ou entre Wise e Santander. Confira nome do titular idêntico ao passaporte."
+      "title": "Fazer uma transferência pequena de teste (50–100 €) antes da entrada do aluguel",
+      "detail": "Do Brasil para o IBAN ES ou, depois do câmbio, de Wise para o Santander da mesma titularidade. Confira o nome do titular idêntico ao passaporte. Só então envie o restante. Na SEPA o banco executa pelo IBAN, sem conferir o nome — o teste barato evita perder a fiança. No conceito escreva algo claro (ALQUILER + endereço): o comprovante entra no contrato. Prazo: a Wise costuma cair em segundos (74% em menos de 20 s; 95% em menos de um dia, segundo a própria empresa). TED ou SWIFT do banco brasileiro pode levar dias úteis — não deixe a entrada do aluguel para a véspera. Não pague sinal por Pix brasileiro nem por Bizum (o Pix espanhol) para desconhecido. Detalhe do golpe do sinal: checklist de aluguel.",
+      "links": [
+        {
+          "label": "Wise — enviar para a Espanha",
+          "href": "https://wise.com/br/send-money/send-money-to-spain"
+        },
+        {
+          "label": "Banco de Espanha — IBAN errado",
+          "href": "https://clientebancario.bde.es/pcb/es/blog/upppssstransferencia-enviada-al-iban-equivocado.html"
+        },
+        {
+          "label": "Checklist de aluguel",
+          "href": "/checklists/aluguel"
+        }
+      ]
+    },
+    {
+      "id": "cajero",
+      "title": "Sacar em caixa automático só depois de ler a comissão na tela",
+      "detail": "A tela tem de mostrar a comissão e deixar cancelar — regra do Banco de Espanha. Caixa do aeroporto e máquina de câmbio “independent” costumam sair caros; some isso ao IOF 3,5% e ao spread do cartão brasileiro. Prefira caixa do próprio Santander (débito na rede do banco costuma não ter comissão extra na tela) ou o cartão da Wise, olhando o aviso antes de confirmar. Se o valor assustar, cancele e procure outro caixa. Não aceite “ajuda” de estranho no terminal. Cartão de turismo brasileiro: reserve para emergência, não para o mês.",
+      "links": [
+        {
+          "label": "Banco de Espanha — comissão no caixa",
+          "href": "https://clientebancario.bde.es/pcb/es/blog/comision-cajero.html"
+        }
+      ]
     },
     {
       "id": "recibos",
-      "title": "Cadastrar aluguel, luz e telefone em débito",
-      "detail": "Só depois da conta estável. Débito em conta errada ou ainda de não residente às vezes é recusado pela companhia."
+      "title": "Cadastrar aluguel, luz e telefone em débito só com a conta estável",
+      "detail": "Adeudo domiciliado (débito automático) pede IBAN ES e titular igual ao do contrato. Conta ainda de não residente às vezes é recusada pela companhia de luz ou pela operadora de contrato. Pepephone e similares pedem NIE + IBAN espanhol — não é o caminho do desembarque só com passaporte. Espere a conversão para residente ou uma conta já aceita pela companhia. Não autorize débito em IBAN que você não controla. Para chip pré-pago no desembarque, passaporte original basta. Luz, água e internet: o contrato do imóvel diz quem é o titular; sem titular, o cadastro na prefeitura e o depósito complicam.",
+      "links": [
+        {
+          "label": "Guia de chip e transporte",
+          "href": "/guias/chip-e-transporte"
+        },
+        {
+          "label": "Guia de aluguel na prática",
+          "href": "/guias/aluguel-na-pratica"
+        }
+      ]
     },
     {
       "id": "converter",
-      "title": "Pedir a passagem a conta de residente",
-      "detail": "Com NIE e cadastro na prefeitura, peça no app ou na agência a atualização cadastral. Holerite e alguns contratos de aluguel exigem isso."
+      "title": "Pedir a passagem a conta de residente com NIE e cadastro na prefeitura",
+      "detail": "Com o NIE e o empadronamiento, peça no app ou na agência a atualização cadastral. Holerite e alguns contratos de aluguel exigem conta de residente. A Receita espanhola (Agencia Tributaria) considera residente fiscal quem passa mais de 183 dias no ano civil na Espanha ou quem tem aqui o núcleo dos interesses econômicos (folha atualizada em julho de 2026). Isso é imposto, não o produto do banco; mesmo assim o banco vai pedir NIE e endereço espanhol quando você deixar de ser “não residente”. A residência fiscal vale o ano civil inteiro — não “pela metade”. Não abra uma segunda conta “porque a primeira era de turista” sem perguntar: já ter conta corrente na Espanha é um dos motivos para o banco recusar a conta de pagamento básica. Ordem dos papéis: NIE e padrón primeiro.",
+      "links": [
+        {
+          "label": "Receita — quando você é residente fiscal",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/no-residentes/residencia-personas-fisicas-juridicas/persona-fisica-residente-espana.html"
+        },
+        {
+          "label": "Guia de NIE e primeiros trâmites",
+          "href": "/guias/nie-primeiros-tramites"
+        },
+        {
+          "label": "Checklist do cadastro na prefeitura",
+          "href": "/checklists/empadronamiento"
+        },
+        {
+          "label": "Primeiros 30 dias",
+          "href": "/guias/primeiros-30-dias"
+        }
+      ]
+    },
+    {
+      "id": "basica",
+      "title": "Se recusarem conta, pedir por escrito a conta de pagamento básica",
+      "detail": "Com residência legal na UE, o Banco de Espanha descreve a cuenta de pago básica: o banco que oferece contas de pagamento é obrigado a oferecê-la a quem reside legalmente (mesmo sem domicílio fixo), a solicitante de asilo e a quem não pode ser expulsado. Não é atalho de turista no dia 2. Podem recusar se você já for titular de conta corrente na Espanha, por segurança nacional ou se faltar dado de prevenção à lavagem de dinheiro. A comissão máxima conjunta é de 3 € por mês (Orden ECE/228/2019 no BOE; o Banco de Espanha pode atualizar a cada dois anos) e cobre abertura, saques em euro, cartão e até 120 transferências ou débitos por ano na UE. Peça por escrito. Se recusarem por escrito, o próprio Banco de Espanha explica como reclamar.",
+      "links": [
+        {
+          "label": "Banco de Espanha — quem pode pedir a conta básica",
+          "href": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html"
+        },
+        {
+          "label": "Banco de Espanha — teto de 3 €/mês",
+          "href": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/comisiones.html"
+        },
+        {
+          "label": "BOE — Orden ECE/228/2019",
+          "href": "https://www.boe.es/eli/es/o/2019/02/28/ece228"
+        }
+      ]
     },
     {
       "id": "reserva",
-      "title": "Separar reserva de emergência em euro",
-      "detail": "Deixe uma folga em euro que não seja o limite do cartão de turismo brasileiro."
+      "title": "Separar reserva de emergência em euro e não cair em golpe de banco",
+      "detail": "Deixe uma folga em euro que não seja o limite do cartão de turismo brasileiro. O guia de planejamento soma primeira semana, entrada do aluguel, trâmites e 2 a 3 meses sem salário espanhol. Domínios verdadeiros: bancosantander.es e wise.com. O banco não pede senha nem código SMS por e-mail (Banco de Espanha — phishing). SMS que manda ligar para “cancelar uma transferência” é golpe conhecido (INCIBE). Abra o banco digitando o endereço. Se já caiu: ligue no número do contrato, peça bloqueio e denuncie na Polícia Nacional ou na Guardia Civil. Agendamento de polícia e imigração é gratuito no portal oficial — ninguém vende cita (agendamento) legítima.",
+      "links": [
+        {
+          "label": "Guia de planejamento financeiro",
+          "href": "/guias/planejamento-financeiro"
+        },
+        {
+          "label": "Banco de Espanha — phishing",
+          "href": "https://clientebancario.bde.es/pcb/es/blog/que-es-el-phishing-y-como-evitarlo.html"
+        },
+        {
+          "label": "INCIBE — SMS falso de banco",
+          "href": "https://www.incibe.es/ciudadania/avisos/campana-de-smishing-que-suplanta-entidades-bancarias-solicitando-que-les-llames"
+        },
+        {
+          "label": "Agendamento oficial",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        },
+        {
+          "label": "Polícia Nacional — denúncia",
+          "href": "https://sede.policia.gob.es"
+        }
+      ]
     }
   ]
 }

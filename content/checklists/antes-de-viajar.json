@@ -10,77 +10,156 @@
     {
       "id": "visto",
       "title": "Confirmar se precisa de visto nacional",
-      "detail": "Turismo é até 90 dias em cada período de 180 no espaço Schengen (Europa com fronteira compartilhada). Morar, trabalhar ou estudar longo pede visto no consulado da sua região. Não embarque no caminho errado.",
+      "detail": "O quê: brasileiro não precisa de visto de turismo para o espaço Schengen (países da Europa com fronteira compartilhada). Precisa de visto nacional (tipo D) para morar, trabalhar, estudar mais de 90 dias ou quando o consulado exige o trâmite antes do embarque. Turismo é até 90 dias em cada 180, se a imigração autorizar — e nesses 90 dias você não pode trabalhar nem abrir autónomo (conta própria, parecido com o MEI).\n\nComo: peça pessoalmente no consulado de carreira da sua demarcação. No Brasil são só cinco: Brasília, São Paulo, Rio de Janeiro, Porto Alegre e Salvador. Honorário da cidade vizinha não protocola. Cada pessoa da família preenche o impresso de visto nacional da ficha daquele posto. Quando a folha permitir, peça o NIE (Número de Identidad de Extranjero, o número fiscal) no mesmo expediente. Acompanhe em sutramiteconsular.maec.es.\n\nQuando: ainda no Brasil. Em estudos, a folha trata de pedir com pelo menos dois meses de folga. Recolha o visto no prazo da notificação (várias vias: 1 mês; estudos em São Paulo: 2 meses) e entre na validade — muita residência sai com 90 dias de entrada.\n\nDocumentos: o checklist do seu posto no dia (foto, passaporte, prova de residência na demarcação, meios, seguro, apostilas). CPF e nome iguais ao passaporte.\n\nCusto: em São Paulo a taxa aparece como 80 € em várias fichas. Confirme na tabela do seu posto. A cita é gratuita no site do consulado.\n\nO que não fazer: comprar passagem no caminho errado; pagar “visto aprovado” no Instagram; “chego e regularizo depois”, salvo hipóteses concretas (ex.: familiar de cidadão da UE).",
       "links": [
         { "label": "Guia de visto", "href": "/guias/visto-e-residencia" },
         {
-          "label": "Consulados da Espanha",
-          "href": "https://www.exteriores.gob.es/es/EmbajadasConsulados/Paginas/index.aspx"
+          "label": "Consulados da Espanha no Brasil",
+          "href": "https://www.exteriores.gob.es/Embajadas/brasilia/pt/Embajada/Paginas/Consulados.aspx"
+        },
+        {
+          "label": "Acompanhar o visto",
+          "href": "https://sutramiteconsular.maec.es/Home.aspx"
+        },
+        {
+          "label": "AENA — o que a fronteira pode pedir",
+          "href": "https://www.aena.es/es/pasajeros/documentacion-visados/inmigracion-visados/extranjero-viajas-espana.html"
         }
       ]
     },
     {
       "id": "passaporte",
       "title": "Conferir validade do passaporte e páginas livres",
-      "detail": "Muitos vistos nacionais pedem margem além do período de estadia. Tire cópia da folha de dados e das páginas usadas."
+      "detail": "O quê: o passaporte brasileiro é o documento-base da fronteira e de todo visto. Sem margem de validade o consulado nem protocola.\n\nComo: conte páginas em branco e copie a folha de dados e todas as páginas com carimbo (arquivo + impresso). Se faltar validade, peça outro na Polícia Federal: formulário no gov.br, GRU e cita. Já morando na Espanha, a renovação é no consulado brasileiro — não na polícia espanhola.\n\nQuando: antes da cita do visto, não na semana do voo. A fila da PF come o calendário.\n\nDocumentos para renovar: identidade, CPF, situação eleitoral em dia, foto no padrão da PF, GRU paga e o passaporte antigo. Na viagem, original + cópias.\n\nCusto: a taxa sai na GRU do pedido oficial — confirme o valor do dia no gov.br. Urgência e perda de passaporte ainda válido encarecem. Despachante não fura fila.\n\nRegra de entrada (turismo/Schengen): o Interior pede validade de pelo menos 3 meses depois da saída prevista do espaço Schengen e emissão nos 10 anos anteriores. Visto nacional segue a ficha do posto: nômade e não lucrativa em São Paulo pedem pelo menos 1 ano; vários vistos de trabalho, 4 meses; duas páginas em branco são o pedido clássico.\n\nAlternativa: não embarque só com a foto no celular. Passaporte vencendo no meio da estadia não “estica”.",
+      "links": [
+        { "label": "Guia de documentos", "href": "/guias/documentos-essenciais" },
+        {
+          "label": "Passaporte — Polícia Federal",
+          "href": "https://www.gov.br/pf/pt-br/assuntos/passaporte"
+        },
+        {
+          "label": "Interior — requisitos de entrada",
+          "href": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/extranjeria/regimen-general/entrada-requisitos-y-condiciones/"
+        }
+      ]
     },
     {
       "id": "apostila",
       "title": "Apostilar certidões e antecedentes no Brasil",
-      "detail": "Nascimento, casamento e antecedentes: apostila de Haia em cartório autorizado pelo Conselho Nacional de Justiça (CNJ). Sem isso, a imigração devolve.",
+      "detail": "O quê: Brasil e Espanha são parte da Convenção da Haia. Certidão de nascimento, casamento, união estável, antecedentes e diplomas só entram com apostila — não com “reconhecimento de firma” solto nem legalização no consulado espanhol.\n\nComo (nessa ordem): 1) segunda via recente da certidão; 2) emitir a Certidão de Antecedentes Criminais da Polícia Federal (e a de outro país, se o consulado cobrir o período em que você morou lá); 3) apostilar cada peça no cartório autorizado pelo CNJ; 4) só então traduzir, se o órgão espanhol pedir. A tradução cobre o documento e o texto da apostila. Traduzir antes deixa a apostila de fora.\n\nQuando: com folga antes da cita. A PF informa que a certidão vale 90 dias: se a cita atrasar, emita de novo e apostile a via nova. Consulado brasileiro na Espanha não apostila documento brasileiro.\n\nDocumentos: certidões de estado civil, diploma/histórico se o visto pedir, PDF da PF com código validável (não print recortado). Extrato bancário em geral não se apostila.\n\nCusto: cada apostila custa o equivalente à “procuração sem valor declarado” da tabela do seu estado (Resolução CNJ 228/2016, art. 18), por peça, não por folha. Antecedentes da PF: emissão gratuita. Em São Paulo, muitos papéis em português passam sem tradução; na Espanha, imigração e registro pedem tradutor jurado da lista do Ministério dos Exteriores.\n\nO que não fazer: apostilar certidão velha; deixar para a semana do voo.",
       "links": [
+        { "label": "Guia de documentos", "href": "/guias/documentos-essenciais" },
         {
           "label": "CNJ — Apostila da Haia",
-          "href": "https://www.cnj.jus.br/poder-judiciario/relacoes-internacionais/convenio-da-apostila-da-haia/"
+          "href": "https://www.cnj.jus.br/poder-judiciario/relacoes-internacionais/apostila-da-haia/"
+        },
+        {
+          "label": "Cartórios autorizados",
+          "href": "https://www.cnj.jus.br/poder-judiciario/relacoes-internacionais/apostila-da-haia/cartorios-autorizados/"
+        },
+        {
+          "label": "Antecedentes da PF (gratuito)",
+          "href": "https://www.gov.br/pt-br/servicos/emitir-certidao-de-antecedentes-criminais"
         }
       ]
     },
     {
       "id": "seguro",
       "title": "Contratar o seguro que o visto pede",
-      "detail": "Salve a apólice completa em arquivo e imprima. O cartão do seguro de cartão de crédito quase nunca basta para visto nacional — o consulado pede o texto da cobertura."
+      "detail": "O quê: são dois produtos. Turismo/Schengen pede seguro médico de viagem com urgência, hospital de emergência e repatriação, mínimo 30.000 €, em todo o espaço Schengen e em toda a estadia. Visto nacional (estudos, nômade, não lucrativa, trabalho) pede seguro de doença público ou privado, com seguradora autorizada a operar na Espanha, cobrindo os riscos do SNS (Sistema Nacional de Salud). O de 30.000 € não substitui o segundo.\n\nComo: no visto nacional, busque o nome da seguradora no registro da DGSFP (campo Denominación → Que Contenga). Peça a apólice completa em A4: período contínuo desde o voo, equivalência ao SNS ou “sin copago / sin carencia / sin límite”. São Paulo é estrito (“sem limite”); teto de 30.000 € nessa via é recusa clássica. Turismo: imprima a apólice inteira, não o cartão do banco.\n\nQuando: antes de protocolar. Cobertura a partir do voo. Não cancele na primeira semana: empadronamiento (cadastro na prefeitura) não é alta no sistema de saúde.\n\nDocumentos: apólice completa. Familiar acompanhante, no PDF de estudos de São Paulo, usa os mesmos critérios.\n\nCusto: o de turismo costuma ser dezenas de euros. O médico do visto nacional é outro produto — peça cotação com a apólice. Trocar depois de recusa custa a taxa consular de novo.\n\nO que não passa: cartão de crédito, pacote viagem de 30 dias, plano brasileiro sem registro espanhol.",
+      "links": [
+        { "label": "Guia de seguro", "href": "/guias/seguro-saude-viagem" },
+        {
+          "label": "Registro de seguradoras (DGSFP)",
+          "href": "https://rrpp.dgsfp.mineco.es/"
+        },
+        {
+          "label": "Vistos Schengen — São Paulo",
+          "href": "https://www.exteriores.gob.es/Consulados/saopaulo/pt/ServiciosConsulares/Paginas/Consular/Visados-Schengen.aspx"
+        }
+      ]
     },
     {
       "id": "esim",
       "title": "Comprar eSIM ainda no Brasil",
-      "detail": "eSIM é o chip virtual. Instale o QR no Wi-Fi de casa. Ative ao pousar. Passaporte/dados bastam; o número fiscal de estrangeiro não entra nessa compra.",
+      "detail": "O quê: eSIM é o chip virtual de dados para o desembarque (Maps, banco, agendamento). Não substitui linha espanhola com número +34 para SMS de banco e algumas prefeituras.\n\nComo: confira se o telefone aceita eSIM e não está bloqueado pela operadora brasileira. Compre online com passaporte; o QR chega por e-mail. Instale no Wi-Fi de casa. Ative ao pousar — não no portão, se o plano só funciona na Espanha. O número brasileiro continua no chip físico.\n\nQuando: 1 a 3 dias antes do voo, para testar a instalação. Cobre os primeiros 7–30 dias.\n\nDocumentos: passaporte. O NIE não entra nessa compra.\n\nCusto: compare GB e validade no site. Quiosque de aeroporto costuma empurrar plano de 30–50 € “com ligação para o Brasil”: use só se o eSIM falhou. Roaming brasileiro explode em dois dias de Maps.\n\nAlternativa na primeira semana: pré-pago local com passaporte original. A Lei 25/2007 obriga a registrar nome e documento — não existe SIM anônimo. Digi vende pré-pago na loja com passaporte. Pepephone e Lowi quase sempre pedem NIE, IBAN ou endereço para correio. QR de desconhecido no WhatsApp não instale.",
       "links": [
-        { "label": "Airalo", "href": "https://www.airalo.com" }
+        { "label": "Guia de chip", "href": "/guias/chip-e-transporte" },
+        { "label": "Airalo", "href": "https://www.airalo.com" },
+        { "label": "Digi — pré-pago", "href": "https://www.digimobil.es/movil/prepago" }
       ]
     },
     {
       "id": "banco",
       "title": "Abrir a conta Santander de não residente",
-      "detail": "Online, com passaporte e vídeo, se o Brasil continuar na lista do produto. Código de conta europeu (IBAN espanhol) antes do voo.",
+      "detail": "O quê: a Cuenta Online para No Residentes do Santander Espanha gera IBAN espanhol (24 caracteres, começa com ES) ainda no Brasil, sem NIE. Serve para receber transferência e pagar reserva no dia 1. É conta de não residente.\n\nComo: no site do banco, se o Brasil continuar na lista. O Santander publica: +18 anos, passaporte em vigor, residência fora da Espanha, vídeo (câmera e microfone) e cliente novo. A página indica conta sem comissão de manutenção neste produto — confirme no dia. Se você já for residente fiscal na Espanha, este produto não serve: o banco pede o NIE.\n\nQuando: semanas antes do voo, para o IBAN existir quando pedir hospedagem. Depois do NIE e do empadronamiento, peça a conversão para conta de residente.\n\nDocumentos: passaporte. O canal confiável sem NIE é o online da página do produto, não a promessa de um caixa.\n\nCusto: abertura deste produto sem manutenção, segundo o banco. Para mandar a reserva: IOF 3,5% no câmbio de pessoa física (Decreto nº 12.499/2025) + tarifa da ponte. Simule o seu valor na Wise no dia. Cartão de turismo brasileiro soma IOF e spread — reserve para emergência.\n\nAlternativa: Wise, Revolut ou N26 como ponte; não substituem conta local para muitos aluguéis. BBVA, CaixaBank e Sabadell em balcão quase sempre pedem NIE + endereço. Teste 50–100 € no mesmo IBAN antes de mandar a entrada. Domínio verdadeiro: bancosantander.es — o banco não pede senha por WhatsApp.",
       "links": [
+        { "label": "Guia financeiro", "href": "/guias/planejamento-financeiro" },
+        { "label": "Checklist de conta", "href": "/checklists/conta-bancaria" },
         {
           "label": "Santander — conta com passaporte",
           "href": "https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-online-con-pasaporte"
+        },
+        {
+          "label": "Wise — enviar euro para a Espanha",
+          "href": "https://wise.com/br/send-money/send-money-to-spain"
         }
       ]
     },
     {
       "id": "reserva",
       "title": "Fechar hospedagem dos primeiros dias",
-      "detail": "Endereço inicial ajuda na imigração, no banco e no cadastro na prefeitura. Evite aluguel longo sem visita."
+      "detail": "O quê: um endereço inicial para a imigração, o banco e, depois, o empadronamiento. Não é o contrato de um ano.\n\nComo: feche hotel ou apartamento curto com reserva nominativa, rua, número e código postal. Carta de convite de particular pode servir na fronteira, mas não substitui meios nem passagem de volta. Aluguel longo: visite, leia o contrato, fotografe o estado e só então assine. Idealista ou Fotocasa; anúncio de WhatsApp pedindo sinal “hoje” trate como golpe.\n\nQuando: a estadia curta, antes do voo. A moradia habitual, depois de chegar e andar no bairro.\n\nDocumentos: comprovante de hospedagem ou carta-convite na mala de mão. Passaporte identifica o inquilino; a lei não exige NIE para assinar, mas agência e seguro de fiança preferem NIE, holerite ou reserva alta.\n\nCusto: ordem de grandeza de 10 noites em Airbnb/hotel (não é índice oficial) — 800–1.400 € em Madrid ou Barcelona e 500–900 € em Valência ou Málaga. Moradia habitual: a LAU pede fiança de 1 mês (art. 36) e limita garantia extra a 2 meses; honorários de agência nessa via cabem ao dono (art. 20). Some 2 a 4 meses de aluguel na entrada.\n\nO que não fazer: Pix ou Bizum para “segurar” anúncio sem visita e sem IBAN do titular. Contrato de “temporada” quando você vai morar o ano é o jeito de cobrar comissão.",
+      "links": [
+        { "label": "Guia de aluguel", "href": "/guias/aluguel-na-pratica" },
+        { "label": "Checklist de aluguel", "href": "/checklists/aluguel" }
+      ]
     },
     {
       "id": "dinheiro",
       "title": "Separar os quatro blocos de reserva",
-      "detail": "Primeira semana, depósito de moradia, taxas de trâmite e 2–3 meses de colchão em euro. Veja o guia financeiro.",
+      "detail": "O quê: some os quatro, não só o primeiro. (1) Primeira semana: aeroporto, hospedagem curta, comida, chip. (2) Entrada na moradia: 1º mês + fiança + garantia extra. (3) Trâmites: taxa da polícia, fotos, traduções. (4) Colchão de 2 a 3 meses de aluguel + comida + transporte sem salário espanhol.\n\nComo: abra a conta europeia, avise o banco brasileiro da viagem e leve extratos dos últimos 3 meses na mala de mão. Se a fronteira pedir meios (turismo), o Interior aceita espécie ou cartão com extrato/libreta atualizada — e diz que não admite carta de banco nem extrato só de internet. Quem entra com visto nacional de residência, trabalho ou estudos em vigor está na exceção dessa comprovação.\n\nQuando: feche a reserva em euro antes da passagem. Teste 50–100 € no IBAN espanhol antes de mandar a entrada do aluguel.\n\nCustos de referência (confira no dia): TIE inicial (790-012) 16,08 € e NIE a pedido 9,84 € na tabela da Polícia. Idealista ago. 2026: Madrid 23,3 €/m², Barcelona 20,2, Málaga 16,5, Valência 16,3. Estúdio ~50–60 m²: ordem de 1.150–1.400 € em Madrid, 1.000–1.250 € em Barcelona, 800–1.000 € em Valência/Málaga; quarto 450–700 €. Teto 90 dias, pessoa só: 5.000–9.000 € em Madrid/Barcelona e 3.400–6.100 € em Valência/Málaga. Cartão BR: IOF 3,5%. Caixa do aeroporto: se a comissão na tela estiver alta, cancele.\n\nFronteira turismo: 10% do SMI por pessoa e dia, mínimo 90% do SMI. O Interior, desde 1º de janeiro de 2026, publica 121,10 €/dia e mínimo de 1.098,90 € — confira o número do dia, porque o SMI muda. Leve o bilhete de volta nominativo.\n\nO que não fazer: chegar só com a primeira semana; pagar “encaixe” de cita previa; sinal de imóvel por WhatsApp.",
       "links": [
-        { "label": "Guia financeiro", "href": "/guias/planejamento-financeiro" }
+        { "label": "Guia financeiro", "href": "/guias/planejamento-financeiro" },
+        {
+          "label": "Interior — meios econômicos",
+          "href": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/extranjeria/regimen-general/entrada-requisitos-y-condiciones/"
+        },
+        {
+          "label": "Polícia — taxas 790-012",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tasas.php"
+        }
       ]
     },
     {
       "id": "digital",
       "title": "Organizar pasta digital offline",
-      "detail": "Arquivos nomeados, acessíveis sem chip espanhol: passaporte, visto, seguro, apostilas, código da conta."
+      "detail": "O quê: duas pastas iguais — nuvem baixada no aparelho + envelope físico na bagagem de mão. Se a mala despachada atrasar, você ainda entra e protocola.\n\nComo: nomeie os PDFs com data (2026-casamento-apostila.pdf, não scan(3).pdf). Baixe no celular e no notebook; não dependa do Wi-Fi do aeroporto. Imprima o que a fila da polícia pede em papel. Preencha os formulários oficiais no computador, sem rasura.\n\nQuando: no dia em que cada documento sair, não na véspera. Atualize a pasta se a PF, o seguro ou o visto forem reemitidos.\n\nO que entra: passaporte (folha de dados + páginas carimbadas); visto ou passagem de volta; fotos do visto e 32 × 26 mm da TIE (Tarjeta de Identidad de Extranjero — não é o 3×4 brasileiro); apólice completa; hospedagem; meios; apostilas + PDF da PF; traduções, se pediram; EX-15 (NIE) e EX-17 (TIE); comprovante da taxa 790-012, se já puder gerar; print do IBAN; QR do eSIM; conta de luz da cita consular.\n\nCusto: impressão e envelope. O celular falha na delegacia.\n\nAlternativa: só nuvem ou só porão não serve. Depois de pousar, o roteiro está no checklist da primeira semana.",
+      "links": [
+        { "label": "Guia de documentos", "href": "/guias/documentos-essenciais" },
+        { "label": "Checklist da primeira semana", "href": "/checklists/primeira-semana" },
+        {
+          "label": "Formulários EX-15 e EX-17",
+          "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
+        },
+        {
+          "label": "Gerar taxa 790-012",
+          "href": "https://sede.policia.gob.es/Tasa790_012/"
+        }
+      ]
     },
     {
       "id": "saude",
       "title": "Levar medicamentos, receitas e check-up básico",
-      "detail": "Quantidade para os primeiros meses, com receita e bula junto na mala de mão."
+      "detail": "O quê: estoque dos primeiros meses, receitas com o princípio ativo (não só a marca) e, se o visto pedir, atestado no modelo do consulado com a frase do Regulamento Sanitário Internacional de 2005: você não padece de doença com impacto grave na saúde pública.\n\nComo: remédio contínuo na mala de mão, embalagem original, bula e receita. A AEMPS permite medicação pessoal adequada ao tratamento, em regra até três meses; quantidade maior só justificada. Estupefaciente ou psicotrópico: peça autorização à AEMPS antes (estupefacientes_viajeros@aemps.es) com relatório, receita, bilhete e passaporte em PDF. Receita brasileira não entra na farmácia espanhola — para renovar você precisa de médico na Espanha. Farmácia tem cruz verde; emergência é 112.\n\nQuando: check-up e receitas antes do voo. Atestado perto da cita (o modelo do Rio imprime validade de 90 dias). Estudos até 180 dias em São Paulo estão isentos; acima disso, e na não lucrativa/trabalho, o atestado entra — original apostilado + cópia A4. Cada acompanhante leva o próprio.\n\nDocumentos: receita, relatório, passaporte na consulta, atestado apostilado se a ficha exigir. “Reconhecimento de firma” sozinho não substitui a apostila.\n\nCusto: consulta + apostila do atestado. O convênio especial público (60 €/mês se tiver menos de 65 anos) só depois de um ano de residência — não substitui o seguro do visto agora.\n\nO que não fazer: despachar o contínuo no porão; cancelar o seguro na semana 1; protocolar atestado sem a frase do RSI 2005, sem CRM ou sem apostila.",
+      "links": [
+        { "label": "Guia de seguro e mala", "href": "/guias/seguro-saude-viagem" },
+        { "label": "Saúde nos primeiros meses", "href": "/guias/saude-primeiros-meses" },
+        {
+          "label": "AEMPS — medicamentos do viajante",
+          "href": "https://www.aemps.gob.es/industria-farmaceutica/comercio-exterior/medicamentos-destinados-al-tratamiento-de-los-viajeros/"
+        }
+      ]
     }
   ]
 }

@@ -547,7 +547,7 @@ function ChecklistDocument({ checklist }: { checklist: Checklist }) {
         </Text>
 
         {checklist.items.map((item, index) => (
-          <View key={item.id} style={styles.checkItem} wrap={false}>
+          <View key={item.id} style={styles.checkItem}>
             <View style={styles.checkBox} />
             <View style={styles.checkBody}>
               <Text style={styles.checkStep}>Passo {index + 1}</Text>

@@ -1,8 +1,8 @@
 {
   "slug": "nie",
   "title": "Checklist do NIE (número de estrangeiro)",
-  "description": "Agendamento oficial, formulário de pedido, taxa da polícia e o que levar na delegacia.",
-  "bullets": ["Agendamento oficial", "Formulário e taxa", "O que levar"],
+  "description": "Cita previa oficial, formulário EX-15, taxa 790-012, pasta do dia, foto da TIE e golpe do encaixe.",
+  "bullets": ["Cita previa gratuita", "EX-15 e 790-012", "Pasta e golpes"],
   "stage": "acabei-de-chegar",
   "topics": ["nie", "documentos"],
   "cities": [],
@@ -10,12 +10,30 @@
     {
       "id": "motivo",
       "title": "Definir o motivo concreto da solicitação",
-      "detail": "O formulário EX-15 (pedido de NIE — Número de Identidad de Extranjero, o número fiscal de estrangeiro) pede interesses econômicos, profissionais ou sociais. Escreva o motivo real (abertura de conta, contrato, estudos). Motivo vago é recusa. Se o visto já trouxe NIE, você não precisa deste checklist — vá ao da TIE (o cartão físico)."
+      "detail": "O NIE (Número de Identidad de Extranjero) é o número fiscal de estrangeiro: pessoal, único e sequencial. Não é o cartão. O cartão físico é a TIE (Tarjeta de Identidad de Extranjero). Você pede o número com o formulário EX-15 se for estrangeiro, estiver em situação regular e tiver interesse econômico, profissional ou social na Espanha. A folha da polícia e o art. 205 do RD 1155/2024 exigem que você comunique o motivo. Escreva o motivo real e anexe prova: carta do banco, contrato ou pré-contrato, matrícula, arras de imóvel. “Intereses económicos” sem papel é recusa. Visto nacional e várias resoluções já imprimem o NIE: nesse caso este checklist não serve — vá ao da TIE. Prazo de decisão: cinco dias a contar da entrada do pedido no registro competente. Sem resposta nesse prazo, o silêncio é negativa (desestimatorio), não “ainda está analisando”. Do Brasil, alguns consulados encaminham o pedido à Comisaría General de Extranjería y Fronteras: confira o da sua circunscrição na lista da embaixada, sem inventar posto.",
+      "links": [
+        {
+          "label": "Polícia — atribuição de NIE",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_asignacion_nie.php"
+        },
+        {
+          "label": "RD 1155/2024, art. 205 (BOE)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099"
+        },
+        {
+          "label": "Consulados da Espanha no Brasil",
+          "href": "https://www.exteriores.gob.es/Embajadas/brasilia/pt/Embajada/Paginas/Consulados.aspx"
+        },
+        {
+          "label": "Checklist da TIE",
+          "href": "/checklists/tie-residencia"
+        }
+      ]
     },
     {
       "id": "agendar",
-      "title": "Agendar no portal do Estado",
-      "detail": "O agendamento é obrigatório e gratuito. Província do seu endereço → Polícia Nacional → trâmite de atribuição de NIE (o nome exato varia; costuma ser 'certificados y asignación de NIE'). Imprima o comprovante. Não compre 'encaixe' no WhatsApp: o Ministério avisa que ninguém pode cobrar por marcar horário. Se não houver vaga, tente de manhã cedo e à noite e guarde print datado.",
+      "title": "Agendar no portal do Estado (cita previa)",
+      "detail": "A cita previa (horário marcado) é obrigatória e gratuita. Só no portal do Estado: aceite o aviso, escolha a província do seu endereço e, em seguida, Policía Nacional. O rótulo costuma ser CERTIFICADOS Y ASIGNACIÓN DE NIE (o nome muda um pouco). Não marque TOMA DE HUELLAS (isso é TIE) nem EXTRANJERÍA (autorização). Nome e número do passaporte no agendamento têm de ficar iguais ao documento. Imprima o comprovante (resguardo). Ninguém pode vender a sua vaga. WhatsApp, Telegram ou Instagram pedindo foto do passaporte “para encaixe” entregam a sua identidade a desconhecido: o horário pode ser falso, de outra pessoa, ou o canal some depois do Pix. A Polícia Nacional já desmontou redes com bots que esgotavam o sistema e revendiam cita (a operação pública falou em faixas de dezenas a cerca de 200 €). Se não houver vaga, tente de manhã cedo (7–8 h) e à noite (22–24 h), todos os dias, e guarde print com data e hora de cada “no hay citas disponibles”.",
       "links": [
         {
           "label": "Agendamento oficial",
@@ -24,13 +42,17 @@
         {
           "label": "Polícia — atribuição de NIE",
           "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_asignacion_nie.php"
+        },
+        {
+          "label": "Polícia — desmonte de rede de bots de cita",
+          "href": "https://www.interior.gob.es/opencms/es/detalle/articulo/La-Policia-Nacional-desmantela-un-entramado-que-bloqueaba-el-sistema-de-citas-online-de-extranjeria-mediante-un-bot-informatico/"
         }
       ]
     },
     {
       "id": "formulario",
       "title": "Preencher o formulário EX-15 no computador e imprimir",
-      "detail": "EX-15 é o formulário oficial de pedido de NIE. Nome idêntico ao passaporte. Sem rasura. Baixe só do Ministério, nunca de blog.",
+      "detail": "O EX-15 (Solicitud de Número de Identidad de Extranjero y Certificados) é o impresso oficial do pedido. Baixe só da lista de modelos do Ministério — há PDF editável. O formulário é gratuito; “EX-15 preenchido” à venda é golpe. Preencha no computador, em maiúsculas, sem rasura. Marque só NÚMERO DE IDENTIDAD DE EXTRANJERO (NIE). As caixas de certificado de residente / não residente são outro papel no mesmo impresso: não misture. 1.º e 2.º apelidos: copie o passaporte, inclusive o segundo sobrenome. Não inverta nome e sobrenome. Motivo concreto no campo e na carta anexa. Assine com caneta preta, igual à assinatura do passaporte. O rodapé pede original e cópia: imprima duas vias A4.",
       "links": [
         {
           "label": "Formulários oficiais (EX-15)",
@@ -41,43 +63,91 @@
     {
       "id": "taxa",
       "title": "Pagar a taxa da polícia 790 código 012",
-      "detail": "Gere o modelo, pague no banco ou canal online colaborador e leve o comprovante original. O valor muda no diário oficial; confira o vigente no gerador.",
+      "detail": "A taxa da polícia do número é o modelo 790 código 012, fato “Asignación de Número de Identidad de Extranjero (NIE) a instancia del interesado”. A folha oficial da polícia lista 9,84 € — confirme no gerador no dia do pagamento; a lei de orçamento pode atualizar (ordem ministerial vigente: PJC/617/2025). Não é a 790-052 (autorização na imigração) nem a 790-026 (nacionalidade). Dentro do 790-012, não marque TIE de primeira concessão (hoje 16,08 € na mesma folha): queima o agendamento. 1) Abra o gerador oficial. 2) Identifique-se com o passaporte (ou com o NIE, se já tiver). 3) Marque o fato de atribuição do número. 4) Se ainda não tiver IBAN espanhol, escolha pagamento en efectivo. 5) Baixe, imprima e assine. 6) Pague em banco, caixa de poupança ou cooperativa: a polícia informa que não precisa ser cliente; alguns caixas leem o código de barras. 7) Leve o justificante original carimbado. Print do celular sozinho costuma ser recusado. NIE e TIE não compartilham o mesmo fato: a coleta de digitais pede outra linha.",
       "links": [
         {
           "label": "Gerar taxa 790-012",
           "href": "https://sede.policia.gob.es/Tasa790_012/"
+        },
+        {
+          "label": "Polícia — importes das taxas",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tasas.php"
+        },
+        {
+          "label": "Orden PJC/617/2025 (BOE)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-12056"
         }
       ]
     },
     {
       "id": "docs",
-      "title": "Montar a pasta do dia",
-      "detail": "Passaporte original e cópia da folha de dados (e páginas carimbadas), EX-15 assinado, comprovante da taxa, prova do motivo (carta do banco, contrato, matrícula), comprovante do agendamento e caneta. Leve cópia extra: a delegacia fica com uma via."
+      "title": "Montar a pasta do dia (e a foto certa)",
+      "detail": "Monte duas pastas iguais; a delegacia fica com uma. Leve: passaporte original e cópia da folha de dados e das páginas carimbadas; EX-15 assinado (original + cópia); justificante da 790-012 carimbado; prova do motivo; comprovante da cita impresso; caneta preta. A folha da polícia do NIE lista EX-15 e taxa — não lista fotografia. A foto 32 × 26 mm, fundo branco, tamaño carné (não é o 3×4 brasileiro de 4 × 3 cm) é da TIE, no EX-17. Tire o envelope 32 × 26 mm se a sua autorização exigir cartão; não leve 3×4 achando que substitui. Algumas oficinas fotografam na hora na coleta de digitais: não conte com isso. PDF no celular não substitui papel.",
+      "links": [
+        {
+          "label": "Interior — foto 32 × 26 mm do DNI",
+          "href": "https://www.interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/dni/documentacion-necesaria-para-su-tramitacion/"
+        },
+        {
+          "label": "Guia de NIE e primeiros trâmites",
+          "href": "/guias/nie-primeiros-tramites"
+        }
+      ]
     },
     {
       "id": "copias",
       "title": "Levar cópia extra de tudo",
-      "detail": "Delegacia pede uma via para o arquivo. Leve cópia extra de tudo e uma caneta."
+      "detail": "A delegacia arquiva uma via. Tire cópia A4 nítida da folha de dados do passaporte (com a zona de leitura da máquina) e das páginas com carimbo de entrada ou visto. Não recorte o número. Duas coleções completas: EX-15, taxa, prova do motivo e cita. Uma terceira via no fundo da mochila resolve cópia borrada. Não plastifique. Não entregue o passaporte original para “o senhor da fila fazer as cópias” — use copistería com você ao lado. O PDF na tela não vale como via de arquivo.",
+      "links": [
+        {
+          "label": "Guia de NIE e primeiros trâmites",
+          "href": "/guias/nie-primeiros-tramites"
+        }
+      ]
     },
     {
       "id": "endereco",
       "title": "Confirmar endereço e horário no dia anterior",
-      "detail": "O comprovante traz o endereço da oficina. Chegue com folga: segurança e fila."
+      "detail": "O comprovante da cita traz o endereço da oficina (comisaría ou oficina de extranjería). Confira no mapa na véspera e o meio de transporte. Horário de Madrid não cobre quem mora em outra província: a cita é da província do seu endereço. Chegue 15–20 min antes: segurança e fila. Feriado local ou greve: o portal não avisa na porta. Se perder o horário, em geral recomeça a fila no site. Leve o endereço impresso; o sinal no saguão cai."
     },
     {
       "id": "comparecer",
       "title": "Comparecer e não improvisar trâmite",
-      "detail": "Se o horário for de NIE (número), não tente resolver TIE (cartão) no mesmo balcão. Celular no silencioso."
+      "detail": "No dia: controle de segurança, fila e apresentação do comprovante da cita. No balcão conferem passaporte × EX-15 × taxa × motivo. Ficam com uma via. Celular no silencioso. Se o horário for de atribuição de NIE, não tente “já que estou aqui” resolver TIE ou digitais: é outro trâmite, outra cita. Responda só o motivo que você documentou. Algumas oficinas entregam o papel com o número no mesmo dia; outras notificam dentro de cinco dias. Sem resposta nesse prazo, o regulamento conta recusa — não espere o papel “cair na caixa”. Não pague ninguém na fila para “acelerar”. Recurso de reposición: 1 mês perante o mesmo órgão; via contencioso-administrativa: 2 meses (folha da polícia).",
+      "links": [
+        {
+          "label": "Polícia — atribuição de NIE",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_asignacion_nie.php"
+        }
+      ]
     },
     {
       "id": "protocolo",
       "title": "Fotografar o comprovante",
-      "detail": "O papel com o NIE é o documento até sair a TIE. Fotografe e escaneie no mesmo dia."
+      "detail": "O papel com o NIE (resolução ou EX-15 selado) é o documento até sair a TIE. Fotografe e escaneie no mesmo dia, ainda na rua: na delegacia o celular falha. Guarde o original numa capa, sem dobrar o selo, e uma cópia na nuvem ou no e-mail. Bancos e a Receita (Hacienda) pedem o número sem espaço nem hífen. Não publique o documento inteiro em rede social. Se só lhe devolverem uma cópia carimbada do EX-15, esse é o recibo até a notificação. Perdeu o papel: volte à mesma oficina com o passaporte e pergunte a via oficial (certificado ou cópia do expediente). Não compre “2.ª via” em Instagram."
     },
     {
       "id": "acompanhar",
       "title": "Avançar cadastro na prefeitura, banco e TIE",
-      "detail": "NIE sozinho não substitui o cartão se a sua autorização exige TIE. Siga o checklist de TIE e o de cadastro na prefeitura."
+      "detail": "O NIE sozinho não substitui o cartão se a sua autorização exige TIE (em regra, permanência de mais de seis meses: art. 209 do RD 1155/2024). O prazo típico para pedir o cartão é de um mês a contar da entrada, da concessão ou de quando a autorização passa a valer. Siga o checklist da TIE: EX-17, outra linha da 790-012, foto 32 × 26 mm e digitais. Em paralelo: empadronamiento (cadastro na prefeitura) e conta. Não pague de novo o fato de atribuição do número. A ordem da primeira semana está no guia dos primeiros 30 dias; o tutorial longo, com valores e nomes do portal, no guia de NIE.",
+      "links": [
+        {
+          "label": "Checklist da TIE",
+          "href": "/checklists/tie-residencia"
+        },
+        {
+          "label": "Checklist do empadronamiento",
+          "href": "/checklists/empadronamiento"
+        },
+        {
+          "label": "Guia de NIE e primeiros trâmites",
+          "href": "/guias/nie-primeiros-tramites"
+        },
+        {
+          "label": "Primeiros 30 dias",
+          "href": "/guias/primeiros-30-dias"
+        }
+      ]
     }
   ]
 }

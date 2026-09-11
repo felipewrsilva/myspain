@@ -1,64 +1,211 @@
 {
   "slug": "autonomo-inicio",
   "title": "Checklist para começar como autónomo",
-  "description": "Alta na previdência e na Receita, fatura, imposto sobre as vendas (IVA), imposto de renda e reserva de imposto.",
-  "bullets": ["Alta na previdência", "IVA e imposto de renda", "Reserva de imposto"],
+  "description": "Mini-guia depois da autorização de residência que permite conta própria: certificado digital, alta na Hacienda (modelo 036), alta no RETA e os custos do mês.",
+  "bullets": ["Autorização primeiro", "Certificado, Hacienda e RETA", "Custos do mês"],
   "stage": "ja-moro",
   "topics": ["trabalho", "impostos"],
   "cities": [],
   "items": [
     {
       "id": "autorizacao",
-      "title": "Confirmar que a sua residência permite trabalhar por conta própria",
-      "detail": "Autónomo é quem trabalha por conta própria (parecido com o MEI brasileiro). Visto não lucrativo não permite. Estudos têm teto de horas. Nômade limita cliente espanhol. Sem autorização, a alta de autónomo não regulariza a imigração.",
+      "title": "Só avançar se a residência já permitir conta própria",
+      "detail": "Este checklist começa depois da autorização de residência que permite trabalhar por conta própria. Autónomo é quem fatura em nome próprio (parecido com o MEI brasileiro, com regras espanholas). A alta na Receita (Hacienda) e no RETA (Régimen Especial de Trabajadores Autónomos, a previdência de quem trabalha por conta própria) não regulariza a imigração.\n\nLeia o verso da TIE (Tarjeta de Identidad de Extranjero, o cartão) e a resolução: tem de constar cuenta propia, ou cuenta ajena y propia. Só cuenta ajena não basta. Visto não lucrativo não permite. Estudos têm teto de horas e, em regra, não abrem autónomo pleno. Nômade digital limita cliente espanhol a 20% da atividade. Turista não pode faturar.\n\nQuem entrou com autorização inicial de conta própria: alta na Hacienda e no RETA em até 3 meses após chegar e antes da primeira fatura; TIE em 1 mês após a alta. A Tesouraria pede NIE (Número de Identidad de Extranjero), Número da Segurança Social (NUSS) e o permiso de trabajo y residencia. Sem isso, pare aqui.",
       "links": [
-        { "label": "Guia de visto", "href": "/guias/visto-e-residencia" }
+        {
+          "label": "Guia de visto e residência",
+          "href": "/guias/visto-e-residencia"
+        },
+        {
+          "label": "Autorização inicial por conta própria",
+          "href": "https://www.inclusion.gob.es/web/migraciones/w/autorizacion-inicial-de-residencia-temporal-y-trabajo-por-cuenta-propia"
+        },
+        {
+          "label": "Checklist da TIE",
+          "href": "/checklists/tie-residencia"
+        }
       ]
     },
     {
-      "id": "asesor",
-      "title": "Escolher gestor para os primeiros trimestres",
-      "detail": "Cadastro fiscal, código de atividade econômica e regime de IVA (imposto sobre as faturas) errados saem caro. A mensalidade do contador costuma ser menor que a multa."
+      "id": "certificado",
+      "title": "Tirar o certificado digital da FNMT (e o login Cl@ve)",
+      "detail": "Sem identificação eletrônica a alta online emperra. A FNMT (Fábrica Nacional de Moneda y Timbre) emite o certificado de pessoa física de graça. Ordem: 1) solicite em sede.fnmt.gob.es e guarde o código do e-mail; 2) apareça pessoalmente numa oficina de acreditação (Receita, previdência ou outra da lista oficial — não nos Correos); 3) baixe no mesmo computador, o quanto antes. Brasileiro: TIE ou papel de concessão do NIE e passaporte original. Cita previa (agendamento) costuma ser obrigatória na AEAT e na Segurança Social.\n\nCl@ve é o login comum da administração (PIN, Permanente ou app). Com o certificado, o registro avançado sai pela internet. Não envie PIN, certificado nem captura de tela a “gestor” de WhatsApp. A Agencia Tributaria não cobra multa por SMS com link fora de .gob.es.",
+      "links": [
+        {
+          "label": "FNMT — certificado de cidadão",
+          "href": "https://www.sede.fnmt.gob.es/certificados/persona-fisica"
+        },
+        {
+          "label": "FNMT — acreditar identidade",
+          "href": "https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-software-ecc/acreditar-identidad"
+        },
+        {
+          "label": "Cl@ve",
+          "href": "https://clave.gob.es"
+        },
+        {
+          "label": "Guia de impostos (login)",
+          "href": "/guias/impostos-organizacao"
+        }
+      ]
     },
     {
-      "id": "alta",
-      "title": "Fazer alta na previdência e na Receita antes de faturar",
-      "detail": "O regime de autónomos na Segurança Social é a previdência de quem trabalha por conta própria. O cadastro na Agencia Tributaria é a Receita. Data de início alinhada nas duas.",
+      "id": "nuss",
+      "title": "Confirmar o Número da Segurança Social (NUSS)",
+      "detail": "O NUSS (também chamado NAF, Número de Afiliación) identifica você na previdência. Sem ele a alta no RETA não fecha. Se você já teve tarjeta sanitaria ou contrato na Espanha, o número provavelmente já existe: consulte a área pessoal do Importass (portal da Tesouraria). Se não tiver, peça em “Solicitar el número de la Seguridad Social”, com certificado ou Cl@ve. Dá para pedir sem login (selfie + foto do documento), mas o certificado evita atraso. A própria alta de autónomo no Importass também pode atribuir o NUSS no mesmo trâmite.",
       "links": [
-        { "label": "Segurança Social", "href": "https://www.seg-social.es" },
-        { "label": "Agencia Tributaria", "href": "https://sede.agenciatributaria.gob.es" }
+        {
+          "label": "Importass — pedir o NUSS",
+          "href": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Solicitar+el+numero+de+la+Seguridad+Social"
+        },
+        {
+          "label": "Importass — início",
+          "href": "https://portal.seg-social.gob.es/wps/portal/importass/importass/inicio"
+        }
       ]
     },
     {
       "id": "conta",
-      "title": "Separar conta para receber clientes",
-      "detail": "Conta espanhola de residente (código IBAN, começa com ES) ajuda. Não misture aluguel e material de trabalho no mesmo extrato se puder evitar."
+      "title": "Ter IBAN espanhol (ES) para o débito da quota",
+      "detail": "Na alta do RETA você informa uma conta para domiciliar a quota: o cargo cai no último dia útil do mês. O IBAN espanhol tem 24 caracteres e começa com ES. Tem de ser conta da qual você é titular (ou ter autorização do titular). Conta de não residente às vezes recusa o débito da Tesouraria — peça a passagem a conta de residente com NIE. Separe, se puder, o extrato de aluguel e supermercado do da atividade: a Receita olha movimento se cruzar dados.",
+      "links": [
+        {
+          "label": "Checklist de conta bancária",
+          "href": "/checklists/conta-bancaria"
+        }
+      ]
+    },
+    {
+      "id": "hacienda",
+      "title": "Alta censal na Hacienda: modelo 036 antes de faturar",
+      "detail": "A Hacienda (Agencia Tributaria) é a Receita espanhola. O modelo 036 é a declaração censal de alta no Censo de empresarios, profesionales y retenedores. Apresente antes de iniciar a atividade, da primeira fatura, de cobrar, de pagar fornecedor ou de contratar. O modelo 037 (versão simplificada) foi suprimido em 3 de fevereiro de 2025: use só o 036. Pessoa física na Península e Baleares: Censos WEB na sede, com certificado ou Cl@ve. Quem mora no País Vasco ou em Navarra trata com a Hacienda foral, não com esta sede.\n\nNo 036 você escolhe o epígrafe do IAE (Impuesto sobre Actividades Económicas) e o CNAE. Use o buscador oficial: epígrafe errado muda IVA e retenção. Pessoa física está isenta de pagar o IAE; o epígrafe entra no 036, não é uma taxa mensal. Marque regime de IVA (geral 21% na maior parte dos serviços; há isenções) e IRPF em estimação direta. Cliente na UE: peça inclusão no ROI (Registro de Operadores Intracomunitarios) no próprio 036. Guarde o justificante com CSV. A data de início tem de coincidir com a do RETA.",
+      "links": [
+        {
+          "label": "Quando fazer a alta censal",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/censos-nif-domicilio-fiscal/tramites-censales-relacionados-empresarios-profesionales-retenedores/darme-alta-censo-empresarios-profesionales-retenedores.html"
+        },
+        {
+          "label": "Prazo do modelo 036",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/censos/plazo-presentacion-modelo-306-037.html"
+        },
+        {
+          "label": "Censos WEB e modelo 036",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-actividades-economicas/modelos-036-037.html"
+        },
+        {
+          "label": "Buscador de IAE",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/ayuda/herramientas-asistencia-virtual/herramientas-asistencia-virtual-censos-iae.html"
+        },
+        {
+          "label": "Pessoa física isenta de IAE",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/declaraciones-informativas-otros-impuestos-tasas/impuesto-sobre-actividades-economicas/tengo-que-presentar-declaracion-iae.html"
+        }
+      ]
+    },
+    {
+      "id": "reta",
+      "title": "Alta no RETA no Importass, na mesma data",
+      "detail": "O RETA é o regime da Segurança Social de quem trabalha por conta própria. Trâmite: Importass → Altas, bajas y modificaciones → Alta en trabajo autónomo. Prazo: no dia em que começa ou até 60 dias antes. Fora de prazo, a alta vale o dia 1.º daquele mês, você perde a tarifa plana e pode haver recargo (acréscimo). A Tesouraria avisa multa de 3.750 a 12.000 € se começar a atividade sem alta.\n\nLeve na tela: NIE, NUSS, data de início igual à do 036, epígrafe IAE e CNAE, domicílio da atividade, previsão de rendimentos líquidos mensais, Mutua colaboradora (a entidade que cobre baixa e acidente) e IBAN. Estrangeiro de fora da UE: NIE + NUSS + permiso de trabajo y residencia. Marque a tarifa plana no próprio formulário se for a primeira alta (ou se passou 2 anos fora do RETA; 3 anos se já usou o benefício). Até 3 altas no ano podem valer no dia do início; as outras cobram o mês inteiro. Baixe o justificante no mesmo dia.",
+      "links": [
+        {
+          "label": "Importass — alta em trabalho autónomo",
+          "href": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Alta_trabajo_autonomo"
+        },
+        {
+          "label": "Guia prática RETA (Importass)",
+          "href": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo+Autonomo/Guia"
+        },
+        {
+          "label": "Ordem de cotização 2026 (BOE)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-7296"
+        }
+      ]
+    },
+    {
+      "id": "custos",
+      "title": "Fechar os custos do mês (quota, IVA, IRPF)",
+      "detail": "Certificado FNMT: 0 €. Modelo 036: sem taxa. A quota do RETA não é zero. Em 2026 a tarifa plana da Tesouraria é 80 €/mês nos primeiros 12 meses, mais o MEI (Mecanismo de Equidad Intergeneracional, 0,9%): total 88,64 €. Prorroga outros 12 meses se os rendimentos líquidos ficarem abaixo do salário mínimo, com pedido no Importass antes de acabar o primeiro ano. Sem tarifa plana, a quota sai da base × tipos da ordem PJC/297/2026 (28,30% contingências comuns + 1,30% profissionais + 0,90% MEI + 0,90% cese de actividad + 0,10% formação = 31,50%). Na base mínima do tramo 1 da tabela geral (950,98 €) isso dá cerca de 300 €/mês. Há tabela reduzida se a previsão ficar abaixo de 1.166,70 €/mês (base mínima 653,59 €). A Tesouraria regulariza no ano seguinte com os dados da renda.\n\nAlém da quota: IVA que você cobra na fatura não é seu (alíquota geral 21%; confira a da atividade). IRPF: profissional em regra sofre retenção de 15% na fatura (7% no ano de início e nos dois seguintes, se comunicar ao cliente). Sem retenção suficiente, o modelo 130 antecipa 20% do rendimento líquido do trimestre. Gestor: a mensalidade costuma ser menor que a multa de um 303 fora do prazo; peça orçamento, não invente valor. Não misture CNPJ brasileiro se você já é residente fiscal espanhol.",
+      "links": [
+        {
+          "label": "Guia prática RETA — tarifa plana",
+          "href": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo+Autonomo/Guia"
+        },
+        {
+          "label": "Tipos de retenção de IRPF",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_1-cuadro-relacion-tipos-retencion-porcentaje.html"
+        },
+        {
+          "label": "Guia de impostos",
+          "href": "/guias/impostos-organizacao"
+        }
+      ]
+    },
+    {
+      "id": "asesor",
+      "title": "Decidir se precisa de gestor nos primeiros trimestres",
+      "detail": "Com certificado você mesmo apresenta o 036 e o RETA. O que costuma sair caro é epígrafe, regime de IVA ou estimação de IRPF errados, não a alta em si. Um gestor (asesor fiscal) que você escolheu — NIF visível, contrato, nunca Instagram “alta em 24 h” — ajuda a fechar 303 e 130. Não envie Cl@ve nem o arquivo do certificado. Este site não indica escritório. A mensalidade, quando existe, compare com a multa de declaração fora do prazo, não com “visto garantido”.",
+      "links": [
+        {
+          "label": "Guia de trabalho e contrato",
+          "href": "/guias/trabalho-e-contrato"
+        }
+      ]
     },
     {
       "id": "fatura",
-      "title": "Configurar fatura com número fiscal, numeração e dados",
-      "detail": "O número fiscal (NIF) identifica você na Receita. Série em ordem, IVA quando couber, forma de pagamento. Sem isso a declaração trimestral de IVA não fecha."
-    },
-    {
-      "id": "reserva",
-      "title": "Reservar IVA, imposto de renda e contribuição todo mês",
-      "detail": "IVA é o imposto das faturas. Imposto de renda é o IRPF. Contribuição é o que vai para a previdência. O que entra na conta não é lucro. Separe antes de gastar."
-    },
-    {
-      "id": "modelos",
-      "title": "Colocar as declarações 303 e 130 no calendário trimestral",
-      "detail": "Modelo 303 é o IVA trimestral. Modelo 130 é a antecipação do imposto de renda. Prazos oficiais na sede da Receita. Atraso gera acréscimo.",
+      "title": "Montar a fatura com NIF, série e impostos",
+      "detail": "O NIF (Número de Identificación Fiscal) do autónomo pessoa física é o próprio NIE. Cada fatura: número em série contínua, data, seus dados e NIF, dados e NIF do cliente, descrição, base, IVA quando couber, retenção de IRPF se for atividade profissional, forma de pagamento. Sem isso o modelo 303 não fecha. Cliente espanhol profissional: em regra 15% de IRPF (7% no início, se você avisou). Cliente particular muitas vezes não retém: aí entra o 130. Não emita nota brasileira “enquanto o 036 não sai”. Não fature no dia da alta se a data de início no 036/RETA for posterior.",
       "links": [
         {
-          "label": "Sede da Receita espanhola",
+          "label": "Sede da Agencia Tributaria",
           "href": "https://sede.agenciatributaria.gob.es"
         }
       ]
     },
     {
+      "id": "reserva",
+      "title": "Separar quota, IVA e IRPF todo mês, antes de gastar",
+      "detail": "O que entra no IBAN não é lucro. No mesmo dia em que o cliente paga, desvie para uma subconta ou poupança: quota do RETA (88,64 € na tarifa plana de 2026, ou a quota do seu tramo), o IVA das faturas e o IRPF (retenção já descontada pelo cliente ou os 20% do 130). Só então gaste o resto. A quota debita no último dia útil; se a conta estiver zerada, a Tesouraria cobra recargo. Não use o IVA para aluguel.",
+      "links": [
+        {
+          "label": "Guia de planejamento financeiro",
+          "href": "/guias/planejamento-financeiro"
+        }
+      ]
+    },
+    {
+      "id": "modelos",
+      "title": "Colocar 303 e 130 no calendário trimestral",
+      "detail": "Modelo 303: autoliquidação do IVA. Prazo oficial: 1–20 de abril, julho e outubro; o 4.º trimestre, 1–30 de janeiro. Se domiciliar o pagamento, a data antecipa (no calendário 2026, em regra até o dia 15 nos três primeiros e até 27 de janeiro no 4.º). Modelo 130: pagamento fracionado do IRPF em estimação direta, 20% do rendimento líquido acumulado no ano. Mesmos trimestres; o 4.º também até 30 de janeiro. Profissional cuja fatura já leva retenção em pelo menos 70% dos ingressos (no trimestre, se for o primeiro ano) pode ficar dispensado do 130. Autónomo declara a renda anual (modelo 100) mesmo com poucos meses de alta. Atraso gera acréscimo. Apresente com certificado ou Cl@ve na sede.",
+      "links": [
+        {
+          "label": "Prazos do modelo 303 (IVA)",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/iva/presentar-declaracion-iva-modelo-303/plazo-presentacion-modelo-303.html"
+        },
+        {
+          "label": "Instruções do modelo 130",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html"
+        },
+        {
+          "label": "Calendário do contribuinte 2026",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026.html"
+        }
+      ]
+    },
+    {
       "id": "controle",
-      "title": "Planilha semanal de receitas e despesas",
-      "detail": "Não acumule o trimestre inteiro na véspera da declaração. Atualize a planilha toda semana."
+      "title": "Planilha semanal e baixa se a atividade parar",
+      "detail": "Atualize receitas, IVA, retenções e gastos dedutíveis toda semana. Não acumule o trimestre na véspera do 303. Guarde PDF das faturas e dos justificantes de alta. Se a atividade acabar, apresente baixa no 036 (1 mês após o cese) e baixa no RETA no Importass (pode ser até 60 dias antes; fora de prazo a baixa vale o último dia do mês). Alta e baixa sem comunicar geram quota de mês inteiro. Autónomo sempre entra na campanha da renda: o rascunho não traz faturas sozinho.",
+      "links": [
+        {
+          "label": "Guia de impostos",
+          "href": "/guias/impostos-organizacao"
+        },
+        {
+          "label": "Importass — trabalho autónomo",
+          "href": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo+Autonomo/Guia"
+        }
+      ]
     }
   ]
 }
