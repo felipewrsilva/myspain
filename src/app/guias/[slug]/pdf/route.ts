@@ -15,15 +15,27 @@ export async function GET(_request: Request, { params }: { params: Promise<{ slu
     return new NextResponse("Guia não encontrado", { status: 404 });
   }
 
-  const pdf = await renderMarkdownPdf({
+  const payload = {
     title: item.title,
     description: item.description,
     content: item.content,
     kicker: "Guia",
     path: `/guias/${slug}`,
-  });
-  const body = new Uint8Array(pdf);
+  };
 
+  let pdf: Buffer;
+  try {
+    pdf = await renderMarkdownPdf(payload);
+  } catch (error) {
+    console.error("PDF render failed", slug, error);
+    pdf = await renderMarkdownPdf({
+      ...payload,
+      content:
+        "Leia este guia no site. O arquivo PDF não pôde ser montado automaticamente; o conteúdo completo está na página web.",
+    });
+  }
+
+  const body = new Uint8Array(pdf);
   return new NextResponse(body, {
     headers: {
       "Content-Type": "application/pdf",

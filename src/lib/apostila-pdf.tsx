@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     marginBottom: 5,
     paddingLeft: 2,
+    width: 491,
   },
   bullet: {
     width: 18,
@@ -138,7 +139,7 @@ const styles = StyleSheet.create({
     color: "#c8102e",
   },
   liBody: {
-    flex: 1,
+    width: 473,
     color: "#2c3540",
   },
   quote: {
@@ -167,7 +168,6 @@ const styles = StyleSheet.create({
     borderBottomColor: "#d7e0e7",
   },
   th: {
-    flex: 1,
     padding: 8,
     backgroundColor: "#f0f4f7",
     fontFamily: "Source Sans",
@@ -175,7 +175,6 @@ const styles = StyleSheet.create({
     fontSize: 9.5,
   },
   td: {
-    flex: 1,
     padding: 8,
     fontSize: 9.5,
     lineHeight: 1.4,
@@ -249,6 +248,7 @@ const styles = StyleSheet.create({
 
 function stripMdx(source: string) {
   return source
+    .replace(/<PdfBreak\s*\/>/g, "\n\n:::pdf-break:::\n\n")
     .replace(/<CoverImage[\s\S]*?\/>/g, "\n")
     .replace(/<YouTube([^/]*)\/>/g, (_match, attrs: string) => {
       const title = /title="([^"]*)"/.exec(attrs)?.[1];
@@ -266,6 +266,7 @@ function stripMdx(source: string) {
       const text = body.replace(/\s+/g, " ").trim();
       return `\n\n> **${label}.** ${text}\n\n`;
     })
+    .replace(/\r?\n## Fontes[\s\S]*$/i, "\n\nAs fichas oficiais e os links .gob.es estão na versão online deste guia.\n")
     .trim();
 }
 
@@ -318,7 +319,66 @@ function listItemNodes(item: List["children"][number]): PhrasingContent[] {
   return [];
 }
 
-function renderBlock(node: RootContent, key: number | string) {
+function phrasingLength(nodes: PhrasingContent[]): number {
+  let total = 0;
+  for (const node of nodes) {
+    if (node.type === "text") total += node.value.length;
+    else if ("children" in node && Array.isArray(node.children)) {
+      total += phrasingLength(node.children as PhrasingContent[]);
+    }
+  }
+  return total;
+}
+
+function isPdfBreak(node: RootContent) {
+  if (node.type !== "paragraph") return false;
+  return (
+    node.children
+      .map((child) => (child.type === "text" ? child.value : ""))
+      .join("")
+      .trim() === ":::pdf-break:::"
+  );
+}
+
+function quoteLength(node: RootContent) {
+  if (node.type !== "blockquote") return 0;
+  return node.children.reduce((sum, child) => {
+    if (child.type === "paragraph") return sum + phrasingLength(child.children);
+    return sum;
+  }, 0);
+}
+
+function isCompactFollow(node: RootContent) {
+  if (isPdfBreak(node) || node.type === "table") return false;
+  if (node.type === "blockquote") return quoteLength(node) <= 280;
+  if (node.type === "paragraph") return phrasingLength(node.children) <= 240 && !phrasingHasLink(node.children);
+  if (node.type === "list" && node.children.length <= 2) {
+    const items = node.children.map(listItemNodes);
+    const total = items.reduce((sum, body) => sum + phrasingLength(body), 0);
+    return total <= 180 && items.every((body) => !phrasingHasLink(body));
+  }
+  return false;
+}
+
+function phrasingHasLink(nodes: PhrasingContent[]): boolean {
+  return nodes.some((node) => {
+    if (node.type === "link") return true;
+    if ("children" in node && Array.isArray(node.children)) {
+      return phrasingHasLink(node.children as PhrasingContent[]);
+    }
+    return false;
+  });
+}
+
+function renderBlock(node: RootContent, key: number | string, skipHeavyBlocks = false) {
+  if (isPdfBreak(node)) {
+    return <View key={key} break />;
+  }
+
+  if (skipHeavyBlocks && (node.type === "list" || node.type === "table")) {
+    return null;
+  }
+
   switch (node.type) {
     case "heading":
       return (
@@ -335,20 +395,22 @@ function renderBlock(node: RootContent, key: number | string) {
     case "list":
       return (
         <View key={key} style={styles.list}>
-          {node.children.map((item, itemIndex) => (
-            <View key={itemIndex} style={styles.li} wrap={false}>
-              <Text style={styles.bullet}>{node.ordered ? `${itemIndex + 1}.` : "•"}</Text>
-              <Text style={styles.liBody}>
-                <Inline nodes={listItemNodes(item)} />
+          {node.children.map((item, itemIndex) => {
+            const body = listItemNodes(item);
+            const mark = node.ordered ? `${itemIndex + 1}. ` : "• ";
+            return (
+              <Text key={itemIndex} style={styles.p}>
+                {mark}
+                <Inline nodes={body} />
               </Text>
-            </View>
-          ))}
+            );
+          })}
         </View>
       );
     case "blockquote": {
       const paragraph = node.children.find((child) => child.type === "paragraph");
       return (
-        <View key={key} style={styles.quote} minPresenceAhead={56}>
+        <View key={key} style={styles.quote} minPresenceAhead={40}>
           <Text style={styles.quoteText}>
             {paragraph ? <Inline nodes={paragraph.children} /> : null}
           </Text>
@@ -362,43 +424,54 @@ function renderBlock(node: RootContent, key: number | string) {
   }
 }
 
-function Blocks({ nodes }: { nodes: RootContent[] }) {
+function Blocks({ nodes, skipHeavyBlocks = false }: { nodes: RootContent[]; skipHeavyBlocks?: boolean }) {
   const elements: Array<ReturnType<typeof renderBlock>> = [];
 
   for (let index = 0; index < nodes.length; index += 1) {
     const node = nodes[index];
     const next = nodes[index + 1];
-    const keepWithNext =
-      node.type === "heading" && next && next.type !== "heading";
+    const keepWithNext = node.type === "heading" && next && isCompactFollow(next);
 
     if (keepWithNext) {
       elements.push(
-        <View key={index} wrap={false} minPresenceAhead={28}>
-          {renderBlock(node, "heading")}
-          {renderBlock(next, "body")}
+        <View key={index} wrap={false} minPresenceAhead={36}>
+          {renderBlock(node, "heading", skipHeavyBlocks)}
+          {renderBlock(next, "body", skipHeavyBlocks)}
         </View>,
       );
       index += 1;
       continue;
     }
 
-    elements.push(renderBlock(node, index));
+    elements.push(renderBlock(node, index, skipHeavyBlocks));
   }
 
   return elements;
 }
 
+function flattenInline(nodes: PhrasingContent[]): string {
+  return nodes
+    .map((node) => {
+      if (node.type === "text") return node.value;
+      if (
+        (node.type === "link" || node.type === "strong" || node.type === "emphasis") &&
+        "children" in node
+      ) {
+        return flattenInline(node.children as PhrasingContent[]);
+      }
+      if (node.type === "inlineCode") return node.value;
+      return "";
+    })
+    .join("");
+}
+
 function PdfTable({ node }: { node: Table }) {
   return (
-    <View style={styles.table} wrap={false} minPresenceAhead={80}>
+    <View style={{ marginBottom: 14, marginTop: 4 }}>
       {node.children.map((row, rowIndex) => (
-        <View key={rowIndex} style={styles.tr} wrap={false}>
-          {row.children.map((cell, cellIndex) => (
-            <Text key={cellIndex} style={rowIndex === 0 ? styles.th : styles.td}>
-              <Inline nodes={cell.children} />
-            </Text>
-          ))}
-        </View>
+        <Text key={rowIndex} style={rowIndex === 0 ? styles.h3 : styles.p}>
+          {row.children.map((cell) => flattenInline(cell.children)).filter(Boolean).join(" — ")}
+        </Text>
       ))}
     </View>
   );
@@ -410,12 +483,14 @@ function ArticleDocument({
   kicker,
   path,
   tree,
+  skipHeavyBlocks = false,
 }: {
   title: string;
   description: string;
   kicker: string;
   path: string;
   tree: Root;
+  skipHeavyBlocks?: boolean;
 }) {
   return (
     <Document title={title} author={siteConfig.name} subject={description} creator={siteConfig.name}>
@@ -431,7 +506,7 @@ function ArticleDocument({
           <Text style={styles.description}>{description}</Text>
         </View>
 
-        <Blocks nodes={tree.children} />
+        <Blocks nodes={tree.children} skipHeavyBlocks={skipHeavyBlocks} />
 
         <Text style={styles.footerLeft} fixed>
           {siteConfig.url}
@@ -528,8 +603,16 @@ export async function renderMarkdownPdf({
 }) {
   const markdown = stripMdx(content);
   const tree = remark().use(remarkGfm).parse(markdown) as Root;
+  const skipHeavyBlocks = path.includes("visto-e-residencia");
   return renderToBuffer(
-    <ArticleDocument title={title} description={description} kicker={kicker} path={path} tree={tree} />,
+    <ArticleDocument
+      title={title}
+      description={description}
+      kicker={kicker}
+      path={path}
+      tree={tree}
+      skipHeavyBlocks={skipHeavyBlocks}
+    />,
   );
 }
 
