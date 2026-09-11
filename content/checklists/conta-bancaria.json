@@ -8,8 +8,8 @@
   "items": [
     {
       "id": "santander",
-      "title": "Abrir a conta Santander de não residente (se ainda estiver no Brasil ou sem NIE)",
-      "detail": "Cuenta Online para No Residentes: passaporte, +18 anos e vídeo. Brasil está na lista do banco. Gera IBAN ES sem NIE. Se você já é residente fiscal na Espanha, este produto não serve — o banco pede NIE.",
+      "title": "Abrir a conta Santander de não residente (se ainda estiver no Brasil ou sem o número de estrangeiro)",
+      "detail": "Conta online para não residentes: passaporte, +18 anos e vídeo. Brasil está na lista do banco. Gera código de conta europeu sem o número fiscal de estrangeiro. Se você já é residente fiscal na Espanha, este produto não serve — o banco pede o NIE.",
       "links": [
         {
           "label": "Santander — conta com passaporte",
@@ -20,7 +20,7 @@
     {
       "id": "ponte",
       "title": "Ter uma ponte em euro (Wise ou similar)",
-      "detail": "Use para câmbio e primeiros pagamentos enquanto o cartão espanhol não chega. Senhorio e nómina no entanto vão pedir IBAN espanhol de banco local.",
+      "detail": "Use para câmbio e primeiros pagamentos enquanto o cartão espanhol não chega. Proprietário e holerite, no entanto, vão pedir conta espanhola de banco local.",
       "links": [
         { "label": "Wise", "href": "https://wise.com" }
       ]
@@ -28,7 +28,7 @@
     {
       "id": "docs",
       "title": "Juntar o que a agência tradicional pede",
-      "detail": "Passaporte, NIE quando existir, volante de empadronamiento e, se houver, contrato de trabalho. BBVA, CaixaBank e Sabadell em balcão quase sempre travam sem NIE + endereço."
+      "detail": "Passaporte, número de estrangeiro quando existir, comprovante do cadastro na prefeitura e, se houver, contrato de trabalho. BBVA, CaixaBank e Sabadell em balcão quase sempre travam sem NIE + endereço."
     },
     {
       "id": "app",
@@ -38,7 +38,7 @@
     {
       "id": "teste",
       "title": "Fazer uma transferência pequena de teste",
-      "detail": "Do Brasil para o IBAN ES ou entre Wise e Santander. Confira nome do titular idêntico ao passaporte."
+      "detail": "Do Brasil para a conta espanhola ou entre Wise e Santander. Confira nome do titular idêntico ao passaporte."
     },
     {
       "id": "recibos",
@@ -48,12 +48,12 @@
     {
       "id": "converter",
       "title": "Pedir a passagem a conta de residente",
-      "detail": "Com NIE e padrón, peça no app ou na agência a atualização cadastral. Nómina e alguns contratos de aluguel exigem isso."
+      "detail": "Com NIE e cadastro na prefeitura, peça no app ou na agência a atualização cadastral. Holerite e alguns contratos de aluguel exigem isso."
     },
     {
       "id": "reserva",
       "title": "Separar reserva de emergência em euro",
-      "detail": "Deixe uma folga que não seja o limite do cartão de turismo brasileiro."
+      "detail": "Deixe uma folga em euro que não seja o limite do cartão de turismo brasileiro."
     }
   ]
 }

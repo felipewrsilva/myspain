@@ -3,7 +3,7 @@ import { getChecklists } from "@/lib/content";
 
 export const metadata = {
   title: "Checklists",
-  description: "Checklists interativos para NIE, empadronamiento, banco e mais.",
+  description: "Listas passo a passo: número de estrangeiro, cadastro na prefeitura, banco e mais.",
 };
 
 export default function ChecklistsPage() {

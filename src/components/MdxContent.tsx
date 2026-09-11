@@ -1,6 +1,7 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
+import Image from "next/image";
 import { Callout } from "@/components/Callout";
 import { YouTube } from "@/components/YouTube";
 import { CoverImage } from "@/components/CoverImage";
@@ -9,12 +10,23 @@ const components = {
   YouTube,
   Callout,
   CoverImage,
-  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-    <span className="my-8 block overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--paper-2)]">
-      {/* Markdown images: remote Unsplash, already allowed in next.config */}
-      <img {...props} alt={props.alt ?? ""} className="h-auto w-full object-cover" />
-    </span>
-  ),
+  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => {
+    const { src, alt, ...rest } = props;
+    if (!src) return null;
+    return (
+      <span className="my-8 block overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--paper-2)]">
+        {/* Markdown images: remote Unsplash, already allowed in next.config */}
+        <Image
+          src={src}
+          alt={alt ?? ""}
+          width={1600}
+          height={900}
+          className="h-auto w-full object-cover"
+          {...rest}
+        />
+      </span>
+    );
+  },
   a: (props: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
     const href = props.href ?? "";
     if (href.startsWith("/")) {

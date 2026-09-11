@@ -20,7 +20,7 @@ export const stages: {
     title: "Acabei de chegar",
     shortTitle: "Chegada",
     description:
-      "NIE, empadronamiento, banco, moradia e saúde nos primeiros dias no país.",
+      "Número de estrangeiro (NIE), cadastro na prefeitura, banco, moradia e saúde nos primeiros dias no país.",
     href: "/etapas/acabei-de-chegar",
   },
   {

@@ -24,24 +24,6 @@ const KIND_LABEL: Record<ContinueKind, string> = {
 
 export const continueFallbacks: ContinuePage[] = [
   {
-    href: "/ferramentas/custo-de-vida",
-    title: "Custo de vida na prática",
-    description: "Faixas para planejar aluguel, comida e transporte sem chute.",
-    kind: "outro",
-    label: "Ferramenta",
-    stage: "antes-de-ir",
-    topics: ["custo-de-vida"],
-  },
-  {
-    href: "/ferramentas/conversor",
-    title: "Conversor real e euro",
-    description: "Cotação aproximada para planejar transferência e reserva.",
-    kind: "outro",
-    label: "Ferramenta",
-    stage: "antes-de-ir",
-    topics: ["custo-de-vida"],
-  },
-  {
     href: "/comunidade",
     title: "Comunidade no WhatsApp",
     description: "Dúvidas reais e gente no mesmo caminho que você.",

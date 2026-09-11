@@ -12,7 +12,7 @@ export default function ComunidadePage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[var(--accent)]">Comunidade</p>
       <h1 className="mt-2 max-w-3xl font-[family-name:var(--font-display)] text-4xl font-extrabold text-[var(--ink)] sm:text-5xl">
-        Gente no mesmo caminho, no WhatsApp
+        Encontre gente no mesmo caminho, nos grupos oficiais do WhatsApp
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-[var(--ink-muted)]">
         Tire dúvidas, compare processos e troque indicações com respeito e objetividade.

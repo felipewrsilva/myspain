@@ -1,7 +1,7 @@
 {
   "slug": "antes-de-viajar",
   "title": "Checklist antes de viajar",
-  "description": "Visto certo, apostila, eSIM, Santander e o que não deixar para a semana do voo.",
+  "description": "Visto certo, apostila, chip virtual, conta Santander e o que não deixar para a semana do voo.",
   "stage": "antes-de-ir",
   "topics": ["documentos", "custo-de-vida"],
   "cities": [],
@@ -9,7 +9,7 @@
     {
       "id": "visto",
       "title": "Confirmar se precisa de visto nacional",
-      "detail": "Turismo é 90/180. Morar, trabalhar ou estudar longo pede visto no consulado da sua circunscrição. Não embarque no caminho errado.",
+      "detail": "Turismo é até 90 dias em cada período de 180 no espaço Schengen (Europa com fronteira compartilhada). Morar, trabalhar ou estudar longo pede visto no consulado da sua região. Não embarque no caminho errado.",
       "links": [
         { "label": "Guia de visto", "href": "/guias/visto-e-residencia" },
         {
@@ -21,12 +21,12 @@
     {
       "id": "passaporte",
       "title": "Conferir validade do passaporte e páginas livres",
-      "detail": "Muitos vistos nacionais pedem margem além da estancia. Tire cópia da folha de dados e das páginas usadas."
+      "detail": "Muitos vistos nacionais pedem margem além do período de estadia. Tire cópia da folha de dados e das páginas usadas."
     },
     {
       "id": "apostila",
       "title": "Apostilar certidões e antecedentes no Brasil",
-      "detail": "Nascimento, casamento e antecedentes: apostila de Haia em cartório autorizado. Sem isso, extranjería devolve.",
+      "detail": "Nascimento, casamento e antecedentes: apostila de Haia em cartório autorizado pelo Conselho Nacional de Justiça (CNJ). Sem isso, a imigração devolve.",
       "links": [
         {
           "label": "CNJ — Apostila da Haia",
@@ -37,12 +37,12 @@
     {
       "id": "seguro",
       "title": "Contratar o seguro que o visto pede",
-      "detail": "Salve a apólice completa em PDF e imprima. Cartão do seguro de cartão de crédito quase nunca basta para visto nacional."
+      "detail": "Salve a apólice completa em arquivo e imprima. O cartão do seguro de cartão de crédito quase nunca basta para visto nacional — o consulado pede o texto da cobertura."
     },
     {
       "id": "esim",
       "title": "Comprar eSIM ainda no Brasil",
-      "detail": "Instale o QR no Wi-Fi de casa. Ative ao pousar. Passaporte/dados bastam; NIE não entra nessa compra.",
+      "detail": "eSIM é o chip virtual. Instale o QR no Wi-Fi de casa. Ative ao pousar. Passaporte/dados bastam; o número fiscal de estrangeiro não entra nessa compra.",
       "links": [
         { "label": "Airalo", "href": "https://www.airalo.com" }
       ]
@@ -50,7 +50,7 @@
     {
       "id": "banco",
       "title": "Abrir a conta Santander de não residente",
-      "detail": "Online, com passaporte e vídeo, se o Brasil continuar na lista do produto. IBAN espanhol antes do voo.",
+      "detail": "Online, com passaporte e vídeo, se o Brasil continuar na lista do produto. Código de conta europeu (IBAN espanhol) antes do voo.",
       "links": [
         {
           "label": "Santander — conta com passaporte",
@@ -61,7 +61,7 @@
     {
       "id": "reserva",
       "title": "Fechar hospedagem dos primeiros dias",
-      "detail": "Endereço inicial ajuda na imigração, no banco e no padrón. Evite aluguel longo sem visita."
+      "detail": "Endereço inicial ajuda na imigração, no banco e no cadastro na prefeitura. Evite aluguel longo sem visita."
     },
     {
       "id": "dinheiro",
@@ -74,12 +74,12 @@
     {
       "id": "digital",
       "title": "Organizar pasta digital offline",
-      "detail": "PDFs nomeados, acessíveis sem chip espanhol: passaporte, visto, seguro, apostilas, IBAN."
+      "detail": "Arquivos nomeados, acessíveis sem chip espanhol: passaporte, visto, seguro, apostilas, código da conta."
     },
     {
       "id": "saude",
       "title": "Levar medicamentos, receitas e check-up básico",
-      "detail": "Quantidade para os primeiros meses. Receita e bula junto."
+      "detail": "Quantidade para os primeiros meses, com receita e bula junto na mala de mão."
     }
   ]
 }

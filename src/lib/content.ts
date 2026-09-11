@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import type { StageId } from "@/lib/site";
 import type { ContinuePage } from "@/lib/continue";
 import topics from "../../content/topics.json";
-import costs from "../../content/costs.json";
 import { getCover } from "../../content/covers";
 
 const contentRoot = path.join(process.cwd(), "content");
@@ -128,10 +127,6 @@ export function getChecklist(slug: string): Checklist | undefined {
 
 export function getTopics() {
   return topics;
-}
-
-export function getCosts() {
-  return costs;
 }
 
 export function getContentByStage(stage: StageId) {

@@ -9,9 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guias",
     "/apostilas",
     "/checklists",
-    "/ferramentas",
-    "/ferramentas/custo-de-vida",
-    "/ferramentas/conversor",
     "/comunidade",
   ].map((path) => ({
     url: `${base}${path}`,

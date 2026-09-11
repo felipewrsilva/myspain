@@ -1,7 +1,7 @@
 {
   "slug": "autonomo-inicio",
   "title": "Checklist para começar como autónomo",
-  "description": "Alta na SS e na Hacienda, fatura, 303/130 e reserva de imposto.",
+  "description": "Alta na previdência e na Receita, fatura, imposto sobre as vendas (IVA), imposto de renda e reserva de imposto.",
   "stage": "ja-moro",
   "topics": ["trabalho", "impostos"],
   "cities": [],
@@ -9,7 +9,7 @@
     {
       "id": "autorizacao",
       "title": "Confirmar que a sua residência permite trabalhar por conta própria",
-      "detail": "Não lucrativa não permite. Estudos têm teto de horas. Nômade limita cliente espanhol. Sem autorização, a alta de autónomo não regulariza extranjería.",
+      "detail": "Autónomo é quem trabalha por conta própria (parecido com o MEI brasileiro). Visto não lucrativo não permite. Estudos têm teto de horas. Nômade limita cliente espanhol. Sem autorização, a alta de autónomo não regulariza a imigração.",
       "links": [
         { "label": "Guia de visto", "href": "/guias/visto-e-residencia" }
       ]
@@ -17,12 +17,12 @@
     {
       "id": "asesor",
       "title": "Escolher gestor para os primeiros trimestres",
-      "detail": "Alta censal, IAE e regime de IVA errados saem caro. A mensalidade do asesor costuma ser menor que a multa."
+      "detail": "Cadastro fiscal, código de atividade econômica e regime de IVA (imposto sobre as faturas) errados saem caro. A mensalidade do contador costuma ser menor que a multa."
     },
     {
       "id": "alta",
-      "title": "Fazer alta na Segurança Social e na Hacienda antes de faturar",
-      "detail": "RETA na SS e modelo de alta censal na Agencia Tributaria. Data de início alinhada nas duas.",
+      "title": "Fazer alta na previdência e na Receita antes de faturar",
+      "detail": "O regime de autónomos na Segurança Social é a previdência de quem trabalha por conta própria. O cadastro na Agencia Tributaria é a Receita. Data de início alinhada nas duas.",
       "links": [
         { "label": "Segurança Social", "href": "https://www.seg-social.es" },
         { "label": "Agencia Tributaria", "href": "https://sede.agenciatributaria.gob.es" }
@@ -31,25 +31,25 @@
     {
       "id": "conta",
       "title": "Separar conta para receber clientes",
-      "detail": "IBAN espanhol de residente ajuda. Não misture aluguel e material de trabalho no mesmo extrato se puder evitar."
+      "detail": "Conta espanhola de residente (código IBAN, começa com ES) ajuda. Não misture aluguel e material de trabalho no mesmo extrato se puder evitar."
     },
     {
       "id": "fatura",
-      "title": "Configurar fatura com NIF, numeração e dados fiscais",
-      "detail": "Série correlativa, IVA quando couber, forma de pagamento. Sem isso o 303 não fecha."
+      "title": "Configurar fatura com número fiscal, numeração e dados",
+      "detail": "O número fiscal (NIF) identifica você na Receita. Série em ordem, IVA quando couber, forma de pagamento. Sem isso a declaração trimestral de IVA não fecha."
     },
     {
       "id": "reserva",
-      "title": "Reservar IVA, IRPF e cotização todo mês",
-      "detail": "O que entra na conta não é lucro. Separe antes de gastar."
+      "title": "Reservar IVA, imposto de renda e contribuição todo mês",
+      "detail": "IVA é o imposto das faturas. Imposto de renda é o IRPF. Contribuição é o que vai para a previdência. O que entra na conta não é lucro. Separe antes de gastar."
     },
     {
       "id": "modelos",
-      "title": "Colocar 303 e 130 no calendário trimestral",
-      "detail": "Prazos oficiais na sede da Agencia Tributaria. Atraso gera recargo.",
+      "title": "Colocar as declarações 303 e 130 no calendário trimestral",
+      "detail": "Modelo 303 é o IVA trimestral. Modelo 130 é a antecipação do imposto de renda. Prazos oficiais na sede da Receita. Atraso gera acréscimo.",
       "links": [
         {
-          "label": "Sede Agencia Tributaria",
+          "label": "Sede da Receita espanhola",
           "href": "https://sede.agenciatributaria.gob.es"
         }
       ]
@@ -57,7 +57,7 @@
     {
       "id": "controle",
       "title": "Planilha semanal de receitas e despesas",
-      "detail": "Não acumule o trimestre inteiro na véspera do modelo."
+      "detail": "Não acumule o trimestre inteiro na véspera da declaração. Atualize a planilha toda semana."
     }
   ]
 }

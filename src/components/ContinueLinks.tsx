@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import {
   continueLabel,
   pickContinuePages,
@@ -17,11 +17,9 @@ export function ContinueLinks({
   currentHref: string;
   pages: ContinuePage[];
 }) {
-  const [options, setOptions] = useState<ContinuePage[] | null>(null);
-
-  useEffect(() => {
+  const options = useMemo(() => {
     const visited = recordVisit(currentHref);
-    setOptions(pickContinuePages(currentHref, pages, visited));
+    return pickContinuePages(currentHref, pages, visited);
   }, [currentHref, pages]);
 
   if (!options?.length) return null;
@@ -33,7 +31,6 @@ export function ContinueLinks({
       <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[var(--accent)]">
         Continuar
       </p>
-      <p className="mt-1 text-sm text-[var(--ink-muted)]">Duas saídas. Escolha uma e siga.</p>
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         <ContinueCard page={left} align="left" />
         {right ? <ContinueCard page={right} align="right" /> : null}

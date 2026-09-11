@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Minha Espanha",
   domain: "minhaespanha.com.br",
   description:
-    "Guia prático para brasileiros que querem ir ou já estão na Espanha: etapas, checklists, apostilas e ferramentas.",
+    "Guias práticos para brasileiros que querem ir ou já estão na Espanha: etapas, checklists e apostilas.",
   url: "https://minhaespanha.com.br",
   whatsapp: {
     principal: {
@@ -21,7 +21,6 @@ export const siteConfig = {
     { href: "/guias", label: "Guias" },
     { href: "/checklists", label: "Checklists" },
     { href: "/apostilas", label: "Apostilas" },
-    { href: "/ferramentas", label: "Ferramentas" },
     { href: "/comunidade", label: "Comunidade" },
   ],
 } as const;

@@ -81,11 +81,11 @@ export const covers: Record<string, Cover> = {
   },
   nie: {
     src: unsplash("photo-1450101499163-c8848c66ca85"),
-    alt: "Assinatura de documentos oficiais, como o expediente do NIE",
+    alt: "Assinatura de documentos oficiais, como o pedido do número de estrangeiro (NIE)",
   },
   empadronamiento: {
     src: unsplash("photo-1666861522686-02b2169e0a76"),
-    alt: "Edifício municipal em Valência, o tipo de ayuntamiento do padrón",
+    alt: "Edifício da prefeitura em Valência, onde se faz o cadastro de morador",
   },
   "conta-bancaria": {
     src: unsplash("photo-1563013544-824ae1b704d3"),
@@ -101,11 +101,11 @@ export const covers: Record<string, Cover> = {
   },
   "tie-residencia": {
     src: unsplash("photo-1521791136064-7986c2920216"),
-    alt: "Aperto de mãos após um trâmite oficial, como a TIE",
+    alt: "Aperto de mãos após um trâmite oficial, como o cartão de residência (TIE)",
   },
   "autonomo-inicio": {
     src: unsplash("photo-1517048676732-d65bc937f952"),
-    alt: "Reunião de trabalho, início como autónomo",
+    alt: "Reunião de trabalho, início como autónomo (trabalho por conta própria)",
   },
 
   "nie-primeiros-tramites": {

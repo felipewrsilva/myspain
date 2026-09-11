@@ -18,7 +18,6 @@ Tudo fica no repositório, em `content/`:
 - `guias/*.mdx` — guias
 - `apostilas/*.mdx` — apostilas (PDF opcional em `public/apostilas/`)
 - `checklists/*.json` — checklists
-- `costs.json` — calculadora de custo de vida
 - `site.ts` — nome, nav e links do WhatsApp
 
 ## Deploy

@@ -6,6 +6,15 @@ import { cn } from "@/lib/utils";
 
 const storageKey = (slug: string) => `minha-espanha:checklist:${slug}`;
 
+function loadCheckedFromStorage(slug: string): Record<string, boolean> {
+  try {
+    const raw = typeof window !== "undefined" ? localStorage.getItem(storageKey(slug)) : null;
+    return raw ? (JSON.parse(raw) as Record<string, boolean>) : {};
+  } catch {
+    return {};
+  }
+}
+
 export function ChecklistClient({
   slug,
   items,
@@ -13,23 +22,13 @@ export function ChecklistClient({
   slug: string;
   items: ChecklistItem[];
 }) {
-  const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [ready, setReady] = useState(false);
+  const [checked, setChecked] = useState<Record<string, boolean>>(() => loadCheckedFromStorage(slug));
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(storageKey(slug));
-      if (raw) setChecked(JSON.parse(raw) as Record<string, boolean>);
-    } catch {
-      // ignore
-    }
-    setReady(true);
-  }, [slug]);
-
-  useEffect(() => {
-    if (!ready) return;
     localStorage.setItem(storageKey(slug), JSON.stringify(checked));
-  }, [checked, ready, slug]);
+  }, [checked, slug]);
+
+
 
   const done = useMemo(
     () => items.filter((item) => checked[item.id]).length,

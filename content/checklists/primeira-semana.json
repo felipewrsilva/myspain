@@ -1,7 +1,7 @@
 {
   "slug": "primeira-semana",
   "title": "Checklist da primeira semana",
-  "description": "Internet, cita, padrón e banco nos primeiros sete dias.",
+  "description": "Internet, agendamento, cadastro na prefeitura e banco nos primeiros sete dias.",
   "stage": "acabei-de-chegar",
   "topics": ["nie", "empadronamiento", "banco"],
   "cities": [],
@@ -9,12 +9,12 @@
     {
       "id": "chegar",
       "title": "Anotar o endereço completo e testar Wi-Fi",
-      "detail": "Código postal entra em padrón e banco. Sem internet, a cita previa não abre."
+      "detail": "Código postal entra no cadastro na prefeitura e no banco. Sem internet, o agendamento oficial não abre."
     },
     {
       "id": "chip",
       "title": "Ativar eSIM do Brasil ou comprar pré-pago com passaporte",
-      "detail": "eSIM instala em casa antes do voo. Na loja espanhola, passaporte original basta — NIE não é obrigatório para pré-pago.",
+      "detail": "eSIM é o chip virtual: instale em casa antes do voo. Na loja espanhola, passaporte original basta — o número fiscal de estrangeiro não é obrigatório para pré-pago.",
       "links": [
         { "label": "Guia de chip", "href": "/guias/chip-e-transporte" },
         { "label": "Airalo (eSIM)", "href": "https://www.airalo.com" }
@@ -22,29 +22,29 @@
     },
     {
       "id": "orientar",
-      "title": "Localizar supermercado, farmácia, metrô e ayuntamiento",
-      "detail": "Faça o circuito a pé ou de metrô uma vez. Emergência: 112."
+      "title": "Localizar supermercado, farmácia, metrô e prefeitura",
+      "detail": "Faça o circuito a pé ou de metrô uma vez. Emergência: 112. A prefeitura é onde se faz o cadastro de morador."
     },
     {
       "id": "citas",
-      "title": "Agendar NIE/TIE no ICP Plus no primeiro dia útil",
-      "detail": "Vagas somem em Madrid e Barcelona. Cita é gratuita no portal do Estado.",
+      "title": "Agendar NIE ou TIE no portal oficial no primeiro dia útil",
+      "detail": "NIE é o número fiscal de estrangeiro; TIE é o cartão físico de residência. Vagas somem em Madrid e Barcelona. O agendamento é gratuito no portal do Estado.",
       "links": [
         {
-          "label": "Cita previa oficial",
+          "label": "Agendamento oficial",
           "href": "https://sede.administracionespublicas.gob.es/icpplus/"
         }
       ]
     },
     {
       "id": "padron",
-      "title": "Ver a regra de empadronamiento do seu município",
-      "detail": "Contrato, autorização do dono ou o documento que o ayuntamiento listar. Marque a cita local se existir."
+      "title": "Ver a regra de cadastro na prefeitura do seu município",
+      "detail": "Contrato, autorização do dono ou o documento que a prefeitura listar. Marque o horário local se existir."
     },
     {
       "id": "banco",
-      "title": "Ativar IBAN espanhol",
-      "detail": "Quem já abriu Santander com passaporte no Brasil só confirma o app. Os demais: Wise de ponte + conta local.",
+      "title": "Ativar conta espanhola",
+      "detail": "O código da conta europeia (IBAN) começa com ES. Quem já abriu Santander com passaporte no Brasil só confirma o app. Os demais: Wise de ponte + conta local.",
       "links": [
         {
           "label": "Santander com passaporte",
@@ -55,7 +55,7 @@
     {
       "id": "pasta",
       "title": "Montar a pasta física da semana",
-      "detail": "Passaporte, visto, seguro, EX-15/EX-17, taxa 790-012, reserva e caneta."
+      "detail": "Passaporte, visto, seguro, formulários de NIE (EX-15) e de TIE (EX-17), taxa da polícia 790-012, reserva e caneta."
     }
   ]
 }

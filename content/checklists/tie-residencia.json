@@ -1,7 +1,7 @@
 {
   "slug": "tie-residencia",
-  "title": "Checklist de TIE e residência",
-  "description": "Prazo de um mês, EX-17, huellas, taxa 790-012 e retirada do cartão.",
+  "title": "Checklist de TIE (cartão de residência)",
+  "description": "Prazo de um mês, formulário do cartão, impressões digitais, taxa da polícia e retirada.",
   "stage": "acabei-de-chegar",
   "topics": ["visto", "documentos", "nie"],
   "cities": [],
@@ -9,39 +9,39 @@
     {
       "id": "elegibilidade",
       "title": "Confirmar se a sua autorização exige TIE",
-      "detail": "Estancia ou residência longa (na prática, muitas vias acima de 6 meses, e estudos acima de 180 dias) pede cartão físico. O visto nacional sozinho não substitui a TIE depois do prazo."
+      "detail": "A TIE (Tarjeta de Identidad de Extranjero) é o cartão físico de residência. Autorização longa (na prática, muitas vias acima de 6 meses, e estudos acima de 180 dias) pede esse cartão. O visto nacional sozinho não substitui a TIE depois do prazo."
     },
     {
       "id": "prazo",
       "title": "Anotar o prazo — em várias vias é 1 mês após entrar",
-      "detail": "Consulado e folha de extranjería dizem o prazo. Atraso vira expediente irregular. Coloque alerta no celular."
+      "detail": "Consulado e folha da imigração dizem o prazo. Atraso vira processo irregular. Coloque alerta no celular."
     },
     {
       "id": "cita",
-      "title": "Agendar toma de huellas no ICP Plus",
-      "detail": "Província → Policía Nacional → trámite de expedición de tarjeta / toma de huellas. Imprima o localizador. Cita gratuita.",
+      "title": "Agendar a coleta de digitais no portal oficial",
+      "detail": "No site oficial de agendamento: província → Polícia Nacional → emissão de cartão / coleta de digitais. Imprima o comprovante. Horário gratuito.",
       "links": [
         {
-          "label": "Cita previa ICP Plus",
+          "label": "Agendamento oficial",
           "href": "https://sede.administracionespublicas.gob.es/icpplus/"
         }
       ]
     },
     {
       "id": "formulario",
-      "title": "Preencher o EX-17",
-      "detail": "Modelo oficial de solicitação da TIE. Nome igual ao passaporte.",
+      "title": "Preencher o formulário EX-17",
+      "detail": "EX-17 é o formulário oficial de pedido da TIE. Nome igual ao passaporte.",
       "links": [
         {
-          "label": "Modelos EX (EX-17)",
+          "label": "Formulários oficiais (EX-17)",
           "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
         }
       ]
     },
     {
       "id": "taxa",
-      "title": "Pagar a taxa 790 código 012",
-      "detail": "O importe depende do tipo de cartão (primeira concessão, renovação, familiar UE…). Gere o modelo vigente e leve o justificante.",
+      "title": "Pagar a taxa da polícia 790 código 012",
+      "detail": "O valor depende do tipo de cartão (primeira concessão, renovação, familiar da União Europeia…). Gere o modelo vigente e leve o comprovante.",
       "links": [
         {
           "label": "Gerar taxa 790-012",
@@ -51,18 +51,18 @@
     },
     {
       "id": "docs",
-      "title": "Montar a pasta das huellas",
-      "detail": "Passaporte e cópia, visto ou resolução favorável, EX-17, taxa paga, foto carné fundo branco, padrón se a oficina pedir, justificante da cita."
+      "title": "Montar a pasta das digitais",
+      "detail": "Passaporte e cópia, visto ou resolução favorável, EX-17, taxa paga, foto tamanho documento fundo branco, cadastro na prefeitura se a oficina pedir, comprovante do agendamento."
     },
     {
       "id": "recibo",
-      "title": "Guardar o resguardo até o cartão ficar pronto",
-      "detail": "Esse papel prova que a TIE está em fabricação. Se for viajar nesse intervalo, pergunte na comissaria sobre autorização de regresso."
+      "title": "Guardar o comprovante até o cartão ficar pronto",
+      "detail": "Esse papel prova que a TIE está em fabricação. Se for viajar nesse intervalo, pergunte na delegacia sobre autorização de regresso."
     },
     {
       "id": "retirada",
-      "title": "Retirar o cartão com o resguardo e o passaporte",
-      "detail": "Anote a data que a polícia indicar. Em algumas cidades a retirada também pede cita."
+      "title": "Retirar o cartão com o comprovante e o passaporte",
+      "detail": "Anote a data que a polícia indicar. Em algumas cidades a retirada também pede agendamento."
     }
   ]
 }

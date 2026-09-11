@@ -1,7 +1,7 @@
 {
   "slug": "empadronamiento",
-  "title": "Checklist do Empadronamiento",
-  "description": "Endereço real, regra do município, volante e o que atualizar quando mudar de casa.",
+  "title": "Checklist do empadronamiento (cadastro na prefeitura)",
+  "description": "Endereço real, regra do município, comprovante provisório e o que atualizar quando mudar de casa.",
   "stage": "acabei-de-chegar",
   "topics": ["empadronamiento", "documentos"],
   "cities": [],
@@ -9,12 +9,12 @@
     {
       "id": "moradia",
       "title": "Ter um endereço real para declarar",
-      "detail": "Contrato de aluguel, autorização assinada do proprietário, ou o documento que o ayuntamiento da sua cidade listar. Hotel de uma noite quase nunca serve."
+      "detail": "Empadronamiento é o cadastro de morador na prefeitura. Precisa de contrato de aluguel, autorização assinada do proprietário, ou o documento que a sua cidade listar. Hotel de uma noite quase nunca serve."
     },
     {
       "id": "regras",
       "title": "Ler o procedimento do seu município",
-      "detail": "Cada cidade muda: cita online, presencial, autocita ou junta de distrito. Em Madrid e Barcelona o fluxo está na sede eletrónica do ayuntamiento.",
+      "detail": "Cada cidade muda: agendamento online, presencial, autoagendamento ou junta de bairro. Em Madrid e Barcelona o fluxo está no site da prefeitura.",
       "links": [
         { "label": "Sede Madrid", "href": "https://sede.madrid.es" },
         { "label": "Ajuntament de Barcelona", "href": "https://seuelectronica.ajuntament.barcelona.cat" },
@@ -23,38 +23,38 @@
     },
     {
       "id": "agendar",
-      "title": "Agendar se o município exigir cita",
+      "title": "Agendar se o município exigir horário marcado",
       "detail": "Salve o comprovante. Algumas juntas aceitam fila no mesmo dia; não aposte nisso em capital."
     },
     {
       "id": "docs-id",
       "title": "Separar identificação",
-      "detail": "Passaporte original e cópia. NIE ou TIE se já tiver. Às vezes pedem cópia de páginas com carimbo de entrada."
+      "detail": "Passaporte original e cópia. Número fiscal (NIE) ou cartão de residência (TIE) se já tiver. Às vezes pedem cópia de páginas com carimbo de entrada."
     },
     {
       "id": "docs-casa",
       "title": "Separar comprovante de moradia",
-      "detail": "Contrato, escritura, autorização do titular do padrón anterior, ou fatura. Leia a lista local: o que vale em Valência pode não valer em Madrid."
+      "detail": "Contrato, escritura, autorização de quem já estava cadastrado no endereço, ou fatura. Leia a lista local: o que vale em Valência pode não valer em Madrid."
     },
     {
       "id": "formulario",
-      "title": "Preencher a hoja de padrón se existir",
-      "detail": "Alguns ayuntamientos deixam baixar o formulário. Nome igual ao passaporte."
+      "title": "Preencher o formulário de cadastro se existir",
+      "detail": "Algumas prefeituras deixam baixar a ficha. Nome igual ao passaporte."
     },
     {
       "id": "comparecer",
-      "title": "Pedir o volante no mesmo dia",
-      "detail": "O volante (folha simples) já destrava banco e alguns trâmites. O certificado formal pode demorar e às vezes é pago."
+      "title": "Pedir o comprovante provisório no mesmo dia",
+      "detail": "A folha simples (volante) já destrava banco e alguns trâmites. O certificado formal pode demorar e às vezes é pago."
     },
     {
       "id": "guardar",
       "title": "Digitalizar e arquivar",
-      "detail": "PDF legível + cópia na pasta. Validade típica do volante para outros órgãos: 3 meses — tire outro se pedirem recente."
+      "detail": "Arquivo legível + cópia na pasta. Validade típica do comprovante provisório para outros órgãos: 3 meses — tire outro se pedirem recente."
     },
     {
       "id": "atualizar",
       "title": "Refazer se mudar de endereço",
-      "detail": "Padrón desatualizado quebra abono pessoal de transporte em Madrid, centro de salud e renovação de TIE."
+      "detail": "Cadastro desatualizado quebra desconto pessoal de transporte em Madrid, posto de saúde e renovação do cartão de residência."
     }
   ]
 }

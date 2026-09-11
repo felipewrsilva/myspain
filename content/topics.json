@@ -1,8 +1,8 @@
 [
   { "id": "documentos", "name": "Documentos" },
   { "id": "visto", "name": "Visto e residência" },
-  { "id": "nie", "name": "NIE" },
-  { "id": "empadronamiento", "name": "Empadronamiento" },
+  { "id": "nie", "name": "NIE (número de estrangeiro)" },
+  { "id": "empadronamiento", "name": "Empadronamiento (cadastro na prefeitura)" },
   { "id": "banco", "name": "Banco e finanças" },
   { "id": "moradia", "name": "Moradia" },
   { "id": "trabalho", "name": "Trabalho" },

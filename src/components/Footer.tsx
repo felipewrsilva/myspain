@@ -10,7 +10,7 @@ export function Footer() {
             Minha <span className="text-[var(--accent)]">Espanha</span>
           </p>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
-            Guia prático para a jornada Espanha. Conteúdo no repositório, sempre público, sem enrolação.
+            Guias práticos para brasileiros que vão ou já moram na Espanha. O conteúdo é público, sem cadastro.
           </p>
         </div>
 

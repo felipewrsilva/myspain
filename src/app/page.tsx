@@ -35,7 +35,7 @@ export default function HomePage() {
             className="anim-rise mt-4 max-w-lg text-base text-white/65"
             style={{ animationDelay: "0.18s" }}
           >
-            Guias, checklists e ferramentas para brasileiros na Espanha. Direto, sem login e sem enrolação.
+            Guias, checklists e apostilas para brasileiros na Espanha, sem cadastro e sem enrolação.
           </p>
           <div className="anim-rise mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.26s" }}>
             <Link
