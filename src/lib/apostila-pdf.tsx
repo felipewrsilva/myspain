@@ -18,122 +18,146 @@ import type { Apostila } from "@/lib/content";
 const fontsDir = join(process.cwd(), "src/app/fonts");
 
 Font.register({
-  family: "Syne",
-  src: join(fontsDir, "Syne-ExtraBold.ttf"),
-});
-
-Font.register({
-  family: "Manrope",
+  family: "Source Serif",
   fonts: [
-    { src: join(fontsDir, "Manrope-Regular.ttf"), fontWeight: 400 },
-    { src: join(fontsDir, "Manrope-SemiBold.ttf"), fontWeight: 600 },
+    { src: join(fontsDir, "SourceSerif4-Regular.ttf"), fontWeight: 400 },
+    { src: join(fontsDir, "SourceSerif4-Semibold.ttf"), fontWeight: 600 },
   ],
 });
 
+Font.register({
+  family: "Source Sans",
+  fonts: [
+    { src: join(fontsDir, "SourceSans3-Regular.ttf"), fontWeight: 400 },
+    { src: join(fontsDir, "SourceSans3-Semibold.ttf"), fontWeight: 600 },
+    { src: join(fontsDir, "SourceSans3-Bold.ttf"), fontWeight: 700 },
+  ],
+});
+
+Font.registerHyphenationCallback((word) => [word]);
+
 const styles = StyleSheet.create({
   page: {
-    paddingTop: 56,
-    paddingBottom: 56,
-    paddingHorizontal: 48,
-    fontFamily: "Manrope",
-    fontSize: 10.5,
-    lineHeight: 1.45,
+    paddingTop: 64,
+    paddingBottom: 64,
+    paddingHorizontal: 52,
+    fontFamily: "Source Serif",
+    fontSize: 11,
+    lineHeight: 1.55,
     color: "#14181f",
   },
   header: {
     position: "absolute",
-    top: 22,
-    left: 48,
-    right: 48,
+    top: 24,
+    left: 52,
+    right: 52,
     flexDirection: "row",
     justifyContent: "space-between",
-    fontSize: 8,
+    fontFamily: "Source Sans",
+    fontSize: 8.5,
     color: "#5a6572",
   },
   brand: {
-    fontFamily: "Syne",
-    fontSize: 9,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 9.5,
     color: "#c8102e",
   },
   kicker: {
-    fontFamily: "Syne",
-    fontSize: 8,
-    letterSpacing: 1.4,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 8.5,
+    letterSpacing: 1.6,
     color: "#c8102e",
     marginBottom: 8,
     textTransform: "uppercase",
   },
   title: {
-    fontFamily: "Syne",
-    fontSize: 20,
-    lineHeight: 1.2,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 22,
+    lineHeight: 1.25,
     color: "#14181f",
     marginBottom: 10,
   },
   description: {
-    fontSize: 11,
+    fontSize: 11.5,
+    lineHeight: 1.5,
     color: "#5a6572",
-    marginBottom: 18,
+    marginBottom: 20,
   },
   h2: {
-    fontFamily: "Syne",
-    fontSize: 13,
-    marginTop: 16,
-    marginBottom: 6,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 13.5,
+    lineHeight: 1.3,
+    marginTop: 18,
+    marginBottom: 8,
     color: "#14181f",
   },
   h3: {
-    fontFamily: "Syne",
-    fontSize: 11,
-    marginTop: 12,
-    marginBottom: 4,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 11.5,
+    lineHeight: 1.3,
+    marginTop: 14,
+    marginBottom: 6,
     color: "#14181f",
   },
   p: {
-    marginBottom: 8,
-    color: "#3a4450",
+    marginBottom: 10,
+    color: "#2c3540",
   },
   bold: {
-    fontFamily: "Manrope",
+    fontFamily: "Source Serif",
     fontWeight: 600,
     color: "#14181f",
   },
   link: {
+    fontFamily: "Source Serif",
     color: "#c8102e",
     textDecoration: "none",
   },
   code: {
-    fontSize: 9.5,
+    fontFamily: "Source Sans",
+    fontSize: 10,
     color: "#14181f",
   },
   list: {
-    marginBottom: 8,
+    marginBottom: 10,
   },
   li: {
     flexDirection: "row",
-    marginBottom: 4,
+    marginBottom: 5,
     paddingLeft: 2,
   },
   bullet: {
-    width: 16,
+    width: 18,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
     color: "#c8102e",
-    fontWeight: 600,
   },
   liBody: {
     flex: 1,
-    color: "#3a4450",
+    color: "#2c3540",
   },
   quote: {
-    marginBottom: 10,
-    paddingLeft: 10,
+    marginBottom: 12,
+    marginTop: 4,
+    paddingTop: 8,
+    paddingBottom: 8,
+    paddingLeft: 12,
+    paddingRight: 8,
     borderLeftWidth: 3,
     borderLeftColor: "#c8102e",
+    backgroundColor: "#f7f4f2",
   },
   quoteText: {
     color: "#14181f",
   },
   table: {
-    marginBottom: 12,
+    marginBottom: 14,
+    marginTop: 2,
     borderWidth: 1,
     borderColor: "#d7e0e7",
   },
@@ -144,26 +168,36 @@ const styles = StyleSheet.create({
   },
   th: {
     flex: 1,
-    padding: 6,
+    padding: 8,
     backgroundColor: "#f0f4f7",
-    fontWeight: 600,
-    fontSize: 9,
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 9.5,
   },
   td: {
     flex: 1,
-    padding: 6,
-    fontSize: 9,
-    color: "#3a4450",
+    padding: 8,
+    fontSize: 9.5,
+    lineHeight: 1.4,
+    color: "#2c3540",
   },
-  footer: {
+  footerLeft: {
     position: "absolute",
-    bottom: 22,
-    left: 48,
-    right: 48,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    fontSize: 8,
+    bottom: 28,
+    left: 52,
+    fontFamily: "Source Sans",
+    fontSize: 9,
     color: "#5a6572",
+  },
+  footerRight: {
+    position: "absolute",
+    bottom: 28,
+    left: 52,
+    right: 52,
+    fontFamily: "Source Sans",
+    fontSize: 9,
+    color: "#5a6572",
+    textAlign: "right",
   },
 });
 
@@ -232,55 +266,79 @@ function listItemNodes(item: List["children"][number]): PhrasingContent[] {
   return [];
 }
 
-function Blocks({ nodes }: { nodes: RootContent[] }) {
-  return nodes.map((node, index) => {
-    switch (node.type) {
-      case "heading":
-        return (
-          <Text key={index} style={node.depth >= 3 ? styles.h3 : styles.h2}>
-            <Inline nodes={node.children} />
+function renderBlock(node: RootContent, key: number | string) {
+  switch (node.type) {
+    case "heading":
+      return (
+        <Text key={key} style={node.depth >= 3 ? styles.h3 : styles.h2}>
+          <Inline nodes={node.children} />
+        </Text>
+      );
+    case "paragraph":
+      return (
+        <Text key={key} orphans={3} widows={3} style={styles.p}>
+          <Inline nodes={node.children} />
+        </Text>
+      );
+    case "list":
+      return (
+        <View key={key} style={styles.list}>
+          {node.children.map((item, itemIndex) => (
+            <View key={itemIndex} style={styles.li} wrap={false}>
+              <Text style={styles.bullet}>{node.ordered ? `${itemIndex + 1}.` : "•"}</Text>
+              <Text style={styles.liBody}>
+                <Inline nodes={listItemNodes(item)} />
+              </Text>
+            </View>
+          ))}
+        </View>
+      );
+    case "blockquote": {
+      const paragraph = node.children.find((child) => child.type === "paragraph");
+      return (
+        <View key={key} style={styles.quote} minPresenceAhead={56}>
+          <Text style={styles.quoteText}>
+            {paragraph ? <Inline nodes={paragraph.children} /> : null}
           </Text>
-        );
-      case "paragraph":
-        return (
-          <Text key={index} style={styles.p}>
-            <Inline nodes={node.children} />
-          </Text>
-        );
-      case "list":
-        return (
-          <View key={index} style={styles.list}>
-            {node.children.map((item, itemIndex) => (
-              <View key={itemIndex} style={styles.li} wrap={false}>
-                <Text style={styles.bullet}>{node.ordered ? `${itemIndex + 1}.` : "•"}</Text>
-                <Text style={styles.liBody}>
-                  <Inline nodes={listItemNodes(item)} />
-                </Text>
-              </View>
-            ))}
-          </View>
-        );
-      case "blockquote": {
-        const paragraph = node.children.find((child) => child.type === "paragraph");
-        return (
-          <View key={index} style={styles.quote} wrap={false}>
-            <Text style={styles.quoteText}>
-              {paragraph ? <Inline nodes={paragraph.children} /> : null}
-            </Text>
-          </View>
-        );
-      }
-      case "table":
-        return <PdfTable key={index} node={node} />;
-      default:
-        return null;
+        </View>
+      );
     }
-  });
+    case "table":
+      return <PdfTable key={key} node={node} />;
+    default:
+      return null;
+  }
+}
+
+function Blocks({ nodes }: { nodes: RootContent[] }) {
+  const elements: Array<ReturnType<typeof renderBlock>> = [];
+
+  for (let index = 0; index < nodes.length; index += 1) {
+    const node = nodes[index];
+    const next = nodes[index + 1];
+    const keepWithNext =
+      node.type === "heading" && next && next.type !== "heading";
+
+    if (keepWithNext) {
+      elements.push(
+        <View key={index} wrap={false} minPresenceAhead={28}>
+          {renderBlock(node, "heading")}
+          {renderBlock(next, "body")}
+        </View>,
+      );
+      index += 1;
+      continue;
+    }
+
+    elements.push(renderBlock(node, index));
+  }
+
+  return elements;
 }
 
 function PdfTable({ node }: { node: Table }) {
   return (
-    <View style={styles.table}>
+    <View style={styles.table} wrap={false} minPresenceAhead={80}>
       {node.children.map((row, rowIndex) => (
         <View key={rowIndex} style={styles.tr} wrap={false}>
           {row.children.map((cell, cellIndex) => (
@@ -308,19 +366,23 @@ function ApostilaDocument({ apostila, tree }: { apostila: Apostila; tree: Root }
           <Text>{siteConfig.domain}</Text>
         </View>
 
-        <Text style={styles.kicker}>Apostila</Text>
-        <Text style={styles.title}>{apostila.title}</Text>
-        <Text style={styles.description}>{apostila.description}</Text>
+        <View wrap={false}>
+          <Text style={styles.kicker}>Apostila</Text>
+          <Text style={styles.title}>{apostila.title}</Text>
+          <Text style={styles.description}>{apostila.description}</Text>
+        </View>
 
         <Blocks nodes={tree.children} />
 
-        <View style={styles.footer} fixed>
-          <Text>
-            {siteConfig.url}
-            {apostilaPdfPath(apostila.slug).replace(/\/pdf$/, "")}
-          </Text>
-          <Text render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`} />
-        </View>
+        <Text style={styles.footerLeft} fixed>
+          {siteConfig.url}
+          {apostilaPdfPath(apostila.slug).replace(/\/pdf$/, "")}
+        </Text>
+        <Text
+          style={styles.footerRight}
+          fixed
+          render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
+        />
       </Page>
     </Document>
   );
