@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <p className="flex items-center gap-3 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight">
-            <LogoMark className="size-10 shrink-0" />
+            <LogoMark className="size-10 text-[1.75rem]" />
             <span>
               Minha <span className="text-[var(--accent)]">Espanha</span>
             </span>

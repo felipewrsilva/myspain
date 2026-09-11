@@ -2,10 +2,10 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const size = { width: 180, height: 180 };
+export const size = { width: 32, height: 32 };
 export const contentType = "image/png";
 
-export default async function AppleIcon() {
+export default async function Icon() {
   const font = await readFile(join(process.cwd(), "src/app/fonts/Syne-ExtraBold.ttf"));
 
   return new ImageResponse(
@@ -20,10 +20,11 @@ export default async function AppleIcon() {
           background: "#c8102e",
           color: "#f6efe4",
           fontFamily: "Syne",
-          fontSize: 118,
+          fontSize: 21,
           fontWeight: 800,
-          letterSpacing: -4,
-          paddingBottom: 6,
+          letterSpacing: -0.8,
+          paddingBottom: 1,
+          borderRadius: 8,
         }}
       >
         M
