@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PdfDownload } from "@/components/PdfDownload";
+import { ContinueLinks } from "@/components/ContinueLinks";
+import { CoverImage } from "@/components/CoverImage";
 import { MdxContent } from "@/components/MdxContent";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { CoverImage } from "@/components/CoverImage";
-import { ContinueLinks } from "@/components/ContinueLinks";
 import { getContinuePages, getGuide, getGuides, getTopicName } from "@/lib/content";
+import { contentPdfFilename, guidePdfPath } from "@/lib/apostila-pdf";
 import { getStage } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -35,6 +37,7 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Guia</p>
       <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-balance text-[var(--ink)]">{guide.title}</h1>
       <p className="mt-4 text-lg text-pretty text-[var(--ink-muted)]">{guide.description}</p>
+      <PdfDownload href={guidePdfPath(guide.slug)} filename={contentPdfFilename(guide.slug)} />
       <div className="mt-4 flex flex-wrap gap-2 text-xs">
         {stage ? (
           <Link

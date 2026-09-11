@@ -2,7 +2,9 @@ import { notFound } from "next/navigation";
 import { ChecklistClient } from "@/components/ChecklistClient";
 import { ContinueLinks } from "@/components/ContinueLinks";
 import { CoverImage } from "@/components/CoverImage";
+import { PdfDownload } from "@/components/PdfDownload";
 import { getChecklist, getChecklists, getContinuePages } from "@/lib/content";
+import { checklistPdfPath, contentPdfFilename } from "@/lib/apostila-pdf";
 import { getStage } from "@/lib/site";
 import Link from "next/link";
 
@@ -34,6 +36,7 @@ export default async function ChecklistPage({ params }: PageProps<"/checklists/[
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Checklist</p>
       <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-balance text-[var(--ink)]">{item.title}</h1>
       <p className="mt-4 text-lg text-pretty text-[var(--ink-muted)]">{item.description}</p>
+      <PdfDownload href={checklistPdfPath(item.slug)} filename={contentPdfFilename(item.slug)} />
       {stage ? (
         <Link href={stage.href} className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-[var(--accent)] hover:underline">
           Ver etapa: {stage.title}

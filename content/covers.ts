@@ -7,7 +7,7 @@ function unsplash(photoId: string, width = 1600) {
   return `https://images.unsplash.com/${photoId}?auto=format&fit=crop&w=${width}&q=80`;
 }
 
-/** Capas por slug (guia, checklist, apostila) e por etapa. Cada foto é única no site. */
+/** Capas por slug (guia, checklist e etapa). Cada foto é única no site. */
 export const covers: Record<string, Cover> = {
   "antes-de-ir": {
     src: unsplash("photo-1436491865332-7a61a109cc05"),
@@ -111,14 +111,6 @@ export const covers: Record<string, Cover> = {
   "nie-primeiros-tramites": {
     src: unsplash("photo-1589829545856-d10d557cf95f"),
     alt: "Balança da justiça, o peso dos primeiros trâmites oficiais",
-  },
-  "moradia-contratos": {
-    src: unsplash("photo-1554995207-c18c203602cb"),
-    alt: "Sala com sofá, o tipo de imóvel que o contrato descreve",
-  },
-  "dinheiro-90-dias": {
-    src: unsplash("photo-1553729459-efe14ef6055d"),
-    alt: "Notas e planejamento financeiro dos primeiros 90 dias",
   },
 };
 

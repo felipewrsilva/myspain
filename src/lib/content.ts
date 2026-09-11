@@ -26,12 +26,6 @@ export type Guide = ContentMeta & {
   content: string;
 };
 
-export type Apostila = ContentMeta & {
-  slug: string;
-  content: string;
-  pdf?: string | null;
-};
-
 export type ChecklistLink = {
   label: string;
   href: string;
@@ -95,19 +89,6 @@ export function getGuide(slug: string): Guide | undefined {
   return getGuides().find((guide) => guide.slug === slug);
 }
 
-export function getApostilas(): Apostila[] {
-  return readMdxDir("apostilas")
-    .map((file) => {
-      const item = parseMdxFile("apostilas", file);
-      return { ...item, pdf: `/apostilas/${item.slug}/pdf` };
-    })
-    .sort((a, b) => a.title.localeCompare(b.title, "pt-BR"));
-}
-
-export function getApostila(slug: string): Apostila | undefined {
-  return getApostilas().find((item) => item.slug === slug);
-}
-
 export function getChecklists(): Checklist[] {
   const dir = path.join(contentRoot, "checklists");
   if (!fs.existsSync(dir)) return [];
@@ -139,7 +120,6 @@ export function getTopics() {
 export function getContentByStage(stage: StageId) {
   return {
     guides: getGuides().filter((item) => item.stage === stage),
-    apostilas: getApostilas().filter((item) => item.stage === stage),
     checklists: getChecklists().filter((item) => item.stage === stage),
   };
 }
@@ -161,15 +141,6 @@ export function getContinuePages(): ContinuePage[] {
       description: item.description,
       bullets: item.bullets,
       kind: "checklist" as const,
-      stage: item.stage,
-      topics: item.topics,
-    })),
-    ...getApostilas().map((item) => ({
-      href: `/apostilas/${item.slug}`,
-      title: item.title,
-      description: item.description,
-      bullets: item.bullets,
-      kind: "apostila" as const,
       stage: item.stage,
       topics: item.topics,
     })),

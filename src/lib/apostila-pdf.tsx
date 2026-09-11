@@ -13,7 +13,7 @@ import { remark } from "remark";
 import remarkGfm from "remark-gfm";
 import type { List, PhrasingContent, Root, RootContent, Table } from "mdast";
 import { siteConfig } from "@/lib/site";
-import type { Apostila } from "@/lib/content";
+import type { Checklist } from "@/lib/content";
 
 const fontsDir = join(process.cwd(), "src/app/fonts");
 
@@ -199,6 +199,52 @@ const styles = StyleSheet.create({
     color: "#5a6572",
     textAlign: "right",
   },
+  checkItem: {
+    flexDirection: "row",
+    marginBottom: 14,
+    paddingBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "#e6edf2",
+  },
+  checkBox: {
+    width: 13,
+    height: 13,
+    marginTop: 3,
+    marginRight: 10,
+    borderWidth: 1.2,
+    borderColor: "#14181f",
+  },
+  checkBody: {
+    flex: 1,
+  },
+  checkStep: {
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 8.5,
+    letterSpacing: 1.2,
+    color: "#c8102e",
+    textTransform: "uppercase",
+    marginBottom: 3,
+  },
+  checkTitle: {
+    fontFamily: "Source Sans",
+    fontWeight: 700,
+    fontSize: 12,
+    marginBottom: 4,
+    color: "#14181f",
+  },
+  checkDetail: {
+    fontSize: 10.5,
+    lineHeight: 1.45,
+    color: "#2c3540",
+    marginBottom: 4,
+  },
+  checkLink: {
+    fontFamily: "Source Sans",
+    fontSize: 9,
+    color: "#c8102e",
+    marginBottom: 2,
+  },
 });
 
 function stripMdx(source: string) {
@@ -358,14 +404,21 @@ function PdfTable({ node }: { node: Table }) {
   );
 }
 
-function ApostilaDocument({ apostila, tree }: { apostila: Apostila; tree: Root }) {
+function ArticleDocument({
+  title,
+  description,
+  kicker,
+  path,
+  tree,
+}: {
+  title: string;
+  description: string;
+  kicker: string;
+  path: string;
+  tree: Root;
+}) {
   return (
-    <Document
-      title={apostila.title}
-      author={siteConfig.name}
-      subject={apostila.description}
-      creator={siteConfig.name}
-    >
+    <Document title={title} author={siteConfig.name} subject={description} creator={siteConfig.name}>
       <Page size="A4" style={styles.page}>
         <View style={styles.header} fixed>
           <Text style={styles.brand}>{siteConfig.name}</Text>
@@ -373,16 +426,16 @@ function ApostilaDocument({ apostila, tree }: { apostila: Apostila; tree: Root }
         </View>
 
         <View wrap={false}>
-          <Text style={styles.kicker}>Apostila</Text>
-          <Text style={styles.title}>{apostila.title}</Text>
-          <Text style={styles.description}>{apostila.description}</Text>
+          <Text style={styles.kicker}>{kicker}</Text>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.description}>{description}</Text>
         </View>
 
         <Blocks nodes={tree.children} />
 
         <Text style={styles.footerLeft} fixed>
           {siteConfig.url}
-          {apostilaPdfPath(apostila.slug).replace(/\/pdf$/, "")}
+          {path}
         </Text>
         <Text
           style={styles.footerRight}
@@ -394,16 +447,92 @@ function ApostilaDocument({ apostila, tree }: { apostila: Apostila; tree: Root }
   );
 }
 
-export function apostilaPdfPath(slug: string) {
-  return `/apostilas/${slug}/pdf`;
+function ChecklistDocument({ checklist }: { checklist: Checklist }) {
+  return (
+    <Document
+      title={checklist.title}
+      author={siteConfig.name}
+      subject={checklist.description}
+      creator={siteConfig.name}
+    >
+      <Page size="A4" style={styles.page}>
+        <View style={styles.header} fixed>
+          <Text style={styles.brand}>{siteConfig.name}</Text>
+          <Text>{siteConfig.domain}</Text>
+        </View>
+
+        <View wrap={false}>
+          <Text style={styles.kicker}>Checklist</Text>
+          <Text style={styles.title}>{checklist.title}</Text>
+          <Text style={styles.description}>{checklist.description}</Text>
+        </View>
+
+        <Text style={styles.p}>
+          Marque no papel. O progresso do site fica só no navegador; este PDF é a cópia para levar.
+        </Text>
+
+        {checklist.items.map((item, index) => (
+          <View key={item.id} style={styles.checkItem} wrap={false}>
+            <View style={styles.checkBox} />
+            <View style={styles.checkBody}>
+              <Text style={styles.checkStep}>Passo {index + 1}</Text>
+              <Text style={styles.checkTitle}>{item.title}</Text>
+              <Text style={styles.checkDetail}>{item.detail}</Text>
+              {item.links?.map((link) => (
+                <Link key={link.href} src={absoluteUrl(link.href)} style={styles.checkLink}>
+                  {link.label}: {absoluteUrl(link.href)}
+                </Link>
+              ))}
+            </View>
+          </View>
+        ))}
+
+        <Text style={styles.footerLeft} fixed>
+          {siteConfig.url}
+          {`/checklists/${checklist.slug}`}
+        </Text>
+        <Text
+          style={styles.footerRight}
+          fixed
+          render={({ pageNumber, totalPages }) => `${pageNumber} / ${totalPages}`}
+        />
+      </Page>
+    </Document>
+  );
 }
 
-export function apostilaPdfFilename(slug: string) {
+export function contentPdfFilename(slug: string) {
   return `minha-espanha-${slug}.pdf`;
 }
 
-export async function renderApostilaPdf(apostila: Apostila) {
-  const markdown = stripMdx(apostila.content);
+export function guidePdfPath(slug: string) {
+  return `/guias/${slug}/pdf`;
+}
+
+export function checklistPdfPath(slug: string) {
+  return `/checklists/${slug}/pdf`;
+}
+
+export async function renderMarkdownPdf({
+  title,
+  description,
+  content,
+  kicker,
+  path,
+}: {
+  title: string;
+  description: string;
+  content: string;
+  kicker: string;
+  path: string;
+}) {
+  const markdown = stripMdx(content);
   const tree = remark().use(remarkGfm).parse(markdown) as Root;
-  return renderToBuffer(<ApostilaDocument apostila={apostila} tree={tree} />);
+  return renderToBuffer(
+    <ArticleDocument title={title} description={description} kicker={kicker} path={path} tree={tree} />,
+  );
+}
+
+export async function renderChecklistPdf(checklist: Checklist) {
+  return renderToBuffer(<ChecklistDocument checklist={checklist} />);
 }

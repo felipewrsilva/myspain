@@ -1,16 +1,10 @@
 import type { MetadataRoute } from "next";
-import { getApostilas, getChecklists, getGuides } from "@/lib/content";
+import { getChecklists, getGuides } from "@/lib/content";
 import { siteConfig, stages } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
-  const staticRoutes = [
-    "",
-    "/guias",
-    "/apostilas",
-    "/checklists",
-    "/comunidade",
-  ].map((path) => ({
+  const staticRoutes = ["", "/guias", "/checklists", "/comunidade"].map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),
   }));
@@ -25,15 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  const apostilaRoutes = getApostilas().map((item) => ({
-    url: `${base}/apostilas/${item.slug}`,
-    lastModified: new Date(),
-  }));
-
   const checklistRoutes = getChecklists().map((item) => ({
     url: `${base}/checklists/${item.slug}`,
     lastModified: new Date(),
   }));
 
-  return [...staticRoutes, ...stageRoutes, ...guideRoutes, ...apostilaRoutes, ...checklistRoutes];
+  return [...staticRoutes, ...stageRoutes, ...guideRoutes, ...checklistRoutes];
 }

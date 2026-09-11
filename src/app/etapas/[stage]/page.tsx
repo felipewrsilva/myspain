@@ -107,25 +107,6 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
         </section>
       ) : null}
 
-      {content.apostilas.length ? (
-        <section className="mt-12">
-          <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Apostilas</h2>
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            {content.apostilas.map((item) => (
-              <ContentCard
-                key={item.slug}
-                href={`/apostilas/${item.slug}`}
-                title={item.title}
-                description={item.description}
-                bullets={item.bullets}
-                image={item.cover}
-                imageAlt={item.coverAlt}
-              />
-            ))}
-          </div>
-        </section>
-      ) : null}
-
       <div className="mt-14">
         <WhatsAppCTA compact />
       </div>

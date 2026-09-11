@@ -13,7 +13,7 @@ export default function ChecklistsPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <h1 className="font-[family-name:var(--font-display)] text-4xl font-extrabold text-[var(--ink)]">Checklists</h1>
       <p className="mt-3 max-w-2xl text-[var(--ink-muted)]">
-        {checklists.length} checklists com progresso salvo neste navegador.
+        {checklists.length} checklists: marque neste navegador ou imprima o PDF.
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {checklists.map((item) => (

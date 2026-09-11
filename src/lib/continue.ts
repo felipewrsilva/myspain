@@ -1,6 +1,6 @@
 import type { StageId } from "@/lib/site";
 
-export type ContinueKind = "guia" | "checklist" | "apostila" | "outro";
+export type ContinueKind = "guia" | "checklist" | "outro";
 
 export type ContinuePage = {
   href: string;
@@ -19,7 +19,6 @@ const STAGE_ORDER: StageId[] = ["antes-de-ir", "acabei-de-chegar", "ja-moro"];
 const KIND_LABEL: Record<ContinueKind, string> = {
   guia: "Guia",
   checklist: "Checklist",
-  apostila: "Apostila",
   outro: "Seguir",
 };
 
@@ -88,7 +87,6 @@ function scorePage(
     if (pageIndex === currentIndex - 1) score -= 5;
     score += overlap(page.topics, current.topics) * 6;
     if (page.kind !== current.kind && page.kind !== "outro") score += 6;
-    if (page.kind === "apostila") score += 1;
   }
 
   if (sibling) {

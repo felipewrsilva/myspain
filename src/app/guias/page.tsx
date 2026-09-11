@@ -13,7 +13,7 @@ export default function GuiasPage() {
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <h1 className="font-[family-name:var(--font-display)] text-4xl font-extrabold text-[var(--ink)]">Guias</h1>
       <p className="mt-3 max-w-2xl text-[var(--ink-muted)]">
-        {guides.length} guias objetivos para cada momento da jornada.
+        {guides.length} guias. Leia no site ou baixe o PDF.
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {guides.map((guide) => (

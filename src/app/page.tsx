@@ -47,7 +47,7 @@ export default function HomePage() {
             className="anim-rise mt-4 max-w-xl text-base text-pretty text-white/65"
             style={{ animationDelay: "0.18s" }}
           >
-            Guias, checklists e apostilas para brasileiros na Espanha, sem cadastro e sem enrolação.
+            Guias e checklists para brasileiros na Espanha, para ler no site ou baixar em PDF. Sem cadastro e sem enrolação.
           </p>
           <div className="anim-rise mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.26s" }}>
             <Link
@@ -75,7 +75,7 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-[var(--ink-muted)]">
-            Cada etapa reúne o que importa agora: guias, checklists e apostilas no lugar certo.
+            Cada etapa reúne o que importa agora: guias e checklists, no site ou em PDF.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export default function HomePage() {
           <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Guias para ler agora</h2>
-              <p className="mt-2 text-[var(--ink-muted)]">Orientações objetivas, sem rodeio.</p>
+              <p className="mt-2 text-[var(--ink-muted)]">Orientações objetivas. Leia aqui ou baixe o PDF.</p>
             </div>
             <Link href="/guias" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
               Todos os guias
@@ -152,7 +152,7 @@ export default function HomePage() {
         <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Checklists</h2>
-            <p className="mt-2 text-[var(--ink-muted)]">Marque no celular e avance passo a passo.</p>
+            <p className="mt-2 text-[var(--ink-muted)]">Marque no celular ou imprima o PDF.</p>
           </div>
           <Link href="/checklists" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
             Todos os checklists
