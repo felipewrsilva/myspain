@@ -38,12 +38,6 @@ export function Header() {
               </Link>
             );
           })}
-          <Link
-            href="/buscar"
-            className="ml-3 rounded-lg bg-[var(--ink)] px-3.5 py-2 text-[0.9rem] font-semibold text-white transition hover:bg-[var(--accent)]"
-          >
-            Buscar
-          </Link>
         </nav>
 
         <button
@@ -70,13 +64,6 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/buscar"
-              onClick={() => setOpen(false)}
-              className="mt-1 rounded-lg bg-[var(--ink)] px-3 py-2.5 text-center text-sm font-semibold text-white"
-            >
-              Buscar
-            </Link>
           </div>
         </div>
       ) : null}

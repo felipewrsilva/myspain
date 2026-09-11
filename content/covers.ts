@@ -7,24 +7,24 @@ function unsplash(photoId: string, width = 1600) {
   return `https://images.unsplash.com/${photoId}?auto=format&fit=crop&w=${width}&q=80`;
 }
 
-/** Capas por slug (guia, checklist, apostila) e por etapa. */
+/** Capas por slug (guia, checklist, apostila) e por etapa. Cada foto é única no site. */
 export const covers: Record<string, Cover> = {
   "antes-de-ir": {
     src: unsplash("photo-1436491865332-7a61a109cc05"),
     alt: "Asa de avião sobre as nuvens, no caminho para a Espanha",
   },
   "acabei-de-chegar": {
-    src: unsplash("photo-1539037116277-4db20889f2d4"),
-    alt: "Gran Vía de Madrid ao entardecer",
+    src: unsplash("photo-1746019418576-1141de76d46b"),
+    alt: "Palácio Real de Madrid, o tipo de marco que se vê nos primeiros dias",
   },
   "ja-moro": {
-    src: unsplash("photo-1555881400-74d7acaacd8b"),
-    alt: "Plaza de España em Sevilha, rotina de quem já mora no país",
+    src: unsplash("photo-1759431771046-5ee79ecfbabf"),
+    alt: "Alhambra em Granada, o tipo de rotina visual de quem já mora na Espanha",
   },
 
   "visto-e-residencia": {
-    src: unsplash("photo-1436491865332-7a61a109cc05"),
-    alt: "Viagem de avião: o visto certo se decide antes de embarcar",
+    src: unsplash("photo-1488085061387-422e29b40080"),
+    alt: "Janela de avião no pôr do sol: o visto certo se decide antes de embarcar",
   },
   "documentos-essenciais": {
     src: unsplash("photo-1586281380349-632531db7ed4"),
@@ -43,16 +43,16 @@ export const covers: Record<string, Cover> = {
     alt: "Mapa e acessórios de viagem sobre a mesa antes do embarque",
   },
   "primeiros-30-dias": {
-    src: unsplash("photo-1539037116277-4db20889f2d4"),
-    alt: "Rua central de Madrid, cenário típico da primeira semana",
+    src: unsplash("photo-1770850186337-d6fdf280d06d"),
+    alt: "Barcelona vista da montanha, o tipo de panorama da primeira exploração",
   },
   "aluguel-na-pratica": {
     src: unsplash("photo-1522708323590-d24dbb6b0267"),
     alt: "Sala de um apartamento claro, do tipo que se visita no Idealista",
   },
   "chip-e-transporte": {
-    src: unsplash("photo-1469854523086-cc02fe5d8800"),
-    alt: "Estrada e viagem pela Espanha, deslocamento do dia a dia",
+    src: unsplash("photo-1758471206484-0eaa2568320c"),
+    alt: "Barcelona ao entardecer, o deslocamento urbano do dia a dia",
   },
   "saude-primeiros-meses": {
     src: unsplash("photo-1576091160399-112ba8d25d1d"),
@@ -76,20 +76,20 @@ export const covers: Record<string, Cover> = {
   },
 
   "antes-de-viajar": {
-    src: unsplash("photo-1488646953014-85cb44e25828"),
-    alt: "Planejamento de viagem com mapa e passagens",
+    src: unsplash("photo-1557183200-f0fec6612738"),
+    alt: "Mala aberta com o que levar: o checklist antes do voo",
   },
   nie: {
     src: unsplash("photo-1450101499163-c8848c66ca85"),
     alt: "Assinatura de documentos oficiais, como o expediente do NIE",
   },
   empadronamiento: {
-    src: unsplash("photo-1555881400-74d7acaacd8b"),
-    alt: "Prédio histórico espanhol, tipo de ayuntamiento onde se faz o padrón",
+    src: unsplash("photo-1666861522686-02b2169e0a76"),
+    alt: "Edifício municipal em Valência, o tipo de ayuntamiento do padrón",
   },
   "conta-bancaria": {
-    src: unsplash("photo-1579621970795-87facc2f976d"),
-    alt: "Dinheiro e planejamento para abrir conta em euro",
+    src: unsplash("photo-1563013544-824ae1b704d3"),
+    alt: "Cartão e laptop para abrir e usar a conta em euro",
   },
   aluguel: {
     src: unsplash("photo-1502672260266-1c1ef2d93688"),
@@ -97,11 +97,11 @@ export const covers: Record<string, Cover> = {
   },
   "primeira-semana": {
     src: unsplash("photo-1523531294919-4bcd7c65e216"),
-    alt: "Parque e cidade espanhola na primeira semana após a chegada",
+    alt: "Park Güell em Barcelona, exploração da primeira semana",
   },
   "tie-residencia": {
-    src: unsplash("photo-1450101499163-c8848c66ca85"),
-    alt: "Documentos oficiais sobre a mesa, trâmite da TIE",
+    src: unsplash("photo-1521791136064-7986c2920216"),
+    alt: "Aperto de mãos após um trâmite oficial, como a TIE",
   },
   "autonomo-inicio": {
     src: unsplash("photo-1517048676732-d65bc937f952"),
@@ -109,18 +109,23 @@ export const covers: Record<string, Cover> = {
   },
 
   "nie-primeiros-tramites": {
-    src: unsplash("photo-1450101499163-c8848c66ca85"),
-    alt: "Papelada de trâmites, NIE e primeiros formulários",
+    src: unsplash("photo-1589829545856-d10d557cf95f"),
+    alt: "Balança da justiça, o peso dos primeiros trâmites oficiais",
   },
   "moradia-contratos": {
-    src: unsplash("photo-1522708323590-d24dbb6b0267"),
-    alt: "Apartamento mobilado, foco de contratos de aluguel",
+    src: unsplash("photo-1554995207-c18c203602cb"),
+    alt: "Sala com sofá, o tipo de imóvel que o contrato descreve",
   },
   "dinheiro-90-dias": {
     src: unsplash("photo-1553729459-efe14ef6055d"),
     alt: "Notas e planejamento financeiro dos primeiros 90 dias",
   },
 };
+
+const coverSources = Object.values(covers).map((cover) => cover.src);
+if (new Set(coverSources).size !== coverSources.length) {
+  throw new Error("Duplicate cover image in content/covers.ts");
+}
 
 export function getCover(slug: string): Cover | undefined {
   return covers[slug];

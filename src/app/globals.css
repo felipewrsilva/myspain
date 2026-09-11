@@ -38,11 +38,6 @@ body {
   color: var(--ink);
 }
 
-.leaflet-container {
-  font: inherit;
-  border-radius: 1.25rem;
-}
-
 @keyframes rise {
   from {
     opacity: 0;

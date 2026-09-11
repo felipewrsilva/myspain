@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 import { ChecklistClient } from "@/components/ChecklistClient";
+import { ContinueLinks } from "@/components/ContinueLinks";
 import { CoverImage } from "@/components/CoverImage";
-import { getChecklist, getChecklists } from "@/lib/content";
+import { getChecklist, getChecklists, getContinuePages } from "@/lib/content";
 import { getStage } from "@/lib/site";
 import Link from "next/link";
 
@@ -46,6 +47,7 @@ export default async function ChecklistPage({ params }: PageProps<"/checklists/[
       <div className="mt-8">
         <ChecklistClient slug={item.slug} items={item.items} />
       </div>
+      <ContinueLinks key={item.slug} currentHref={`/checklists/${item.slug}`} pages={getContinuePages()} />
     </div>
   );
 }

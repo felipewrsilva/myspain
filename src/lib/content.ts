@@ -2,9 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { StageId } from "@/lib/site";
-import cities from "../../content/cities.json";
+import type { ContinuePage } from "@/lib/continue";
 import topics from "../../content/topics.json";
-import places from "../../content/places.json";
 import costs from "../../content/costs.json";
 import { getCover } from "../../content/covers";
 
@@ -55,25 +54,6 @@ export type Checklist = {
   items: ChecklistItem[];
   cover?: string;
   coverAlt?: string;
-};
-
-export type Place = {
-  id: string;
-  name: string;
-  city: string;
-  category: string;
-  lat: number;
-  lng: number;
-  address: string;
-  description: string;
-  topics: string[];
-};
-
-export type SearchFilters = {
-  q?: string;
-  cidade?: string;
-  tema?: string;
-  etapa?: string;
 };
 
 function readMdxDir(dir: string) {
@@ -146,101 +126,12 @@ export function getChecklist(slug: string): Checklist | undefined {
   return getChecklists().find((item) => item.slug === slug);
 }
 
-export function getCities() {
-  return cities;
-}
-
 export function getTopics() {
   return topics;
 }
 
-export function getPlaces(): Place[] {
-  return places as Place[];
-}
-
 export function getCosts() {
   return costs;
-}
-
-function matchesFilters(
-  item: {
-    title: string;
-    description: string;
-    stage?: string;
-    topics?: string[];
-    cities?: string[];
-    content?: string;
-  },
-  filters: SearchFilters,
-) {
-  const q = filters.q?.trim().toLowerCase();
-  if (q) {
-    const haystack = [
-      item.title,
-      item.description,
-      item.content ?? "",
-      ...(item.topics ?? []),
-    ]
-      .join(" ")
-      .toLowerCase();
-    if (!haystack.includes(q)) return false;
-  }
-  if (filters.etapa && item.stage !== filters.etapa) return false;
-  if (filters.tema && !(item.topics ?? []).includes(filters.tema)) return false;
-  if (
-    filters.cidade &&
-    (item.cities?.length ?? 0) > 0 &&
-    !(item.cities ?? []).includes(filters.cidade)
-  ) {
-    return false;
-  }
-  if (filters.cidade && (item.cities?.length ?? 0) === 0) {
-    // conteúdo geral (sem cidade) aparece em qualquer filtro de cidade
-  }
-  return true;
-}
-
-export function searchContent(filters: SearchFilters) {
-  const guides = getGuides()
-    .filter((item) => matchesFilters(item, filters))
-    .map((item) => ({
-      type: "guia" as const,
-      href: `/guias/${item.slug}`,
-      title: item.title,
-      description: item.description,
-      stage: item.stage,
-      topics: item.topics,
-      image: item.cover,
-      imageAlt: item.coverAlt,
-    }));
-
-  const apostilas = getApostilas()
-    .filter((item) => matchesFilters(item, filters))
-    .map((item) => ({
-      type: "apostila" as const,
-      href: `/apostilas/${item.slug}`,
-      title: item.title,
-      description: item.description,
-      stage: item.stage,
-      topics: item.topics,
-      image: item.cover,
-      imageAlt: item.coverAlt,
-    }));
-
-  const checklists = getChecklists()
-    .filter((item) => matchesFilters(item, filters))
-    .map((item) => ({
-      type: "checklist" as const,
-      href: `/checklists/${item.slug}`,
-      title: item.title,
-      description: item.description,
-      stage: item.stage,
-      topics: item.topics,
-      image: item.cover,
-      imageAlt: item.coverAlt,
-    }));
-
-  return [...guides, ...apostilas, ...checklists];
 }
 
 export function getContentByStage(stage: StageId) {
@@ -251,11 +142,36 @@ export function getContentByStage(stage: StageId) {
   };
 }
 
-export { getCover } from "../../content/covers";
-
-export function getCityName(id: string) {
-  return getCities().find((city) => city.id === id)?.name ?? id;
+export function getContinuePages(): ContinuePage[] {
+  return [
+    ...getGuides().map((item) => ({
+      href: `/guias/${item.slug}`,
+      title: item.title,
+      description: item.description,
+      kind: "guia" as const,
+      stage: item.stage,
+      topics: item.topics,
+    })),
+    ...getChecklists().map((item) => ({
+      href: `/checklists/${item.slug}`,
+      title: item.title,
+      description: item.description,
+      kind: "checklist" as const,
+      stage: item.stage,
+      topics: item.topics,
+    })),
+    ...getApostilas().map((item) => ({
+      href: `/apostilas/${item.slug}`,
+      title: item.title,
+      description: item.description,
+      kind: "apostila" as const,
+      stage: item.stage,
+      topics: item.topics,
+    })),
+  ];
 }
+
+export { getCover } from "../../content/covers";
 
 export function getTopicName(id: string) {
   return getTopics().find((topic) => topic.id === id)?.name ?? id;

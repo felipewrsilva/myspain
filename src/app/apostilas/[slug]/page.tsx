@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
-import { MdxContent } from "@/components/MdxContent";
+import { ContinueLinks } from "@/components/ContinueLinks";
 import { CoverImage } from "@/components/CoverImage";
-import { getApostila, getApostilas } from "@/lib/content";
+import { MdxContent } from "@/components/MdxContent";
+import { getApostila, getApostilas, getContinuePages } from "@/lib/content";
 
 export function generateStaticParams() {
   return getApostilas().map((item) => ({ slug: item.slug }));
@@ -51,6 +52,7 @@ export default async function ApostilaPage({ params }: PageProps<"/apostilas/[sl
       <div className="mt-10">
         <MdxContent source={item.content} />
       </div>
+      <ContinueLinks key={item.slug} currentHref={`/apostilas/${item.slug}`} pages={getContinuePages()} />
     </article>
   );
 }

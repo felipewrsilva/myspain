@@ -1,5 +1,4 @@
 import { ContentCard } from "@/components/ContentCard";
-import { SearchForm } from "@/components/SearchForm";
 import { getGuides, getTopicName } from "@/lib/content";
 
 export const metadata = {
@@ -16,9 +15,6 @@ export default function GuiasPage() {
       <p className="mt-3 max-w-2xl text-[var(--ink-muted)]">
         {guides.length} guias objetivos para cada momento da jornada.
       </p>
-      <div className="mt-8">
-        <SearchForm />
-      </div>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {guides.map((guide) => (
           <ContentCard

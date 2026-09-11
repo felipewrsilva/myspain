@@ -1,8 +1,0 @@
-[
-  { "id": "madrid", "name": "Madrid", "region": "Comunidade de Madrid" },
-  { "id": "barcelona", "name": "Barcelona", "region": "Catalunha" },
-  { "id": "valencia", "name": "Valência", "region": "Comunidade Valenciana" },
-  { "id": "malaga", "name": "Málaga", "region": "Andaluzia" },
-  { "id": "sevilla", "name": "Sevilha", "region": "Andaluzia" },
-  { "id": "bilbao", "name": "Bilbao", "region": "País Basco" }
-]

@@ -9,8 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guias",
     "/apostilas",
     "/checklists",
-    "/buscar",
-    "/mapa",
     "/ferramentas",
     "/ferramentas/custo-de-vida",
     "/ferramentas/conversor",

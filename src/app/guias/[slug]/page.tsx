@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { MdxContent } from "@/components/MdxContent";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { CoverImage } from "@/components/CoverImage";
-import { getGuide, getGuides, getTopicName } from "@/lib/content";
+import { ContinueLinks } from "@/components/ContinueLinks";
+import { getContinuePages, getGuide, getGuides, getTopicName } from "@/lib/content";
 import { getStage } from "@/lib/site";
 
 export function generateStaticParams() {
@@ -54,6 +55,7 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
       <div className="mt-10">
         <MdxContent source={guide.content} />
       </div>
+      <ContinueLinks key={guide.slug} currentHref={`/guias/${guide.slug}`} pages={getContinuePages()} />
       <div className="mt-12">
         <WhatsAppCTA compact />
       </div>
