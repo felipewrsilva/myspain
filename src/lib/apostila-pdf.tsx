@@ -34,7 +34,14 @@ Font.register({
   ],
 });
 
-Font.registerHyphenationCallback((word) => [word]);
+Font.registerHyphenationCallback((word) => {
+  if (word.length <= 16) return [word];
+  const parts: string[] = [];
+  for (let i = 0; i < word.length; i += 8) {
+    parts.push(word.slice(i, i + 8));
+  }
+  return parts;
+});
 
 const styles = StyleSheet.create({
   page: {
@@ -214,7 +221,7 @@ const styles = StyleSheet.create({
     borderColor: "#14181f",
   },
   checkBody: {
-    flex: 1,
+    width: 466,
   },
   checkStep: {
     fontFamily: "Source Sans",
@@ -295,9 +302,9 @@ function Inline({ nodes }: { nodes: PhrasingContent[] }) {
         );
       case "link":
         return (
-          <Link key={index} src={absoluteUrl(node.url)} style={styles.link}>
+          <Text key={index} style={styles.link}>
             <Inline nodes={node.children} />
-          </Link>
+          </Text>
         );
       case "inlineCode":
         return (
@@ -319,17 +326,6 @@ function listItemNodes(item: List["children"][number]): PhrasingContent[] {
   return [];
 }
 
-function phrasingLength(nodes: PhrasingContent[]): number {
-  let total = 0;
-  for (const node of nodes) {
-    if (node.type === "text") total += node.value.length;
-    else if ("children" in node && Array.isArray(node.children)) {
-      total += phrasingLength(node.children as PhrasingContent[]);
-    }
-  }
-  return total;
-}
-
 function isPdfBreak(node: RootContent) {
   if (node.type !== "paragraph") return false;
   return (
@@ -338,36 +334,6 @@ function isPdfBreak(node: RootContent) {
       .join("")
       .trim() === ":::pdf-break:::"
   );
-}
-
-function quoteLength(node: RootContent) {
-  if (node.type !== "blockquote") return 0;
-  return node.children.reduce((sum, child) => {
-    if (child.type === "paragraph") return sum + phrasingLength(child.children);
-    return sum;
-  }, 0);
-}
-
-function isCompactFollow(node: RootContent) {
-  if (isPdfBreak(node) || node.type === "table") return false;
-  if (node.type === "blockquote") return quoteLength(node) <= 280;
-  if (node.type === "paragraph") return phrasingLength(node.children) <= 240 && !phrasingHasLink(node.children);
-  if (node.type === "list" && node.children.length <= 2) {
-    const items = node.children.map(listItemNodes);
-    const total = items.reduce((sum, body) => sum + phrasingLength(body), 0);
-    return total <= 180 && items.every((body) => !phrasingHasLink(body));
-  }
-  return false;
-}
-
-function phrasingHasLink(nodes: PhrasingContent[]): boolean {
-  return nodes.some((node) => {
-    if (node.type === "link") return true;
-    if ("children" in node && Array.isArray(node.children)) {
-      return phrasingHasLink(node.children as PhrasingContent[]);
-    }
-    return false;
-  });
 }
 
 function renderBlock(node: RootContent, key: number | string, skipHeavyBlocks = false) {
@@ -410,7 +376,7 @@ function renderBlock(node: RootContent, key: number | string, skipHeavyBlocks = 
     case "blockquote": {
       const paragraph = node.children.find((child) => child.type === "paragraph");
       return (
-        <View key={key} style={styles.quote} minPresenceAhead={40}>
+        <View key={key} style={styles.quote}>
           <Text style={styles.quoteText}>
             {paragraph ? <Inline nodes={paragraph.children} /> : null}
           </Text>
@@ -425,28 +391,7 @@ function renderBlock(node: RootContent, key: number | string, skipHeavyBlocks = 
 }
 
 function Blocks({ nodes, skipHeavyBlocks = false }: { nodes: RootContent[]; skipHeavyBlocks?: boolean }) {
-  const elements: Array<ReturnType<typeof renderBlock>> = [];
-
-  for (let index = 0; index < nodes.length; index += 1) {
-    const node = nodes[index];
-    const next = nodes[index + 1];
-    const keepWithNext = node.type === "heading" && next && isCompactFollow(next);
-
-    if (keepWithNext) {
-      elements.push(
-        <View key={index} wrap={false} minPresenceAhead={36}>
-          {renderBlock(node, "heading", skipHeavyBlocks)}
-          {renderBlock(next, "body", skipHeavyBlocks)}
-        </View>,
-      );
-      index += 1;
-      continue;
-    }
-
-    elements.push(renderBlock(node, index, skipHeavyBlocks));
-  }
-
-  return elements;
+  return nodes.map((node, index) => renderBlock(node, index, skipHeavyBlocks));
 }
 
 function flattenInline(nodes: PhrasingContent[]): string {
@@ -500,7 +445,7 @@ function ArticleDocument({
           <Text>{siteConfig.domain}</Text>
         </View>
 
-        <View wrap={false}>
+        <View>
           <Text style={styles.kicker}>{kicker}</Text>
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.description}>{description}</Text>
@@ -536,7 +481,7 @@ function ChecklistDocument({ checklist }: { checklist: Checklist }) {
           <Text>{siteConfig.domain}</Text>
         </View>
 
-        <View wrap={false}>
+        <View>
           <Text style={styles.kicker}>Checklist</Text>
           <Text style={styles.title}>{checklist.title}</Text>
           <Text style={styles.description}>{checklist.description}</Text>
@@ -603,7 +548,7 @@ export async function renderMarkdownPdf({
 }) {
   const markdown = stripMdx(content);
   const tree = remark().use(remarkGfm).parse(markdown) as Root;
-  const skipHeavyBlocks = path.includes("visto-e-residencia");
+  const skipHeavyBlocks = false;
   return renderToBuffer(
     <ArticleDocument
       title={title}
