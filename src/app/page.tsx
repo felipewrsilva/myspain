@@ -5,9 +5,18 @@ import { ContentCard, CardBullets } from "@/components/ContentCard";
 import { getGuides, getChecklists, getCover } from "@/lib/content";
 import { stages } from "@/lib/site";
 
+const featuredGuideSlugs = ["visto-e-residencia", "primeiros-30-dias", "planejamento-financeiro"];
+const featuredChecklistSlugs = ["antes-de-viajar", "nie", "primeira-semana"];
+
+function pickBySlug<T extends { slug: string }>(items: T[], slugs: string[]) {
+  return slugs
+    .map((slug) => items.find((item) => item.slug === slug))
+    .filter((item): item is T => Boolean(item));
+}
+
 export default function HomePage() {
-  const guides = getGuides().slice(0, 3);
-  const checklists = getChecklists().slice(0, 3);
+  const guides = pickBySlug(getGuides(), featuredGuideSlugs);
+  const checklists = pickBySlug(getChecklists(), featuredChecklistSlugs);
 
   return (
     <>
