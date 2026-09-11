@@ -20,7 +20,7 @@ export function YouTube({ id, title }: { id: string; title: string }) {
       </div>
       <figcaption className="px-4 py-2.5 text-sm text-[var(--ink-muted)]">
         {title}
-        <span className="mt-0.5 block text-xs">Em português do Brasil. Complementa o texto; a regra oficial está nos links .gob.es.</span>
+        <span className="mt-0.5 block text-xs">Complementa o texto; a regra oficial está nos links .gob.es.</span>
       </figcaption>
     </figure>
   );

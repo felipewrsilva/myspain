@@ -26,9 +26,11 @@ const components = {
     );
   },
   a: ({ href = "", children, ...rest }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+    const linkClass =
+      "break-words font-semibold text-[var(--accent)] underline-offset-4 hover:underline [overflow-wrap:anywhere]";
     if (href.startsWith("/")) {
       return (
-        <Link href={href} className="font-semibold text-[var(--accent)] underline-offset-4 hover:underline">
+        <Link href={href} className={linkClass}>
           {children}
         </Link>
       );
@@ -37,7 +39,7 @@ const components = {
       <a
         {...rest}
         href={href}
-        className="font-semibold text-[var(--accent)] underline-offset-4 hover:underline"
+        className={linkClass}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -47,13 +49,13 @@ const components = {
     );
   },
   h2: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h2 className="mt-10 mb-3 scroll-mt-24 font-[family-name:var(--font-display)] text-2xl font-bold text-balance text-[var(--ink)]" {...props} />
+    <h2 className="mt-10 mb-3 scroll-mt-24 font-[family-name:var(--font-display)] text-2xl font-bold break-words text-balance text-[var(--ink)]" {...props} />
   ),
   h3: (props: React.HTMLAttributes<HTMLHeadingElement>) => (
-    <h3 className="mt-8 mb-2 scroll-mt-24 text-lg font-bold text-balance text-[var(--ink)]" {...props} />
+    <h3 className="mt-8 mb-2 scroll-mt-24 text-lg font-bold break-words text-balance text-[var(--ink)]" {...props} />
   ),
   p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <p className="mb-4 leading-relaxed text-pretty text-[var(--ink-muted)]" {...props} />
+    <p className="mb-4 leading-relaxed break-words text-pretty text-[var(--ink-muted)]" {...props} />
   ),
   ul: (props: React.HTMLAttributes<HTMLUListElement>) => (
     <ul className="mb-4 list-disc space-y-2 pl-5 text-[var(--ink-muted)]" {...props} />

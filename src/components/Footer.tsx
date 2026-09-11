@@ -13,7 +13,7 @@ export function Footer() {
             className="inline-flex items-center gap-3 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight"
           >
             <LogoMark className="size-10 shrink-0 text-[1.75rem]" />
-            <span className="whitespace-nowrap">
+            <span>
               Minha <span className="text-[var(--accent)]">Espanha</span>
             </span>
           </Link>

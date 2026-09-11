@@ -262,7 +262,7 @@ function stripMdx(source: string) {
       const id = /id="([^"]*)"/.exec(attrs)?.[1];
       const url = id ? `https://www.youtube.com/watch?v=${id}` : "";
       if (title && url) {
-        return `\n\n**Vídeo (português do Brasil):** [${title}](${url})\n\n`;
+        return `\n\n**Vídeo:** [${title}](${url})\n\n`;
       }
       if (url) return `\n\n**Vídeo:** ${url}\n\n`;
       return title ? `\n\n**Vídeo no site:** ${title}\n\n` : "\n";

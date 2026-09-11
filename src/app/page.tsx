@@ -31,9 +31,9 @@ export default function HomePage() {
           }}
         />
         <div className="mx-auto flex max-w-6xl flex-col px-4 pb-10 pt-16 sm:px-6 md:min-h-[92vh] md:justify-end md:pb-20 md:pt-28">
-          <p className="anim-rise font-[family-name:var(--font-display)] text-[clamp(3rem,9vw,6.5rem)] font-extrabold leading-[0.88] tracking-tight">
-            <span className="block whitespace-nowrap">Minha</span>
-            <span className="block whitespace-nowrap">Espanha</span>
+          <p className="anim-rise max-w-full font-[family-name:var(--font-display)] text-[clamp(2.75rem,12vw,6.5rem)] font-extrabold leading-[0.88] tracking-tight">
+            <span className="block">Minha</span>
+            <span className="block">Espanha</span>
           </p>
           <h1
             className="anim-rise mt-6 max-w-xl text-xl font-medium text-white/90 sm:text-2xl"
