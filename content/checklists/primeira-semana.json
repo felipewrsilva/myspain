@@ -2,6 +2,7 @@
   "slug": "primeira-semana",
   "title": "Checklist da primeira semana",
   "description": "Internet, agendamento, cadastro na prefeitura e banco nos primeiros sete dias.",
+  "bullets": ["Internet", "Agendamento", "Cadastro na prefeitura"],
   "stage": "acabei-de-chegar",
   "topics": ["nie", "empadronamiento", "banco"],
   "cities": [],

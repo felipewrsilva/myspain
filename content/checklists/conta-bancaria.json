@@ -2,6 +2,7 @@
   "slug": "conta-bancaria",
   "title": "Checklist para abrir conta bancária",
   "description": "Santander com passaporte, ponte em euro e conversão para conta de residente.",
+  "bullets": ["Santander com passaporte", "Ponte em euro", "Conta de residente"],
   "stage": "acabei-de-chegar",
   "topics": ["banco"],
   "cities": [],

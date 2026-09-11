@@ -32,10 +32,10 @@ export default async function ChecklistPage({ params }: PageProps<"/checklists/[
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Checklist</p>
-      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-[var(--ink)]">{item.title}</h1>
-      <p className="mt-4 text-lg text-[var(--ink-muted)]">{item.description}</p>
+      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-balance text-[var(--ink)]">{item.title}</h1>
+      <p className="mt-4 text-lg text-pretty text-[var(--ink-muted)]">{item.description}</p>
       {stage ? (
-        <Link href={stage.href} className="mt-4 inline-block text-sm text-[var(--accent)] hover:underline">
+        <Link href={stage.href} className="mt-4 inline-flex min-h-11 items-center text-sm font-semibold text-[var(--accent)] hover:underline">
           Ver etapa: {stage.title}
         </Link>
       ) : null}

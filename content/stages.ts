@@ -5,6 +5,7 @@ export const stages: {
   title: string;
   shortTitle: string;
   description: string;
+  bullets: string[];
   href: string;
 }[] = [
   {
@@ -13,6 +14,7 @@ export const stages: {
     shortTitle: "Antes",
     description:
       "Documentos, dinheiro, visto e o que organizar no Brasil para chegar com o pé no chão.",
+    bullets: ["Documentos", "Dinheiro e visto", "O que resolver no Brasil"],
     href: "/etapas/antes-de-ir",
   },
   {
@@ -21,6 +23,7 @@ export const stages: {
     shortTitle: "Chegada",
     description:
       "Número de estrangeiro (NIE), cadastro na prefeitura, banco, moradia e saúde nos primeiros dias no país.",
+    bullets: ["NIE", "Cadastro na prefeitura", "Banco e moradia"],
     href: "/etapas/acabei-de-chegar",
   },
   {
@@ -29,6 +32,7 @@ export const stages: {
     shortTitle: "Vida",
     description:
       "Trabalho, impostos, idioma e a rotina de quem já está estabelecido.",
+    bullets: ["Trabalho", "Impostos", "Idioma e rotina"],
     href: "/etapas/ja-moro",
   },
 ];

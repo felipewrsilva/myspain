@@ -2,6 +2,7 @@
   "slug": "nie",
   "title": "Checklist do NIE (número de estrangeiro)",
   "description": "Agendamento oficial, formulário de pedido, taxa da polícia e o que levar na delegacia.",
+  "bullets": ["Agendamento oficial", "Formulário e taxa", "O que levar"],
   "stage": "acabei-de-chegar",
   "topics": ["nie", "documentos"],
   "cities": [],

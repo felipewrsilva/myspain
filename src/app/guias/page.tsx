@@ -22,6 +22,7 @@ export default function GuiasPage() {
             href={`/guias/${guide.slug}`}
             title={guide.title}
             description={guide.description}
+            bullets={guide.bullets}
             meta={guide.topics.map(getTopicName).slice(0, 2).join(" · ")}
             image={guide.cover}
             imageAlt={guide.coverAlt}

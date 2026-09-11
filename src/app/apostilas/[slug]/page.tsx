@@ -29,21 +29,15 @@ export default async function ApostilaPage({ params }: PageProps<"/apostilas/[sl
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">Apostila</p>
-      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-[var(--ink)]">{item.title}</h1>
-      <p className="mt-4 text-lg text-[var(--ink-muted)]">{item.description}</p>
-      {item.pdf ? (
-        <a
-          href={item.pdf}
-          className="mt-6 inline-flex rounded-xl bg-[var(--ink)] px-5 py-3 text-sm font-medium text-[var(--paper)] hover:bg-[var(--accent)]"
-          download
-        >
-          Baixar PDF
-        </a>
-      ) : (
-        <p className="mt-6 text-sm text-[var(--ink-muted)]">
-          PDF em preparação. Por enquanto, use a leitura online abaixo.
-        </p>
-      )}
+      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-balance text-[var(--ink)]">{item.title}</h1>
+      <p className="mt-4 text-lg text-pretty text-[var(--ink-muted)]">{item.description}</p>
+      <a
+        href={`/apostilas/${item.slug}/pdf`}
+        download={`minha-espanha-${item.slug}.pdf`}
+        className="mt-6 inline-flex min-h-11 items-center rounded-xl bg-[var(--ink)] px-5 text-sm font-medium text-[var(--paper)] hover:bg-[var(--accent)]"
+      >
+        Baixar PDF para ler offline
+      </a>
       {item.cover ? (
         <div className="mt-8">
           <CoverImage src={item.cover} alt={item.coverAlt || item.title} priority />

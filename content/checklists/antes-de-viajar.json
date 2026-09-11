@@ -2,6 +2,7 @@
   "slug": "antes-de-viajar",
   "title": "Checklist antes de viajar",
   "description": "Visto certo, apostila, chip virtual, conta Santander e o que não deixar para a semana do voo.",
+  "bullets": ["Visto", "Apostila", "Chip e conta"],
   "stage": "antes-de-ir",
   "topics": ["documentos", "custo-de-vida"],
   "cities": [],

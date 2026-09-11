@@ -11,7 +11,7 @@ export const siteConfig = {
       description: "Canal principal da comunidade Minha Espanha.",
     },
     comunidade: {
-      label: "Comunidade",
+      label: "Grupo de dúvidas",
       href: "https://chat.whatsapp.com/BaAoOrCt4FTGhiXiiZxNSu",
       description: "Espaço para tirar dúvidas e trocar experiências do dia a dia.",
     },

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { ContentCard } from "@/components/ContentCard";
+import { ContentCard, CardBullets } from "@/components/ContentCard";
 import { getGuides, getChecklists, getCover } from "@/lib/content";
-import { stages, siteConfig } from "@/lib/site";
+import { stages } from "@/lib/site";
 
 export default function HomePage() {
   const guides = getGuides().slice(0, 3);
@@ -11,7 +11,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative isolate min-h-[92vh] overflow-hidden bg-[var(--ink)] text-white">
+      <section className="relative isolate overflow-hidden bg-[var(--ink)] text-white md:min-h-[92vh]">
         <div
           className="anim-zoom absolute inset-0 -z-10"
           style={{
@@ -21,18 +21,21 @@ export default function HomePage() {
             backgroundPosition: "center 40%",
           }}
         />
-        <div className="mx-auto flex min-h-[92vh] max-w-6xl flex-col justify-end px-4 pb-20 pt-28 sm:px-6">
-          <p className="anim-rise font-[family-name:var(--font-display)] text-[clamp(3.4rem,12vw,7.5rem)] font-extrabold leading-[0.9] tracking-tight">
-            {siteConfig.name}
+        <div className="mx-auto flex max-w-6xl flex-col px-4 pb-10 pt-16 sm:px-6 md:min-h-[92vh] md:justify-end md:pb-20 md:pt-28">
+          <p className="anim-rise font-[family-name:var(--font-display)] text-[clamp(3rem,9vw,6.5rem)] font-extrabold leading-[0.88] tracking-tight">
+            <span className="block whitespace-nowrap">Minha</span>
+            <span className="block whitespace-nowrap">Espanha</span>
           </p>
           <h1
             className="anim-rise mt-6 max-w-xl text-xl font-medium text-white/90 sm:text-2xl"
             style={{ animationDelay: "0.1s" }}
           >
-            Chegue preparado. Resolva a burocracia. Viva com método.
+            <span className="block">Chegue preparado.</span>
+            <span className="block">Resolva a burocracia.</span>
+            <span className="block">Viva com método.</span>
           </h1>
           <p
-            className="anim-rise mt-4 max-w-lg text-base text-white/65"
+            className="anim-rise mt-4 max-w-xl text-base text-pretty text-white/65"
             style={{ animationDelay: "0.18s" }}
           >
             Guias, checklists e apostilas para brasileiros na Espanha, sem cadastro e sem enrolação.
@@ -40,13 +43,13 @@ export default function HomePage() {
           <div className="anim-rise mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.26s" }}>
             <Link
               href="/etapas/antes-de-ir"
-              className="inline-flex items-center justify-center rounded-lg bg-[var(--accent)] px-6 py-3.5 text-sm font-bold text-white transition hover:brightness-110"
+              className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--accent)] px-6 text-sm font-bold text-white transition hover:brightness-110"
             >
               Começar pela minha etapa
             </Link>
             <Link
               href="/comunidade"
-              className="inline-flex items-center justify-center rounded-lg border border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
+              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/30 px-6 text-sm font-semibold text-white transition hover:bg-white/10"
             >
               Ir para a comunidade
             </Link>
@@ -99,7 +102,7 @@ export default function HomePage() {
                   <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]">
                     {stage.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-[var(--ink-muted)]">{stage.description}</p>
+                  <CardBullets items={stage.bullets} />
                   <span className="mt-5 inline-block text-sm font-bold text-[var(--accent)]">Ver etapa</span>
                 </div>
               </Link>
@@ -110,12 +113,12 @@ export default function HomePage() {
 
       <section className="border-y border-[var(--line)] bg-white">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-          <div className="mb-8 flex items-end justify-between gap-4">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Guias para ler agora</h2>
               <p className="mt-2 text-[var(--ink-muted)]">Orientações objetivas, sem rodeio.</p>
             </div>
-            <Link href="/guias" className="text-sm font-bold text-[var(--accent)] hover:underline">
+            <Link href="/guias" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
               Todos os guias
             </Link>
           </div>
@@ -126,6 +129,7 @@ export default function HomePage() {
                 href={`/guias/${guide.slug}`}
                 title={guide.title}
                 description={guide.description}
+                bullets={guide.bullets}
                 meta="Guia"
                 image={guide.cover}
                 imageAlt={guide.coverAlt}
@@ -136,12 +140,12 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <div className="mb-8 flex items-end justify-between gap-4">
+        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Checklists</h2>
             <p className="mt-2 text-[var(--ink-muted)]">Marque no celular e avance passo a passo.</p>
           </div>
-          <Link href="/checklists" className="text-sm font-bold text-[var(--accent)] hover:underline">
+          <Link href="/checklists" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
             Todos os checklists
           </Link>
         </div>
@@ -152,6 +156,7 @@ export default function HomePage() {
               href={`/checklists/${item.slug}`}
               title={item.title}
               description={item.description}
+              bullets={item.bullets}
               meta="Checklist"
               image={item.cover}
               imageAlt={item.coverAlt}

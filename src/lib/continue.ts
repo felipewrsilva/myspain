@@ -6,6 +6,7 @@ export type ContinuePage = {
   href: string;
   title: string;
   description: string;
+  bullets?: string[];
   kind: ContinueKind;
   label?: string;
   stage: StageId;
@@ -27,6 +28,7 @@ export const continueFallbacks: ContinuePage[] = [
     href: "/comunidade",
     title: "Comunidade no WhatsApp",
     description: "Dúvidas reais e gente no mesmo caminho que você.",
+    bullets: ["Dúvidas reais", "Relatos atualizados", "Gente no mesmo caminho"],
     kind: "outro",
     label: "Comunidade",
     stage: "acabei-de-chegar",

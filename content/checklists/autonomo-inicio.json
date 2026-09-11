@@ -2,6 +2,7 @@
   "slug": "autonomo-inicio",
   "title": "Checklist para começar como autónomo",
   "description": "Alta na previdência e na Receita, fatura, imposto sobre as vendas (IVA), imposto de renda e reserva de imposto.",
+  "bullets": ["Alta na previdência", "IVA e imposto de renda", "Reserva de imposto"],
   "stage": "ja-moro",
   "topics": ["trabalho", "impostos"],
   "cities": [],

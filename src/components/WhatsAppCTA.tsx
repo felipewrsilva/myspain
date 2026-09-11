@@ -28,7 +28,7 @@ export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
         className={
           compact
             ? "mt-2 font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]"
-            : "mt-3 max-w-xl font-[family-name:var(--font-display)] text-3xl font-bold sm:text-4xl"
+            : "mt-3 max-w-xl font-[family-name:var(--font-display)] text-3xl font-bold text-balance sm:text-4xl"
         }
       >
         Entre nos grupos do WhatsApp
@@ -40,22 +40,24 @@ export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
         <a
           href={siteConfig.whatsapp.principal.href}
           target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center justify-center rounded-lg bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110"
+          rel="noopener noreferrer"
+          className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[var(--accent)] px-5 text-sm font-semibold text-white transition hover:brightness-110"
         >
-          Grupo principal
+          {siteConfig.whatsapp.principal.label}
+          <span className="sr-only"> (abre o WhatsApp)</span>
         </a>
         <a
           href={siteConfig.whatsapp.comunidade.href}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className={
             compact
-              ? "inline-flex items-center justify-center rounded-lg border border-[var(--line)] px-5 py-3 text-sm font-semibold text-[var(--ink)]"
-              : "inline-flex items-center justify-center rounded-lg border border-white/25 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+              ? "inline-flex min-h-11 items-center justify-center rounded-lg border border-[var(--line)] px-5 text-sm font-semibold text-[var(--ink)]"
+              : "inline-flex min-h-11 items-center justify-center rounded-lg border border-white/25 px-5 text-sm font-semibold text-white transition hover:bg-white/10"
           }
         >
-          Comunidade
+          {siteConfig.whatsapp.comunidade.label}
+          <span className="sr-only"> (abre o WhatsApp)</span>
         </a>
       </div>
     </section>

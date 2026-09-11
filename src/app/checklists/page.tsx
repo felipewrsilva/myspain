@@ -22,6 +22,7 @@ export default function ChecklistsPage() {
             href={`/checklists/${item.slug}`}
             title={item.title}
             description={item.description}
+            bullets={item.bullets}
             meta={`${item.items.length} passos`}
             image={item.cover}
             imageAlt={item.coverAlt}

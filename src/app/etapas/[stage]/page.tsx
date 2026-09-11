@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContentCard } from "@/components/ContentCard";
 import { CoverImage } from "@/components/CoverImage";
@@ -32,10 +33,10 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[var(--accent)]">Etapa</p>
-      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl font-extrabold text-[var(--ink)] sm:text-5xl">
+      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl font-extrabold text-balance text-[var(--ink)] sm:text-5xl">
         {stage.title}
       </h1>
-      <p className="mt-4 max-w-2xl text-lg text-[var(--ink-muted)]">{stage.description}</p>
+      <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">{stage.description}</p>
 
       {cover ? (
         <div className="mt-8">
@@ -48,72 +49,82 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
         </div>
       ) : null}
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        {stages.map((item) => (
-          <a
-            key={item.id}
-            href={item.href}
-            className={`rounded-lg px-4 py-2 text-sm font-semibold ${
-              item.id === stage.id
-                ? "bg-[var(--ink)] text-white"
-                : "border border-[var(--line)] bg-white text-[var(--ink-muted)]"
-            }`}
-          >
-            {item.shortTitle}
-          </a>
-        ))}
-      </div>
+      <nav className="mt-6 flex flex-wrap gap-2" aria-label="Trocar etapa">
+        {stages.map((item) => {
+          const current = item.id === stage.id;
+          return (
+            <Link
+              key={item.id}
+              href={item.href}
+              aria-current={current ? "page" : undefined}
+              className={`inline-flex min-h-11 items-center rounded-lg px-4 text-sm font-semibold ${
+                current
+                  ? "bg-[var(--ink)] text-white"
+                  : "border border-[var(--line)] bg-white text-[var(--ink-muted)]"
+              }`}
+            >
+              {item.shortTitle}
+            </Link>
+          );
+        })}
+      </nav>
 
-      <section className="mt-12">
-        <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Guias</h2>
-        <div className="mt-4 grid gap-4 md:grid-cols-2">
-          {content.guides.map((guide) => (
-            <ContentCard
-              key={guide.slug}
-              href={`/guias/${guide.slug}`}
-              title={guide.title}
-              description={guide.description}
-              image={guide.cover}
-              imageAlt={guide.coverAlt}
-            />
-          ))}
-        </div>
-      </section>
+      {content.guides.length ? (
+        <section className="mt-12">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Guias</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            {content.guides.map((guide) => (
+              <ContentCard
+                key={guide.slug}
+                href={`/guias/${guide.slug}`}
+                title={guide.title}
+                description={guide.description}
+                bullets={guide.bullets}
+                image={guide.cover}
+                imageAlt={guide.coverAlt}
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
 
-      <section className="mt-12">
-        <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Checklists</h2>
-        <div className="mt-4 grid gap-4 md:grid-cols-2">
-          {content.checklists.map((item) => (
-            <ContentCard
-              key={item.slug}
-              href={`/checklists/${item.slug}`}
-              title={item.title}
-              description={item.description}
-              image={item.cover}
-              imageAlt={item.coverAlt}
-            />
-          ))}
-        </div>
-      </section>
+      {content.checklists.length ? (
+        <section className="mt-12">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Checklists</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            {content.checklists.map((item) => (
+              <ContentCard
+                key={item.slug}
+                href={`/checklists/${item.slug}`}
+                title={item.title}
+                description={item.description}
+                bullets={item.bullets}
+                image={item.cover}
+                imageAlt={item.coverAlt}
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
 
-      <section className="mt-12">
-        <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Apostilas</h2>
-        <div className="mt-4 grid gap-4 md:grid-cols-2">
-          {content.apostilas.map((item) => (
-            <ContentCard
-              key={item.slug}
-              href={`/apostilas/${item.slug}`}
-              title={item.title}
-              description={item.description}
-              image={item.cover}
-              imageAlt={item.coverAlt}
-            />
-          ))}
-          {!content.apostilas.length ? (
-            <p className="text-sm text-[var(--ink-muted)]">Nenhuma apostila nesta etapa por enquanto.</p>
-          ) : null}
-        </div>
-      </section>
+      {content.apostilas.length ? (
+        <section className="mt-12">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Apostilas</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            {content.apostilas.map((item) => (
+              <ContentCard
+                key={item.slug}
+                href={`/apostilas/${item.slug}`}
+                title={item.title}
+                description={item.description}
+                bullets={item.bullets}
+                image={item.cover}
+                imageAlt={item.coverAlt}
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <div className="mt-14">
         <WhatsAppCTA compact />

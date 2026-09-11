@@ -11,6 +11,7 @@ const contentRoot = path.join(process.cwd(), "content");
 export type ContentMeta = {
   title: string;
   description: string;
+  bullets: string[];
   stage: StageId;
   topics: string[];
   cities: string[];
@@ -47,6 +48,7 @@ export type Checklist = {
   slug: string;
   title: string;
   description: string;
+  bullets: string[];
   stage: StageId;
   topics: string[];
   cities: string[];
@@ -71,6 +73,7 @@ function parseMdxFile(dir: string, file: string) {
     slug,
     title: String(data.title ?? slug),
     description: String(data.description ?? ""),
+    bullets: Array.isArray(data.bullets) ? data.bullets.map((item) => String(item)) : [],
     stage: data.stage as StageId,
     topics: (data.topics as string[]) ?? [],
     cities: (data.cities as string[]) ?? [],
@@ -94,7 +97,10 @@ export function getGuide(slug: string): Guide | undefined {
 
 export function getApostilas(): Apostila[] {
   return readMdxDir("apostilas")
-    .map((file) => parseMdxFile("apostilas", file))
+    .map((file) => {
+      const item = parseMdxFile("apostilas", file);
+      return { ...item, pdf: `/apostilas/${item.slug}/pdf` };
+    })
     .sort((a, b) => a.title.localeCompare(b.title, "pt-BR"));
 }
 
@@ -114,6 +120,7 @@ export function getChecklists(): Checklist[] {
       const cover = getCover(item.slug);
       return {
         ...item,
+        bullets: item.bullets ?? [],
         cover: item.cover ?? cover?.src,
         coverAlt: item.coverAlt ?? cover?.alt,
       };
@@ -143,6 +150,7 @@ export function getContinuePages(): ContinuePage[] {
       href: `/guias/${item.slug}`,
       title: item.title,
       description: item.description,
+      bullets: item.bullets,
       kind: "guia" as const,
       stage: item.stage,
       topics: item.topics,
@@ -151,6 +159,7 @@ export function getContinuePages(): ContinuePage[] {
       href: `/checklists/${item.slug}`,
       title: item.title,
       description: item.description,
+      bullets: item.bullets,
       kind: "checklist" as const,
       stage: item.stage,
       topics: item.topics,
@@ -159,6 +168,7 @@ export function getContinuePages(): ContinuePage[] {
       href: `/apostilas/${item.slug}`,
       title: item.title,
       description: item.description,
+      bullets: item.bullets,
       kind: "apostila" as const,
       stage: item.stage,
       topics: item.topics,

@@ -2,6 +2,7 @@
   "slug": "aluguel",
   "title": "Checklist de aluguel",
   "description": "Do Idealista à entrega das chaves, com fiança da lei do aluguel e sinais de golpe.",
+  "bullets": ["Idealista", "Fiança da lei do aluguel", "Sinais de golpe"],
   "stage": "acabei-de-chegar",
   "topics": ["moradia"],
   "cities": [],

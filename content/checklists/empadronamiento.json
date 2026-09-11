@@ -2,6 +2,7 @@
   "slug": "empadronamiento",
   "title": "Checklist do empadronamiento (cadastro na prefeitura)",
   "description": "Endereço real, regra do município, comprovante provisório e o que atualizar quando mudar de casa.",
+  "bullets": ["Endereço real", "Comprovante provisório", "Atualizar ao mudar"],
   "stage": "acabei-de-chegar",
   "topics": ["empadronamiento", "documentos"],
   "cities": [],

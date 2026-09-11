@@ -2,6 +2,7 @@
   "slug": "tie-residencia",
   "title": "Checklist de TIE (cartão de residência)",
   "description": "Prazo de um mês, formulário do cartão, impressões digitais, taxa da polícia e retirada.",
+  "bullets": ["Prazo de um mês", "Impressões digitais", "Taxa e retirada"],
   "stage": "acabei-de-chegar",
   "topics": ["visto", "documentos", "nie"],
   "cities": [],
