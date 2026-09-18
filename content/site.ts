@@ -20,6 +20,7 @@ export const siteConfig = {
     { href: "/etapas/antes-de-ir", label: "Etapas" },
     { href: "/guias", label: "Guias" },
     { href: "/checklists", label: "Checklists" },
+    { href: "/anuncios", label: "Anúncios" },
     { href: "/comunidade", label: "Comunidade" },
   ],
 } as const;

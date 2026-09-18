@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
+import { getAds } from "@/lib/anuncios";
 import { getChecklists, getGuides } from "@/lib/content";
 import { siteConfig, stages } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
-  const staticRoutes = ["", "/guias", "/checklists", "/comunidade"].map((path) => ({
+  const staticRoutes = ["", "/guias", "/checklists", "/anuncios", "/comunidade"].map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),
   }));
@@ -24,5 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(),
   }));
 
-  return [...staticRoutes, ...stageRoutes, ...guideRoutes, ...checklistRoutes];
+  const adRoutes = getAds().map((ad) => ({
+    url: `${base}/anuncios/${ad.slug}`,
+    lastModified: new Date(ad.publishedAt),
+  }));
+
+  return [...staticRoutes, ...stageRoutes, ...guideRoutes, ...checklistRoutes, ...adRoutes];
 }
