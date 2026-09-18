@@ -18,7 +18,8 @@ export default function AnunciosPage() {
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">
         Espaço simples para anúncios de brasileiros na Espanha. Abra o card para ver detalhes e
-        falar com o anunciante.
+        falar com o anunciante. A Minha Espanha divulga, mas não intermedia nem garante os
+        serviços anunciados.
       </p>
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">

@@ -2,8 +2,11 @@ import type { AdContact } from "@/lib/anuncios";
 import { cn } from "@/lib/utils";
 
 function contactCtaLabel(contact: AdContact) {
-  if (contact.type === "whatsapp") return "Reservar no WhatsApp";
+  if (contact.ctaLabel) return contact.ctaLabel;
+  if (contact.type === "whatsapp") return "Falar no WhatsApp";
   if (contact.type === "instagram") return "Ver no Instagram";
+  if (contact.type === "email") return "Enviar e-mail";
+  if (contact.type === "phone") return "Ligar";
   return contact.label;
 }
 

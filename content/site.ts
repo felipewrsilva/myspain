@@ -7,12 +7,16 @@ export const siteConfig = {
   whatsapp: {
     principal: {
       label: "Grupo principal",
-      href: "https://chat.whatsapp.com/Fvt3hT3pHo75s43ujI4bUQ",
+      href:
+        process.env.NEXT_PUBLIC_WHATSAPP_GRUPO_URL ??
+        "https://chat.whatsapp.com/GiWX4kudkrjE2TWtRI3ML1",
       description: "Canal principal da comunidade Minha Espanha.",
     },
     comunidade: {
       label: "Grupo de dúvidas",
-      href: "https://chat.whatsapp.com/BaAoOrCt4FTGhiXiiZxNSu",
+      href:
+        process.env.NEXT_PUBLIC_WHATSAPP_COMUNIDADE_URL ??
+        "https://chat.whatsapp.com/Ey7G8RgFhwf41gVzhlodu7",
       description: "Espaço para tirar dúvidas e trocar experiências do dia a dia.",
     },
   },
