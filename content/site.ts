@@ -5,19 +5,12 @@ export const siteConfig = {
     "Guias práticos para brasileiros que querem ir ou já estão na Espanha: etapas, checklist embutido e PDF para levar.",
   url: "https://minhaespanha.com.br",
   whatsapp: {
-    principal: {
-      label: "Grupo principal",
+    grupo: {
+      label: "Entrar no grupo",
       href:
         process.env.NEXT_PUBLIC_WHATSAPP_GRUPO_URL ??
         "https://chat.whatsapp.com/GiWX4kudkrjE2TWtRI3ML1",
-      description: "Canal principal da comunidade Minha Espanha.",
-    },
-    comunidade: {
-      label: "Grupo de dúvidas",
-      href:
-        process.env.NEXT_PUBLIC_WHATSAPP_COMUNIDADE_URL ??
-        "https://chat.whatsapp.com/Ey7G8RgFhwf41gVzhlodu7",
-      description: "Espaço para tirar dúvidas e trocar experiências do dia a dia.",
+      description: "Grupo oficial da Minha Espanha no WhatsApp.",
     },
   },
   /** Contato do projeto (página Fale Conosco). */

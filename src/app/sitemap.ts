@@ -5,7 +5,7 @@ import { siteConfig, stages } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
-  const staticRoutes = ["", "/guias", "/anuncios", "/comunidade", "/fale-conosco"].map((path) => ({
+  const staticRoutes = ["", "/guias", "/anuncios", "/fale-conosco"].map((path) => ({
     url: `${base}${path}`,
     lastModified: new Date(),
   }));

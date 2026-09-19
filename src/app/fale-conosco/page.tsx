@@ -3,11 +3,11 @@ import { siteConfig } from "@/lib/site";
 export const metadata = {
   title: "Fale Conosco",
   description:
-    "Entre em contato com a Minha Espanha por e-mail ou participe dos grupos oficiais no WhatsApp.",
+    "Entre em contato com a Minha Espanha por e-mail ou participe do grupo oficial no WhatsApp.",
 };
 
 export default function FaleConoscoPage() {
-  const { principal, comunidade } = siteConfig.whatsapp;
+  const grupo = siteConfig.whatsapp.grupo;
   const email = siteConfig.contact.email;
 
   return (
@@ -20,14 +20,14 @@ export default function FaleConoscoPage() {
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">
         Dúvidas, sugestões, problemas no site ou assuntos relacionados aos anúncios: fale
-        direto com o projeto por e-mail, ou entre nos grupos oficiais do WhatsApp para
-        trocar experiência com outras pessoas na mesma jornada.
+        direto com o projeto por e-mail, ou entre no grupo oficial do WhatsApp para trocar
+        experiência com outras pessoas na mesma jornada.
       </p>
 
-      <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-4 md:grid-cols-2">
         <a
           href={`mailto:${email}`}
-          className="rounded-2xl bg-[var(--ink)] p-8 text-white transition hover:-translate-y-0.5 md:col-span-2 lg:col-span-1"
+          className="rounded-2xl bg-[var(--ink)] p-8 text-white transition hover:-translate-y-0.5"
         >
           <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-white/50">
             E-mail
@@ -44,7 +44,7 @@ export default function FaleConoscoPage() {
         </a>
 
         <a
-          href={principal.href}
+          href={grupo.href}
           target="_blank"
           rel="noopener noreferrer"
           className="rounded-2xl border border-[var(--line)] bg-white p-8 transition hover:-translate-y-0.5 hover:border-[var(--accent-2)]"
@@ -53,28 +53,9 @@ export default function FaleConoscoPage() {
             WhatsApp
           </p>
           <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-bold text-[var(--ink)]">
-            {principal.label}
+            Grupo oficial
           </h2>
-          <p className="mt-3 text-[var(--ink-muted)]">{principal.description}</p>
-          <span className="mt-6 inline-flex min-h-11 items-center rounded-lg border border-[var(--line)] px-4 text-sm font-bold text-[var(--ink)]">
-            Entrar no WhatsApp
-            <span className="sr-only"> (abre em nova aba)</span>
-          </span>
-        </a>
-
-        <a
-          href={comunidade.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-2xl border border-[var(--line)] bg-white p-8 transition hover:-translate-y-0.5 hover:border-[var(--accent-2)]"
-        >
-          <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
-            WhatsApp
-          </p>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-bold text-[var(--ink)]">
-            {comunidade.label}
-          </h2>
-          <p className="mt-3 text-[var(--ink-muted)]">{comunidade.description}</p>
+          <p className="mt-3 text-[var(--ink-muted)]">{grupo.description}</p>
           <span className="mt-6 inline-flex min-h-11 items-center rounded-lg border border-[var(--line)] px-4 text-sm font-bold text-[var(--ink)]">
             Entrar no WhatsApp
             <span className="sr-only"> (abre em nova aba)</span>

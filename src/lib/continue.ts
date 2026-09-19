@@ -26,8 +26,8 @@ export const continueFallbacks: ContinuePage[] = [
   {
     href: "/fale-conosco",
     title: "Fale Conosco",
-    description: "E-mail do projeto e grupos oficiais no WhatsApp.",
-    bullets: ["Contato por e-mail", "Grupos no WhatsApp", "Dúvidas e anúncios"],
+    description: "E-mail do projeto e grupo oficial no WhatsApp.",
+    bullets: ["Contato por e-mail", "Grupo no WhatsApp", "Dúvidas e anúncios"],
     kind: "outro",
     label: "Contato",
     stage: "acabei-de-chegar",

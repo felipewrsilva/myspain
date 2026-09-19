@@ -1,6 +1,8 @@
 import { siteConfig } from "@/lib/site";
 
 export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
+  const grupo = siteConfig.whatsapp.grupo;
+
   return (
     <section
       className={
@@ -31,32 +33,19 @@ export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
             : "mt-3 max-w-xl font-[family-name:var(--font-display)] text-3xl font-bold text-balance sm:text-4xl"
         }
       >
-        Entre nos grupos do WhatsApp
+        Entre no grupo do WhatsApp
       </h2>
       <p className={compact ? "mt-2 text-sm text-[var(--ink-muted)]" : "mt-3 max-w-xl text-white/65"}>
         Dúvidas reais, relatos atualizados e gente no mesmo caminho que você.
       </p>
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      <div className="mt-6">
         <a
-          href={siteConfig.whatsapp.principal.href}
+          href={grupo.href}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[var(--accent)] px-5 text-sm font-semibold text-white transition hover:brightness-110"
         >
-          {siteConfig.whatsapp.principal.label}
-          <span className="sr-only"> (abre o WhatsApp)</span>
-        </a>
-        <a
-          href={siteConfig.whatsapp.comunidade.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={
-            compact
-              ? "inline-flex min-h-11 items-center justify-center rounded-lg border border-[var(--line)] px-5 text-sm font-semibold text-[var(--ink)]"
-              : "inline-flex min-h-11 items-center justify-center rounded-lg border border-white/25 px-5 text-sm font-semibold text-white transition hover:bg-white/10"
-          }
-        >
-          {siteConfig.whatsapp.comunidade.label}
+          {grupo.label}
           <span className="sr-only"> (abre o WhatsApp)</span>
         </a>
       </div>

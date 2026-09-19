@@ -40,23 +40,12 @@ export function Footer() {
           <ul className="mt-4 space-y-1 text-sm text-white/70">
             <li>
               <a
-                href={siteConfig.whatsapp.principal.href}
+                href={siteConfig.whatsapp.grupo.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex min-h-11 items-center hover:text-white"
               >
-                {siteConfig.whatsapp.principal.label}
-                <span className="sr-only"> (abre o WhatsApp)</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href={siteConfig.whatsapp.comunidade.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center hover:text-white"
-              >
-                {siteConfig.whatsapp.comunidade.label}
+                {siteConfig.whatsapp.grupo.label}
                 <span className="sr-only"> (abre o WhatsApp)</span>
               </a>
             </li>

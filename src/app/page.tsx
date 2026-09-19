@@ -3,7 +3,7 @@ import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ContentCard, CardBullets } from "@/components/ContentCard";
 import { getGuides, getChecklistsForGuide, getCover } from "@/lib/content";
-import { stages } from "@/lib/site";
+import { siteConfig, stages } from "@/lib/site";
 
 const featuredGuideSlugs = ["visto-e-residencia", "primeiros-30-dias", "planejamento-financeiro"];
 
@@ -54,12 +54,15 @@ export default function HomePage() {
             >
               Começar pela minha etapa
             </Link>
-            <Link
-              href="/comunidade"
+            <a
+              href={siteConfig.whatsapp.grupo.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/30 px-6 text-sm font-semibold text-white transition hover:bg-white/10"
             >
-              Ir para a comunidade
-            </Link>
+              Entrar no grupo
+              <span className="sr-only"> (abre o WhatsApp)</span>
+            </a>
           </div>
         </div>
       </section>
