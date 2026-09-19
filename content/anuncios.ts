@@ -174,8 +174,8 @@ export const ads: Ad[] = [
     ],
     price: null,
     priceNote: "Valores a combinar no WhatsApp.",
-    image: "/anuncios/nomada-de-mascotas.jpg",
-    imageAlt: "Golden retriever e gato tabby juntos em uma sala iluminada",
+    image: "/anuncios/nomada-pets.jpg",
+    imageAlt: "Cão e gato juntos ao ar livre, em um momento de carinho",
     provider: "Carol Canguro",
     providerRole: "Pet Care",
     contacts: [
