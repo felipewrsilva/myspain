@@ -84,7 +84,7 @@ export type Ad = {
 };
 
 const nomadaWhatsAppMessage = encodeURIComponent(
-  "Olá, Carol! Vi o anúncio da Nómada de Mascotas na Minha Espanha. Gostaria de combinar cuidado para minha mascote em Madrid. Pode me dizer disponibilidade e valores?",
+  "Olá, Carol! Vi o anúncio da Nómada de Mascotas na Minha Espanha. Queria combinar o cuidado da minha mascote em Madrid. Pode me dizer disponibilidade e valores?",
 );
 
 export const ads: Ad[] = [
@@ -92,11 +92,11 @@ export const ads: Ad[] = [
     slug: "nomada-de-mascotas",
     title: "Nómada de Mascotas",
     summary:
-      "Pet care em Madrid e arredores: passeios, cuidado em casa e atenção individual.",
+      "Pet care em Madrid e arredores. Passeios, cuidado em casa e atenção individual, a combinar.",
     description:
-      "Sua mascote cuidada como em casa, mesmo quando você não está. Pet care com confiança, carinho e atenção personalizada.",
+      "Sua mascote bem cuidada, mesmo quando você não está. Confiança, carinho e atenção personalizada, com o formato combinado no WhatsApp.",
     body: [
-      "A Nómada de Mascotas é o serviço da Carol Canguro: passeios, cuidado no ambiente do próprio animal e atenção individual. Funciona bem para quem trabalha fora, viaja ou prefere evitar creche.",
+      "A Nómada de Mascotas é o pet care da Carol Canguro em Madrid e arredores. Os serviços partem de passeios, cuidado em casa e atenção individual. O restante se adapta ao que você e o pet precisam.",
     ],
     tagline: "Confianza, cariño y atención personalizada",
     location: "Madrid e arredores",
@@ -104,7 +104,7 @@ export const ads: Ad[] = [
       label: "Madrid e arredores",
       region: "Comunidad de Madrid",
       description:
-        "Atendimento na capital e regiões próximas. Confirme bairro ou município no primeiro contato: a cobertura depende de deslocamento e agenda.",
+        "Atende Madrid e regiões próximas. No primeiro contato, diga seu bairro ou município para confirmar cobertura, deslocamento e agenda.",
       image: "/anuncios/madrid-gran-via.jpg",
       imageAlt: "Gran Vía e Edificio Metrópolis em Madrid",
       mapHref: "https://maps.google.com/?q=Madrid,+Spain",
@@ -118,63 +118,62 @@ export const ads: Ad[] = [
       {
         title: "Paseos",
         subtitle: "Passeios",
-        detail:
-          "Saídas para o pet se movimentar e manter a rotina fora de casa. Combine duração e preferências no WhatsApp.",
+        detail: "Passeios sob medida. Duração, frequência e rotina a combinar.",
       },
       {
         title: "Cuidado en casa",
         subtitle: "Cuidado em casa",
         detail:
-          "Acompanhamento no ambiente do próprio animal: comida, água, companhia e o que for combinado, sem tirar o pet de casa.",
+          "Apoio no dia a dia do pet. Ambiente, horários e cuidados específicos a combinar.",
       },
       {
         title: "Atención individual",
         subtitle: "Atenção individual",
         detail:
-          "Cuidado personalizado, com foco no temperamento do animal, em vez de atendimento em grupo.",
+          "Atenção dedicada ao temperamento e às necessidades do animal. Detalhes a combinar.",
       },
     ],
     audience: [
-      "Quem mora em Madrid ou arredores e precisa de apoio com o pet",
-      "Quem viaja ou tem rotina corrida e prefere cuidado em casa",
-      "Tutores que valorizam atenção individual",
+      "Quem precisa de apoio com o pet em Madrid ou arredores",
+      "Quem viaja ou tem rotina corrida",
+      "Quem quer combinar o cuidado conforme o pet",
     ],
     bookingSteps: [
       "Chame no WhatsApp com zona, tipo de pet e o que precisa.",
-      "Combine datas, acesso à casa, rotina e valores.",
-      "Se for viagem mais longa, combine uma conversa prévia.",
+      "Combinem formato, datas, rotina e valores.",
+      "Se quiser, façam uma conversa prévia antes de começar.",
     ],
     prepareChecklist: [
-      "Rotina do pet: comida, passeio, medicação e restrições",
+      "Rotina do pet: comida, passeios, medicação e restrições",
       "Contato do veterinário e de uma emergência",
-      "Acesso à casa (chave, código, alarme)",
+      "Acesso e orientações práticas, se forem necessários",
       "O que fazer se o pet precisar de atendimento veterinário",
     ],
     questionsToAsk: [
       "Você atende minha zona nesta data?",
       "Qual o valor e o que está incluso?",
-      "O passeio é individual? Qual a duração?",
-      "Podemos fazer uma apresentação antes da primeira reserva?",
+      "Como fica o cuidado no meu caso?",
+      "Podemos conversar antes da primeira vez?",
     ],
     faqs: [
       {
         question: "O pet precisa ir para a casa da cuidadora?",
         answer:
-          "Em geral, não: o foco é cuidado em casa. Se fizer mais sentido outro formato para o seu pet, combine direto com a Carol.",
+          "Depende do que funcionar melhor para você e para o pet. Combine o formato no WhatsApp.",
       },
       {
         question: "Serve para gatos também?",
         answer:
-          "Sim, cães e gatos. Conta a rotina e o temperamento no WhatsApp para ela montar o cuidado certo.",
+          "Sim. Conta a rotina e o temperamento no WhatsApp para combinar o cuidado.",
       },
       {
         question: "A Minha Espanha intermedia o pagamento?",
         answer:
-          "Não. Valor, horários e detalhes você fecha direto com a Carol, do jeito que funcionar para os dois.",
+          "Não. Valor, horários e detalhes você fecha direto com a Carol no WhatsApp.",
       },
     ],
     price: null,
-    priceNote: "Valores sob consulta no WhatsApp.",
+    priceNote: "Valores a combinar no WhatsApp.",
     image: "/anuncios/nomada-de-mascotas.jpg",
     imageAlt: "Golden retriever e gato tabby juntos em uma sala iluminada",
     provider: "Carol Canguro",
@@ -185,7 +184,7 @@ export const ads: Ad[] = [
         label: "WhatsApp",
         value: "619 44 10 40",
         href: `https://wa.me/34619441040?text=${nomadaWhatsAppMessage}`,
-        ctaLabel: "Reservar no WhatsApp",
+        ctaLabel: "Falar no WhatsApp",
       },
       {
         type: "instagram",
@@ -194,7 +193,7 @@ export const ads: Ad[] = [
         href: "https://www.instagram.com/carol_sarmentosilva/",
       },
     ],
-    publishedAt: "2026-03-19",
+    publishedAt: "2026-09-19",
     featured: true,
   },
 ];

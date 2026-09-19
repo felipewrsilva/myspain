@@ -132,7 +132,7 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
           <div className="space-y-12">
             {ad.body?.length ? (
               <section>
-                <SectionHeading eyebrow="Sobre" title="O serviço em detalhe" />
+                <SectionHeading eyebrow="Sobre" title="Sobre o serviço" />
                 <div className="mt-6 space-y-4 text-base leading-relaxed text-pretty text-[var(--ink-muted)]">
                   {ad.body.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
@@ -201,7 +201,7 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
 
             {ad.audience?.length ? (
               <section>
-                <SectionHeading eyebrow="Perfil" title="Para quem faz mais sentido" />
+                <SectionHeading eyebrow="Perfil" title="Para quem é" />
                 <CardBullets items={ad.audience} className="mt-6 text-base" />
               </section>
             ) : null}
@@ -284,9 +284,8 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
 
             <Callout variant="aviso">
               <p>
-                A Minha Espanha divulga este anúncio da comunidade, mas não intermedia o contato nem
-                garante o serviço. Confirme zona, valores, disponibilidade e condições diretamente com
-                o anunciante.
+                A Minha Espanha só divulga o anúncio. Contato, valores e condições ficam entre você
+                e a Carol.
               </p>
             </Callout>
           </div>
