@@ -43,6 +43,7 @@ const nextConfig: NextConfig = {
         destination: "/guias/nie-primeiros-tramites/pdf",
         permanent: true,
       },
+      { source: "/comunidade", destination: "/fale-conosco", permanent: true },
     ];
   },
 };

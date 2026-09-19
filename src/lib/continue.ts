@@ -24,12 +24,12 @@ const KIND_LABEL: Record<ContinueKind, string> = {
 
 export const continueFallbacks: ContinuePage[] = [
   {
-    href: "/comunidade",
-    title: "Comunidade no WhatsApp",
-    description: "Dúvidas reais e gente no mesmo caminho que você.",
-    bullets: ["Dúvidas reais", "Relatos atualizados", "Gente no mesmo caminho"],
+    href: "/fale-conosco",
+    title: "Fale Conosco",
+    description: "E-mail do projeto e grupos oficiais no WhatsApp.",
+    bullets: ["Contato por e-mail", "Grupos no WhatsApp", "Dúvidas e anúncios"],
     kind: "outro",
-    label: "Comunidade",
+    label: "Contato",
     stage: "acabei-de-chegar",
     topics: [],
   },

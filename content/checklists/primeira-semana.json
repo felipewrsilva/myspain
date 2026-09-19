@@ -1,10 +1,19 @@
 {
   "slug": "primeira-semana",
+  "guia": "primeiros-30-dias",
   "title": "Checklist da primeira semana",
   "description": "Internet, agendamento (cita), cadastro na prefeitura e banco nos primeiros sete dias.",
-  "bullets": ["Internet", "Agendamento", "Cadastro na prefeitura"],
+  "bullets": [
+    "Internet",
+    "Agendamento",
+    "Cadastro na prefeitura"
+  ],
   "stage": "acabei-de-chegar",
-  "topics": ["nie", "empadronamiento", "banco"],
+  "topics": [
+    "nie",
+    "empadronamiento",
+    "banco"
+  ],
   "cities": [],
   "items": [
     {
@@ -12,9 +21,18 @@
       "title": "Anotar o endereço completo e testar Wi-Fi",
       "detail": "O código postal espanhol tem cinco dígitos e entra no cadastro na prefeitura (empadronamiento), no banco, na taxa da polícia 790-012 e no agendamento oficial. Anote no celular e no papel, no mesmo dia em que chega ao endereço: tipo de via (calle, avenida, plaza), nome da rua, número, piso, porta, município, província e código postal. Se o anúncio do quarto ou a reserva vierem incompletos, busque a rua no localizador dos Correos e tire foto da placa e da porta.\n\nAntes de dormir, teste duas redes: o Wi-Fi da casa e os dados móveis. Abra o portal de agendamento do Estado e o app do banco. Sem internet, a fila oficial não anda e o SMS de confirmação não chega. Salve offline (arquivos, não só o e-mail) o passaporte, o visto, o seguro e a reserva.\n\nCusto: o Wi-Fi costuma estar no contrato da casa; se o chip atrasar, um café com rede estável é o plano B (alguns euros). Documentos: reserva, contrato ou mensagem do anfitrião com o endereço escrito. Alternativa: hotel ou Airbnb serve para chegar e para o mapa; o empadronamiento pede moradia habitual, não reserva de uma noite. Detalhe do chip e da ordem dos papéis: guias de chip e dos primeiros 30 dias.",
       "links": [
-        { "label": "Correos — código postal", "href": "https://www.correos.es/es/es/herramientas/codigos-postales/detalle" },
-        { "label": "Agendamento oficial", "href": "https://sede.administracionespublicas.gob.es/icpplus/" },
-        { "label": "Guia da primeira semana", "href": "/guias/primeiros-30-dias" }
+        {
+          "label": "Correos — código postal",
+          "href": "https://www.correos.es/es/es/herramientas/codigos-postales/detalle"
+        },
+        {
+          "label": "Agendamento oficial",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        },
+        {
+          "label": "Guia da primeira semana",
+          "href": "/guias/primeiros-30-dias"
+        }
       ]
     },
     {
@@ -22,11 +40,26 @@
       "title": "Ativar eSIM do Brasil ou comprar pré-pago com passaporte",
       "detail": "É melhor resolver a internet no primeiro dia. Se você já comprou um eSIM (chip virtual) para usar na Espanha ainda no Brasil, instale o QR no Wi-Fi de casa antes do voo e ative ao pousar, seguindo as instruções da operadora. Confira se os dados móveis funcionam e se o roaming brasileiro está desligado: o custo explode em dois dias de Google Maps. Em setembro de 2026, um pacote Airalo de 7 dias ilimitados na Espanha aparecia a 23,50 USD; há packs menores. Confira o preço no dia da compra.\n\nSe ainda não tiver internet móvel, compre um chip físico numa loja de telefonia. Os planos pré-pagos mais básicos costumam ficar na casa dos ~10 €, conforme a operadora e os gigas do letreiro. Na Digi, a folha de pré-pago lista a linha de 5 GB a 3 €/mês; packs com mais dados giram em torno de 7–10 €. Leve o passaporte original: a Lei 25/2007 obriga a operadora a registrar quem compra o cartão. O NIE (número fiscal de estrangeiro) não é obrigatório para pré-pago. Foto no celular não serve. Guarde o PUK.\n\neSIM de viagem é só dado: em geral não vem número espanhol (+34) para SMS de banco e para algumas prefeituras. O combo que funciona na primeira semana é eSIM do Brasil no dia 1 + loja Digi (busque o ponto de venda) com passaporte, para ter o +34. Pepephone e Lowi pedem NIE e conta — deixe para depois. Quiosque de aeroporto (Movistar, Vodafone, Orange) funciona no mesmo dia, mas o vendedor empurra plano de 30–50 €; use só se o eSIM falhou e não há loja no caminho.\n\nNão instale QR mandado por desconhecido no WhatsApp. Recarga Digi: app Mi DIGI ou digitando *100#.",
       "links": [
-        { "label": "Guia de chip", "href": "/guias/chip-e-transporte" },
-        { "label": "Airalo (eSIM)", "href": "https://www.airalo.com" },
-        { "label": "Digi pré-pago", "href": "https://www.digimobil.es/movil/prepago" },
-        { "label": "Digi — pontos de venda", "href": "https://www.digimobil.es/puntosdeventa" },
-        { "label": "Lei 25/2007 (BOE)", "href": "https://www.boe.es/eli/es/l/2007/10/18/25/con" }
+        {
+          "label": "Guia de chip",
+          "href": "/guias/chip-e-transporte"
+        },
+        {
+          "label": "Airalo (eSIM)",
+          "href": "https://www.airalo.com"
+        },
+        {
+          "label": "Digi pré-pago",
+          "href": "https://www.digimobil.es/movil/prepago"
+        },
+        {
+          "label": "Digi — pontos de venda",
+          "href": "https://www.digimobil.es/puntosdeventa"
+        },
+        {
+          "label": "Lei 25/2007 (BOE)",
+          "href": "https://www.boe.es/eli/es/l/2007/10/18/25/con"
+        }
       ]
     },
     {
@@ -34,10 +67,22 @@
       "title": "Localizar supermercado, farmácia, metrô e prefeitura",
       "detail": "No primeiro dia, faça a pé ou de metrô o circuito casa → supermercado → farmácia → estação. No segundo, o trajeto até a prefeitura e, se já tiver horário, até a delegacia do agendamento. Marque os pins no Google Maps ou no Citymapper e baixe o mapa offline. Cruz verde na fachada é farmácia (oficina de farmacia); parafarmácia não substitui para medicamento com receita.\n\nEmergência real: 112 (ambulância, polícia, bombeiros). É o número europeu, gratuito, em toda a Espanha. Diga onde está e o que aconteceu. Urgência sanitária que não é emergência vital: em várias regiões (Catalunha e outras) existe o 061, integrado ao 112; em Madrid a emergência sanitária concentra-se no próprio 112. Na dúvida, ligue 112. Farmácia de plantão: buscador do Conselho de Farmacêuticos. Sem receita espanhola, o farmacêutico resolve muita coisa do dia a dia (dor de cabeça, alergia leve); antibiótico e controlado pedem receta espanhola. Não cancele o seguro do visto nesta semana: o cadastro na prefeitura não é alta no sistema de saúde.\n\nPassagem avulsa come o orçamento. Sem o empadronamiento, o abono pessoal de Madrid não sai: use 10 viagens num cartão sem nome (Multi) ou o título de turista. Em Barcelona, a T-casual (10 viagens, 1 zona) aparece a 13 € na tabela da T-mobilitat; a T-usual mensal, a 22,80 €. Em Valência, a SUMA 10 da zona A aparece a 8 €. Confira a tarifa da sua zona no consórcio local no dia. Apps: Mi Tarjeta Transporte / Tarjeta Transporte (Madrid), T-mobilitat (Barcelona), RecargaSUMA e EMTicket (Valência).",
       "links": [
-        { "label": "112 — urgência (Sanidade)", "href": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/intro_Urg_Extrahosp.htm" },
-        { "label": "Farmácias de plantão", "href": "https://www.farmaceuticos.com/farmacias-de-guardia/" },
-        { "label": "Guia de transporte", "href": "/guias/chip-e-transporte" },
-        { "label": "Guia de saúde", "href": "/guias/saude-primeiros-meses" }
+        {
+          "label": "112 — urgência (Sanidade)",
+          "href": "https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/ofertaRecursos/hospitales/intro_Urg_Extrahosp.htm"
+        },
+        {
+          "label": "Farmácias de plantão",
+          "href": "https://www.farmaceuticos.com/farmacias-de-guardia/"
+        },
+        {
+          "label": "Guia de transporte",
+          "href": "/guias/chip-e-transporte"
+        },
+        {
+          "label": "Guia de saúde",
+          "href": "/guias/saude-primeiros-meses"
+        }
       ]
     },
     {
@@ -45,14 +90,38 @@
       "title": "Agendar NIE ou TIE no portal oficial no primeiro dia útil",
       "detail": "NIE (Número de Identidad de Extranjero) é o número fiscal de estrangeiro. TIE (Tarjeta de Identidad de Extranjero) é o cartão físico de residência. São trâmites diferentes. No primeiro dia útil na Espanha, abra o portal oficial de cita previa (agendamento prévio). É gratuito. Aceite o aviso, escolha a província do seu endereço e só então o órgão: Polícia Nacional para atribuição de NIE, coleta de digitais da TIE ou recolha do cartão; Imigração (Delegación / Subdelegación del Gobierno) para autorizações. Horário de NIE não serve para digitais. Horário de imigração não serve para polícia. Nome e número do passaporte no agendamento têm de ficar iguais ao documento. Imprima o comprovante.\n\nSe o visto já trouxe NIE, pule a atribuição do número e marque toma de huellas (expedición de tarjeta) no prazo da sua via — em muitas, 1 mês após entrar. Sem número, o pedido é o formulário EX-15, com motivo concreto (banco, contrato, estudos). O cartão pede o EX-17. Os dois impressos são gratuitos na lista do Ministério; venda de “modelo preenchido” é golpe.\n\nA taxa da polícia é o modelo 790 código 012, paga antes de ir, no banco (não precisa ser cliente da agência) ou no canal online colaborador. Leve o justificante original carimbado. Na tabela da Polícia Nacional (confirme o importe no gerador no dia; a lei de orçamento pode atualizar): atribuição de NIE a pedido do interessado, 9,84 €; TIE de primeira concessão de residência temporal, estada ou transfronteiriço, 16,08 €. NIE e TIE não compartilham o mesmo fato no 790-012.\n\nVagas somem em Madrid e Barcelona. Tente de manhã cedo (7–8 h) e à noite (22–24 h), todos os dias, e guarde print com data e hora de cada “no hay citas”. Ninguém pode cobrar por marcar horário: a Polícia já desmontou redes que usavam bots para esgotar o sistema e revender encaixe. WhatsApp, Telegram ou Instagram pedindo foto do passaporte “para preencher o formulário” entregam a sua identidade a desconhecido.",
       "links": [
-        { "label": "Agendamento oficial", "href": "https://sede.administracionespublicas.gob.es/icpplus/" },
-        { "label": "Polícia — atribuição de NIE", "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_asignacion_nie.php" },
-        { "label": "Formulários EX-15 e EX-17", "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales" },
-        { "label": "Gerar taxa 790-012", "href": "https://sede.policia.gob.es/Tasa790_012/" },
-        { "label": "Taxas da polícia", "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tasas.php" },
-        { "label": "Guia de NIE", "href": "/guias/nie-primeiros-tramites" },
-        { "label": "Checklist do NIE", "href": "/checklists/nie" },
-        { "label": "Checklist da TIE", "href": "/checklists/tie-residencia" }
+        {
+          "label": "Agendamento oficial",
+          "href": "https://sede.administracionespublicas.gob.es/icpplus/"
+        },
+        {
+          "label": "Polícia — atribuição de NIE",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tramite_asignacion_nie.php"
+        },
+        {
+          "label": "Formulários EX-15 e EX-17",
+          "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
+        },
+        {
+          "label": "Gerar taxa 790-012",
+          "href": "https://sede.policia.gob.es/Tasa790_012/"
+        },
+        {
+          "label": "Taxas da polícia",
+          "href": "https://sede.policia.gob.es/portalCiudadano/_es/tramites_extranjeria_tasas.php"
+        },
+        {
+          "label": "Guia de NIE",
+          "href": "/guias/nie-primeiros-tramites"
+        },
+        {
+          "label": "Checklist do NIE",
+          "href": "/guias/nie-primeiros-tramites#checklist-nie"
+        },
+        {
+          "label": "Checklist da TIE",
+          "href": "/guias/nie-primeiros-tramites#checklist-tie-residencia"
+        }
       ]
     },
     {
@@ -60,11 +129,26 @@
       "title": "Ver a regra de cadastro na prefeitura do seu município",
       "detail": "Empadronamiento é o cadastro de morador na prefeitura do município onde você mora de fato. Não espere a TIE. Sem esse papel travam o desconto pessoal de transporte em Madrid, o posto de saúde e boa parte dos bancos tradicionais. Não precisa de residência “regular” para se inscrever: precisa de residência habitual e dos documentos que a sua cidade listar. Não espere a segunda semana se já tiver contrato, autorização do dono ou o comprovante que o município aceita.\n\nDocumentos típicos no dia: passaporte original e cópia (às vezes a página com o carimbo de entrada); NIE ou TIE se já tiver; prova de moradia — contrato de aluguel, escritura, ou autorização assinada de quem já está no endereço / do proprietário, com o documento de identidade dessa pessoa; formulário local, se a prefeitura publicar um. Em Madrid, a hoja padronal vai em maiúsculas, com assinatura manuscrita de todos os maiores de idade, mais a declaração responsável. Hotel ou Airbnb de poucos dias quase nunca serve.\n\nOnde tratar depende do município, não de um portal único do Estado. Madrid: sede eletrônica (Padrón Municipal), assistente de documentação e alta presencial com cita nas Oficinas de Atención a la Ciudadanía (010 / 914 800 010). Barcelona: folha de nova cidadania e alta no padró (gratuito; com certificado digital a confirmação por e-mail costuma sair em cerca de 7 dias se os papéis estiverem certos); presencial na OAC com cita (010). Valência: alta e mudança na sede do Ajuntament; a prefeitura escreve que os trâmites de padrón são gratuitos. Em Madrid a expedição do certificado também é gratuita, segundo a sede. Peça o volante (comprovante informativo) no mesmo dia, se a oficina emitir. Bancos e postos de saúde costumam pedir um volante recente.\n\nCusto da inscrição: em regra, gratuito. Não pague para “entrar” no cadastro da casa de um desconhecido — se o município comprovar que você não mora ali, o alta cai. Estrangeiro de fora da UE sem autorização de longa duração precisa renovar o cadastro a cada dois anos (art. 16 da Lei 7/1985). Mudou de hotel para casa? Atualize o endereço.",
       "links": [
-        { "label": "Checklist do empadronamiento", "href": "/checklists/empadronamiento" },
-        { "label": "Madrid — Padrón", "href": "https://sede.madrid.es" },
-        { "label": "Barcelona — empadronamiento", "href": "https://ajuntament.barcelona.cat/novaciutadania/es/empadronamiento" },
-        { "label": "Valência — alta e mudança", "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.11?lang=1" },
-        { "label": "Lei 7/1985, art. 16 (BOE)", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16" }
+        {
+          "label": "Checklist do empadronamiento",
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
+        },
+        {
+          "label": "Madrid — Padrón",
+          "href": "https://sede.madrid.es"
+        },
+        {
+          "label": "Barcelona — empadronamiento",
+          "href": "https://ajuntament.barcelona.cat/novaciutadania/es/empadronamiento"
+        },
+        {
+          "label": "Valência — alta e mudança",
+          "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.11?lang=1"
+        },
+        {
+          "label": "Lei 7/1985, art. 16 (BOE)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16"
+        }
       ]
     },
     {
@@ -72,11 +156,26 @@
       "title": "Ativar conta espanhola",
       "detail": "O código da conta europeia (IBAN) espanhol tem 24 caracteres e começa com ES. Sem ele, aluguel, algumas reservas e o débito de luz travam. Se você já abriu a Cuenta Online para No Residentes do Santander no Brasil (passaporte em vigor, mais de 18 anos, identificação por vídeo; Brasil na lista do produto), nesta semana ative o app e o cartão e troque o telefone cadastrado para o número espanhol no mesmo dia — o SMS de confirmação não chega no roaming eterno. A página do banco apresenta 0 € de comissão de manutenção neste produto (TIN 0%, TAE 0%); confirme as condições vigentes na folha do Santander. É conta de não residente: se você já for residente fiscal na Espanha, este produto não serve e o banco pede o NIE.\n\nSe ainda não tem conta: use Wise (ou similar) como ponte em euro para os primeiros pagamentos e para mandar a reserva; em paralelo, tente o Santander online se ainda contar como não residente. BBVA, CaixaBank e Sabadell em balcão quase sempre pedem NIE + comprovante do cadastro na prefeitura — deixe para depois desses dois papéis, não para o dia 2. Alguns bancos tradicionais pedem ainda o certificado de não residente da polícia (EX-15 + taxa 790-012, validade 3 meses). Só marque essa cita se o banco exigir por escrito: o produto online do Santander com passaporte não pede isso na página do banco.\n\nCom residência legal na UE, o Banco de Espanha descreve a cuenta de pago básica: o banco que oferece contas de pagamento é obrigatório a oferecê-la a quem reside legalmente, sem amarrar a nómina. Não é atalho de turista no dia 2. Faça uma transferência pequena de teste (Wise → Santander, ou Brasil → ES) antes de pagar caução, com o nome do titular idêntico ao passaporte. Débito de luz e aluguel só depois da conta estável.",
       "links": [
-        { "label": "Santander — conta com passaporte", "href": "https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-online-con-pasaporte" },
-        { "label": "Checklist de conta", "href": "/checklists/conta-bancaria" },
-        { "label": "Guia financeiro", "href": "/guias/planejamento-financeiro" },
-        { "label": "Banco de Espanha — conta básica", "href": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html" },
-        { "label": "Wise", "href": "https://wise.com/br" }
+        {
+          "label": "Santander — conta com passaporte",
+          "href": "https://www.bancosantander.es/particulares/cuentas-bancarias/cuenta-online-con-pasaporte"
+        },
+        {
+          "label": "Checklist de conta",
+          "href": "/guias/primeiros-30-dias#checklist-conta-bancaria"
+        },
+        {
+          "label": "Guia financeiro",
+          "href": "/guias/planejamento-financeiro"
+        },
+        {
+          "label": "Banco de Espanha — conta básica",
+          "href": "https://clientebancario.bde.es/pcb/es/menu-horizontal/productosservici/cuentasdepositos/cuentascorriente/guia-textual/CuentadepagoBasica/quienes-pueden-solicitarla-.html"
+        },
+        {
+          "label": "Wise",
+          "href": "https://wise.com/br"
+        }
       ]
     },
     {
@@ -84,10 +183,22 @@
       "title": "Montar a pasta física da semana",
       "detail": "Na delegacia o celular falha e o PDF na tela não substitui o papel. Monte duas vias iguais: a oficina fica com uma. Quando: assim que marcar a cita, não na manhã do dia. Onde imprimir: copistería perto de casa ou de uma estação (cópias saem por alguns cêntimos a página).\n\nO que levar, conforme o horário marcado. Sempre: passaporte original e cópia da folha de dados (e das páginas com carimbo de entrada); visto nacional ou resolução; apólice do seguro; reserva ou contrato; comprovante da cita impresso; caneta preta. Só NIE (número): formulário EX-15 assinado, original + cópia, nome igual ao passaporte, e prova do motivo (carta do banco, contrato, matrícula). Só TIE (cartão): EX-17 assinado, original + cópia, e foto 32 × 26 mm fundo branco — não é o 3×4 brasileiro. Na loja, peça “foto carnet 32×26, fondo blanco”; leve duas vias. Algumas oficinas fotografam na hora; não conte com isso.\n\nA taxa 790-012 paga-se antes. Gere no site da polícia, imprima, assine e pague no banco (en efectivo se ainda não tiver IBAN local). Leve o justificante original carimbado: print do celular sozinho costuma ser recusado. Formulários baixe só da lista do Ministério — são gratuitos. Custo da pasta no dia: o fato certo no 790-012 (9,84 € para atribuição de NIE; 16,08 € para TIE de primeira concessão, na tabela da polícia — confirme no gerador) + fotos e cópias. Alternativa se faltar um papel: não improvise o trâmite no balcão (horário de NIE não vira TIE). Reagende e volte com a via completa.",
       "links": [
-        { "label": "Formulários oficiais", "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales" },
-        { "label": "Gerar taxa 790-012", "href": "https://sede.policia.gob.es/Tasa790_012/" },
-        { "label": "Guia de NIE (pasta do dia)", "href": "/guias/nie-primeiros-tramites" },
-        { "label": "Guia de documentos", "href": "/guias/documentos-essenciais" }
+        {
+          "label": "Formulários oficiais",
+          "href": "https://www.inclusion.gob.es/web/migraciones/modelos-generales"
+        },
+        {
+          "label": "Gerar taxa 790-012",
+          "href": "https://sede.policia.gob.es/Tasa790_012/"
+        },
+        {
+          "label": "Guia de NIE (pasta do dia)",
+          "href": "/guias/nie-primeiros-tramites"
+        },
+        {
+          "label": "Guia de documentos",
+          "href": "/guias/documentos-essenciais"
+        }
       ]
     }
   ]

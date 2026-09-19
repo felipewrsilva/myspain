@@ -3,9 +3,16 @@ import { notFound } from "next/navigation";
 import { PdfDownload } from "@/components/PdfDownload";
 import { ContinueLinks } from "@/components/ContinueLinks";
 import { CoverImage } from "@/components/CoverImage";
+import { GuideChecklists } from "@/components/GuideChecklists";
 import { MdxContent } from "@/components/MdxContent";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { getContinuePages, getGuide, getGuides, getTopicName } from "@/lib/content";
+import {
+  getChecklistsForGuide,
+  getContinuePages,
+  getGuide,
+  getGuides,
+  getTopicName,
+} from "@/lib/content";
 import { contentPdfFilename, guidePdfPath } from "@/lib/apostila-pdf";
 import { getStage } from "@/lib/site";
 
@@ -31,6 +38,7 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
   const guide = getGuide(slug);
   if (!guide) notFound();
   const stage = getStage(guide.stage);
+  const checklists = getChecklistsForGuide(guide.slug);
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
@@ -55,6 +63,11 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
             {getTopicName(topic)}
           </span>
         ))}
+        {checklists.length ? (
+          <span className="inline-flex min-h-11 items-center rounded-full border border-[var(--accent)]/30 bg-[color-mix(in_oklab,var(--accent)_8%,white)] px-3.5 text-[var(--accent)]">
+            {checklists.length === 1 ? "Com checklist" : `${checklists.length} checklists`}
+          </span>
+        ) : null}
       </div>
       {guide.cover ? (
         <div className="mt-8">
@@ -64,6 +77,7 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
       <div className="mt-10">
         <MdxContent source={guide.content} />
       </div>
+      <GuideChecklists checklists={checklists} />
       <ContinueLinks key={guide.slug} currentHref={`/guias/${guide.slug}`} pages={getContinuePages()} />
       <div className="mt-12">
         <WhatsAppCTA compact />

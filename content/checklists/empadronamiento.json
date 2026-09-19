@@ -1,10 +1,18 @@
 {
   "slug": "empadronamiento",
+  "guia": "primeiros-30-dias",
   "title": "Checklist do empadronamiento (cadastro na prefeitura)",
   "description": "Mini-guia do Padrón: endereço real, documentos de Madrid, Barcelona e Valência, cita, volante versus certificado e o que atualizar ao mudar.",
-  "bullets": ["Endereço real (hotel não vale)", "Volante vs certificado", "Atualizar ao mudar"],
+  "bullets": [
+    "Endereço real (hotel não vale)",
+    "Volante vs certificado",
+    "Atualizar ao mudar"
+  ],
   "stage": "acabei-de-chegar",
-  "topics": ["empadronamiento", "documentos"],
+  "topics": [
+    "empadronamiento",
+    "documentos"
+  ],
   "cities": [],
   "items": [
     {
@@ -12,8 +20,14 @@
       "title": "Ter um endereço real para declarar",
       "detail": "Empadronamiento é o cadastro de morador no Padrón municipal (o registro da prefeitura). A lei pede residência habitual no município — não reserva de turista. Hotel de uma noite, Airbnb de fim de semana e contrato de temporada quase nunca passam: Madrid e Valência tratam contrato turístico ou de residência não habitual como caso em que a prefeitura pode exigir papel extra ou recusar. Hotel, residência estudantil ou similar só entra se for estabelecimento coletivo e o responsável assinar autorização com dados, firma e carimbo (em Valência, só se o sítio já constar como coletivo no Padrón). Não pague para “entrar” no cadastro da casa de um desconhecido: se a prefeitura comprovar que você não mora ali, o alta cai e banco, cartão de residência (TIE) e posto de saúde voltam à estaca zero. Peça no contrato de aluguel autorização expressa para se cadastrar.",
       "links": [
-        { "label": "Checklist de aluguel", "href": "/checklists/aluguel" },
-        { "label": "Guia de aluguel na prática", "href": "/guias/aluguel-na-pratica" }
+        {
+          "label": "Checklist de aluguel",
+          "href": "/guias/aluguel-na-pratica#checklist-aluguel"
+        },
+        {
+          "label": "Guia de aluguel na prática",
+          "href": "/guias/aluguel-na-pratica"
+        }
       ]
     },
     {
@@ -21,12 +35,30 @@
       "title": "Ler o procedimento do seu município",
       "detail": "Cada prefeitura muda documentos, prazo do contrato e se dá para fazer online. Não copie a lista de outra cidade. Madrid: sede eletrônica, assistente de documentação e alta presencial com cita obrigatória nas oficinas Línea Madrid. Barcelona: trâmite gratuito; com certificado digital a confirmação costuma chegar por e-mail em cerca de 7 dias naturais se os papéis estiverem certos; presencial é na OAC (Oficina de Atención Ciudadana, o balcão da prefeitura). Valência: alta e mudança na sede (procedimento PA.GP.11); todos os trâmites de Padrón são gratuitos. Não precisa de residência “regular” para se inscrever: precisa de residência habitual e do que a sua cidade listar. Se você mora em outro município da área metropolitana (Hospitalet, Móstoles, Torrent), use o site daquela prefeitura, não o da capital.",
       "links": [
-        { "label": "Madrid — Padrón (sede)", "href": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=18d637c190180210VgnVCM100000c90da8c0RCRD" },
-        { "label": "Barcelona — empadronamiento", "href": "https://ajuntament.barcelona.cat/novaciutadania/es/empadronamiento" },
-        { "label": "Barcelona — alta no padró", "href": "https://www.barcelona.cat/internationalwelcome/es/tramite/alta-en-el-padron-de-habitantes-de-barcelona" },
-        { "label": "Valência — alta e mudança", "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.11?lang=1" },
-        { "label": "Lei 7/1985, art. 16 (Padrón)", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16" },
-        { "label": "Guia dos primeiros 30 dias", "href": "/guias/primeiros-30-dias" }
+        {
+          "label": "Madrid — Padrón (sede)",
+          "href": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextoid=3e3debb41f6e2410VgnVCM2000000c205a0aRCRD&vgnextchannel=18d637c190180210VgnVCM100000c90da8c0RCRD"
+        },
+        {
+          "label": "Barcelona — empadronamiento",
+          "href": "https://ajuntament.barcelona.cat/novaciutadania/es/empadronamiento"
+        },
+        {
+          "label": "Barcelona — alta no padró",
+          "href": "https://www.barcelona.cat/internationalwelcome/es/tramite/alta-en-el-padron-de-habitantes-de-barcelona"
+        },
+        {
+          "label": "Valência — alta e mudança",
+          "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.11?lang=1"
+        },
+        {
+          "label": "Lei 7/1985, art. 16 (Padrón)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16"
+        },
+        {
+          "label": "Guia dos primeiros 30 dias",
+          "href": "/guias/primeiros-30-dias"
+        }
       ]
     },
     {
@@ -34,9 +66,18 @@
       "title": "Marcar a cita (horário) se a prefeitura exigir",
       "detail": "Cita previa é o horário marcado. Salve o comprovante (PDF ou print datado). Madrid: alta e mudança pedem cita obrigatória; o nome no agendamento é o do adulto que vai comparecer; vale 1 cita por pessoa a cada 30 dias e só um domicílio por horário; marque em madrid.es/citaprevia (categoria Padrón → altas, baixas e mudança) ou ligue 010 de Madrid / 91 480 00 10 de fora. Não aposte em fila sem hora em capital. Barcelona: presencial só com cita na OAC; dá para iniciar pelo 010 (catalão, castelhano, inglês e francês) ou online com certificado. Valência: peça cita no site ou no 010 / 96 310 00 10 / 96 208 11 04 (1 cita por pessoa, salvo unidade familiar); se não houver vaga, a prefeitura indica ir sem hora à Oficina do Padrón (entrada por Periodista Azzati) ou à OAC Tabacalera (Amadeo de Saboya, 11), ou protocolar na sede com certificado digital.",
       "links": [
-        { "label": "Madrid — cita previa", "href": "https://www.madrid.es/citaprevia" },
-        { "label": "Madrid — Padrón com cita", "href": "https://www.madrid.es/portales/munimadrid/es/Tramites-de-Padron-y-censo-electoral-con-cita-previa/?vgnextchannel=0c1290aaaeb30810VgnVCM1000001d4a900aRCRD&vgnextoid=3da7968042610810VgnVCM1000001d4a900aRCRD" },
-        { "label": "Valência — cita previa", "href": "https://www.valencia.es/cas/tramites/cita-previa/-/content/cita-previa-2020?uid=A932EB624113849BC1258561003D4BF5" }
+        {
+          "label": "Madrid — cita previa",
+          "href": "https://www.madrid.es/citaprevia"
+        },
+        {
+          "label": "Madrid — Padrón com cita",
+          "href": "https://www.madrid.es/portales/munimadrid/es/Tramites-de-Padron-y-censo-electoral-con-cita-previa/?vgnextchannel=0c1290aaaeb30810VgnVCM1000001d4a900aRCRD&vgnextoid=3da7968042610810VgnVCM1000001d4a900aRCRD"
+        },
+        {
+          "label": "Valência — cita previa",
+          "href": "https://www.valencia.es/cas/tramites/cita-previa/-/content/cita-previa-2020?uid=A932EB624113849BC1258561003D4BF5"
+        }
       ]
     },
     {
@@ -44,8 +85,14 @@
       "title": "Separar identificação",
       "detail": "Leve original e cópia. Brasileiro sem cartão espanhol: passaporte em vigor (às vezes pedem também as páginas com carimbo de entrada). NIE (Número de Identidad de Extranjero, o número fiscal) ou TIE (Tarjeta de Identidad de Extranjero, o cartão de residência) só se você já tiver — o cadastro não exige residência regular. Comunitário: documento de identidade do país, passaporte ou cartão de residência; se levar só o certificado verde de registro de cidadão da União, anexe o passaporte ou o RG do país. Documento vencido cai. Papel público de fora da UE precisa de apostila; tradução jurada se não estiver em espanhol (em Barcelona, também catalão; em Valência, também valenciano). Presencial: originais em papel.",
       "links": [
-        { "label": "Checklist do NIE", "href": "/checklists/nie" },
-        { "label": "Checklist da TIE", "href": "/checklists/tie-residencia" }
+        {
+          "label": "Checklist do NIE",
+          "href": "/guias/nie-primeiros-tramites#checklist-nie"
+        },
+        {
+          "label": "Checklist da TIE",
+          "href": "/guias/nie-primeiros-tramites#checklist-tie-residencia"
+        }
       ]
     },
     {
@@ -53,9 +100,18 @@
       "title": "Separar comprovante de moradia",
       "detail": "O que vale em uma capital pode cair na outra. Madrid: contrato de aluguel de moradia ou quarto em vigor, assinado por todos os que figuram nele, duração mínima de 6 meses e referência cadastral (catastral); se o contrato for prorrogado ou assinado por meio eletrônico, leve também o último recibo do aluguel (arrendador, inquilino, período e endereço). Barcelona: contrato vigente com duração mínima de 3 meses ou prórroga explícita acima desse prazo; em contrato vencido mas prorrogado, indefinido ou digitalizado, some o último recibo (2 meses) ou fatura de luz, água ou gás no nome do inquilino (3 meses) — conta de telefone ou internet não serve. Valência: contrato de mais de 6 meses (renovação mês a mês não conta), referência cadastral e último recibo ou transferência dos últimos 2 meses; em quarto, o contrato precisa dizer quantos quartos a casa tem e qual é o seu. Se o seu nome não está no contrato: autorização expressa de quem tem o uso (dono ou inquilino titular) + cópia do documento dessa pessoa. Em Valência, casa alugada de terceiro pede autorização do inquilino e do proprietário. A autorização tem prazo curto: em Valência vale 1 mês a partir da data do papel; em Barcelona, leia a folha do trâmite (a sede fala em 3 meses para a delegação online).",
       "links": [
-        { "label": "Madrid — folha padronal (PDF)", "href": "https://sede.madrid.es/UnidadesDescentralizadas/UDCEstadistica/TramitesMunicipales/Ficheros/Hoja_padronal.pdf" },
-        { "label": "Barcelona — alta (sede)", "href": "https://seuelectronica.ajuntament.barcelona.cat/APPS/portaltramits/es/ciudadano/descripcio/T135i/PTCIU.html" },
-        { "label": "Valência — documentos da alta", "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.11?lang=1" }
+        {
+          "label": "Madrid — folha padronal (PDF)",
+          "href": "https://sede.madrid.es/UnidadesDescentralizadas/UDCEstadistica/TramitesMunicipales/Ficheros/Hoja_padronal.pdf"
+        },
+        {
+          "label": "Barcelona — alta (sede)",
+          "href": "https://seuelectronica.ajuntament.barcelona.cat/APPS/portaltramits/es/ciudadano/descripcio/T135i/PTCIU.html"
+        },
+        {
+          "label": "Valência — documentos da alta",
+          "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.11?lang=1"
+        }
       ]
     },
     {
@@ -63,8 +119,14 @@
       "title": "Preencher a ficha local (hoja padronal)",
       "detail": "Nome e apelidos iguais ao passaporte, sem rasura. Madrid: baixe a hoja padronal, preencha em maiúsculas e peça assinatura manuscrita de todos os maiores de idade que vão se cadastrar; some a declaración responsable (pode assinar quem comparece ou qualquer maior que assinou a folha). Barcelona: o formulário sai na Oficina Virtual de Trámites (com certificado) ou na OAC no dia da cita; pelo 010 a prefeitura manda a folha pelo correio ao endereço do alta — você devolve assinada em até 1 mês. Valência: use os impressos da sede (autorização em moradia alheia, delegação, modelos de menor). Não baixe ficha de blog.",
       "links": [
-        { "label": "Madrid — hoja padronal (PDF)", "href": "https://sede.madrid.es/UnidadesDescentralizadas/UDCEstadistica/TramitesMunicipales/Ficheros/Hoja_padronal.pdf" },
-        { "label": "Madrid — declaración responsable (PDF)", "href": "https://sede.madrid.es/UnidadesDescentralizadas/UDCEstadistica/TramitesMunicipales/Ficheros/FORMULARIODECLARACIONRESPONSABLE.pdf" }
+        {
+          "label": "Madrid — hoja padronal (PDF)",
+          "href": "https://sede.madrid.es/UnidadesDescentralizadas/UDCEstadistica/TramitesMunicipales/Ficheros/Hoja_padronal.pdf"
+        },
+        {
+          "label": "Madrid — declaración responsable (PDF)",
+          "href": "https://sede.madrid.es/UnidadesDescentralizadas/UDCEstadistica/TramitesMunicipales/Ficheros/FORMULARIODECLARACIONRESPONSABLE.pdf"
+        }
       ]
     },
     {
@@ -72,9 +134,18 @@
       "title": "Pedir volante e saber quando precisa do certificado",
       "detail": "Volante (ou volante de residência) é a folha informativa: em Barcelona sai no ato na OAC (até 2 vias) e, no online, depois do e-mail de confirmação. Certificado de empadronamiento é o documento público que prova residência e domicílio habitual (art. 16 da Lei 7/1985); o INE diz que o certificado acredita e o volante informa — nenhum dos dois tem validade geral impressa. Madrid: o certificado é gratuito e, no presencial, pode sair na mesma cita da alta; depois, sem cita na maioria das oficinas Línea Madrid, pelo 010 (correio em cerca de 15 dias úteis) ou na hora com Cl@ve. Valência: emissão de certificado também é gratuita (sede, 010 ou presencial). Banco, posto de saúde e TIE costumam pedir papel recente — muitos falam em 3 meses; isso é exigência do órgão, não caducidade do Padrón. Se o balcão só entregar justificante de protocolo, acompanhe o alta na pasta cidadã.",
       "links": [
-        { "label": "Madrid — certificado (gratuito)", "href": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextchannel=5388a38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default&vgnextoid=23ccdd9d6baed010VgnVCM2000000c205a0aRCRD" },
-        { "label": "INE — instruções do Padrón (2020)", "href": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-4784" },
-        { "label": "Lei 7/1985, art. 16", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16" }
+        {
+          "label": "Madrid — certificado (gratuito)",
+          "href": "https://sede.madrid.es/portal/site/tramites/menuitem.62876cb64654a55e2dbd7003a8a409a0/?vgnextchannel=5388a38813180210VgnVCM100000c90da8c0RCRD&vgnextfmt=default&vgnextoid=23ccdd9d6baed010VgnVCM2000000c205a0aRCRD"
+        },
+        {
+          "label": "INE — instruções do Padrón (2020)",
+          "href": "https://www.boe.es/buscar/doc.php?id=BOE-A-2020-4784"
+        },
+        {
+          "label": "Lei 7/1985, art. 16",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16"
+        }
       ]
     },
     {
@@ -82,8 +153,14 @@
       "title": "Digitalizar e arquivar",
       "detail": "Foto nítida no mesmo dia e PDF na pasta com passaporte, contrato e cita. O cadastro no Padrón continua; o que “vence” é a paciência do banco, do posto de saúde ou da polícia se o papel estiver velho. Tire outro volante ou certificado quando pedirem recente — em Madrid e Valência a 2ª via do certificado é gratuita. Não entregue o único original se puder levar cópia: alguns balcões ficam com uma via.",
       "links": [
-        { "label": "Guia de saúde nos primeiros meses", "href": "/guias/saude-primeiros-meses" },
-        { "label": "Guia de chip e transporte", "href": "/guias/chip-e-transporte" }
+        {
+          "label": "Guia de saúde nos primeiros meses",
+          "href": "/guias/saude-primeiros-meses"
+        },
+        {
+          "label": "Guia de chip e transporte",
+          "href": "/guias/chip-e-transporte"
+        }
       ]
     },
     {
@@ -91,9 +168,18 @@
       "title": "Refazer se mudar de endereço",
       "detail": "O cadastro não se atualiza sozinho. Hotel → quarto ou casa nova: faça mudança de domicílio (mesmo município) ou alta no município novo. Sem isso quebram o abono pessoal de transporte em Madrid, o centro de saúde da zona e a correspondência da TIE. Comunique também o domicílio habitual à comisaría da polícia do lugar onde você mora, no máximo 1 mês depois (art. 213 do RD 1155/2024), com volante ou certificado recente — senão a imigração manda carta no endereço velho. Domicílio fiscal da Receita é outro cadastro: atualize na sede da Agência Tributária se for o caso.",
       "links": [
-        { "label": "Guia vida estabelecida (mudança)", "href": "/guias/vida-estabelecida" },
-        { "label": "RD 1155/2024, art. 213", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099#a213" },
-        { "label": "Receita — mudança de domicílio fiscal", "href": "https://sede.agenciatributaria.gob.es/Sede/censos-nif-domicilio-fiscal/domicilio-ciudadanos/comunicar-cambio-domicilio-fiscal.html" }
+        {
+          "label": "Guia vida estabelecida (mudança)",
+          "href": "/guias/vida-estabelecida"
+        },
+        {
+          "label": "RD 1155/2024, art. 213",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-24099#a213"
+        },
+        {
+          "label": "Receita — mudança de domicílio fiscal",
+          "href": "https://sede.agenciatributaria.gob.es/Sede/censos-nif-domicilio-fiscal/domicilio-ciudadanos/comunicar-cambio-domicilio-fiscal.html"
+        }
       ]
     },
     {
@@ -101,9 +187,18 @@
       "title": "Anotar a renovação de 2 anos se for o seu caso",
       "detail": "Estrangeiro de fora da UE sem autorização de residência de longa duração precisa renovar o cadastro a cada 2 anos (art. 16 da Lei 7/1985). Se não renovar, a prefeitura pode dar baixa por caducidade sem ouvir você. A renovação ratifica que você continua no mesmo município e no mesmo endereço. Madrid tem cita específica de renovação/confirmação de pessoas estrangeiras (leve a carta da prefeitura e o documento original). Valência: trâmite na sede e, sem hora, nas mesmas oficinas do Padrón. Barcelona: não comunitário sem longa duração, 2 anos; comunitário com certificado de registro da União, a folha municipal fala em confirmar a cada 5 anos (sem esse certificado, 2 anos). Anote a data no calendário no dia do alta.",
       "links": [
-        { "label": "Lei 7/1985, art. 16 (renovação)", "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16" },
-        { "label": "Valência — renovação de estrangeiros", "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.50?lang=1" },
-        { "label": "Barcelona — vigência do padró", "href": "https://www.barcelona.cat/internationalwelcome/es/tramite/alta-en-el-padron-de-habitantes-de-barcelona" }
+        {
+          "label": "Lei 7/1985, art. 16 (renovação)",
+          "href": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-5392#a16"
+        },
+        {
+          "label": "Valência — renovação de estrangeiros",
+          "href": "https://sede.valencia.es/sede/registro/procedimiento/PA.GP.50?lang=1"
+        },
+        {
+          "label": "Barcelona — vigência do padró",
+          "href": "https://www.barcelona.cat/internationalwelcome/es/tramite/alta-en-el-padron-de-habitantes-de-barcelona"
+        }
       ]
     }
   ]

@@ -1,10 +1,18 @@
 {
   "slug": "nie",
+  "guia": "nie-primeiros-tramites",
   "title": "Checklist do NIE (número de estrangeiro)",
   "description": "Cita previa oficial, formulário EX-15, taxa 790-012, pasta do dia, foto da TIE e golpe do encaixe.",
-  "bullets": ["Cita previa gratuita", "EX-15 e 790-012", "Pasta e golpes"],
+  "bullets": [
+    "Cita previa gratuita",
+    "EX-15 e 790-012",
+    "Pasta e golpes"
+  ],
   "stage": "acabei-de-chegar",
-  "topics": ["nie", "documentos"],
+  "topics": [
+    "nie",
+    "documentos"
+  ],
   "cities": [],
   "items": [
     {
@@ -26,7 +34,7 @@
         },
         {
           "label": "Checklist da TIE",
-          "href": "/checklists/tie-residencia"
+          "href": "/guias/nie-primeiros-tramites#checklist-tie-residencia"
         }
       ]
     },
@@ -133,11 +141,11 @@
       "links": [
         {
           "label": "Checklist da TIE",
-          "href": "/checklists/tie-residencia"
+          "href": "/guias/nie-primeiros-tramites#checklist-tie-residencia"
         },
         {
           "label": "Checklist do empadronamiento",
-          "href": "/checklists/empadronamiento"
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
         },
         {
           "label": "Guia de NIE e primeiros trâmites",

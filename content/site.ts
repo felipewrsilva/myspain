@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Minha Espanha",
   domain: "minhaespanha.com.br",
   description:
-    "Guias práticos para brasileiros que querem ir ou já estão na Espanha: etapas, checklists e PDF para levar.",
+    "Guias práticos para brasileiros que querem ir ou já estão na Espanha: etapas, checklist embutido e PDF para levar.",
   url: "https://minhaespanha.com.br",
   whatsapp: {
     principal: {
@@ -20,11 +20,15 @@ export const siteConfig = {
       description: "Espaço para tirar dúvidas e trocar experiências do dia a dia.",
     },
   },
+  /** Contato do projeto (página Fale Conosco). */
+  contact: {
+    email:
+      process.env.NEXT_PUBLIC_CONTACT_EMAIL?.trim() || "contact@felipewrsilva.dev",
+  },
   nav: [
     { href: "/etapas/antes-de-ir", label: "Etapas" },
     { href: "/guias", label: "Guias" },
-    { href: "/checklists", label: "Checklists" },
     { href: "/anuncios", label: "Anúncios" },
-    { href: "/comunidade", label: "Comunidade" },
+    { href: "/fale-conosco", label: "Fale Conosco" },
   ],
 } as const;

@@ -2,11 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ContentCard, CardBullets } from "@/components/ContentCard";
-import { getGuides, getChecklists, getCover } from "@/lib/content";
+import { getGuides, getChecklistsForGuide, getCover } from "@/lib/content";
 import { stages } from "@/lib/site";
 
 const featuredGuideSlugs = ["visto-e-residencia", "primeiros-30-dias", "planejamento-financeiro"];
-const featuredChecklistSlugs = ["antes-de-viajar", "nie", "primeira-semana"];
 
 function pickBySlug<T extends { slug: string }>(items: T[], slugs: string[]) {
   return slugs
@@ -16,7 +15,6 @@ function pickBySlug<T extends { slug: string }>(items: T[], slugs: string[]) {
 
 export default function HomePage() {
   const guides = pickBySlug(getGuides(), featuredGuideSlugs);
-  const checklists = pickBySlug(getChecklists(), featuredChecklistSlugs);
 
   return (
     <>
@@ -47,7 +45,7 @@ export default function HomePage() {
             className="anim-rise mt-4 max-w-xl text-base text-pretty text-white/65"
             style={{ animationDelay: "0.18s" }}
           >
-            Guias e checklists para brasileiros na Espanha, para ler no site ou baixar em PDF. Sem cadastro e sem enrolação.
+            Guias práticos com checklist embutido, para ler no site ou baixar em PDF. Sem cadastro e sem enrolação.
           </p>
           <div className="anim-rise mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.26s" }}>
             <Link
@@ -75,7 +73,7 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-[var(--ink-muted)]">
-            Cada etapa reúne o que importa agora: guias e checklists, no site ou em PDF.
+            Cada etapa reúne os guias do momento, com checklist quando fizer sentido, no site ou em PDF.
           </p>
         </div>
 
@@ -125,52 +123,31 @@ export default function HomePage() {
           <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Guias para ler agora</h2>
-              <p className="mt-2 text-[var(--ink-muted)]">Orientações objetivas. Leia aqui ou baixe o PDF.</p>
+              <p className="mt-2 text-[var(--ink-muted)]">
+                Orientações objetivas, com checklist no fim quando houver passos para marcar.
+              </p>
             </div>
             <Link href="/guias" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
               Todos os guias
             </Link>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
-            {guides.map((guide) => (
-              <ContentCard
-                key={guide.slug}
-                href={`/guias/${guide.slug}`}
-                title={guide.title}
-                description={guide.description}
-                bullets={guide.bullets}
-                meta="Guia"
-                image={guide.cover}
-                imageAlt={guide.coverAlt}
-              />
-            ))}
+            {guides.map((guide) => {
+              const checklistCount = getChecklistsForGuide(guide.slug).length;
+              return (
+                <ContentCard
+                  key={guide.slug}
+                  href={`/guias/${guide.slug}`}
+                  title={guide.title}
+                  description={guide.description}
+                  bullets={guide.bullets}
+                  meta={checklistCount ? `Guia · ${checklistCount === 1 ? "checklist" : `${checklistCount} checklists`}` : "Guia"}
+                  image={guide.cover}
+                  imageAlt={guide.coverAlt}
+                />
+              );
+            })}
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
-        <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Checklists</h2>
-            <p className="mt-2 text-[var(--ink-muted)]">Marque no celular ou imprima o PDF.</p>
-          </div>
-          <Link href="/checklists" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
-            Todos os checklists
-          </Link>
-        </div>
-        <div className="grid gap-4 md:grid-cols-3">
-          {checklists.map((item) => (
-            <ContentCard
-              key={item.slug}
-              href={`/checklists/${item.slug}`}
-              title={item.title}
-              description={item.description}
-              bullets={item.bullets}
-              meta="Checklist"
-              image={item.cover}
-              imageAlt={item.coverAlt}
-            />
-          ))}
         </div>
       </section>
 

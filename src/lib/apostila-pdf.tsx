@@ -523,7 +523,7 @@ function ChecklistDocument({ checklist }: { checklist: Checklist }) {
 
         <Text style={styles.footerLeft} fixed>
           {siteConfig.url}
-          {`/checklists/${checklist.slug}`}
+          {`/guias/${checklist.guia}#checklist-${checklist.slug}`}
         </Text>
         <Text
           style={styles.footerRight}

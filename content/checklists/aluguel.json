@@ -1,10 +1,17 @@
 {
   "slug": "aluguel",
+  "guia": "aluguel-na-pratica",
   "title": "Checklist de aluguel",
   "description": "Mini-guia do Idealista à entrega das chaves: visita, fiança, honorários da Lei 12/2023, inventário e sinais de golpe.",
-  "bullets": ["Idealista e visita", "Fiança e honorários (Lei 12/2023)", "Golpe e inventário"],
+  "bullets": [
+    "Idealista e visita",
+    "Fiança e honorários (Lei 12/2023)",
+    "Golpe e inventário"
+  ],
   "stage": "acabei-de-chegar",
-  "topics": ["moradia"],
+  "topics": [
+    "moradia"
+  ],
   "cities": [],
   "items": [
     {
@@ -31,8 +38,14 @@
       "title": "Filtrar no Idealista e comparar 5 anúncios do mesmo bairro",
       "detail": "O mercado de fato está no Idealista; o Fotocasa serve de complemento. Filtre o mesmo bairro e a mesma metragem. Compare o preço com 5 anúncios: 30–40% abaixo da média do quarteirão é isca. O índice do Idealista de agosto de 2026 (publicado em 1º/9/2026) apontava 15,1 €/m² no país, 23,3 €/m² em Madrid e 20,2 €/m² em Barcelona — use como teto, não como o seu anúncio. O índice passou a excluir temporada e férias em julho de 2026. Agência física do bairro ajuda depois que você já andou na rua. Anúncio só de WhatsApp ou Facebook (“particular, transfere hoje”) trate como golpe até prova em contrário. Idealista não garante o anunciante.",
       "links": [
-        { "label": "Idealista", "href": "https://www.idealista.com" },
-        { "label": "Fotocasa", "href": "https://www.fotocasa.es" },
+        {
+          "label": "Idealista",
+          "href": "https://www.idealista.com"
+        },
+        {
+          "label": "Fotocasa",
+          "href": "https://www.fotocasa.es"
+        },
         {
           "label": "Idealista — índice de aluguel (agosto 2026)",
           "href": "https://www.idealista.com/news/inmobiliario/vivienda/2026/09/01/911881-el-precio-del-alquiler-sube-un-5-8-en-agosto-y-sigue-por-encima-de-los-15-euros-m2"
@@ -149,7 +162,7 @@
         },
         {
           "label": "Checklist do empadronamiento",
-          "href": "/checklists/empadronamiento"
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
         }
       ]
     },
@@ -186,7 +199,7 @@
         },
         {
           "label": "Checklist de conta bancária",
-          "href": "/checklists/conta-bancaria"
+          "href": "/guias/primeiros-30-dias#checklist-conta-bancaria"
         }
       ]
     },
@@ -197,7 +210,7 @@
       "links": [
         {
           "label": "Checklist do empadronamiento",
-          "href": "/checklists/empadronamiento"
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
         },
         {
           "label": "Guia: primeiros 30 dias",

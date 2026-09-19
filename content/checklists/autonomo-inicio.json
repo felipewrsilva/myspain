@@ -1,10 +1,18 @@
 {
   "slug": "autonomo-inicio",
+  "guia": "trabalho-e-contrato",
   "title": "Checklist para começar como autónomo",
   "description": "Mini-guia depois da autorização de residência que permite conta própria: certificado digital, alta na Hacienda (modelo 036), alta no RETA e os custos do mês.",
-  "bullets": ["Autorização primeiro", "Certificado, Hacienda e RETA", "Custos do mês"],
+  "bullets": [
+    "Autorização primeiro",
+    "Certificado, Hacienda e RETA",
+    "Custos do mês"
+  ],
   "stage": "ja-moro",
-  "topics": ["trabalho", "impostos"],
+  "topics": [
+    "trabalho",
+    "impostos"
+  ],
   "cities": [],
   "items": [
     {
@@ -22,7 +30,7 @@
         },
         {
           "label": "Checklist da TIE",
-          "href": "/checklists/tie-residencia"
+          "href": "/guias/nie-primeiros-tramites#checklist-tie-residencia"
         }
       ]
     },
@@ -71,7 +79,7 @@
       "links": [
         {
           "label": "Checklist de conta bancária",
-          "href": "/checklists/conta-bancaria"
+          "href": "/guias/primeiros-30-dias#checklist-conta-bancaria"
         }
       ]
     },

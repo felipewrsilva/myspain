@@ -1,10 +1,19 @@
 {
   "slug": "tie-residencia",
+  "guia": "nie-primeiros-tramites",
   "title": "Checklist de TIE (cartão de residência)",
   "description": "Mini-guia da TIE: prazo de um mês, EX-17, foto 32×26 mm, digitais, taxa 790-012 e recolha do cartão.",
-  "bullets": ["Prazo de um mês", "EX-17, foto e taxa", "Digitais e recolha"],
+  "bullets": [
+    "Prazo de um mês",
+    "EX-17, foto e taxa",
+    "Digitais e recolha"
+  ],
   "stage": "acabei-de-chegar",
-  "topics": ["visto", "documentos", "nie"],
+  "topics": [
+    "visto",
+    "documentos",
+    "nie"
+  ],
   "cities": [],
   "items": [
     {
@@ -67,7 +76,7 @@
         },
         {
           "label": "Checklist do empadronamiento",
-          "href": "/checklists/empadronamiento"
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
         },
         {
           "label": "Renovação: vida estabelecida",
@@ -116,7 +125,7 @@
         },
         {
           "label": "Checklist do NIE (se ainda faltar o número)",
-          "href": "/checklists/nie"
+          "href": "/guias/nie-primeiros-tramites#checklist-nie"
         }
       ]
     },

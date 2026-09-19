@@ -22,7 +22,7 @@ export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
             : "text-[0.7rem] font-bold uppercase tracking-[0.14em] text-white/50"
         }
       >
-        Comunidade
+        WhatsApp
       </p>
       <h2
         className={

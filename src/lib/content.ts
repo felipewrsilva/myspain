@@ -40,6 +40,8 @@ export type ChecklistItem = {
 
 export type Checklist = {
   slug: string;
+  /** Guia que hospeda este checklist (`content/guias/{guia}.mdx`). */
+  guia: string;
   title: string;
   description: string;
   bullets: string[];
@@ -50,6 +52,16 @@ export type Checklist = {
   cover?: string;
   coverAlt?: string;
 };
+
+/** Âncora do checklist na página da guia correspondente. */
+export function checklistAnchor(slug: string) {
+  return `checklist-${slug}`;
+}
+
+/** URL canônica: guia + âncora do checklist. */
+export function checklistHref(checklist: Pick<Checklist, "slug" | "guia">) {
+  return `/guias/${checklist.guia}#${checklistAnchor(checklist.slug)}`;
+}
 
 function readMdxDir(dir: string) {
   const full = path.join(contentRoot, dir);
@@ -98,6 +110,9 @@ export function getChecklists(): Checklist[] {
     .map((file) => {
       const raw = fs.readFileSync(path.join(dir, file), "utf8");
       const item = JSON.parse(raw) as Checklist;
+      if (!item.guia) {
+        throw new Error(`Checklist ${file} precisa do campo "guia" (slug da guia hospedeira).`);
+      }
       const cover = getCover(item.slug);
       return {
         ...item,
@@ -113,6 +128,10 @@ export function getChecklist(slug: string): Checklist | undefined {
   return getChecklists().find((item) => item.slug === slug);
 }
 
+export function getChecklistsForGuide(guideSlug: string): Checklist[] {
+  return getChecklists().filter((item) => item.guia === guideSlug);
+}
+
 export function getTopics() {
   return topics;
 }
@@ -125,26 +144,15 @@ export function getContentByStage(stage: StageId) {
 }
 
 export function getContinuePages(): ContinuePage[] {
-  return [
-    ...getGuides().map((item) => ({
-      href: `/guias/${item.slug}`,
-      title: item.title,
-      description: item.description,
-      bullets: item.bullets,
-      kind: "guia" as const,
-      stage: item.stage,
-      topics: item.topics,
-    })),
-    ...getChecklists().map((item) => ({
-      href: `/checklists/${item.slug}`,
-      title: item.title,
-      description: item.description,
-      bullets: item.bullets,
-      kind: "checklist" as const,
-      stage: item.stage,
-      topics: item.topics,
-    })),
-  ];
+  return getGuides().map((item) => ({
+    href: `/guias/${item.slug}`,
+    title: item.title,
+    description: item.description,
+    bullets: item.bullets,
+    kind: "guia" as const,
+    stage: item.stage,
+    topics: item.topics,
+  }));
 }
 
 export { getCover } from "../../content/covers";

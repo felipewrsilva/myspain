@@ -1,10 +1,17 @@
 {
   "slug": "conta-bancaria",
+  "guia": "primeiros-30-dias",
   "title": "Checklist para abrir conta bancária",
   "description": "Santander com passaporte, Wise de ponte, IBAN ES de 24 caracteres, o que levar na agência, prazos e custos aproximados.",
-  "bullets": ["Santander com passaporte", "Wise de ponte e IBAN ES", "O que levar, prazos e custos"],
+  "bullets": [
+    "Santander com passaporte",
+    "Wise de ponte e IBAN ES",
+    "O que levar, prazos e custos"
+  ],
   "stage": "acabei-de-chegar",
-  "topics": ["banco"],
+  "topics": [
+    "banco"
+  ],
   "cities": [],
   "items": [
     {
@@ -91,11 +98,11 @@
         },
         {
           "label": "Checklist do cadastro na prefeitura",
-          "href": "/checklists/empadronamiento"
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
         },
         {
           "label": "Checklist do NIE",
-          "href": "/checklists/nie"
+          "href": "/guias/nie-primeiros-tramites#checklist-nie"
         }
       ]
     },
@@ -129,7 +136,7 @@
         },
         {
           "label": "Checklist de aluguel",
-          "href": "/checklists/aluguel"
+          "href": "/guias/aluguel-na-pratica#checklist-aluguel"
         }
       ]
     },
@@ -174,7 +181,7 @@
         },
         {
           "label": "Checklist do cadastro na prefeitura",
-          "href": "/checklists/empadronamiento"
+          "href": "/guias/primeiros-30-dias#checklist-empadronamiento"
         },
         {
           "label": "Primeiros 30 dias",

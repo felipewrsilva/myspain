@@ -16,7 +16,7 @@ Abra [http://localhost:3000](http://localhost:3000).
 Tudo fica no repositório, em `content/`:
 
 - `guias/*.mdx` — guias (PDF em `/guias/[slug]/pdf`)
-- `checklists/*.json` — checklists (PDF em `/checklists/[slug]/pdf`)
+- `checklists/*.json` — checklists embutidos na guia (`guia` no JSON; PDF em `/checklists/[slug]/pdf`)
 - `site.ts` — nome, nav e links do WhatsApp
 
 ## Deploy
