@@ -160,17 +160,17 @@ export const ads: Ad[] = [
       {
         question: "O pet precisa ir para a casa da cuidadora?",
         answer:
-          "Não necessariamente. O anúncio destaca cuidado em casa. Confirme o formato exato no WhatsApp.",
+          "Em geral, não: o foco é cuidado em casa. Se fizer mais sentido outro formato para o seu pet, combine direto com a Carol.",
       },
       {
         question: "Serve para gatos também?",
         answer:
-          "O material fala em mascotes de forma ampla. Confirme espécie e rotina antes de reservar.",
+          "Sim, cães e gatos. Conta a rotina e o temperamento no WhatsApp para ela montar o cuidado certo.",
       },
       {
         question: "A Minha Espanha intermedia o pagamento?",
         answer:
-          "Não. A divulgação é da comunidade; valores e condições ficam entre você e a anunciante.",
+          "Não. Valor, horários e detalhes você fecha direto com a Carol, do jeito que funcionar para os dois.",
       },
     ],
     price: null,
