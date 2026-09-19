@@ -23,7 +23,7 @@ export default function HomePage() {
           className="anim-zoom absolute inset-0 -z-10"
           style={{
             backgroundImage:
-              "linear-gradient(105deg, rgba(20,24,31,0.92) 18%, rgba(20,24,31,0.55) 55%, rgba(200,16,46,0.35) 100%), url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=2200&q=80')",
+              "linear-gradient(105deg, rgba(20,24,31,0.92) 18%, rgba(20,24,31,0.55) 55%, rgba(200,16,46,0.35) 100%), url('/images/unsplash/photo-1539037116277-4db20889f2d4.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center 40%",
           }}

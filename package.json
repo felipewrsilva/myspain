@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "images:vendor": "node scripts/vendor-unsplash-images.mjs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.9.0",
