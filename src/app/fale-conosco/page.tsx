@@ -19,9 +19,7 @@ export default function FaleConoscoPage() {
         Fale Conosco
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">
-        Dúvidas, sugestões, problemas no site ou assuntos relacionados aos anúncios: fale
-        direto com o projeto por e-mail, ou entre no grupo oficial do WhatsApp para trocar
-        experiência com outras pessoas na mesma jornada.
+        E-mail para falar com o projeto. WhatsApp para trocar experiência com quem está na mesma jornada.
       </p>
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">

@@ -70,9 +70,9 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
 
       {content.guides.length ? (
         <section className="mt-12">
-          <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Guias</h2>
+          <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold">Guias desta etapa</h2>
           <p className="mt-2 max-w-2xl text-sm text-[var(--ink-muted)]">
-            Cada guia traz o texto completo. Quando houver passos para marcar, o checklist fica no final da página.
+            Escolha pelo tema que você precisa resolver agora.
           </p>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             {content.guides.map((guide) => (

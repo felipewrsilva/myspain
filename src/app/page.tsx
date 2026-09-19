@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ContentCard, CardBullets } from "@/components/ContentCard";
-import { getGuides, getChecklistsForGuide, getCover } from "@/lib/content";
-import { stages } from "@/lib/site";
+import { getGuides, getCover, getTopicName } from "@/lib/content";
+import { stages, getStage } from "@/lib/site";
 
 const featuredGuideSlugs = ["visto-e-residencia", "primeiros-30-dias", "planejamento-financeiro"];
 
@@ -45,7 +45,7 @@ export default function HomePage() {
             className="anim-rise mt-4 max-w-xl text-base text-pretty text-white/65"
             style={{ animationDelay: "0.18s" }}
           >
-            Guias práticos com checklist embutido, para ler no site ou baixar em PDF. Sem cadastro e sem enrolação.
+            Guias práticos para quem vai ou já mora na Espanha. Escolha a fase da jornada e avance com método.
           </p>
           <div className="anim-rise mt-9" style={{ animationDelay: "0.26s" }}>
             <Link
@@ -67,7 +67,7 @@ export default function HomePage() {
             </h2>
           </div>
           <p className="max-w-sm text-sm text-[var(--ink-muted)]">
-            Cada etapa reúne os guias do momento, com checklist quando fizer sentido, no site ou em PDF.
+            Três momentos da jornada. Em cada um, os guias que importam naquele ponto.
           </p>
         </div>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
             <div>
               <h2 className="font-[family-name:var(--font-display)] text-3xl font-bold">Guias para ler agora</h2>
               <p className="mt-2 text-[var(--ink-muted)]">
-                Orientações objetivas, com checklist no fim quando houver passos para marcar.
+                Temas que mais travam quem está de mudança. Abra um e siga dali.
               </p>
             </div>
             <Link href="/guias" className="inline-flex min-h-11 shrink-0 items-center text-sm font-bold text-[var(--accent)] hover:underline">
@@ -127,7 +127,9 @@ export default function HomePage() {
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {guides.map((guide) => {
-              const checklistCount = getChecklistsForGuide(guide.slug).length;
+              const stage = getStage(guide.stage);
+              const topics = guide.topics.map(getTopicName).slice(0, 2).join(" · ");
+              const meta = [stage?.shortTitle, topics].filter(Boolean).join(" · ") || undefined;
               return (
                 <ContentCard
                   key={guide.slug}
@@ -135,7 +137,7 @@ export default function HomePage() {
                   title={guide.title}
                   description={guide.description}
                   bullets={guide.bullets}
-                  meta={checklistCount ? `Guia · ${checklistCount === 1 ? "checklist" : `${checklistCount} checklists`}` : "Guia"}
+                  meta={meta}
                   image={guide.cover}
                   imageAlt={guide.coverAlt}
                 />

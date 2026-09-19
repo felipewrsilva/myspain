@@ -16,10 +16,10 @@ export function GuideChecklists({ checklists }: { checklists: Checklist[] }) {
           Checklist{checklists.length > 1 ? "s" : ""}
         </p>
         <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)] sm:text-3xl">
-          Marque o progresso neste guia
+          Marque o que já resolveu
         </h2>
         <p className="mt-2 max-w-2xl text-[var(--ink-muted)]">
-          O progresso fica só neste navegador. Baixe o PDF se preferir riscar no papel.
+          O progresso fica neste navegador. Se preferir papel, baixe o PDF abaixo.
         </p>
       </div>
 

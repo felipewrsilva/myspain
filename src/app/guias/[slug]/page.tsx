@@ -63,11 +63,6 @@ export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {
             {getTopicName(topic)}
           </span>
         ))}
-        {checklists.length ? (
-          <span className="inline-flex min-h-11 items-center rounded-full border border-[var(--accent)]/30 bg-[color-mix(in_oklab,var(--accent)_8%,white)] px-3.5 text-[var(--accent)]">
-            {checklists.length === 1 ? "Com checklist" : `${checklists.length} checklists`}
-          </span>
-        ) : null}
       </div>
       {guide.cover ? (
         <div className="mt-8">

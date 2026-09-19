@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ContentCard } from "@/components/ContentCard";
-import { getChecklistsForGuide, getGuides, getTopicName } from "@/lib/content";
+import { getGuides, getTopicName } from "@/lib/content";
+import { getStage } from "@/lib/site";
 
 export const metadata = {
   title: "Guias",
@@ -32,11 +33,9 @@ export default function GuiasPage() {
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {guides.map((guide) => {
-          const checklistCount = getChecklistsForGuide(guide.slug).length;
+          const stage = getStage(guide.stage);
           const topics = guide.topics.map(getTopicName).slice(0, 2).join(" · ");
-          const meta = checklistCount
-            ? `${topics ? `${topics} · ` : ""}${checklistCount === 1 ? "checklist" : `${checklistCount} checklists`}`
-            : topics;
+          const meta = [stage?.shortTitle, topics].filter(Boolean).join(" · ") || undefined;
           return (
             <ContentCard
               key={guide.slug}
@@ -44,7 +43,7 @@ export default function GuiasPage() {
               title={guide.title}
               description={guide.description}
               bullets={guide.bullets}
-              meta={meta || undefined}
+              meta={meta}
               image={guide.cover}
               imageAlt={guide.coverAlt}
             />

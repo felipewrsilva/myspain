@@ -18,7 +18,7 @@ export function Footer() {
             </span>
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
-            Guias práticos para brasileiros que vão ou já moram na Espanha. O conteúdo é público, sem cadastro.
+            Guias práticos para brasileiros que vão ou já moram na Espanha.
           </p>
         </div>
 

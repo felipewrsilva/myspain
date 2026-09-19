@@ -17,8 +17,8 @@ export default function AnunciosPage() {
         Serviços e oportunidades da comunidade
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">
-        Anúncios da comunidade para brasileiros na Espanha. A Minha Espanha divulga; o combinado
-        fica entre você e o anunciante.
+        Serviços e oportunidades de brasileiros na Espanha. A Minha Espanha só divulga; o acordo é
+        direto com o anunciante.
       </p>
 
       <div className="mt-10 grid gap-4 md:grid-cols-2">
