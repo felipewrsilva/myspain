@@ -3,7 +3,7 @@ import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ContentCard, CardBullets } from "@/components/ContentCard";
 import { getGuides, getChecklistsForGuide, getCover } from "@/lib/content";
-import { siteConfig, stages } from "@/lib/site";
+import { stages } from "@/lib/site";
 
 const featuredGuideSlugs = ["visto-e-residencia", "primeiros-30-dias", "planejamento-financeiro"];
 
@@ -47,22 +47,13 @@ export default function HomePage() {
           >
             Guias práticos com checklist embutido, para ler no site ou baixar em PDF. Sem cadastro e sem enrolação.
           </p>
-          <div className="anim-rise mt-9 flex flex-col gap-3 sm:flex-row" style={{ animationDelay: "0.26s" }}>
+          <div className="anim-rise mt-9" style={{ animationDelay: "0.26s" }}>
             <Link
               href="/etapas/antes-de-ir"
               className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--accent)] px-6 text-sm font-bold text-white transition hover:brightness-110"
             >
               Começar pela minha etapa
             </Link>
-            <a
-              href={siteConfig.whatsapp.grupo.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/30 px-6 text-sm font-semibold text-white transition hover:bg-white/10"
-            >
-              Entrar no grupo
-              <span className="sr-only"> (abre o WhatsApp)</span>
-            </a>
           </div>
         </div>
       </section>

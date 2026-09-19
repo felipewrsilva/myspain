@@ -2,7 +2,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContentCard } from "@/components/ContentCard";
 import { CoverImage } from "@/components/CoverImage";
-import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { getContentByStage, getCover } from "@/lib/content";
 import { getStage, stages, type StageId } from "@/lib/site";
 
@@ -90,10 +89,6 @@ export default async function StagePage({ params }: PageProps<"/etapas/[stage]">
           </div>
         </section>
       ) : null}
-
-      <div className="mt-14">
-        <WhatsAppCTA compact />
-      </div>
     </div>
   );
 }

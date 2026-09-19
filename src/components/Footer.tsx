@@ -36,17 +36,14 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/45">WhatsApp</p>
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/45">Contato</p>
           <ul className="mt-4 space-y-1 text-sm text-white/70">
             <li>
               <a
-                href={siteConfig.whatsapp.grupo.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center hover:text-white"
+                href={`mailto:${siteConfig.contact.email}`}
+                className="inline-flex min-h-11 items-center transition hover:text-white"
               >
-                {siteConfig.whatsapp.grupo.label}
-                <span className="sr-only"> (abre o WhatsApp)</span>
+                {siteConfig.contact.email}
               </a>
             </li>
           </ul>
