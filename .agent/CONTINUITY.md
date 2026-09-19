@@ -15,6 +15,8 @@ Maintain MySpain content/site work with a durable agent briefing and shared cros
 - 2026-09-19T11:59Z [USER] Always-apply agent ops live in `~/.cursor/rules/agent-*.mdc` so every project inherits them.
 - 2026-09-19T11:59Z [USER] Per-repo continuity is `.agent/CONTINUITY.md` (canonical briefing across compaction).
 - 2026-09-19T11:59Z [ASSUMPTION] Repo-specific container details belong in `AGENTS.md`; this repo has no Dockerfile/compose yet (UNCONFIRMED until added).
+- 2026-09-19T12:06Z [USER] Do not create `.agent/README.md`. Layout is only `.agent/CONTINUITY.md` + AGENTS container section.
+- 2026-09-19T12:07Z [USER] No bootstrap skill. Core instructions and prompts must not reference `agent-core-bootstrap`.
 
 ## [PROGRESS]
 
@@ -30,3 +32,5 @@ Maintain MySpain content/site work with a durable agent briefing and shared cros
 ## [OUTCOMES]
 
 - 2026-09-19T12:00Z [TOOL] Core agent structure installed for all projects (global rules + bootstrap skill) and seeded in this repo (`.agent/`, AGENTS container stub). No container workflow created yet (none existed; not required until tooling install).
+- 2026-09-19T12:06Z [TOOL] Removed `.agent/README.md` from this repo.
+- 2026-09-19T12:07Z [TOOL] Deleted personal skill `agent-core-bootstrap` and removed all references from core rules and store.
