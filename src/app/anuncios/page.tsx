@@ -30,7 +30,7 @@ export default function AnunciosPage() {
             title={ad.title}
             description={ad.summary}
             bullets={ad.features}
-            meta={`${ad.category} · ${ad.location}`}
+            meta={`${ad.subcategory ?? ad.category} · ${ad.location}`}
             image={ad.image}
             imageAlt={ad.imageAlt}
           />

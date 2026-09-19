@@ -1,6 +1,13 @@
 import { ads, type Ad } from "../../content/anuncios";
 
-export type { Ad, AdContact, AdContactType, AdService } from "../../content/anuncios";
+export type {
+  Ad,
+  AdContact,
+  AdContactType,
+  AdFaq,
+  AdLocation,
+  AdService,
+} from "../../content/anuncios";
 
 /**
  * Lista anúncios publicados.
