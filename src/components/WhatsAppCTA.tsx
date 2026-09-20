@@ -8,7 +8,7 @@ export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
       className={
         compact
           ? "rounded-2xl border border-[var(--line)] bg-white p-6"
-          : "relative overflow-hidden rounded-[1.75rem] bg-[var(--ink)] p-8 text-white sm:p-10"
+          : "relative overflow-hidden rounded-[1.75rem] bg-[var(--ink)] p-6 text-white sm:p-10"
       }
     >
       {!compact ? (
@@ -30,7 +30,7 @@ export function WhatsAppCTA({ compact = false }: { compact?: boolean }) {
         className={
           compact
             ? "mt-2 font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]"
-            : "mt-3 max-w-xl font-[family-name:var(--font-display)] text-3xl font-bold text-balance sm:text-4xl"
+            : "mt-3 max-w-xl font-[family-name:var(--font-display)] text-2xl font-bold break-words text-balance sm:text-4xl"
         }
       >
         Entre no grupo do WhatsApp

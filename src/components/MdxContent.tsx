@@ -63,23 +63,25 @@ const components = {
   ol: (props: React.HTMLAttributes<HTMLOListElement>) => (
     <ol className="mb-4 list-decimal space-y-2 pl-5 text-[var(--ink-muted)]" {...props} />
   ),
-  li: (props: React.HTMLAttributes<HTMLLIElement>) => <li className="leading-relaxed" {...props} />,
+  li: (props: React.HTMLAttributes<HTMLLIElement>) => (
+    <li className="leading-relaxed break-words [overflow-wrap:anywhere]" {...props} />
+  ),
   strong: (props: React.HTMLAttributes<HTMLElement>) => (
     <strong className="font-semibold text-[var(--ink)]" {...props} />
   ),
   table: (props: React.TableHTMLAttributes<HTMLTableElement>) => (
-    <div className="mb-6 overflow-x-auto rounded-2xl border border-[var(--line)]">
-      <table className="w-full min-w-[32rem] text-left text-sm" {...props} />
+    <div className="mb-6 max-w-full overflow-x-auto rounded-2xl border border-[var(--line)]">
+      <table className="w-full table-fixed text-left text-sm sm:table-auto" {...props} />
     </div>
   ),
   thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
     <thead className="bg-[var(--paper-2)] text-[var(--ink)]" {...props} />
   ),
   th: (props: React.ThHTMLAttributes<HTMLTableCellElement>) => (
-    <th className="px-3 py-2.5 font-semibold" {...props} />
+    <th className="px-2.5 py-2.5 align-top font-semibold break-words sm:px-3 [overflow-wrap:anywhere]" {...props} />
   ),
   td: (props: React.TdHTMLAttributes<HTMLTableCellElement>) => (
-    <td className="border-t border-[var(--line)] px-3 py-2.5 text-[var(--ink-muted)]" {...props} />
+    <td className="border-t border-[var(--line)] px-2.5 py-2.5 align-top break-words text-[var(--ink-muted)] sm:px-3 [overflow-wrap:anywhere]" {...props} />
   ),
   blockquote: (props: React.BlockquoteHTMLAttributes<HTMLQuoteElement>) => (
     <blockquote

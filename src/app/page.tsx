@@ -50,7 +50,7 @@ export default function HomePage() {
           <div className="anim-rise mt-9" style={{ animationDelay: "0.26s" }}>
             <Link
               href="/etapas/antes-de-ir"
-              className="inline-flex min-h-12 items-center justify-center rounded-lg bg-[var(--accent)] px-6 text-sm font-bold text-white transition hover:brightness-110"
+              className="inline-flex min-h-12 max-w-full items-center justify-center rounded-lg bg-[var(--accent)] px-5 text-sm font-bold text-white transition hover:brightness-110 sm:px-6"
             >
               Começar pela minha etapa
             </Link>
@@ -99,8 +99,8 @@ export default function HomePage() {
                     0{index + 1}
                   </span>
                 )}
-                <div className="p-7 pt-5">
-                  <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]">
+                <div className="p-5 pt-5 sm:p-7 sm:pt-5">
+                  <h3 className="font-[family-name:var(--font-display)] text-2xl font-bold break-words text-[var(--ink)]">
                     {stage.title}
                   </h3>
                   <CardBullets items={stage.bullets} />

@@ -8,9 +8,9 @@ export function CardBullets({ items, className }: { items: string[]; className?:
   return (
     <ul className={cn("mt-3 space-y-1.5 text-sm text-[var(--ink-muted)]", className)}>
       {items.map((item) => (
-        <li key={item} className="flex gap-2.5">
+        <li key={item} className="flex min-w-0 gap-2.5">
           <span aria-hidden className="mt-[0.55em] size-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-          <span>{item}</span>
+          <span className="min-w-0 break-words [overflow-wrap:anywhere]">{item}</span>
         </li>
       ))}
     </ul>
@@ -58,17 +58,19 @@ export function ContentCard({
           />
         </div>
       ) : null}
-      <div className="p-6">
+      <div className="min-w-0 p-5 sm:p-6">
         {meta ? (
-          <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">{meta}</p>
+          <p className="break-words text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)] [overflow-wrap:anywhere]">
+            {meta}
+          </p>
         ) : null}
-        <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl font-bold leading-snug text-balance text-[var(--ink)]">
+        <h3 className="mt-2 font-[family-name:var(--font-display)] text-xl font-bold leading-snug break-words text-balance text-[var(--ink)]">
           {title}
         </h3>
         {points.length ? (
           <CardBullets items={points} />
         ) : description ? (
-          <p className="mt-2 text-sm leading-relaxed text-pretty text-[var(--ink-muted)]">{description}</p>
+          <p className="mt-2 text-sm leading-relaxed break-words text-pretty text-[var(--ink-muted)]">{description}</p>
         ) : null}
         <span className="mt-4 inline-block text-sm font-semibold text-[var(--accent)] transition group-hover:underline">
           Abrir

@@ -38,7 +38,7 @@ export function AdContactLinks({
             target="_blank"
             rel="noopener noreferrer"
             className={cn(
-              "inline-flex min-h-11 items-center justify-center rounded-lg px-5 text-sm font-semibold transition",
+              "inline-flex min-h-11 max-w-full items-center justify-center rounded-lg px-5 text-sm font-semibold break-words transition",
               primary
                 ? "bg-[var(--accent)] text-white hover:brightness-110"
                 : "border border-[var(--line)] bg-white text-[var(--ink)] hover:border-[var(--accent-2)]",
@@ -68,7 +68,7 @@ export function AdLocationPanel({ location }: { location: AdLocation }) {
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(20,24,31,0.88)] via-[rgba(20,24,31,0.35)] to-transparent" />
           <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
             <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/55">Localização</p>
-            <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-bold text-white sm:text-4xl">
+            <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold break-words text-white sm:text-4xl">
               {location.label}
             </h2>
             <p className="mt-2 text-sm font-medium text-white/75">{location.region}</p>
@@ -83,12 +83,12 @@ export function AdLocationPanel({ location }: { location: AdLocation }) {
             {location.notes?.length ? (
               <ul className="mt-5 space-y-2.5">
                 {location.notes.map((note) => (
-                  <li key={note} className="flex gap-2.5 text-sm text-[var(--ink)]">
+                  <li key={note} className="flex min-w-0 gap-2.5 text-sm text-[var(--ink)]">
                     <span
                       aria-hidden
                       className="mt-1.5 size-1.5 shrink-0 rounded-full bg-[var(--accent-2)]"
                     />
-                    <span>{note}</span>
+                    <span className="min-w-0 break-words">{note}</span>
                   </li>
                 ))}
               </ul>

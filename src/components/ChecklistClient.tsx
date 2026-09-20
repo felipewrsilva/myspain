@@ -106,14 +106,14 @@ export function ChecklistClient({
                     <span className="block text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
                       Passo {index + 1}
                     </span>
-                    <span className={cn("mt-1 block font-semibold text-[var(--ink)]", isChecked && "line-through opacity-60")}>
+                    <span className={cn("mt-1 block font-semibold break-words text-[var(--ink)]", isChecked && "line-through opacity-60")}>
                       {item.title}
                     </span>
-                    <span className="mt-1 block text-sm leading-relaxed text-[var(--ink-muted)]">{item.detail}</span>
+                    <span className="mt-1 block text-sm leading-relaxed break-words text-[var(--ink-muted)]">{item.detail}</span>
                   </span>
                 </label>
                 {item.links?.length ? (
-                  <div className="flex flex-wrap gap-x-3 gap-y-2 border-t border-[var(--line)] px-4 py-3 pl-14">
+                  <div className="flex min-w-0 flex-wrap gap-x-3 gap-y-2 border-t border-[var(--line)] px-4 py-3 pl-14">
                     {item.links.map((link) => {
                       const internal = link.href.startsWith("/");
                       if (internal) {
@@ -121,7 +121,7 @@ export function ChecklistClient({
                           <Link
                             key={link.href}
                             href={link.href}
-                            className="inline-flex min-h-11 items-center text-sm font-semibold text-[var(--accent)] underline-offset-4 hover:underline"
+                            className="inline-flex min-h-11 max-w-full items-center break-words text-sm font-semibold text-[var(--accent)] underline-offset-4 hover:underline [overflow-wrap:anywhere]"
                           >
                             {link.label}
                           </Link>
@@ -133,7 +133,7 @@ export function ChecklistClient({
                           href={link.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex min-h-11 items-center text-sm font-semibold text-[var(--accent)] underline-offset-4 hover:underline"
+                          className="inline-flex min-h-11 max-w-full items-center break-words text-sm font-semibold text-[var(--accent)] underline-offset-4 hover:underline [overflow-wrap:anywhere]"
                         >
                           {link.label}
                           <span className="sr-only"> (abre em nova aba)</span>

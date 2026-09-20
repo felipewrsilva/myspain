@@ -15,7 +15,7 @@ export default function FaleConoscoPage() {
       <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[var(--accent)]">
         Contato
       </p>
-      <h1 className="mt-2 max-w-3xl font-[family-name:var(--font-display)] text-4xl font-extrabold text-balance text-[var(--ink)] sm:text-5xl">
+      <h1 className="mt-2 max-w-3xl font-[family-name:var(--font-display)] text-3xl font-extrabold break-words text-balance text-[var(--ink)] sm:text-5xl">
         Fale Conosco
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">
@@ -25,18 +25,18 @@ export default function FaleConoscoPage() {
       <div className="mt-10 grid gap-4 md:grid-cols-2">
         <a
           href={`mailto:${email}`}
-          className="rounded-2xl bg-[var(--ink)] p-8 text-white transition hover:-translate-y-0.5"
+          className="min-w-0 rounded-2xl bg-[var(--ink)] p-6 text-white transition hover:-translate-y-0.5 sm:p-8"
         >
           <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-white/50">
             E-mail
           </p>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-bold">
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-2xl font-bold break-words sm:text-3xl">
             Contato do projeto
           </h2>
-          <p className="mt-3 text-white/70">
+          <p className="mt-3 text-pretty text-white/70">
             Para falar com quem cuida da Minha Espanha sobre o site ou os anúncios.
           </p>
-          <span className="mt-6 inline-flex min-h-11 items-center rounded-lg bg-[var(--accent)] px-4 text-sm font-bold">
+          <span className="mt-6 inline-flex min-h-11 max-w-full items-center rounded-lg bg-[var(--accent)] px-4 text-sm font-bold break-all [overflow-wrap:anywhere]">
             {email}
           </span>
         </a>
@@ -45,12 +45,12 @@ export default function FaleConoscoPage() {
           href={grupo.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border border-[var(--line)] bg-white p-8 transition hover:-translate-y-0.5 hover:border-[var(--accent-2)]"
+          className="min-w-0 rounded-2xl border border-[var(--line)] bg-white p-6 transition hover:-translate-y-0.5 hover:border-[var(--accent-2)] sm:p-8"
         >
           <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
             WhatsApp
           </p>
-          <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-bold text-[var(--ink)]">
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-2xl font-bold break-words text-[var(--ink)] sm:text-3xl">
             Grupo oficial
           </h2>
           <p className="mt-3 text-[var(--ink-muted)]">{grupo.description}</p>

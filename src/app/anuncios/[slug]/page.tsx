@@ -35,10 +35,10 @@ function SectionHeading({
   return (
     <div className="max-w-2xl">
       <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[var(--accent)]">{eyebrow}</p>
-      <h2 className="mt-2 font-[family-name:var(--font-display)] text-3xl font-bold text-[var(--ink)]">
+      <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold break-words text-[var(--ink)] sm:text-3xl">
         {title}
       </h2>
-      {description ? <p className="mt-3 text-[var(--ink-muted)]">{description}</p> : null}
+      {description ? <p className="mt-3 break-words text-[var(--ink-muted)]">{description}</p> : null}
     </div>
   );
 }
@@ -81,25 +81,25 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
               <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-white/50">
                 {ad.subcategory ?? ad.category}
               </p>
-              <h1 className="mt-3 font-[family-name:var(--font-display)] text-4xl font-extrabold text-balance sm:text-5xl lg:text-6xl">
+              <h1 className="mt-3 font-[family-name:var(--font-display)] text-3xl font-extrabold break-words text-balance sm:text-5xl lg:text-6xl">
                 {ad.title}
               </h1>
               {ad.tagline ? (
-                <p className="mt-4 max-w-xl text-lg font-medium text-white/85">{ad.tagline}</p>
+                <p className="mt-4 max-w-xl text-lg font-medium break-words text-white/85">{ad.tagline}</p>
               ) : null}
-              <p className="mt-4 max-w-2xl text-base leading-relaxed text-pretty text-white/65 sm:text-lg">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed break-words text-pretty text-white/65 sm:text-lg">
                 {ad.description}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2 text-xs">
-                <span className="inline-flex min-h-10 items-center rounded-full bg-white/10 px-3.5 text-white/90 ring-1 ring-white/15">
+                <span className="inline-flex min-h-10 max-w-full items-center rounded-full bg-white/10 px-3.5 break-words text-white/90 ring-1 ring-white/15">
                   {ad.location}
                 </span>
-                <span className="inline-flex min-h-10 items-center rounded-full bg-white/10 px-3.5 text-white/90 ring-1 ring-white/15">
+                <span className="inline-flex min-h-10 max-w-full items-center rounded-full bg-white/10 px-3.5 break-words text-white/90 ring-1 ring-white/15">
                   {ad.category}
                 </span>
                 {ad.provider ? (
-                  <span className="inline-flex min-h-10 items-center rounded-full bg-white/10 px-3.5 text-white/90 ring-1 ring-white/15">
+                  <span className="inline-flex min-h-10 max-w-full items-center rounded-full bg-white/10 px-3.5 break-words text-white/90 ring-1 ring-white/15">
                     {ad.provider}
                     {ad.providerRole ? ` · ${ad.providerRole}` : ""}
                   </span>
@@ -107,16 +107,16 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-white/15 bg-white/8 p-6 backdrop-blur-md sm:p-7">
+            <div className="min-w-0 rounded-[1.5rem] border border-white/15 bg-white/8 p-5 backdrop-blur-md sm:p-7">
               <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-white/45">Contato rápido</p>
-              <p className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold">
+              <p className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold break-words">
                 {ad.provider ?? "Falar com o anunciante"}
               </p>
-              {ad.providerRole ? <p className="mt-1 text-sm text-white/60">{ad.providerRole}</p> : null}
-              {ad.priceNote ? <p className="mt-3 text-sm text-white/65">{ad.priceNote}</p> : null}
-              <ul className="mt-4 space-y-1.5 text-sm text-white/70">
+              {ad.providerRole ? <p className="mt-1 text-sm break-words text-white/60">{ad.providerRole}</p> : null}
+              {ad.priceNote ? <p className="mt-3 text-sm break-words text-white/65">{ad.priceNote}</p> : null}
+              <ul className="mt-4 min-w-0 space-y-1.5 text-sm text-white/70">
                 {ad.contacts.map((contact) => (
-                  <li key={`${contact.type}-${contact.value}`}>
+                  <li key={`${contact.type}-${contact.value}`} className="min-w-0 break-words [overflow-wrap:anywhere]">
                     <span className="text-white/90">{contact.label}:</span> {contact.value}
                   </li>
                 ))}
@@ -146,11 +146,11 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
             {hasServices ? (
               <section>
                 <SectionHeading eyebrow="Serviços" title="O que você pode combinar" />
-                <div className="mt-8 grid gap-4 md:grid-cols-3">
+                <div className="mt-8 grid gap-4 lg:grid-cols-3">
                   {serviceItems.map((service, index) => (
                     <div
                       key={service.title}
-                      className="relative overflow-hidden rounded-2xl border border-[var(--line)] bg-white p-6 transition hover:-translate-y-0.5 hover:border-[var(--accent-2)]"
+                      className="relative min-w-0 overflow-hidden rounded-2xl border border-[var(--line)] bg-white p-5 transition hover:-translate-y-0.5 hover:border-[var(--accent-2)] sm:p-6"
                     >
                       <span className="font-[family-name:var(--font-display)] text-4xl font-extrabold text-[color-mix(in_oklab,var(--accent)_18%,white)]">
                         {String(index + 1).padStart(2, "0")}
@@ -209,11 +209,11 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
             {ad.bookingSteps?.length ? (
               <section>
                 <SectionHeading eyebrow="Reserva" title="Como combinar" />
-                <ol className="mt-8 grid gap-4 sm:grid-cols-3">
+                <ol className="mt-8 grid gap-4 lg:grid-cols-3">
                   {ad.bookingSteps.map((step, index) => (
                     <li
                       key={step}
-                      className="rounded-2xl border border-[var(--line)] bg-white p-5"
+                      className="min-w-0 rounded-2xl border border-[var(--line)] bg-white p-5"
                     >
                       <span className="inline-flex size-8 items-center justify-center rounded-full bg-[var(--paper-2)] text-sm font-bold text-[var(--ink)]">
                         {index + 1}
@@ -262,18 +262,18 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
                       key={faq.question}
                       className="group rounded-2xl border border-[var(--line)] bg-white px-5 py-4 open:border-[var(--accent-2)]"
                     >
-                      <summary className="cursor-pointer list-none font-semibold text-[var(--ink)] marker:content-none [&::-webkit-details-marker]:hidden">
+                      <summary className="cursor-pointer list-none font-semibold break-words text-[var(--ink)] marker:content-none [&::-webkit-details-marker]:hidden">
                         <span className="flex items-start justify-between gap-4">
-                          <span>{faq.question}</span>
+                          <span className="min-w-0 flex-1 break-words">{faq.question}</span>
                           <span
                             aria-hidden
-                            className="mt-0.5 text-[var(--accent-2)] transition group-open:rotate-45"
+                            className="mt-0.5 shrink-0 text-[var(--accent-2)] transition group-open:rotate-45"
                           >
                             +
                           </span>
                         </span>
                       </summary>
-                      <p className="mt-3 text-sm leading-relaxed text-pretty text-[var(--ink-muted)]">
+                      <p className="mt-3 text-sm leading-relaxed break-words text-pretty text-[var(--ink-muted)]">
                         {faq.answer}
                       </p>
                     </details>
@@ -295,11 +295,11 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
               <div className="relative aspect-[16/10]">
                 <Image src={ad.image} alt={ad.imageAlt} fill sizes="400px" className="object-cover" />
               </div>
-              <div className="p-6">
+              <div className="p-5 sm:p-6">
                 <p className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
                   Anunciante
                 </p>
-                <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]">
+                <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold break-words text-[var(--ink)]">
                   {ad.provider ?? ad.title}
                 </h2>
                 {ad.providerRole ? (

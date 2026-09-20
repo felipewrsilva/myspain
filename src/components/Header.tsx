@@ -37,13 +37,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 min-w-0 border-b border-[var(--line)] bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl min-w-0 items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
-        <Link href="/" aria-label="Minha Espanha, ir para o início" className="group flex min-w-0 items-center gap-2.5 rounded-lg">
-          <LogoMark className="size-9 shrink-0 text-[1.55rem]" />
-          <span className="flex min-w-0 items-baseline gap-1">
-            <span className="font-[family-name:var(--font-display)] text-[1.35rem] font-extrabold tracking-tight text-[var(--ink)]">
+        <Link href="/" aria-label="Minha Espanha, ir para o início" className="group flex min-w-0 items-center gap-2 rounded-lg sm:gap-2.5">
+          <LogoMark className="size-8 shrink-0 text-[1.4rem] sm:size-9 sm:text-[1.55rem]" />
+          <span className="flex min-w-0 flex-wrap items-baseline gap-x-1">
+            <span className="font-[family-name:var(--font-display)] text-[1.2rem] font-extrabold tracking-tight text-[var(--ink)] sm:text-[1.35rem]">
               Minha
             </span>
-            <span className="font-[family-name:var(--font-display)] text-[1.35rem] font-extrabold tracking-tight text-[var(--accent)]">
+            <span className="font-[family-name:var(--font-display)] text-[1.2rem] font-extrabold tracking-tight text-[var(--accent)] sm:text-[1.35rem]">
               Espanha
             </span>
           </span>

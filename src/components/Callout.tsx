@@ -35,7 +35,7 @@ export function Callout({
       <p className={cn("mb-2 text-[0.7rem] font-bold uppercase tracking-[0.14em]", style.labelClass)}>
         {style.label}
       </p>
-      <div className="text-[var(--ink)] [&_a]:font-semibold [&_a]:text-[var(--accent)] [&_p]:mb-0 [&_p]:text-[var(--ink)] [&_ul]:mb-0">
+      <div className="text-[var(--ink)] break-words [&_a]:break-words [&_a]:font-semibold [&_a]:text-[var(--accent)] [&_a]:[overflow-wrap:anywhere] [&_p]:mb-0 [&_p]:text-[var(--ink)] [&_ul]:mb-0">
         {children}
       </div>
     </aside>

@@ -13,7 +13,7 @@ export default function AnunciosPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <p className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-[var(--accent)]">Anúncios</p>
-      <h1 className="mt-2 max-w-3xl font-[family-name:var(--font-display)] text-4xl font-extrabold text-balance text-[var(--ink)] sm:text-5xl">
+      <h1 className="mt-2 max-w-3xl font-[family-name:var(--font-display)] text-3xl font-extrabold break-words text-balance text-[var(--ink)] sm:text-5xl">
         Serviços e oportunidades da comunidade
       </h1>
       <p className="mt-4 max-w-2xl text-lg text-pretty text-[var(--ink-muted)]">

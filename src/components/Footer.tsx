@@ -10,10 +10,10 @@ export function Footer() {
           <Link
             href="/"
             aria-label="Minha Espanha, ir para o início"
-            className="inline-flex items-center gap-3 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight"
+            className="inline-flex max-w-full min-w-0 items-center gap-3 font-[family-name:var(--font-display)] text-3xl font-extrabold tracking-tight"
           >
             <LogoMark className="size-10 shrink-0 text-[1.75rem]" />
-            <span>
+            <span className="min-w-0 break-words">
               Minha <span className="text-[var(--accent)]">Espanha</span>
             </span>
           </Link>
@@ -38,10 +38,10 @@ export function Footer() {
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/45">Contato</p>
           <ul className="mt-4 space-y-1 text-sm text-white/70">
-            <li>
+            <li className="min-w-0">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
-                className="inline-flex min-h-11 items-center transition hover:text-white"
+                className="inline-flex min-h-11 max-w-full items-center break-all transition hover:text-white [overflow-wrap:anywhere]"
               >
                 {siteConfig.contact.email}
               </a>
@@ -49,7 +49,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 py-4 text-center text-xs text-white/40">
+      <div className="border-t border-white/10 px-4 py-4 text-center text-xs break-words text-white/40">
         © {new Date().getFullYear()} {siteConfig.name} · {siteConfig.domain}
       </div>
     </footer>

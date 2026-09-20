@@ -50,7 +50,7 @@ function ContinueCard({ page }: { page: ContinuePage }) {
       <span className="text-[0.7rem] font-bold uppercase tracking-[0.14em] text-[var(--accent-2)]">
         {continueLabel(page)}
       </span>
-      <span className="mt-2 font-[family-name:var(--font-display)] text-xl font-bold leading-snug text-balance text-[var(--ink)]">
+      <span className="mt-2 font-[family-name:var(--font-display)] text-xl font-bold leading-snug break-words text-balance text-[var(--ink)]">
         {page.title}
       </span>
       {page.bullets?.length ? (
