@@ -46,3 +46,10 @@ next-env.d.ts
 !.env.example
 
 /tmp/
+
+# Local agent briefing (skills/rules under .cursor/ stay tracked)
+.cursor/CONTINUITY.md
+
+# Legacy agent folders (use .cursor/ only)
+.agent/
+.agents/

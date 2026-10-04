@@ -87,7 +87,119 @@ const nomadaWhatsAppMessage = encodeURIComponent(
   "Olá, Carol! Vi o anúncio da Nómada de Mascotas na Minha Espanha. Queria combinar o cuidado da minha mascote em Madrid. Pode me dizer disponibilidade e valores?",
 );
 
+const guarderiaPerroFelizWhatsAppMessage = encodeURIComponent(
+  "Olá, Bia! Vi o anúncio da Guardería Perro Feliz na Minha Espanha. Queria combinar o cuidado da minha mascote em Madrid. Pode me dizer disponibilidade e valores?",
+);
+
 export const ads: Ad[] = [
+  {
+    slug: "guarderia-perro-feliz",
+    title: "Guardería Perro Feliz",
+    summary:
+      "Guardería (creche) para cães pequenos e médio-pequenos em Madrid. Amor, atenção e rotina a combinar.",
+    description:
+      "Um lugar favorito para o seu cão em Madrid. Amor, carinho, atenção e respeito, com o formato combinado no WhatsApp.",
+    body: [
+      "A Guardería Perro Feliz é a creche canina da Bia em Madrid. O foco são cães pequenos e médio-pequenos (perros pequeños y medianos pequeños). Os detalhes de agenda, rotina e valores você combina direto com ela.",
+    ],
+    tagline: "Tu mascota ya no va a echarte de menos",
+    location: "Madrid",
+    locationDetail: {
+      label: "Madrid",
+      region: "Comunidad de Madrid",
+      description:
+        "Atende em Madrid. No primeiro contato, diga seu bairro e o porte do cão para confirmar cobertura, agenda e deslocamento.",
+      image: "/anuncios/madrid-gran-via.jpg",
+      imageAlt: "Gran Vía e Edificio Metrópolis em Madrid",
+      mapHref: "https://maps.google.com/?q=Madrid,+Spain",
+      mapLabel: "Ver Madrid no mapa",
+    },
+    category: "Serviços",
+    categoryId: "servicos",
+    subcategory: "Pet care",
+    features: ["Guardería canina", "Cães pequenos", "Atenção e carinho"],
+    services: [
+      {
+        title: "Guardería",
+        subtitle: "Creche canina",
+        detail:
+          "Espaço e rotina para o cão enquanto você está fora. Horários e formato a combinar.",
+      },
+      {
+        title: "Perros pequeños",
+        subtitle: "Cães pequenos e médio-pequenos",
+        detail:
+          "Atendimento pensado para portes menores. Confirme o porte do seu cão no WhatsApp.",
+      },
+      {
+        title: "Amor y cuidado",
+        subtitle: "Amor, atenção e respeito",
+        detail:
+          "Cuidado com carinho e atenção individual. Necessidades específicas a combinar.",
+      },
+    ],
+    audience: [
+      "Quem precisa de creche (guardería) para o cão em Madrid",
+      "Tutores de cães pequenos ou médio-pequenos",
+      "Quem quer combinar rotina e horários no WhatsApp",
+    ],
+    bookingSteps: [
+      "Chame no WhatsApp com zona, porte do cão e o que precisa.",
+      "Combinem formato, datas, rotina e valores.",
+      "Se quiser, façam uma conversa prévia antes de começar.",
+    ],
+    prepareChecklist: [
+      "Porte, idade e temperamento do cão",
+      "Rotina: comida, passeios, medicação e restrições",
+      "Contato do veterinário e de uma emergência",
+      "O que fazer se o cão precisar de atendimento veterinário",
+    ],
+    questionsToAsk: [
+      "Você atende meu bairro e o porte do meu cão?",
+      "Qual o valor e o que está incluso?",
+      "Como funciona a rotina na guardería?",
+      "Podemos conversar antes da primeira vez?",
+    ],
+    faqs: [
+      {
+        question: "Serve para qualquer porte de cão?",
+        answer:
+          "O anúncio indica foco em cães pequenos e médio-pequenos. Confirme o porte no WhatsApp.",
+      },
+      {
+        question: "É só creche diurna ou também pernoite?",
+        answer:
+          "Combine o formato e os horários direto com a Bia no WhatsApp.",
+      },
+      {
+        question: "A Minha Espanha intermedia o pagamento?",
+        answer:
+          "Não. Valor, horários e detalhes você fecha direto com a Bia no WhatsApp.",
+      },
+    ],
+    price: null,
+    priceNote: "Valores a combinar no WhatsApp.",
+    image: "/anuncios/guarderia-perro-feliz.jpg",
+    imageAlt: "Cartaz da Guardería Perro Feliz com fotos de cães e tutoras em Madrid",
+    provider: "Bia",
+    providerRole: "Guardería canina",
+    contacts: [
+      {
+        type: "whatsapp",
+        label: "WhatsApp",
+        value: "662 62 06 03",
+        href: `https://wa.me/34662620603?text=${guarderiaPerroFelizWhatsAppMessage}`,
+        ctaLabel: "Falar no WhatsApp",
+      },
+      {
+        type: "instagram",
+        label: "Instagram",
+        value: "@guarderiaperrofeliz_",
+        href: "https://www.instagram.com/guarderiaperrofeliz_/",
+      },
+    ],
+    publishedAt: "2026-10-04",
+  },
   {
     slug: "nomada-de-mascotas",
     title: "Nómada de Mascotas",

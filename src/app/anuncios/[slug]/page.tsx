@@ -233,7 +233,7 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
                       Prepare-se
                     </p>
                     <h2 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)]">
-                      Checklist do tutor
+                      Antes de reservar
                     </h2>
                     <CardBullets items={ad.prepareChecklist} className="mt-5" />
                   </div>
@@ -285,7 +285,7 @@ export default async function AnuncioPage({ params }: PageProps<"/anuncios/[slug
             <Callout variant="aviso">
               <p>
                 A Minha Espanha só divulga o anúncio. Contato, valores e condições ficam entre você
-                e a Carol.
+                e {ad.provider ?? "o anunciante"}.
               </p>
             </Callout>
           </div>
