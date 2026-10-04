@@ -4,6 +4,7 @@ import { ContentCard } from "@/components/ContentCard";
 import { CoverImage } from "@/components/CoverImage";
 import { getContentByStage, getCover } from "@/lib/content";
 import { getStage, stages, type StageId } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return stages.map((stage) => ({ stage: stage.id }));
@@ -14,11 +15,12 @@ export async function generateMetadata({ params }: PageProps<"/etapas/[stage]">)
   const stage = getStage(stageId);
   if (!stage) return {};
   const cover = getCover(stage.id);
-  return {
+  return buildPageMetadata({
     title: stage.title,
     description: stage.description,
-    openGraph: cover ? { images: [{ url: cover.src, alt: cover.alt }] } : undefined,
-  };
+    path: `/etapas/${stage.id}`,
+    images: cover ? [{ url: cover.src, alt: cover.alt }] : undefined,
+  });
 }
 
 export default async function StagePage({ params }: PageProps<"/etapas/[stage]">) {

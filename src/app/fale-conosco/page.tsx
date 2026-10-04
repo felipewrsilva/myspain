@@ -1,10 +1,12 @@
 import { siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = buildPageMetadata({
   title: "Fale Conosco",
   description:
     "Entre em contato com a Minha Espanha por e-mail ou participe do grupo oficial no WhatsApp.",
-};
+  path: "/fale-conosco",
+});
 
 export default function FaleConoscoPage() {
   const grupo = siteConfig.whatsapp.grupo;

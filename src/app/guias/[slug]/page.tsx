@@ -15,6 +15,7 @@ import {
 } from "@/lib/content";
 import { contentPdfFilename, guidePdfPath } from "@/lib/apostila-pdf";
 import { getStage } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getGuides().map((guide) => ({ slug: guide.slug }));
@@ -24,13 +25,15 @@ export async function generateMetadata({ params }: PageProps<"/guias/[slug]">) {
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
-  return {
+  return buildPageMetadata({
     title: guide.title,
     description: guide.description,
-    openGraph: guide.cover
-      ? { images: [{ url: guide.cover, alt: guide.coverAlt ?? guide.title }] }
+    path: `/guias/${guide.slug}`,
+    type: "article",
+    images: guide.cover
+      ? [{ url: guide.cover, alt: guide.coverAlt ?? guide.title }]
       : undefined,
-  };
+  });
 }
 
 export default async function GuiaPage({ params }: PageProps<"/guias/[slug]">) {

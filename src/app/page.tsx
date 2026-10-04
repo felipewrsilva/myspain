@@ -1,9 +1,28 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { ContentCard, CardBullets } from "@/components/ContentCard";
 import { getGuides, getCover, getTopicName } from "@/lib/content";
-import { stages, getStage } from "@/lib/site";
+import { stages, getStage, siteConfig } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
+
+const homeTitle = `${siteConfig.name} | guia prático para a Espanha`;
+
+export const metadata: Metadata = {
+  ...buildPageMetadata({
+    title: homeTitle,
+    description: siteConfig.description,
+    path: "/",
+    images: [
+      {
+        url: "/images/unsplash/photo-1539037116277-4db20889f2d4.jpg",
+        alt: "Vista de Madri com o Palacio de Cibeles",
+      },
+    ],
+  }),
+  title: { absolute: homeTitle },
+};
 
 const featuredGuideSlugs = ["visto-e-residencia", "primeiros-30-dias", "planejamento-financeiro"];
 

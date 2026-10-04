@@ -1,11 +1,13 @@
 import { ContentCard } from "@/components/ContentCard";
 import { getAds } from "@/lib/anuncios";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = buildPageMetadata({
   title: "Anúncios",
   description:
     "Anúncios de brasileiros na Espanha: serviços e oportunidades da comunidade, com contato direto.",
-};
+  path: "/anuncios",
+});
 
 export default function AnunciosPage() {
   const items = getAds();

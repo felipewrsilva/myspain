@@ -5,6 +5,7 @@ import { AdContactLinks, AdLocationPanel } from "@/components/AdContactLinks";
 import { Callout } from "@/components/Callout";
 import { CardBullets } from "@/components/ContentCard";
 import { getAd, getAds } from "@/lib/anuncios";
+import { buildPageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAds().map((ad) => ({ slug: ad.slug }));
@@ -14,13 +15,12 @@ export async function generateMetadata({ params }: PageProps<"/anuncios/[slug]">
   const { slug } = await params;
   const ad = getAd(slug);
   if (!ad) return {};
-  return {
+  return buildPageMetadata({
     title: ad.title,
     description: ad.summary,
-    openGraph: {
-      images: [{ url: ad.image, alt: ad.imageAlt }],
-    },
-  };
+    path: `/anuncios/${ad.slug}`,
+    images: [{ url: ad.image, alt: ad.imageAlt }],
+  });
 }
 
 function SectionHeading({

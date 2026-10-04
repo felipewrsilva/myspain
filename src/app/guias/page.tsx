@@ -2,12 +2,14 @@ import Link from "next/link";
 import { ContentCard } from "@/components/ContentCard";
 import { getGuides, getTopicName } from "@/lib/content";
 import { getStage } from "@/lib/site";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = buildPageMetadata({
   title: "Guias",
   description:
     "Guias práticos para brasileiros na Espanha, organizados por tema e pela fase da jornada.",
-};
+  path: "/guias",
+});
 
 export default function GuiasPage() {
   const guides = getGuides();
